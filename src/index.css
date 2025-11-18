@@ -134,13 +134,24 @@ All colors MUST be HSL.
   }
 }
 
-/* Hide Lovable branding elements */
+/* Remove all Lovable branding and editor buttons */
 .lovable-branding,
 .lovable-logo,
+#lovable-logo,
 .lovable-editor-button,
+#lovable-editor,
 #lovable-editor-button,
-footer .lovable,
-header .lovable {
+#lovable-editor-btn,
+button.lovable,
+a.lovable,
+.lovable,
+.lovable *,
+#lovable,
+#lovable *,
+[aria-label="Edit with Lovable"],
+[aria-label="Lovable Editor"],
+[title="Lovable"],
+[title="Edit with Lovable"] {
     display: none !important;
     opacity: 0 !important;
     visibility: hidden !important;
