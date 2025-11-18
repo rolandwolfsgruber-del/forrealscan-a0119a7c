@@ -10,18 +10,18 @@ export const Examples = ({ language }: ExamplesProps) => {
   const t = translations[language];
 
   return (
-    <section id="examples" className="py-20 bg-muted/30">
+    <section id="examples" className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t.examples_title}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             {t.examples_subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto">
           {/* Real Photo Example */}
           <Card className="border-2 border-veritas/40 hover:border-veritas hover:shadow-[0_0_25px_rgba(34,197,94,0.2)] transition-all duration-300 backdrop-blur-sm bg-card/80 rounded-2xl">
             <CardHeader>

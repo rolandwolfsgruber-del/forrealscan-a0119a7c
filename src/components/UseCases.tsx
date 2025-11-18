@@ -37,15 +37,15 @@ export const UseCases = ({ language }: UseCasesProps) => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t.cases_title}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 md:gap-8 max-w-7xl mx-auto">
           {cases.map((useCase, index) => (
             <Card key={index} className="border-2 hover:border-primary/50 hover:shadow-xl transition-all duration-300 p-2 flex flex-col h-full rounded-2xl">
               <CardHeader className="flex-grow">

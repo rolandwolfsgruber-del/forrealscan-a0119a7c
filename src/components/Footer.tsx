@@ -11,12 +11,12 @@ export const Footer = ({ language }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-muted/50 border-t border-border py-12">
+    <footer className="bg-muted/50 border-t border-border py-8 sm:py-10 md:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
           {/* Logo/Brand */}
-          <div className="flex-shrink-0">
-            <div className="h-10 w-32 bg-gradient-to-r from-veritas to-robo rounded-xl flex items-center justify-center text-white font-bold text-sm">
+          <div className="flex-shrink-0 mb-2 md:mb-0">
+            <div className="h-8 sm:h-10 w-28 sm:w-32 bg-gradient-to-r from-veritas to-robo rounded-lg sm:rounded-xl flex items-center justify-center text-white font-bold text-xs sm:text-sm">
               ForRealScan
             </div>
           </div>
@@ -53,7 +53,7 @@ export const Footer = ({ language }: FooterProps) => {
           </nav>
 
           {/* Copyright */}
-          <div className="text-sm text-muted-foreground">
+          <div className="text-xs sm:text-sm text-muted-foreground text-center md:text-left mt-2 md:mt-0">
             {t.footer_copyright.replace('{year}', currentYear.toString())}
           </div>
         </div>
