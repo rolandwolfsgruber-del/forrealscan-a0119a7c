@@ -133,3 +133,16 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide Lovable branding elements */
+.lovable-branding,
+.lovable-logo,
+.lovable-editor-button,
+#lovable-editor-button,
+footer .lovable,
+header .lovable {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
