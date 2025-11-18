@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header language={language} setLanguage={setLanguage} />
-      <main>
+      <main className="space-y-24">
         <Hero language={language} />
         <HowItWorks language={language} />
         <Modes language={language} />

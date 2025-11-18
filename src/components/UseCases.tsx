@@ -45,17 +45,17 @@ export const UseCases = ({ language }: UseCasesProps) => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {cases.map((useCase, index) => (
-            <Card key={index} className="border-2 hover:border-primary/50 transition-all duration-300">
-              <CardHeader>
-                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${useCase.color} flex items-center justify-center mb-4`}>
-                  <useCase.icon className="w-7 h-7 text-white" />
+            <Card key={index} className="border-2 hover:border-primary/50 hover:shadow-xl transition-all duration-300 p-2 flex flex-col h-full rounded-2xl">
+              <CardHeader className="flex-grow">
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${useCase.color} flex items-center justify-center mb-6 shadow-lg hover:shadow-xl transition-shadow`}>
+                  <useCase.icon className="w-9 h-9 text-white" strokeWidth={2.5} />
                 </div>
-                <CardTitle className="text-lg">{useCase.title}</CardTitle>
+                <CardTitle className="text-lg mb-3">{useCase.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">{useCase.description}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{useCase.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -33,18 +33,18 @@ export const FAQ = ({ language }: FAQProps) => {
           </h2>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="max-w-4xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-5">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card border-2 border-border rounded-lg px-6 data-[state=open]:border-primary/50"
+                className="bg-card border-2 border-border rounded-xl px-7 py-1 data-[state=open]:border-primary/60 data-[state=open]:shadow-lg transition-all duration-300"
               >
-                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <AccordionTrigger className="text-left font-bold text-base hover:no-underline py-5 hover:text-primary transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
