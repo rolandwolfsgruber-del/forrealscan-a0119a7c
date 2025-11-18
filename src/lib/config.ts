@@ -1,5 +1,5 @@
 // Application configuration constants
-export const APP_URL = 'https://forrealscan.vercel.app'; // Replace with actual app URL
+export const APP_URL = 'https://app.forrealscan.com';
 export const SUPPORT_EMAIL = 'support@forrealscan.com';
 export const SOCIAL_LINKS = {
   twitter: 'https://twitter.com/forrealscan',
