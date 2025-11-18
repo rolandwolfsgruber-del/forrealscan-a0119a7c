@@ -25,21 +25,21 @@ export const Hero = ({ language }: HeroProps) => {
       {/* Hero content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo with Glow Effect - Fully Free-Floating */}
+          {/* Logo with Glow Effect - App Style Square Container */}
           <div className="relative mb-16 flex justify-center">
-            {/* Wide Soft Glow Behind Logo */}
+            {/* Wide Soft Glow Behind Square Container */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative w-[600px] h-[500px] sm:w-[700px] sm:h-[600px]">
+              <div className="relative w-[500px] h-[450px] sm:w-[600px] sm:h-[550px]">
                 {/* Veritas Glow (Left/Green) */}
                 <div 
-                  className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full blur-[100px] opacity-60"
+                  className="absolute left-0 top-1/2 -translate-y-1/2 w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] rounded-full blur-[120px] opacity-70"
                   style={{
                     background: 'radial-gradient(circle, #22c55e 0%, transparent 70%)',
                   }}
                 />
                 {/* Robo Glow (Right/Blue) */}
                 <div 
-                  className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full blur-[100px] opacity-60"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] rounded-full blur-[120px] opacity-70"
                   style={{
                     background: 'radial-gradient(circle, #3b82f6 0%, transparent 70%)',
                   }}
@@ -47,13 +47,16 @@ export const Hero = ({ language }: HeroProps) => {
               </div>
             </div>
 
-            {/* ForRealScan Master Logo - No Container, No Background */}
-            <img 
-              src={logoMaster} 
-              alt="ForRealScan Logo" 
-              className="relative z-10 w-[320px] h-auto sm:w-[400px] object-contain"
-              style={{ imageRendering: 'crisp-edges' }}
-            />
+            {/* Perfect Square Container - App Style */}
+            <div className="relative z-10 bg-[#0f1419] rounded-[52px] p-8 sm:p-10 shadow-2xl aspect-square flex items-center justify-center w-[280px] sm:w-[340px]">
+              {/* ForRealScan Master Logo - Centered, No Extra Padding */}
+              <img 
+                src={logoMaster} 
+                alt="ForRealScan Logo" 
+                className="w-full h-auto object-contain"
+                style={{ imageRendering: 'crisp-edges' }}
+              />
+            </div>
           </div>
 
           {/* Headline - positioned below glow with more spacing */}
