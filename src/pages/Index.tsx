@@ -19,6 +19,20 @@ const Index = () => {
       <Header language={language} setLanguage={setLanguage} />
       <main className="space-y-24">
         <Hero language={language} />
+        
+        {/* Google AdSense Ad Unit */}
+        <div className="container mx-auto px-4">
+          <ins className="adsbygoogle"
+               style={{ display: 'block', textAlign: 'center', margin: '40px 0' }}
+               data-ad-client="ca-pub-7086576267073548"
+               data-ad-slot="1234567890"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script dangerouslySetInnerHTML={{
+            __html: '(adsbygoogle = window.adsbygoogle || []).push({});'
+          }} />
+        </div>
+        
         <HowItWorks language={language} />
         <Modes language={language} />
         <Examples language={language} />
