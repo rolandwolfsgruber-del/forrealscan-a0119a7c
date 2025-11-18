@@ -25,9 +25,9 @@ export const Hero = ({ language }: HeroProps) => {
       {/* Hero content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo with Glow Effect - App Style */}
+          {/* Logo with Glow Effect - No Container */}
           <div className="relative mb-16 flex justify-center">
-            {/* Wide Soft Glow Behind Container */}
+            {/* Wide Soft Glow Behind Logo */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[600px] h-[500px] sm:w-[700px] sm:h-[600px]">
                 {/* Veritas Glow (Left/Green) - Wider and Softer */}
@@ -47,13 +47,12 @@ export const Hero = ({ language }: HeroProps) => {
               </div>
             </div>
 
-            {/* Dark Rounded-Square Container - App Style */}
-            <div className="relative z-10 bg-[#0f1419] rounded-[32px] p-12 sm:p-16 shadow-2xl">
-              {/* ForRealScan Master Logo - Centered Inside Container */}
+            {/* ForRealScan Master Logo - Floating Freely */}
+            <div className="relative z-10">
               <img 
                 src={logoMaster} 
                 alt="ForRealScan Logo" 
-                className="w-[280px] h-auto sm:w-[340px] object-contain"
+                className="w-[320px] h-auto sm:w-[400px] object-contain"
                 style={{ imageRendering: 'crisp-edges' }}
               />
             </div>
