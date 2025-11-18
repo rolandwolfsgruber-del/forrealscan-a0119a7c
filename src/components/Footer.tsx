@@ -38,11 +38,10 @@ export const Footer = ({ language }: FooterProps) => {
               {t.footer_privacy}
             </a>
             <a 
-              href={`mailto:${SUPPORT_EMAIL}`} 
+              href="mailto:info.forrealscan@gmail.com" 
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
-              <Mail className="w-4 h-4" />
-              {t.footer_contact}
+              📧 info@forrealscan.com
             </a>
           </nav>
 
