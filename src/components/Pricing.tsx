@@ -13,15 +13,15 @@ export const Pricing = ({ language }: PricingProps) => {
   const t = translations[language];
 
   return (
-    <section id="pricing" className="py-20 bg-background">
+    <section id="pricing" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t.pricing_title}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto items-stretch">
           {/* Free Plan */}
           <Card className="border-2 border-border hover:border-veritas/40 hover:shadow-lg transition-all duration-300 rounded-2xl">
             <CardHeader className="pb-6">

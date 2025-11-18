@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header language={language} setLanguage={setLanguage} />
-      <main className="space-y-24">
+      <main className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
         <Hero language={language} />
         
         {/* Google AdSense Ad Unit */}

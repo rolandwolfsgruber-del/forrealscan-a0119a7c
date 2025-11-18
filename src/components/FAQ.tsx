@@ -25,26 +25,26 @@ export const FAQ = ({ language }: FAQProps) => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-muted/30">
+    <section id="faq" className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t.faq_title}
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-5">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4 md:space-y-5">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card border-2 border-border rounded-xl px-7 py-1 data-[state=open]:border-primary/60 data-[state=open]:shadow-lg transition-all duration-300"
+                className="bg-card border-2 border-border rounded-xl px-4 sm:px-6 md:px-7 py-1 data-[state=open]:border-primary/60 data-[state=open]:shadow-lg transition-all duration-300"
               >
-                <AccordionTrigger className="text-left font-bold text-base hover:no-underline py-5 hover:text-primary transition-colors">
+                <AccordionTrigger className="text-left font-bold text-sm sm:text-base hover:no-underline py-4 sm:py-5 hover:text-primary transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed pb-4 sm:pb-5">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

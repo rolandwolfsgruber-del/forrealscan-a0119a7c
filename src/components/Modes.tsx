@@ -11,15 +11,15 @@ export const Modes = ({ language }: ModesProps) => {
   const t = translations[language];
 
   return (
-    <section id="modes" className="py-20 bg-background">
+    <section id="modes" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t.modes_title}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 max-w-6xl mx-auto">
           {/* V3 Standard Scan */}
           <Card className="border-2 border-veritas/30 hover:border-veritas hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] transition-all duration-300 rounded-2xl p-2">
             <CardHeader>
