@@ -22,7 +22,7 @@ export const Footer = ({ language }: FooterProps) => {
           </div>
 
           {/* Links with Icons */}
-          <nav className="flex flex-wrap items-center justify-center gap-8 text-sm">
+          <nav className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 md:gap-8 text-sm">
             <a 
               href="/imprint" 
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -38,7 +38,14 @@ export const Footer = ({ language }: FooterProps) => {
               {t.footer_privacy}
             </a>
             <a 
-              href="mailto:info.forrealscan@gmail.com" 
+              href="/contact" 
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              {t.footer_contact || 'Contact'}
+            </a>
+            <a 
+              href="mailto:info@forrealscan.com" 
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               📧 info@forrealscan.com
