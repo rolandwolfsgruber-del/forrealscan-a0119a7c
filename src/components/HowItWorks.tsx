@@ -39,17 +39,17 @@ export const HowItWorks = ({ language }: HowItWorksProps) => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {steps.map((step, index) => (
-            <Card key={index} className="border-2 hover:border-primary/50 transition-all duration-300">
+            <Card key={index} className="border-2 hover:border-primary/50 hover:shadow-xl transition-all duration-300 p-2">
               <CardHeader>
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-veritas/20 to-robo/20 flex items-center justify-center mb-4 ${step.color}`}>
-                  <step.icon className="w-8 h-8" />
+                <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br from-veritas/20 to-robo/20 flex items-center justify-center mb-6 ${step.color}`}>
+                  <step.icon className="w-11 h-11" strokeWidth={2.5} />
                 </div>
                 <CardTitle className="text-xl font-bold">{step.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{step.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
               </CardContent>
             </Card>
           ))}

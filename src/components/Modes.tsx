@@ -19,15 +19,15 @@ export const Modes = ({ language }: ModesProps) => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* V3 Standard Scan */}
-          <Card className="border-2 hover:border-veritas/50 transition-all duration-300">
+          <Card className="border-2 border-veritas/30 hover:border-veritas hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] transition-all duration-300 rounded-2xl p-2">
             <CardHeader>
               <div className="flex items-center justify-between mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-veritas/10 flex items-center justify-center">
-                  <Zap className="w-7 h-7 text-veritas" />
+                <div className="w-16 h-16 rounded-2xl bg-veritas/10 flex items-center justify-center">
+                  <Zap className="w-9 h-9 text-veritas" strokeWidth={2.5} />
                 </div>
-                <Badge variant="secondary" className="bg-veritas/20 text-veritas">
+                <Badge variant="secondary" className="bg-veritas/20 text-veritas px-3 py-1">
                   {t.mode_v3_badge}
                 </Badge>
               </div>
@@ -57,13 +57,14 @@ export const Modes = ({ language }: ModesProps) => {
           </Card>
 
           {/* V5 UltraDeepScan */}
-          <Card className="border-2 border-robo/50 hover:border-robo transition-all duration-300 shadow-lg">
+          <Card className="border-2 border-robo hover:border-robo hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] shadow-xl relative overflow-hidden rounded-2xl p-2">
+            <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-robo to-robo-glow opacity-15 blur-3xl" />
             <CardHeader>
               <div className="flex items-center justify-between mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-robo/10 flex items-center justify-center">
-                  <Shield className="w-7 h-7 text-robo" />
+                <div className="w-16 h-16 rounded-2xl bg-robo/10 flex items-center justify-center">
+                  <Shield className="w-9 h-9 text-robo" strokeWidth={2.5} />
                 </div>
-                <Badge className="bg-robo text-robo-foreground">
+                <Badge className="bg-robo text-robo-foreground px-3 py-1">
                   {t.mode_v5_badge}
                 </Badge>
               </div>

@@ -1,5 +1,6 @@
 import { Language, translations } from '@/lib/translations';
 import { SUPPORT_EMAIL } from '@/lib/config';
+import { FileText, Shield, Mail } from 'lucide-react';
 
 interface FooterProps {
   language: Language;
@@ -20,24 +21,27 @@ export const Footer = ({ language }: FooterProps) => {
             </div>
           </div>
 
-          {/* Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6 text-sm">
+          {/* Links with Icons */}
+          <nav className="flex flex-wrap items-center justify-center gap-8 text-sm">
             <a 
               href="/imprint" 
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
+              <FileText className="w-4 h-4" />
               {t.footer_imprint}
             </a>
             <a 
               href="/privacy" 
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
+              <Shield className="w-4 h-4" />
               {t.footer_privacy}
             </a>
             <a 
               href={`mailto:${SUPPORT_EMAIL}`} 
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
+              <Mail className="w-4 h-4" />
               {t.footer_contact}
             </a>
           </nav>
