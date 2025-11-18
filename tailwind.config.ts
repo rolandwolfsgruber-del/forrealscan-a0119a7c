@@ -19,6 +19,16 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        veritas: {
+          DEFAULT: "hsl(var(--veritas))",
+          foreground: "hsl(var(--veritas-foreground))",
+          glow: "hsl(var(--veritas-glow))",
+        },
+        robo: {
+          DEFAULT: "hsl(var(--robo))",
+          foreground: "hsl(var(--robo-foreground))",
+          glow: "hsl(var(--robo-glow))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -80,10 +90,21 @@ export default {
             height: "0",
           },
         },
+        "glow-shimmer": {
+          "0%": { transform: "translateX(-5%) scale(1)" },
+          "50%": { transform: "translateX(5%) scale(1.05)" },
+          "100%": { transform: "translateX(-5%) scale(1)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "glow-shimmer": "glow-shimmer 8s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },
