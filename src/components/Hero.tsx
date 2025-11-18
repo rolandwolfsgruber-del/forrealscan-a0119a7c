@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
+import logoMaster from '@/assets/logo-master.png';
 
 interface HeroProps {
   language: Language;
@@ -25,7 +26,7 @@ export const Hero = ({ language }: HeroProps) => {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo with Glow Effect */}
-          <div className="relative mb-20 flex justify-center">
+          <div className="relative mb-24 flex justify-center">
             {/* Dual Glow Background - Larger and More Intense */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[500px] h-[500px] sm:w-[600px] sm:h-[600px]">
@@ -33,22 +34,27 @@ export const Hero = ({ language }: HeroProps) => {
                 <div 
                   className="absolute left-0 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 rounded-full blur-3xl opacity-80"
                   style={{
-                    background: 'radial-gradient(circle, hsl(var(--veritas-glow)) 0%, transparent 65%)',
+                    background: 'radial-gradient(circle, #22c55e 0%, transparent 65%)',
                   }}
                 />
                 {/* Robo Glow (Right/Blue) - Static, No Animation */}
                 <div 
                   className="absolute right-0 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 rounded-full blur-3xl opacity-80"
                   style={{
-                    background: 'radial-gradient(circle, hsl(var(--robo-glow)) 0%, transparent 65%)',
+                    background: 'radial-gradient(circle, #3b82f6 0%, transparent 65%)',
                   }}
                 />
               </div>
             </div>
 
-            {/* Logo Placeholder - 35-45% Larger */}
-            <div className="relative z-10 h-44 w-88 sm:h-56 sm:w-[440px] bg-gradient-to-r from-veritas to-robo rounded-3xl flex items-center justify-center shadow-2xl">
-              <span className="text-white font-bold text-3xl sm:text-4xl lg:text-5xl">ForRealScan</span>
+            {/* ForRealScan Master Logo - 35-45% Larger, Pixel Perfect */}
+            <div className="relative z-10">
+              <img 
+                src={logoMaster} 
+                alt="ForRealScan Logo" 
+                className="w-[420px] h-auto sm:w-[560px] md:w-[640px] object-contain"
+                style={{ imageRendering: 'crisp-edges' }}
+              />
             </div>
           </div>
 
