@@ -25,34 +25,35 @@ export const Hero = ({ language }: HeroProps) => {
       {/* Hero content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo with Glow Effect */}
-          <div className="relative mb-24 flex justify-center">
-            {/* Dual Glow Background - Larger and More Intense */}
+          {/* Logo with Glow Effect - App Style */}
+          <div className="relative mb-16 flex justify-center">
+            {/* Wide Soft Glow Behind Container */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative w-[500px] h-[500px] sm:w-[600px] sm:h-[600px]">
-                {/* Veritas Glow (Left/Green) - Static, No Animation */}
+              <div className="relative w-[600px] h-[500px] sm:w-[700px] sm:h-[600px]">
+                {/* Veritas Glow (Left/Green) - Wider and Softer */}
                 <div 
-                  className="absolute left-0 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 rounded-full blur-3xl opacity-80"
+                  className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full blur-[100px] opacity-60"
                   style={{
-                    background: 'radial-gradient(circle, #22c55e 0%, transparent 65%)',
+                    background: 'radial-gradient(circle, #22c55e 0%, transparent 70%)',
                   }}
                 />
-                {/* Robo Glow (Right/Blue) - Static, No Animation */}
+                {/* Robo Glow (Right/Blue) - Wider and Softer */}
                 <div 
-                  className="absolute right-0 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 rounded-full blur-3xl opacity-80"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full blur-[100px] opacity-60"
                   style={{
-                    background: 'radial-gradient(circle, #3b82f6 0%, transparent 65%)',
+                    background: 'radial-gradient(circle, #3b82f6 0%, transparent 70%)',
                   }}
                 />
               </div>
             </div>
 
-            {/* ForRealScan Master Logo - 35-45% Larger, Pixel Perfect */}
-            <div className="relative z-10">
+            {/* Dark Rounded-Square Container - App Style */}
+            <div className="relative z-10 bg-[#0f1419] rounded-[32px] p-12 sm:p-16 shadow-2xl">
+              {/* ForRealScan Master Logo - Centered Inside Container */}
               <img 
                 src={logoMaster} 
                 alt="ForRealScan Logo" 
-                className="w-[420px] h-auto sm:w-[560px] md:w-[640px] object-contain"
+                className="w-[280px] h-auto sm:w-[340px] object-contain"
                 style={{ imageRendering: 'crisp-edges' }}
               />
             </div>
