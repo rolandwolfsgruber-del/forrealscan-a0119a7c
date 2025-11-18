@@ -48,7 +48,7 @@ export const Hero = ({ language }: HeroProps) => {
             </div>
 
             {/* Dark Rounded Square Container - App Style */}
-            <div className="relative z-10 bg-[#0f1a20] rounded-[60px] sm:rounded-[70px] p-10 sm:p-14 shadow-2xl w-[300px] sm:w-[380px] aspect-square flex items-center justify-center">
+            <div className="relative z-10 bg-[#0f1a20] rounded-[60px] sm:rounded-[70px] p-4 sm:p-6 shadow-2xl w-[280px] sm:w-[360px] aspect-square flex items-center justify-center">
               {/* ForRealScan Master Logo */}
               <img 
                 src={logoMaster} 
