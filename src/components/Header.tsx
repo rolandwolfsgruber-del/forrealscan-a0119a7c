@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, Globe } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
+import logoMaster from '@/assets/logo-master.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -40,9 +41,11 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="h-10 w-32 bg-gradient-to-r from-veritas to-robo rounded-xl flex items-center justify-center text-white font-bold text-sm">
-              ForRealScan
-            </div>
+            <img 
+              src={logoMaster} 
+              alt="ForRealScan Logo" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
