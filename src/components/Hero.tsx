@@ -25,19 +25,19 @@ export const Hero = ({ language }: HeroProps) => {
       {/* Hero content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo with Glow Effect - No Container */}
+          {/* Logo with Glow Effect - Fully Free-Floating */}
           <div className="relative mb-16 flex justify-center">
             {/* Wide Soft Glow Behind Logo */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[600px] h-[500px] sm:w-[700px] sm:h-[600px]">
-                {/* Veritas Glow (Left/Green) - Wider and Softer */}
+                {/* Veritas Glow (Left/Green) */}
                 <div 
                   className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full blur-[100px] opacity-60"
                   style={{
                     background: 'radial-gradient(circle, #22c55e 0%, transparent 70%)',
                   }}
                 />
-                {/* Robo Glow (Right/Blue) - Wider and Softer */}
+                {/* Robo Glow (Right/Blue) */}
                 <div 
                   className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full blur-[100px] opacity-60"
                   style={{
@@ -47,15 +47,13 @@ export const Hero = ({ language }: HeroProps) => {
               </div>
             </div>
 
-            {/* ForRealScan Master Logo - Floating Freely */}
-            <div className="relative z-10">
-              <img 
-                src={logoMaster} 
-                alt="ForRealScan Logo" 
-                className="w-[320px] h-auto sm:w-[400px] object-contain"
-                style={{ imageRendering: 'crisp-edges' }}
-              />
-            </div>
+            {/* ForRealScan Master Logo - No Container, No Background */}
+            <img 
+              src={logoMaster} 
+              alt="ForRealScan Logo" 
+              className="relative z-10 w-[320px] h-auto sm:w-[400px] object-contain"
+              style={{ imageRendering: 'crisp-edges' }}
+            />
           </div>
 
           {/* Headline - positioned below glow with more spacing */}
