@@ -2,6 +2,7 @@ import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import squirrelImage from '@/assets/squirrel-real.jpg';
+import butterflyImage from '@/assets/butterfly-ai.webp';
 
 interface ExamplesProps {
   language: Language;
@@ -59,9 +60,13 @@ export const Examples = ({ language }: ExamplesProps) => {
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* Placeholder for AI image with enhanced styling */}
-              <div className="aspect-square bg-gradient-to-br from-robo/10 to-robo/25 rounded-xl flex items-center justify-center border-2 border-robo/30 shadow-lg min-h-[330px]">
-                <span className="text-robo/40 text-sm font-medium">AI Photo Placeholder</span>
+              {/* AI-generated butterfly photo */}
+              <div className="aspect-square rounded-xl overflow-hidden border-2 border-robo/30 shadow-lg">
+                <img 
+                  src={butterflyImage} 
+                  alt="AI-generated photo of a butterfly on a flower" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Robo comment with glassmorphism */}
