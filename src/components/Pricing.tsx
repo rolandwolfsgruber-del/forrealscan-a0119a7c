@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { APP_URL } from '@/lib/config';
+import { useToast } from '@/hooks/use-toast';
 
 interface PricingProps {
   language: Language;
@@ -11,6 +12,14 @@ interface PricingProps {
 
 export const Pricing = ({ language }: PricingProps) => {
   const t = translations[language];
+  const { toast } = useToast();
+
+  const handlePremiumNotify = () => {
+    toast({
+      title: t.pricing_premium_coming_soon_title,
+      description: t.pricing_premium_coming_soon_message,
+    });
+  };
 
   return (
     <section id="pricing" className="py-12 sm:py-16 md:py-20 bg-background">
@@ -44,10 +53,6 @@ export const Pricing = ({ language }: PricingProps) => {
                   <Check className="w-5 h-5 text-veritas flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t.pricing_free_feat3}</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-veritas flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.pricing_free_feat4}</span>
-                </li>
               </ul>
               
               <Button asChild variant="outline" className="w-full h-12 text-base rounded-xl">
@@ -58,19 +63,16 @@ export const Pricing = ({ language }: PricingProps) => {
             </CardContent>
           </Card>
 
-          {/* Premium Plan - Dominant Card */}
+          {/* Premium Plan - Coming Soon Card */}
           <Card className="border-4 border-robo hover:shadow-[0_0_50px_rgba(59,130,246,0.4)] shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-br from-robo/5 to-robo/10 lg:scale-105">
             <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-robo to-robo-glow opacity-20 blur-3xl" />
             <div className="absolute top-4 right-4">
               <Badge className="bg-robo text-robo-foreground text-sm px-4 py-1.5 font-semibold">
-                Empfohlen
+                {t.pricing_premium_badge}
               </Badge>
             </div>
             <CardHeader className="pb-6 relative z-10">
               <CardTitle className="text-3xl mb-2">{t.pricing_premium_title}</CardTitle>
-              <CardDescription className="text-5xl font-bold text-foreground mt-3">
-                {t.pricing_premium_price}
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6 relative z-10">
               <ul className="space-y-4">
@@ -96,10 +98,11 @@ export const Pricing = ({ language }: PricingProps) => {
                 </li>
               </ul>
               
-              <Button asChild className="w-full bg-gradient-to-r from-veritas to-robo hover:opacity-90 h-14 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all">
-                <a href={APP_URL} target="_blank" rel="noopener noreferrer">
-                  {t.pricing_premium_cta}
-                </a>
+              <Button 
+                onClick={handlePremiumNotify}
+                className="w-full bg-gradient-to-r from-veritas to-robo hover:opacity-90 h-14 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+              >
+                {t.pricing_premium_cta}
               </Button>
             </CardContent>
           </Card>
