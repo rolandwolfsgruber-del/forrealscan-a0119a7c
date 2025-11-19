@@ -42,7 +42,7 @@ export const translations = {
     mode_v5_feat1: 'V3 AI-Erkennung + V4 Retusche-Analyse',
     mode_v5_feat2: 'Auto-Trigger bei unsicheren Ergebnissen',
     mode_v5_feat3: 'Ultra Verdict kombiniert beide Analysen',
-    mode_v5_feat4: 'Premium: Unbegrenzt & werbefrei',
+    mode_v5_feat4: 'Limitiert durch 3 Scans pro Tag',
     
     // Examples
     examples_title: 'Siehst du den Unterschied?',
@@ -155,7 +155,7 @@ export const translations = {
     mode_v5_feat1: 'V3 AI detection + V4 retouch analysis',
     mode_v5_feat2: 'Auto-trigger on uncertain results',
     mode_v5_feat3: 'Ultra Verdict combines both analyses',
-    mode_v5_feat4: 'Premium: Unlimited & ad-free',
+    mode_v5_feat4: 'Limited to 3 scans per day',
     
     // Examples
     examples_title: 'Can You Spot the Difference?',
@@ -268,7 +268,7 @@ export const translations = {
     mode_v5_feat1: 'Rilevamento AI V3 + analisi ritocco V4',
     mode_v5_feat2: 'Attivazione automatica su risultati incerti',
     mode_v5_feat3: 'Ultra Verdict combina entrambe le analisi',
-    mode_v5_feat4: 'Premium: Illimitato e senza pubblicità',
+    mode_v5_feat4: 'Limitato a 3 scansioni al giorno',
     
     // Examples
     examples_title: 'Riesci a Vedere la Differenza?',
@@ -381,7 +381,7 @@ export const translations = {
     mode_v5_feat1: 'Detección IA V3 + análisis de retoque V4',
     mode_v5_feat2: 'Activación automática en resultados inciertos',
     mode_v5_feat3: 'Ultra Verdict combina ambos análisis',
-    mode_v5_feat4: 'Premium: Ilimitado y sin anuncios',
+    mode_v5_feat4: 'Limitado a 3 escaneos por día',
     
     // Examples
     examples_title: '¿Puedes Ver la Diferencia?',
