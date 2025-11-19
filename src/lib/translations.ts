@@ -74,7 +74,7 @@ export const translations = {
     pricing_free_price: 'Kostenlos',
     pricing_free_feat1: 'Kostenlose V3 SmartScans',
     pricing_free_feat2: 'Limitierte V5 UltraDeepScans pro Tag (3/Tag)',
-    pricing_free_feat3: 'Werbung unterstützt den kostenlosen Betrieb',
+    pricing_free_feat3: 'Werbung unterstützt die kostenlose Nutzung',
     pricing_free_cta: 'Kostenlos starten',
     
     pricing_premium_badge: 'Bald verfügbar',
@@ -187,7 +187,7 @@ export const translations = {
     pricing_free_price: 'Free',
     pricing_free_feat1: 'Free V3 SmartScans',
     pricing_free_feat2: 'Limited V5 UltraDeepScans per day (3/day)',
-    pricing_free_feat3: 'Ads support the free experience',
+    pricing_free_feat3: 'Ads support the free version',
     pricing_free_cta: 'Start Free',
     
     pricing_premium_badge: 'Coming soon',
@@ -300,7 +300,7 @@ export const translations = {
     pricing_free_price: 'Gratuito',
     pricing_free_feat1: 'V3 SmartScans gratuiti',
     pricing_free_feat2: 'V5 UltraDeepScans limitati al giorno (3/giorno)',
-    pricing_free_feat3: 'La pubblicità supporta l\'esperienza gratuita',
+    pricing_free_feat3: 'La pubblicità supporta la versione gratuita',
     pricing_free_cta: 'Inizia Gratis',
     
     pricing_premium_badge: 'Prossimamente',
@@ -413,7 +413,7 @@ export const translations = {
     pricing_free_price: 'Gratis',
     pricing_free_feat1: 'V3 SmartScans gratuitos',
     pricing_free_feat2: 'V5 UltraDeepScans limitados por día (3/día)',
-    pricing_free_feat3: 'Los anuncios soportan la experiencia gratuita',
+    pricing_free_feat3: 'Los anuncios soportan la versión gratuita',
     pricing_free_cta: 'Comenzar Gratis',
     
     pricing_premium_badge: 'Próximamente',
