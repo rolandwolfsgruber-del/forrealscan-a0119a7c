@@ -1,6 +1,7 @@
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import squirrelImage from '@/assets/squirrel-real.jpg';
 
 interface ExamplesProps {
   language: Language;
@@ -31,9 +32,13 @@ export const Examples = ({ language }: ExamplesProps) => {
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* Placeholder for real image with enhanced styling */}
-              <div className="aspect-square bg-gradient-to-br from-veritas/10 to-veritas/25 rounded-xl flex items-center justify-center border-2 border-veritas/30 shadow-lg min-h-[330px]">
-                <span className="text-veritas/40 text-sm font-medium">Real Photo Placeholder</span>
+              {/* Real squirrel photo */}
+              <div className="aspect-square rounded-xl overflow-hidden border-2 border-veritas/30 shadow-lg">
+                <img 
+                  src={squirrelImage} 
+                  alt="Real photo of a squirrel in nature" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Veritas comment with glassmorphism */}
