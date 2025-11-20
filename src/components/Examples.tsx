@@ -2,7 +2,7 @@ import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import squirrelImage from '@/assets/squirrel-real.jpg';
-import butterflyImage from '@/assets/butterfly-ai.webp';
+import gorillaImage from '@/assets/gorilla-ai.jpg';
 
 interface ExamplesProps {
   language: Language;
@@ -63,8 +63,8 @@ export const Examples = ({ language }: ExamplesProps) => {
               {/* AI-generated butterfly photo */}
               <div className="aspect-square rounded-xl overflow-hidden border-2 border-robo/30 shadow-lg">
                 <img 
-                  src={butterflyImage} 
-                  alt="AI-generated photo of a butterfly on a flower" 
+                  src={gorillaImage} 
+                  alt="AI-generated photo of a girl with an albino gorilla" 
                   className="w-full h-full object-cover"
                 />
               </div>
