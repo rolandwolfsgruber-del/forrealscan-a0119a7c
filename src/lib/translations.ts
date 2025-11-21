@@ -223,7 +223,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: 'Siehst du den Unterschied?',
-    game_subtitle: 'Teste dein Auge – ForRealScan zeigt dir anschließend die Auflösung.',
+    game_subtitle: 'KI-generierte Bilder werden immer realer, doch ForRealScan hilft dir den Unterschied zu sehen.',
     game_cta: 'Spiel starten (Demnächst)',
     
     // Use Cases
@@ -371,7 +371,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: 'Can You Spot the Difference?',
-    game_subtitle: 'Test your eye – ForRealScan will show you the answer afterwards.',
+    game_subtitle: 'AI-generated images are becoming more realistic, but ForRealScan helps you see the difference.',
     game_cta: 'Start Game (Coming Soon)',
     
     // Use Cases
@@ -519,7 +519,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: 'Vedi la Differenza?',
-    game_subtitle: 'Testa il tuo occhio – ForRealScan ti mostrerà la soluzione dopo.',
+    game_subtitle: 'Le immagini generate dall\'IA diventano sempre più realistiche, ma ForRealScan ti aiuta a vedere la differenza.',
     game_cta: 'Inizia il Gioco (Prossimamente)',
     
     // Use Cases
@@ -667,7 +667,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: '¿Ves la Diferencia?',
-    game_subtitle: 'Pon a prueba tu ojo – ForRealScan te mostrará la solución después.',
+    game_subtitle: 'Las imágenes generadas por IA son cada vez más realistas, pero ForRealScan te ayuda a ver la diferencia.',
     game_cta: 'Iniciar Juego (Próximamente)',
     
     // Use Cases
