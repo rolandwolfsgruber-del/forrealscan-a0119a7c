@@ -2,11 +2,15 @@ import { useState } from 'react';
 import { Language } from '@/lib/translations';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { UseCases } from '@/components/UseCases';
 import { HowItWorks } from '@/components/HowItWorks';
+import { StoryCheck } from '@/components/StoryCheck';
+import { Retouch } from '@/components/Retouch';
+import { ShareCards } from '@/components/ShareCards';
+import { Disclaimer } from '@/components/Disclaimer';
 import { Modes } from '@/components/Modes';
 import { Examples } from '@/components/Examples';
 import { MiniGame } from '@/components/MiniGame';
-import { UseCases } from '@/components/UseCases';
 import { Pricing } from '@/components/Pricing';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
@@ -33,11 +37,15 @@ const Index = () => {
           }} />
         </div>
         
+        <UseCases language={language} />
         <HowItWorks language={language} />
+        <StoryCheck language={language} />
+        <Retouch language={language} />
+        <ShareCards language={language} />
+        <Disclaimer language={language} />
         <Modes language={language} />
         <Examples language={language} />
         <MiniGame language={language} />
-        <UseCases language={language} />
         <Pricing language={language} />
         <FAQ language={language} />
       </main>

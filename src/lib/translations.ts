@@ -12,19 +12,41 @@ export const translations = {
     language_label: 'Sprache',
     
     // Hero
-    hero_title: 'Echt oder KI? ForRealScan sagt es dir in Sekunden.',
-    hero_subtitle: 'Modernste KI-Erkennung für authentische Inhalte. Vertraue auf Veritas & Robo – deine digitalen Detektive.',
-    hero_cta_primary: 'App starten',
+    hero_title: 'Erkenne, wie viel KI in deinen Bildern steckt',
+    hero_subtitle: 'Lade Bilder oder Screenshots hoch und erhalte eine klare Einschätzung mit Prozentwert, visuellen Hinweisen und kurzen Erklärungen, wie echt oder künstlich ein Motiv wirkt.',
+    hero_cta_primary: 'Jetzt prüfen',
     hero_cta_secondary: 'Beispiele ansehen',
     
     // How it works
-    how_title: 'So funktioniert ForRealScan',
-    how_step1_title: 'Bild hochladen',
-    how_step1_text: 'Laden Sie Ihr Bild direkt per Drag & Drop oder über die Upload-Funktion hoch.',
-    how_step2_title: 'Scan starten',
-    how_step2_text: 'Unsere KI analysiert das Bild mit modernsten Algorithmen in Echtzeit.',
-    how_step3_title: 'Ergebnis verstehen',
-    how_step3_text: 'Erhalten Sie eine klare Einschätzung mit detaillierter Erklärung von Veritas und Robo.',
+    how_title: 'Wie funktioniert ForRealScan?',
+    how_step1_title: 'Wahrscheinlichkeiten statt harte Urteile',
+    how_step1_text: 'ForRealScan zeigt dir eine geschätzte Wahrscheinlichkeit, ob KI-Generierung oder starke Bearbeitung im Spiel ist. Es geht um fundierte Hinweise – nicht um endgültige Urteile.',
+    how_step2_title: 'Echte Erklärungen statt nur Prozentzahlen',
+    how_step2_text: 'Zu jedem Scan erhältst du verständliche Erklärungen: Welche Bild- oder Textstellen wirken eher natürlich, welche eher KI-typisch und warum.',
+    how_step3_title: 'Unsicherheits-Zonen werden klar markiert',
+    how_step3_text: 'Wenn ein Ergebnis unsicher ist – zum Beispiel bei sehr kurzen Texten oder schwierigen Bildern – weist ForRealScan deutlich darauf hin, statt Sicherheit vorzutäuschen.',
+    
+    // Story Check & Text
+    story_title: 'Bilder, Texte und Story im Zusammenspiel prüfen',
+    story_text_title: 'Texte besser auf KI-Anteil einschätzen',
+    story_text_desc: 'ForRealScan hilft dir dabei, längere Texte besser einzuschätzen: Welche Passagen klingen sehr generisch oder gleichförmig, wo zeigt sich persönliche Handschrift? Auffällige Stellen können markiert und kurz erklärt werden – immer mit dem klaren Hinweis, dass es sich um Einschätzungen und Wahrscheinlichkeiten handelt.',
+    story_check_title: 'Story-Check für Screenshots und Posts',
+    story_check_desc: 'Wenn Bild und Text zusammenkommen – zum Beispiel in einem Social-Media-Post – kann ForRealScan prüfen, ob Bild, Beschreibung und Behauptung grob zusammenpassen. So erkennst du schneller, ob eine dramatische Story wirklich plausibel wirkt oder eher wie ein KI-Fantasie-Szenario.',
+    
+    // Retouch & Manipulation
+    retouch_title: 'Digitale Bearbeitung verständlich erklärt',
+    retouch_intro: 'Nicht jede Bearbeitung ist schlecht – aber es hilft, sie zu erkennen. ForRealScan zeigt dir, wo ein Bild stark geglättet, nachgeschärft oder deutlich verändert wurde.',
+    retouch_point1: 'Hautglättung, Lichtanpassungen oder starke Filter können als mögliche Retusche gekennzeichnet werden.',
+    retouch_point2: 'Auffällige Veränderungen an Gesichtszügen oder Proportionen können vorsichtig benannt werden.',
+    retouch_point3: 'Erklärtexte bleiben neutral und sachlich, damit du dir selbst ein Urteil bilden kannst.',
+    
+    // ShareCards
+    share_title: 'Ergebnisse teilen, wo sie gebraucht werden',
+    share_text: 'Scans können als kompakte Ergebnis-Karten geteilt werden, zum Beispiel in Chats oder unter Social-Media-Posts. So machst du deine Einschätzung für andere nachvollziehbar – inklusive Hinweis auf Unsicherheiten.',
+    
+    // Disclaimer
+    disclaimer_title: 'Wichtiger Hinweis',
+    disclaimer_text: 'ForRealScan liefert dir fundierte technische Einschätzungen und Wahrscheinlichkeiten. Die Ergebnisse sind keine juristischen Beweise, helfen dir aber dabei, bewusster zu entscheiden – und sollten nicht als alleinige Grundlage für Vorwürfe oder harte Anschuldigungen dienen.',
     
     // Modes
     modes_title: 'Zwei Modi – ein Ziel: Wahrheit.',
@@ -61,12 +83,24 @@ export const translations = {
     cases_title: 'Für wen ist ForRealScan?',
     case1_title: 'Influencer & Creator',
     case1_text: 'Schütze deine Authentizität und beweise die Echtheit deiner Inhalte.',
+    case1_detail1: 'Zeige deiner Community mit einem ForRealScan-Ergebnis, dass deine Fotos echt sind – selbst wenn du leicht retuschierst.',
+    case1_detail2: 'Vergleiche echte Fotos mit KI-Bildern, um deinen eigenen Bildstil bewusster zu wählen.',
+    case1_detail3: 'Prüfe Kampagnenmotive, bevor du sie mit Marken oder Agenturen teilst.',
     case2_title: 'Journalisten & Fact Checker',
-    case2_text: 'Überprüfe Bildmaterial schnell und zuverlässig auf Manipulation.',
+    case2_text: 'Überprüfe Bildmaterial schnell und transparent auf mögliche Manipulation.',
+    case2_detail1: 'Scanne Pressefotos und Social-Media-Screenshots, bevor du sie in Artikeln oder Beiträgen verwendest.',
+    case2_detail2: 'Nutze den Story-Check, um zu sehen, ob Bild und Text grob zueinander passen.',
+    case2_detail3: 'Dokumentiere deine Prüfung mit einem knappen ForRealScan-Ergebnis für deine Leser:innen.',
     case3_title: 'Dating & Social',
-    case3_text: 'Erkenne Fake-Profile und KI-generierte Profilbilder sofort.',
+    case3_text: 'Erkenne verdächtige Profilbilder und unrealistische Inszenierungen frühzeitig.',
+    case3_detail1: 'Prüfe Profilbilder, bevor du jemandem vertraust oder persönliche Informationen teilst.',
+    case3_detail2: 'Erkenne stark retuschierte oder KI-erzeugte Selfies, die ein falsches Bild vermitteln.',
+    case3_detail3: 'Scanne Screenshots von viralen Posts, um sie vor dem Teilen besser einschätzen zu können.',
     case4_title: 'Fotografie & Marketing',
-    case4_text: 'Stelle sicher, dass deine visuellen Assets authentisch und glaubwürdig sind.',
+    case4_text: 'Mache die Authentizität deiner visuellen Assets sichtbar.',
+    case4_detail1: 'Zeige Kund:innen, welche Bilder echte Fotos sind und wo digitale Bearbeitung im Spiel ist.',
+    case4_detail2: 'Scanne Produktfotos und Kampagnenmotive vor der Veröffentlichung.',
+    case4_detail3: 'Nutze ForRealScan-Ergebnisse als Transparenz-Pluspunkt in Pitches und Präsentationen.',
     
     // Pricing
     pricing_title: 'Wähle deinen Plan',
@@ -130,15 +164,6 @@ export const translations = {
     hero_cta_primary: 'Launch App',
     hero_cta_secondary: 'View Examples',
     
-    // How it works
-    how_title: 'How ForRealScan Works',
-    how_step1_title: 'Upload Image',
-    how_step1_text: 'Upload your image directly via drag & drop or the upload function.',
-    how_step2_title: 'Start Scan',
-    how_step2_text: 'Our AI analyzes the image with cutting-edge algorithms in real-time.',
-    how_step3_title: 'Understand Results',
-    how_step3_text: 'Get a clear assessment with detailed explanations from Veritas and Robo.',
-    
     // Modes
     modes_title: 'Two Modes – One Goal: Truth.',
     mode_v3_title: 'V3 Standard Scan',
@@ -174,12 +199,55 @@ export const translations = {
     cases_title: 'Who Is ForRealScan For?',
     case1_title: 'Influencers & Creators',
     case1_text: 'Protect your authenticity and prove the genuineness of your content.',
+    case1_detail1: 'Show your community with a ForRealScan result that your photos are real – even if you retouch slightly.',
+    case1_detail2: 'Compare real photos with AI images to choose your own image style more consciously.',
+    case1_detail3: 'Check campaign motifs before sharing them with brands or agencies.',
     case2_title: 'Journalists & Fact Checkers',
-    case2_text: 'Verify images quickly and reliably for manipulation.',
+    case2_text: 'Verify image material quickly and transparently for possible manipulation.',
+    case2_detail1: 'Scan press photos and social media screenshots before using them in articles or posts.',
+    case2_detail2: 'Use the Story-Check to see if image and text roughly match.',
+    case2_detail3: 'Document your review with a brief ForRealScan result for your readers.',
     case3_title: 'Dating & Social',
-    case3_text: 'Detect fake profiles and AI-generated profile pictures instantly.',
+    case3_text: 'Recognize suspicious profile pictures and unrealistic staging early.',
+    case3_detail1: 'Check profile pictures before you trust someone or share personal information.',
+    case3_detail2: 'Recognize heavily retouched or AI-generated selfies that convey a false image.',
+    case3_detail3: 'Scan screenshots of viral posts to better assess them before sharing.',
     case4_title: 'Photography & Marketing',
-    case4_text: 'Ensure your visual assets are authentic and credible.',
+    case4_text: 'Make the authenticity of your visual assets visible.',
+    case4_detail1: 'Show clients which images are real photos and where digital editing is involved.',
+    case4_detail2: 'Scan product photos and campaign motifs before publication.',
+    case4_detail3: 'Use ForRealScan results as a transparency plus in pitches and presentations.',
+    
+    // How it works
+    how_title: 'How ForRealScan Works',
+    how_step1_title: 'Probabilities instead of hard judgments',
+    how_step1_text: 'ForRealScan shows you an estimated probability of whether AI generation or heavy editing is involved. It\'s about well-founded hints – not final judgments.',
+    how_step2_title: 'Real explanations instead of just percentages',
+    how_step2_text: 'With each scan, you get understandable explanations: Which image or text parts seem more natural, which are more typical of AI and why.',
+    how_step3_title: 'Uncertainty zones are clearly marked',
+    how_step3_text: 'If a result is uncertain – for example with very short texts or difficult images – ForRealScan clearly points this out instead of pretending certainty.',
+    
+    // Story Check & Text
+    story_title: 'Check images, texts and story in interplay',
+    story_text_title: 'Better assess texts for AI content',
+    story_text_desc: 'ForRealScan helps you better assess longer texts: Which passages sound very generic or uniform, where does personal handwriting show? Conspicuous passages can be marked and briefly explained – always with the clear note that these are assessments and probabilities.',
+    story_check_title: 'Story-Check for screenshots and posts',
+    story_check_desc: 'When image and text come together – for example in a social media post – ForRealScan can check whether image, description and claim roughly match. This helps you recognize faster whether a dramatic story really seems plausible or more like an AI fantasy scenario.',
+    
+    // Retouch & Manipulation
+    retouch_title: 'Digital editing explained understandably',
+    retouch_intro: 'Not every edit is bad – but it helps to recognize it. ForRealScan shows you where an image was heavily smoothed, sharpened or significantly changed.',
+    retouch_point1: 'Skin smoothing, light adjustments or strong filters can be marked as possible retouching.',
+    retouch_point2: 'Conspicuous changes to facial features or proportions can be cautiously named.',
+    retouch_point3: 'Explanatory texts remain neutral and factual so you can form your own judgment.',
+    
+    // ShareCards
+    share_title: 'Share results where they are needed',
+    share_text: 'Scans can be shared as compact result cards, for example in chats or under social media posts. This makes your assessment comprehensible for others – including notes on uncertainties.',
+    
+    // Disclaimer
+    disclaimer_title: 'Important Note',
+    disclaimer_text: 'ForRealScan provides you with well-founded technical assessments and probabilities. The results are not legal evidence, but help you make more conscious decisions – and should not serve as the sole basis for accusations or harsh allegations.',
     
     // Pricing
     pricing_title: 'Choose Your Plan',
@@ -243,15 +311,6 @@ export const translations = {
     hero_cta_primary: 'Avvia App',
     hero_cta_secondary: 'Vedi Esempi',
     
-    // How it works
-    how_title: 'Come Funziona ForRealScan',
-    how_step1_title: 'Carica Immagine',
-    how_step1_text: 'Carica la tua immagine tramite drag & drop o la funzione di caricamento.',
-    how_step2_title: 'Avvia Scansione',
-    how_step2_text: 'La nostra AI analizza l\'immagine con algoritmi all\'avanguardia in tempo reale.',
-    how_step3_title: 'Comprendi Risultati',
-    how_step3_text: 'Ottieni una valutazione chiara con spiegazioni dettagliate da Veritas e Robo.',
-    
     // Modes
     modes_title: 'Due Modalità – Un Obiettivo: Verità.',
     mode_v3_title: 'V3 Standard Scan',
@@ -287,12 +346,55 @@ export const translations = {
     cases_title: 'Per Chi è ForRealScan?',
     case1_title: 'Influencer & Creator',
     case1_text: 'Proteggi la tua autenticità e dimostra la genuinità dei tuoi contenuti.',
+    case1_detail1: 'Mostra alla tua community con un risultato ForRealScan che le tue foto sono reali – anche se ritocchi leggermente.',
+    case1_detail2: 'Confronta foto reali con immagini AI per scegliere il tuo stile di immagine più consapevolmente.',
+    case1_detail3: 'Controlla i motivi della campagna prima di condividerli con marchi o agenzie.',
     case2_title: 'Giornalisti & Fact Checker',
-    case2_text: 'Verifica le immagini rapidamente e in modo affidabile per manipolazioni.',
+    case2_text: 'Verifica le immagini rapidamente e in modo trasparente per possibili manipolazioni.',
+    case2_detail1: 'Scansiona foto stampa e screenshot dei social media prima di usarli in articoli o post.',
+    case2_detail2: 'Usa lo Story-Check per vedere se immagine e testo corrispondono approssimativamente.',
+    case2_detail3: 'Documenta la tua revisione con un breve risultato ForRealScan per i tuoi lettori.',
     case3_title: 'Dating & Social',
-    case3_text: 'Rileva profili falsi e foto profilo generate da AI istantaneamente.',
+    case3_text: 'Riconosci le foto profilo sospette e la messa in scena irrealistica in anticipo.',
+    case3_detail1: 'Controlla le foto profilo prima di fidarti di qualcuno o condividere informazioni personali.',
+    case3_detail2: 'Riconosci selfie fortemente ritoccati o generati da AI che trasmettono un\'immagine falsa.',
+    case3_detail3: 'Scansiona screenshot di post virali per valutarli meglio prima di condividerli.',
     case4_title: 'Fotografia & Marketing',
-    case4_text: 'Assicurati che le tue risorse visive siano autentiche e credibili.',
+    case4_text: 'Rendi visibile l\'autenticità delle tue risorse visive.',
+    case4_detail1: 'Mostra ai clienti quali immagini sono foto reali e dove è coinvolta l\'editing digitale.',
+    case4_detail2: 'Scansiona foto di prodotti e motivi di campagna prima della pubblicazione.',
+    case4_detail3: 'Usa i risultati ForRealScan come punto di forza della trasparenza in pitch e presentazioni.',
+    
+    // How it works
+    how_title: 'Come Funziona ForRealScan',
+    how_step1_title: 'Probabilità invece di giudizi duri',
+    how_step1_text: 'ForRealScan ti mostra una probabilità stimata se è coinvolta la generazione AI o un\'editing pesante. Si tratta di suggerimenti fondati – non giudizi finali.',
+    how_step2_title: 'Spiegazioni reali invece di sole percentuali',
+    how_step2_text: 'Con ogni scansione, ottieni spiegazioni comprensibili: Quali parti di immagine o testo sembrano più naturali, quali sono più tipiche dell\'AI e perché.',
+    how_step3_title: 'Le zone di incertezza sono chiaramente marcate',
+    how_step3_text: 'Se un risultato è incerto – ad esempio con testi molto brevi o immagini difficili – ForRealScan lo indica chiaramente invece di fingere certezza.',
+    
+    // Story Check & Text
+    story_title: 'Controlla immagini, testi e storia nell\'interazione',
+    story_text_title: 'Valuta meglio i testi per il contenuto AI',
+    story_text_desc: 'ForRealScan ti aiuta a valutare meglio i testi più lunghi: Quali passaggi suonano molto generici o uniformi, dove si mostra la scrittura personale? I passaggi cospicui possono essere contrassegnati e spiegati brevemente – sempre con la chiara nota che si tratta di valutazioni e probabilità.',
+    story_check_title: 'Story-Check per screenshot e post',
+    story_check_desc: 'Quando immagine e testo si uniscono – ad esempio in un post sui social media – ForRealScan può verificare se immagine, descrizione e affermazione corrispondono approssimativamente. Questo ti aiuta a riconoscere più velocemente se una storia drammatica sembra davvero plausibile o più come uno scenario fantastico AI.',
+    
+    // Retouch & Manipulation
+    retouch_title: 'Editing digitale spiegato in modo comprensibile',
+    retouch_intro: 'Non ogni modifica è cattiva – ma aiuta riconoscerla. ForRealScan ti mostra dove un\'immagine è stata fortemente levigata, nitidizzata o significativamente cambiata.',
+    retouch_point1: 'Levigatura della pelle, regolazioni della luce o filtri forti possono essere contrassegnati come possibile ritocco.',
+    retouch_point2: 'Cambiamenti cospicui ai lineamenti del viso o alle proporzioni possono essere nominati con cautela.',
+    retouch_point3: 'I testi esplicativi rimangono neutrali e fattuali in modo da poter formare il tuo giudizio.',
+    
+    // ShareCards
+    share_title: 'Condividi i risultati dove sono necessari',
+    share_text: 'Le scansioni possono essere condivise come carte risultato compatte, ad esempio in chat o sotto post sui social media. Questo rende la tua valutazione comprensibile per gli altri – incluse note sulle incertezze.',
+    
+    // Disclaimer
+    disclaimer_title: 'Nota Importante',
+    disclaimer_text: 'ForRealScan ti fornisce valutazioni tecniche ben fondate e probabilità. I risultati non sono prove legali, ma ti aiutano a prendere decisioni più consapevoli – e non dovrebbero servire come unica base per accuse o dure allegazioni.',
     
     // Pricing
     pricing_title: 'Scegli il Tuo Piano',
@@ -356,15 +458,6 @@ export const translations = {
     hero_cta_primary: 'Iniciar App',
     hero_cta_secondary: 'Ver Ejemplos',
     
-    // How it works
-    how_title: 'Cómo Funciona ForRealScan',
-    how_step1_title: 'Subir Imagen',
-    how_step1_text: 'Sube tu imagen directamente mediante arrastrar y soltar o la función de carga.',
-    how_step2_title: 'Iniciar Escaneo',
-    how_step2_text: 'Nuestra IA analiza la imagen con algoritmos de vanguardia en tiempo real.',
-    how_step3_title: 'Entender Resultados',
-    how_step3_text: 'Obtén una evaluación clara con explicaciones detalladas de Veritas y Robo.',
-    
     // Modes
     modes_title: 'Dos Modos – Un Objetivo: Verdad.',
     mode_v3_title: 'V3 Escaneo Estándar',
@@ -400,12 +493,55 @@ export const translations = {
     cases_title: '¿Para Quién es ForRealScan?',
     case1_title: 'Influencers & Creadores',
     case1_text: 'Protege tu autenticidad y demuestra la genuinidad de tu contenido.',
+    case1_detail1: 'Muestra a tu comunidad con un resultado ForRealScan que tus fotos son reales – incluso si retoques ligeramente.',
+    case1_detail2: 'Compara fotos reales con imágenes AI para elegir tu propio estilo de imagen más conscientemente.',
+    case1_detail3: 'Verifica motivos de campaña antes de compartirlos con marcas o agencias.',
     case2_title: 'Periodistas & Verificadores',
-    case2_text: 'Verifica imágenes rápida y confiablemente para manipulación.',
+    case2_text: 'Verifica imágenes rápida y transparentemente para posible manipulación.',
+    case2_detail1: 'Escanea fotos de prensa y capturas de pantalla de redes sociales antes de usarlas en artículos o publicaciones.',
+    case2_detail2: 'Usa el Story-Check para ver si imagen y texto coinciden aproximadamente.',
+    case2_detail3: 'Documenta tu revisión con un breve resultado ForRealScan para tus lectores.',
     case3_title: 'Citas & Social',
-    case3_text: 'Detecta perfiles falsos y fotos de perfil generadas por IA al instante.',
+    case3_text: 'Reconoce fotos de perfil sospechosas y escenificación irreal temprano.',
+    case3_detail1: 'Verifica fotos de perfil antes de confiar en alguien o compartir información personal.',
+    case3_detail2: 'Reconoce selfies fuertemente retocados o generados por IA que transmiten una imagen falsa.',
+    case3_detail3: 'Escanea capturas de pantalla de publicaciones virales para evaluarlas mejor antes de compartirlas.',
     case4_title: 'Fotografía & Marketing',
-    case4_text: 'Asegúrate de que tus activos visuales sean auténticos y creíbles.',
+    case4_text: 'Haz visible la autenticidad de tus activos visuales.',
+    case4_detail1: 'Muestra a los clientes qué imágenes son fotos reales y dónde está involucrada la edición digital.',
+    case4_detail2: 'Escanea fotos de productos y motivos de campaña antes de la publicación.',
+    case4_detail3: 'Usa los resultados ForRealScan como un plus de transparencia en presentaciones y propuestas.',
+    
+    // How it works
+    how_title: 'Cómo Funciona ForRealScan',
+    how_step1_title: 'Probabilidades en lugar de juicios duros',
+    how_step1_text: 'ForRealScan te muestra una probabilidad estimada de si está involucrada la generación de IA o edición pesada. Se trata de pistas bien fundadas – no juicios finales.',
+    how_step2_title: 'Explicaciones reales en lugar de solo porcentajes',
+    how_step2_text: 'Con cada escaneo, obtienes explicaciones comprensibles: ¿Qué partes de imagen o texto parecen más naturales, cuáles son más típicas de IA y por qué.',
+    how_step3_title: 'Las zonas de incertidumbre se marcan claramente',
+    how_step3_text: 'Si un resultado es incierto – por ejemplo con textos muy cortos o imágenes difíciles – ForRealScan lo señala claramente en lugar de fingir certeza.',
+    
+    // Story Check & Text
+    story_title: 'Verifica imágenes, textos e historia en interacción',
+    story_text_title: 'Evalúa mejor los textos para contenido de IA',
+    story_text_desc: 'ForRealScan te ayuda a evaluar mejor textos más largos: ¿Qué pasajes suenan muy genéricos o uniformes, dónde se muestra escritura personal? Los pasajes conspicuos pueden marcarse y explicarse brevemente – siempre con la nota clara de que se trata de evaluaciones y probabilidades.',
+    story_check_title: 'Story-Check para capturas de pantalla y publicaciones',
+    story_check_desc: 'Cuando imagen y texto se unen – por ejemplo en una publicación en redes sociales – ForRealScan puede verificar si imagen, descripción y afirmación coinciden aproximadamente. Esto te ayuda a reconocer más rápido si una historia dramática realmente parece plausible o más como un escenario de fantasía de IA.',
+    
+    // Retouch & Manipulation
+    retouch_title: 'Edición digital explicada comprensiblemente',
+    retouch_intro: 'No toda edición es mala – pero ayuda reconocerla. ForRealScan te muestra dónde una imagen fue fuertemente suavizada, afilada o significativamente cambiada.',
+    retouch_point1: 'Suavizado de piel, ajustes de luz o filtros fuertes pueden marcarse como posible retoque.',
+    retouch_point2: 'Cambios conspicuos en rasgos faciales o proporciones pueden nombrarse cautelosamente.',
+    retouch_point3: 'Los textos explicativos permanecen neutrales y factuales para que puedas formar tu propio juicio.',
+    
+    // ShareCards
+    share_title: 'Comparte resultados donde sean necesarios',
+    share_text: 'Los escaneos pueden compartirse como tarjetas de resultado compactas, por ejemplo en chats o bajo publicaciones en redes sociales. Esto hace que tu evaluación sea comprensible para otros – incluyendo notas sobre incertidumbres.',
+    
+    // Disclaimer
+    disclaimer_title: 'Nota Importante',
+    disclaimer_text: 'ForRealScan te proporciona evaluaciones técnicas bien fundadas y probabilidades. Los resultados no son pruebas legales, pero te ayudan a tomar decisiones más conscientes – y no deben servir como única base para acusaciones o alegaciones duras.',
     
     // Pricing
     pricing_title: 'Elige Tu Plan',
