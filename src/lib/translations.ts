@@ -215,7 +215,7 @@ export const translations: Record<Language, Translations> = {
     
     // Examples
     examples_title: 'Siehst du den Unterschied?',
-    examples_subtitle: 'Teste dein Auge – unsere KI erkennt es immer.',
+    examples_subtitle: 'KI-generierte Bilder werden immer realer, doch ForRealScan hilft dir den Unterschied zu sehen.',
     examples_real_label: 'Echtes Foto',
     examples_ai_label: 'KI-generiert',
     examples_veritas_comment: 'Natürliche Schatten und Lichtreflexionen – eindeutig echt.',
@@ -223,7 +223,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: 'Siehst du den Unterschied?',
-    game_subtitle: 'KI-generierte Bilder werden immer realer, doch ForRealScan hilft dir den Unterschied zu sehen.',
+    game_subtitle: 'Teste dein Auge – ForRealScan zeigt dir anschließend die Auflösung.',
     game_cta: 'Spiel starten (Demnächst)',
     
     // Use Cases
@@ -363,7 +363,7 @@ export const translations: Record<Language, Translations> = {
     
     // Examples
     examples_title: 'Can You Spot the Difference?',
-    examples_subtitle: 'Test your eye – our AI always knows.',
+    examples_subtitle: 'AI-generated images are becoming more realistic, but ForRealScan helps you see the difference.',
     examples_real_label: 'Real Photo',
     examples_ai_label: 'AI-Generated',
     examples_veritas_comment: 'Natural shadows and light reflections – clearly real.',
@@ -371,7 +371,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: 'Can You Spot the Difference?',
-    game_subtitle: 'AI-generated images are becoming more realistic, but ForRealScan helps you see the difference.',
+    game_subtitle: 'Test your eye – ForRealScan will show you the answer afterwards.',
     game_cta: 'Start Game (Coming Soon)',
     
     // Use Cases
@@ -511,7 +511,7 @@ export const translations: Record<Language, Translations> = {
     
     // Examples
     examples_title: 'Riesci a Vedere la Differenza?',
-    examples_subtitle: 'Metti alla prova il tuo occhio – la nostra IA lo sa sempre.',
+    examples_subtitle: 'Le immagini generate dall\'IA diventano sempre più realistiche, ma ForRealScan ti aiuta a vedere la differenza.',
     examples_real_label: 'Foto Reale',
     examples_ai_label: 'Generata da IA',
     examples_veritas_comment: 'Ombre naturali e riflessi di luce – chiaramente reale.',
@@ -519,7 +519,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: 'Vedi la Differenza?',
-    game_subtitle: 'Le immagini generate dall\'IA diventano sempre più realistiche, ma ForRealScan ti aiuta a vedere la differenza.',
+    game_subtitle: 'Testa il tuo occhio – ForRealScan ti mostrerà la soluzione dopo.',
     game_cta: 'Inizia il Gioco (Prossimamente)',
     
     // Use Cases
@@ -659,7 +659,7 @@ export const translations: Record<Language, Translations> = {
     
     // Examples
     examples_title: '¿Puedes Ver la Diferencia?',
-    examples_subtitle: 'Pon a prueba tu ojo – nuestra IA siempre lo sabe.',
+    examples_subtitle: 'Las imágenes generadas por IA son cada vez más realistas, pero ForRealScan te ayuda a ver la diferencia.',
     examples_real_label: 'Foto Real',
     examples_ai_label: 'Generada por IA',
     examples_veritas_comment: 'Sombras naturales y reflejos de luz – claramente real.',
@@ -667,7 +667,7 @@ export const translations: Record<Language, Translations> = {
     
     // Mini Game
     game_title: '¿Ves la Diferencia?',
-    game_subtitle: 'Las imágenes generadas por IA son cada vez más realistas, pero ForRealScan te ayuda a ver la diferencia.',
+    game_subtitle: 'Pon a prueba tu ojo – ForRealScan te mostrará la solución después.',
     game_cta: 'Iniciar Juego (Próximamente)',
     
     // Use Cases
