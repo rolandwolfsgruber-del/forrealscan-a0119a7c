@@ -70,24 +70,29 @@ export const Hero = ({ language }: HeroProps) => {
           </p>
 
           {/* CTA Buttons - Touch-friendly on mobile */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-stretch sm:items-center px-4">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-gradient-to-r from-veritas to-robo hover:opacity-90 hover:shadow-xl text-white shadow-lg w-full sm:w-auto sm:min-w-[240px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl transition-all"
-            >
-              <a href={APP_URL} target="_blank" rel="noopener noreferrer">
-                {t.hero_cta_primary}
-              </a>
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              onClick={() => scrollToSection('examples')}
-              className="w-full sm:w-auto sm:min-w-[240px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl hover:shadow-lg transition-all"
-            >
-              {t.hero_cta_secondary}
-            </Button>
+          <div className="flex flex-col gap-3 justify-center items-center px-4">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-stretch sm:items-center w-full">
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-gradient-to-r from-veritas to-robo hover:opacity-90 hover:shadow-xl text-white shadow-lg w-full sm:w-auto sm:min-w-[240px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl transition-all"
+              >
+                <a href={APP_URL} target="_blank" rel="noopener noreferrer">
+                  {t.hero_cta_primary}
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                onClick={() => scrollToSection('examples')}
+                className="w-full sm:w-auto sm:min-w-[240px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl hover:shadow-lg transition-all"
+              >
+                {t.hero_cta_secondary}
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground mt-1">
+              {t.hero_microcopy}
+            </p>
           </div>
         </div>
       </div>
