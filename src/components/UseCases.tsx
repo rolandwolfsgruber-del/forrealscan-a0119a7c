@@ -21,28 +21,28 @@ export const UseCases = ({ language }: UseCasesProps) => {
   const cases = [
     {
       icon: Users,
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-veritas via-veritas/80 to-veritas/60',
       title: t.case1_title,
       description: t.case1_text,
       details: [t.case1_detail1, t.case1_detail2, t.case1_detail3],
     },
     {
       icon: Newspaper,
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-robo via-robo/80 to-robo/60',
       title: t.case2_title,
       description: t.case2_text,
       details: [t.case2_detail1, t.case2_detail2, t.case2_detail3],
     },
     {
       icon: Heart,
-      color: 'from-rose-500 to-red-500',
+      color: 'from-veritas/70 via-robo/60 to-robo/80',
       title: t.case3_title,
       description: t.case3_text,
       details: [t.case3_detail1, t.case3_detail2, t.case3_detail3],
     },
     {
       icon: Camera,
-      color: 'from-amber-500 to-orange-500',
+      color: 'from-robo/60 via-veritas/50 to-veritas/70',
       title: t.case4_title,
       description: t.case4_text,
       details: [t.case4_detail1, t.case4_detail2, t.case4_detail3],

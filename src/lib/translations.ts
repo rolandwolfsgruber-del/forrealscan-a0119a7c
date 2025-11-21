@@ -1,6 +1,152 @@
 export type Language = 'de' | 'en' | 'it' | 'es';
 
-export const translations = {
+interface Translations {
+  // Header
+  nav_start: string;
+  nav_features: string;
+  nav_modes: string;
+  nav_pricing: string;
+  nav_faq: string;
+  cta_app: string;
+  language_label: string;
+  
+  // Hero
+  hero_title: string;
+  hero_subtitle: string;
+  hero_cta_primary: string;
+  hero_cta_secondary: string;
+  hero_microcopy: string;
+  
+  // How it works
+  how_title: string;
+  how_step1_title: string;
+  how_step1_text: string;
+  how_step2_title: string;
+  how_step2_text: string;
+  how_step3_title: string;
+  how_step3_text: string;
+  
+  // Story Check & Text
+  story_title: string;
+  story_text_title: string;
+  story_text_desc: string;
+  story_check_title: string;
+  story_check_desc: string;
+  
+  // Retouch & Manipulation
+  retouch_title: string;
+  retouch_intro: string;
+  retouch_point1: string;
+  retouch_point2: string;
+  retouch_point3: string;
+  
+  // ShareCards
+  share_title: string;
+  share_text: string;
+  
+  // Disclaimer
+  disclaimer_title: string;
+  disclaimer_text: string;
+  
+  // Modes
+  modes_title: string;
+  mode_v3_title: string;
+  mode_v3_badge: string;
+  mode_v3_desc: string;
+  mode_v3_feat1: string;
+  mode_v3_feat2: string;
+  mode_v3_feat3: string;
+  mode_v3_feat4: string;
+  mode_v5_title: string;
+  mode_v5_badge: string;
+  mode_v5_desc: string;
+  mode_v5_feat1: string;
+  mode_v5_feat2: string;
+  mode_v5_feat3: string;
+  mode_v5_feat4: string;
+  
+  // Examples
+  examples_title: string;
+  examples_subtitle: string;
+  examples_real_label: string;
+  examples_ai_label: string;
+  examples_veritas_comment: string;
+  examples_robo_comment: string;
+  
+  // Mini Game
+  game_title: string;
+  game_subtitle: string;
+  game_cta: string;
+  
+  // Use Cases
+  cases_title: string;
+  case1_title: string;
+  case1_text: string;
+  case1_detail1: string;
+  case1_detail2: string;
+  case1_detail3: string;
+  case2_title: string;
+  case2_text: string;
+  case2_detail1: string;
+  case2_detail2: string;
+  case2_detail3: string;
+  case3_title: string;
+  case3_text: string;
+  case3_detail1: string;
+  case3_detail2: string;
+  case3_detail3: string;
+  case4_title: string;
+  case4_text: string;
+  case4_detail1: string;
+  case4_detail2: string;
+  case4_detail3: string;
+  
+  // Pricing
+  pricing_title: string;
+  pricing_free_title: string;
+  pricing_free_price: string;
+  pricing_free_feat1: string;
+  pricing_free_feat2: string;
+  pricing_free_feat3: string;
+  pricing_free_cta: string;
+  pricing_premium_badge: string;
+  pricing_premium_title: string;
+  pricing_premium_feat1: string;
+  pricing_premium_feat2: string;
+  pricing_premium_feat3: string;
+  pricing_premium_feat4: string;
+  pricing_premium_feat5: string;
+  pricing_premium_cta: string;
+  pricing_premium_coming_soon_title: string;
+  pricing_premium_coming_soon_message: string;
+  
+  // FAQ
+  faq_title: string;
+  faq_q1: string;
+  faq_a1: string;
+  faq_q2: string;
+  faq_a2: string;
+  faq_q3: string;
+  faq_a3: string;
+  faq_q4: string;
+  faq_a4: string;
+  faq_q5: string;
+  faq_a5: string;
+  faq_q6: string;
+  faq_a6: string;
+  faq_q7: string;
+  faq_a7: string;
+  faq_q8: string;
+  faq_a8: string;
+  
+  // Footer
+  footer_imprint: string;
+  footer_privacy: string;
+  footer_contact: string;
+  footer_copyright: string;
+}
+
+export const translations: Record<Language, Translations> = {
   de: {
     // Header
     nav_start: 'Start',
@@ -13,9 +159,10 @@ export const translations = {
     
     // Hero
     hero_title: 'Erkenne, wie viel KI in deinen Bildern steckt',
-    hero_subtitle: 'Lade Bilder oder Screenshots hoch und erhalte eine klare Einschätzung mit Prozentwert, visuellen Hinweisen und kurzen Erklärungen, wie echt oder künstlich ein Motiv wirkt.',
+    hero_subtitle: 'Lade dein Bild hoch und erhalte sofort einen Prozentwert – mit KI-Hinweisen, Unsicherheitszonen und technischen Details, damit du besser einschätzen kannst, was echt ist.',
     hero_cta_primary: 'Jetzt prüfen',
     hero_cta_secondary: 'Beispiele ansehen',
+    hero_microcopy: 'Kostenlos testen, keine Anmeldung nötig.',
     
     // How it works
     how_title: 'Wie funktioniert ForRealScan?',
@@ -49,7 +196,7 @@ export const translations = {
     disclaimer_text: 'ForRealScan liefert dir fundierte technische Einschätzungen und Wahrscheinlichkeiten. Die Ergebnisse sind keine juristischen Beweise, helfen dir aber dabei, bewusster zu entscheiden – und sollten nicht als alleinige Grundlage für Vorwürfe oder harte Anschuldigungen dienen.',
     
     // Modes
-    modes_title: 'Zwei Modi – ein Ziel: Wahrheit.',
+    modes_title: 'Zwei Modi – ein Ziel: Klarheit.',
     mode_v3_title: 'V3 Standard Scan',
     mode_v3_badge: 'Kostenlos',
     mode_v3_desc: 'Schnelle KI-Score-Erkennung für alltägliche Checks',
@@ -75,9 +222,9 @@ export const translations = {
     examples_robo_comment: 'Pixel-Muster und Artefakte weisen auf KI-Generierung hin.',
     
     // Mini Game
-    game_title: 'Teste dein Auge – Echt oder KI?',
-    game_subtitle: 'Bald verfügbar: Unser interaktives Spiel, bei dem du echte von KI-generierten Bildern unterscheiden musst.',
-    game_cta: 'Bald verfügbar',
+    game_title: 'Siehst du den Unterschied?',
+    game_subtitle: 'Teste dein Auge – ForRealScan zeigt dir anschließend die Auflösung.',
+    game_cta: 'Spiel starten (Demnächst)',
     
     // Use Cases
     cases_title: 'Für wen ist ForRealScan?',
@@ -126,18 +273,18 @@ export const translations = {
     faq_title: 'Häufig gestellte Fragen',
     faq_q1: 'Ist ForRealScan kostenlos?',
     faq_a1: 'Ja! Der V3 Standard Scan ist kostenlos nutzbar. Premium bietet unbegrenzte V5 UltraDeepScans und weitere Features.',
-    faq_q2: 'Speichert ihr meine Bilder?',
-    faq_a2: 'Nein. Deine Bilder werden nur für die Analyse verarbeitet und nicht dauerhaft gespeichert. Datenschutz hat höchste Priorität.',
+    faq_q2: 'Wie zuverlässig sind die Einschätzungen?',
+    faq_a2: 'ForRealScan liefert dir fundierte Wahrscheinlichkeiten und technische Hinweise. In vielen Tests können KI-Bilder sehr zuverlässig erkannt werden – trotzdem gibt es nie eine Garantie von 100 %. Deshalb zeigen wir dir immer auch Unsicherheitsbereiche und erklären, warum ein Ergebnis so ausfällt, damit du es besser einordnen kannst.',
     faq_q3: 'Was ist der Unterschied zwischen V3 und V5?',
     faq_a3: 'V3 ist eine schnelle KI-Erkennung. V5 UltraDeepScan kombiniert KI-Erkennung mit Retusche-Analyse für maximale Sicherheit.',
-    faq_q4: 'Wie genau ist die Erkennung?',
-    faq_a4: 'Unsere Modelle erreichen über 95% Genauigkeit. V5 UltraDeepScan bietet zusätzliche Sicherheit durch hybride Analyse.',
-    faq_q5: 'Funktioniert es auf allen Geräten?',
-    faq_a5: 'Ja! ForRealScan ist vollständig responsiv und funktioniert auf Desktop, Tablet und Smartphone.',
-    faq_q6: 'Warum gibt es Werbung im Free-Modus?',
-    faq_a6: 'Werbung ermöglicht uns, den Free-Modus kostenlos anzubieten. Premium-Nutzer erhalten ein werbefreies Erlebnis.',
-    faq_q7: 'Kann ich ForRealScan kommerziell nutzen?',
-    faq_a7: 'Ja! Mit einem Premium-Plan kannst du ForRealScan unbegrenzt für kommerzielle Zwecke nutzen.',
+    faq_q4: 'Funktioniert es auf allen Geräten?',
+    faq_a4: 'Ja! ForRealScan ist vollständig responsiv und funktioniert auf Desktop, Tablet und Smartphone.',
+    faq_q5: 'Warum gibt es Werbung im Free-Modus?',
+    faq_a5: 'Werbung ermöglicht uns, den Free-Modus kostenlos anzubieten. Premium-Nutzer erhalten ein werbefreies Erlebnis.',
+    faq_q6: 'Kann ich ForRealScan kommerziell nutzen?',
+    faq_a6: 'Ja! Mit einem Premium-Plan kannst du ForRealScan unbegrenzt für kommerzielle Zwecke nutzen.',
+    faq_q7: 'Speichert ihr meine Bilder?',
+    faq_a7: 'Nein. Deine Bilder werden nur für die Analyse verarbeitet und nicht dauerhaft gespeichert. Datenschutz hat höchste Priorität.',
     faq_q8: 'Welche Bildformate werden unterstützt?',
     faq_a8: 'Wir unterstützen JPG, PNG, WEBP und die meisten gängigen Bildformate bis zu 20MB.',
     
@@ -159,64 +306,11 @@ export const translations = {
     language_label: 'Language',
     
     // Hero
-    hero_title: 'Real or AI? ForRealScan tells you in seconds.',
-    hero_subtitle: 'State-of-the-art AI detection for authentic content. Trust Veritas & Robo – your digital detectives.',
-    hero_cta_primary: 'Launch App',
+    hero_title: 'Discover How Much AI is in Your Images',
+    hero_subtitle: 'Upload your image and instantly get a percentage value – with AI indicators, uncertainty zones, and technical details to help you better assess what\'s real.',
+    hero_cta_primary: 'Check Now',
     hero_cta_secondary: 'View Examples',
-    
-    // Modes
-    modes_title: 'Two Modes – One Goal: Truth.',
-    mode_v3_title: 'V3 Standard Scan',
-    mode_v3_badge: 'Free',
-    mode_v3_desc: 'Fast AI score detection for everyday checks',
-    mode_v3_feat1: 'Instant analysis',
-    mode_v3_feat2: 'Simple explanation by Veritas & Robo',
-    mode_v3_feat3: 'Ads possible in free mode',
-    mode_v3_feat4: 'Ideal for everyday checks',
-    
-    mode_v5_title: 'V5 UltraDeepScan',
-    mode_v5_badge: 'Recommended',
-    mode_v5_desc: 'Hybrid deep analysis for maximum security',
-    mode_v5_feat1: 'V3 AI detection + V4 retouch analysis',
-    mode_v5_feat2: 'Auto-trigger on uncertain results',
-    mode_v5_feat3: 'Ultra Verdict combines both analyses',
-    mode_v5_feat4: 'Limited to 3 scans per day',
-    
-    // Examples
-    examples_title: 'Can You Spot the Difference?',
-    examples_subtitle: 'Test your eye – our AI always knows.',
-    examples_real_label: 'Real Photo',
-    examples_ai_label: 'AI-Generated',
-    examples_veritas_comment: 'Natural shadows and light reflections – clearly real.',
-    examples_robo_comment: 'Pixel patterns and artifacts indicate AI generation.',
-    
-    // Mini Game
-    game_title: 'Test Your Eye – Real or AI?',
-    game_subtitle: 'Coming soon: Our interactive game where you distinguish real from AI-generated images.',
-    game_cta: 'Coming Soon',
-    
-    // Use Cases
-    cases_title: 'Who Is ForRealScan For?',
-    case1_title: 'Influencers & Creators',
-    case1_text: 'Protect your authenticity and prove the genuineness of your content.',
-    case1_detail1: 'Show your community with a ForRealScan result that your photos are real – even if you retouch slightly.',
-    case1_detail2: 'Compare real photos with AI images to choose your own image style more consciously.',
-    case1_detail3: 'Check campaign motifs before sharing them with brands or agencies.',
-    case2_title: 'Journalists & Fact Checkers',
-    case2_text: 'Verify image material quickly and transparently for possible manipulation.',
-    case2_detail1: 'Scan press photos and social media screenshots before using them in articles or posts.',
-    case2_detail2: 'Use the Story-Check to see if image and text roughly match.',
-    case2_detail3: 'Document your review with a brief ForRealScan result for your readers.',
-    case3_title: 'Dating & Social',
-    case3_text: 'Recognize suspicious profile pictures and unrealistic staging early.',
-    case3_detail1: 'Check profile pictures before you trust someone or share personal information.',
-    case3_detail2: 'Recognize heavily retouched or AI-generated selfies that convey a false image.',
-    case3_detail3: 'Scan screenshots of viral posts to better assess them before sharing.',
-    case4_title: 'Photography & Marketing',
-    case4_text: 'Make the authenticity of your visual assets visible.',
-    case4_detail1: 'Show clients which images are real photos and where digital editing is involved.',
-    case4_detail2: 'Scan product photos and campaign motifs before publication.',
-    case4_detail3: 'Use ForRealScan results as a transparency plus in pitches and presentations.',
+    hero_microcopy: 'Try for free, no registration required.',
     
     // How it works
     how_title: 'How ForRealScan Works',
@@ -249,6 +343,60 @@ export const translations = {
     disclaimer_title: 'Important Note',
     disclaimer_text: 'ForRealScan provides you with well-founded technical assessments and probabilities. The results are not legal evidence, but help you make more conscious decisions – and should not serve as the sole basis for accusations or harsh allegations.',
     
+    // Modes
+    modes_title: 'Two Modes – One Goal: Clarity.',
+    mode_v3_title: 'V3 Standard Scan',
+    mode_v3_badge: 'Free',
+    mode_v3_desc: 'Fast AI score detection for everyday checks',
+    mode_v3_feat1: 'Instant analysis',
+    mode_v3_feat2: 'Simple explanation by Veritas & Robo',
+    mode_v3_feat3: 'Ads possible in free mode',
+    mode_v3_feat4: 'Ideal for everyday checks',
+    
+    mode_v5_title: 'V5 UltraDeepScan',
+    mode_v5_badge: 'Recommended',
+    mode_v5_desc: 'Hybrid deep analysis for maximum security',
+    mode_v5_feat1: 'V3 AI detection + V4 retouch analysis',
+    mode_v5_feat2: 'Auto-trigger on uncertain results',
+    mode_v5_feat3: 'Ultra Verdict combines both analyses',
+    mode_v5_feat4: 'Limited to 3 scans per day',
+    
+    // Examples
+    examples_title: 'Can You Spot the Difference?',
+    examples_subtitle: 'Test your eye – our AI always knows.',
+    examples_real_label: 'Real Photo',
+    examples_ai_label: 'AI-Generated',
+    examples_veritas_comment: 'Natural shadows and light reflections – clearly real.',
+    examples_robo_comment: 'Pixel patterns and artifacts indicate AI generation.',
+    
+    // Mini Game
+    game_title: 'Can You Spot the Difference?',
+    game_subtitle: 'Test your eye – ForRealScan will show you the answer afterwards.',
+    game_cta: 'Start Game (Coming Soon)',
+    
+    // Use Cases
+    cases_title: 'Who Is ForRealScan For?',
+    case1_title: 'Influencers & Creators',
+    case1_text: 'Protect your authenticity and prove the genuineness of your content.',
+    case1_detail1: 'Show your community with a ForRealScan result that your photos are real – even if you retouch slightly.',
+    case1_detail2: 'Compare real photos with AI images to choose your own image style more consciously.',
+    case1_detail3: 'Check campaign motifs before sharing them with brands or agencies.',
+    case2_title: 'Journalists & Fact Checkers',
+    case2_text: 'Verify image material quickly and transparently for possible manipulation.',
+    case2_detail1: 'Scan press photos and social media screenshots before using them in articles or posts.',
+    case2_detail2: 'Use the Story-Check to see if image and text roughly match.',
+    case2_detail3: 'Document your review with a brief ForRealScan result for your readers.',
+    case3_title: 'Dating & Social',
+    case3_text: 'Recognize suspicious profile pictures and unrealistic staging early.',
+    case3_detail1: 'Check profile pictures before you trust someone or share personal information.',
+    case3_detail2: 'Recognize heavily retouched or AI-generated selfies that convey a false image.',
+    case3_detail3: 'Scan screenshots of viral posts to better assess them before sharing.',
+    case4_title: 'Photography & Marketing',
+    case4_text: 'Make the authenticity of your visual assets visible.',
+    case4_detail1: 'Show clients which images are real photos and where digital editing is involved.',
+    case4_detail2: 'Scan product photos and campaign motifs before publication.',
+    case4_detail3: 'Use ForRealScan results as a transparency plus in pitches and presentations.',
+    
     // Pricing
     pricing_title: 'Choose Your Plan',
     pricing_free_title: 'Free',
@@ -273,18 +421,18 @@ export const translations = {
     faq_title: 'Frequently Asked Questions',
     faq_q1: 'Is ForRealScan free?',
     faq_a1: 'Yes! The V3 Standard Scan is free to use. Premium offers unlimited V5 UltraDeepScans and more features.',
-    faq_q2: 'Do you store my images?',
-    faq_a2: 'No. Your images are only processed for analysis and not permanently stored. Privacy is our top priority.',
+    faq_q2: 'How reliable are the assessments?',
+    faq_a2: 'ForRealScan provides you with well-founded probabilities and technical indicators. In many tests, AI images can be recognized very reliably – but there is never a 100% guarantee. That\'s why we always show you uncertainty ranges and explain why a result turns out the way it does, so you can better evaluate it.',
     faq_q3: 'What\'s the difference between V3 and V5?',
     faq_a3: 'V3 is fast AI detection. V5 UltraDeepScan combines AI detection with retouch analysis for maximum security.',
-    faq_q4: 'How accurate is the detection?',
-    faq_a4: 'Our models achieve over 95% accuracy. V5 UltraDeepScan offers additional security through hybrid analysis.',
-    faq_q5: 'Does it work on all devices?',
-    faq_a5: 'Yes! ForRealScan is fully responsive and works on desktop, tablet, and smartphone.',
-    faq_q6: 'Why are there ads in free mode?',
-    faq_a6: 'Ads allow us to offer the free mode at no cost. Premium users get an ad-free experience.',
-    faq_q7: 'Can I use ForRealScan commercially?',
-    faq_a7: 'Yes! With a Premium plan, you can use ForRealScan unlimited for commercial purposes.',
+    faq_q4: 'Does it work on all devices?',
+    faq_a4: 'Yes! ForRealScan is fully responsive and works on desktop, tablet, and smartphone.',
+    faq_q5: 'Why are there ads in free mode?',
+    faq_a5: 'Ads allow us to offer the free mode at no cost. Premium users get an ad-free experience.',
+    faq_q6: 'Can I use ForRealScan commercially?',
+    faq_a6: 'Yes! With a Premium plan, you can use ForRealScan unlimited for commercial purposes.',
+    faq_q7: 'Do you store my images?',
+    faq_a7: 'No. Your images are only processed for analysis and not permanently stored. Privacy is our top priority.',
     faq_q8: 'What image formats are supported?',
     faq_a8: 'We support JPG, PNG, WEBP and most common image formats up to 20MB.',
     
@@ -306,80 +454,27 @@ export const translations = {
     language_label: 'Lingua',
     
     // Hero
-    hero_title: 'Reale o AI? ForRealScan te lo dice in secondi.',
-    hero_subtitle: 'Rilevamento AI all\'avanguardia per contenuti autentici. Affidati a Veritas & Robo – i tuoi detective digitali.',
-    hero_cta_primary: 'Avvia App',
+    hero_title: 'Riconosci quanta IA c\'è nelle tue immagini',
+    hero_subtitle: 'Carica la tua immagine e ottieni immediatamente un valore percentuale – con indicatori IA, zone di incertezza e dettagli tecnici per valutare meglio ciò che è reale.',
+    hero_cta_primary: 'Verifica Ora',
     hero_cta_secondary: 'Vedi Esempi',
-    
-    // Modes
-    modes_title: 'Due Modalità – Un Obiettivo: Verità.',
-    mode_v3_title: 'V3 Standard Scan',
-    mode_v3_badge: 'Gratuito',
-    mode_v3_desc: 'Rilevamento AI rapido per controlli quotidiani',
-    mode_v3_feat1: 'Analisi istantanea',
-    mode_v3_feat2: 'Spiegazione semplice da Veritas & Robo',
-    mode_v3_feat3: 'Pubblicità possibile in modalità gratuita',
-    mode_v3_feat4: 'Ideale per controlli quotidiani',
-    
-    mode_v5_title: 'V5 UltraDeepScan',
-    mode_v5_badge: 'Consigliato',
-    mode_v5_desc: 'Analisi profonda ibrida per massima sicurezza',
-    mode_v5_feat1: 'Rilevamento AI V3 + analisi ritocco V4',
-    mode_v5_feat2: 'Attivazione automatica su risultati incerti',
-    mode_v5_feat3: 'Ultra Verdict combina entrambe le analisi',
-    mode_v5_feat4: 'Limitato a 3 scansioni al giorno',
-    
-    // Examples
-    examples_title: 'Riesci a Vedere la Differenza?',
-    examples_subtitle: 'Metti alla prova il tuo occhio – la nostra AI lo sa sempre.',
-    examples_real_label: 'Foto Reale',
-    examples_ai_label: 'Generata da AI',
-    examples_veritas_comment: 'Ombre naturali e riflessi di luce – chiaramente reale.',
-    examples_robo_comment: 'Pattern di pixel e artefatti indicano generazione AI.',
-    
-    // Mini Game
-    game_title: 'Metti alla Prova il Tuo Occhio – Reale o AI?',
-    game_subtitle: 'Prossimamente: Il nostro gioco interattivo dove distingui immagini reali da quelle generate da AI.',
-    game_cta: 'Prossimamente',
-    
-    // Use Cases
-    cases_title: 'Per Chi è ForRealScan?',
-    case1_title: 'Influencer & Creator',
-    case1_text: 'Proteggi la tua autenticità e dimostra la genuinità dei tuoi contenuti.',
-    case1_detail1: 'Mostra alla tua community con un risultato ForRealScan che le tue foto sono reali – anche se ritocchi leggermente.',
-    case1_detail2: 'Confronta foto reali con immagini AI per scegliere il tuo stile di immagine più consapevolmente.',
-    case1_detail3: 'Controlla i motivi della campagna prima di condividerli con marchi o agenzie.',
-    case2_title: 'Giornalisti & Fact Checker',
-    case2_text: 'Verifica le immagini rapidamente e in modo trasparente per possibili manipolazioni.',
-    case2_detail1: 'Scansiona foto stampa e screenshot dei social media prima di usarli in articoli o post.',
-    case2_detail2: 'Usa lo Story-Check per vedere se immagine e testo corrispondono approssimativamente.',
-    case2_detail3: 'Documenta la tua revisione con un breve risultato ForRealScan per i tuoi lettori.',
-    case3_title: 'Dating & Social',
-    case3_text: 'Riconosci le foto profilo sospette e la messa in scena irrealistica in anticipo.',
-    case3_detail1: 'Controlla le foto profilo prima di fidarti di qualcuno o condividere informazioni personali.',
-    case3_detail2: 'Riconosci selfie fortemente ritoccati o generati da AI che trasmettono un\'immagine falsa.',
-    case3_detail3: 'Scansiona screenshot di post virali per valutarli meglio prima di condividerli.',
-    case4_title: 'Fotografia & Marketing',
-    case4_text: 'Rendi visibile l\'autenticità delle tue risorse visive.',
-    case4_detail1: 'Mostra ai clienti quali immagini sono foto reali e dove è coinvolta l\'editing digitale.',
-    case4_detail2: 'Scansiona foto di prodotti e motivi di campagna prima della pubblicazione.',
-    case4_detail3: 'Usa i risultati ForRealScan come punto di forza della trasparenza in pitch e presentazioni.',
+    hero_microcopy: 'Prova gratuita, nessuna registrazione richiesta.',
     
     // How it works
     how_title: 'Come Funziona ForRealScan',
     how_step1_title: 'Probabilità invece di giudizi duri',
-    how_step1_text: 'ForRealScan ti mostra una probabilità stimata se è coinvolta la generazione AI o un\'editing pesante. Si tratta di suggerimenti fondati – non giudizi finali.',
+    how_step1_text: 'ForRealScan ti mostra una probabilità stimata se è coinvolta la generazione IA o un\'editing pesante. Si tratta di suggerimenti fondati – non giudizi finali.',
     how_step2_title: 'Spiegazioni reali invece di sole percentuali',
-    how_step2_text: 'Con ogni scansione, ottieni spiegazioni comprensibili: Quali parti di immagine o testo sembrano più naturali, quali sono più tipiche dell\'AI e perché.',
+    how_step2_text: 'Con ogni scansione, ottieni spiegazioni comprensibili: Quali parti di immagine o testo sembrano più naturali, quali sono più tipiche dell\'IA e perché.',
     how_step3_title: 'Le zone di incertezza sono chiaramente marcate',
     how_step3_text: 'Se un risultato è incerto – ad esempio con testi molto brevi o immagini difficili – ForRealScan lo indica chiaramente invece di fingere certezza.',
     
     // Story Check & Text
     story_title: 'Controlla immagini, testi e storia nell\'interazione',
-    story_text_title: 'Valuta meglio i testi per il contenuto AI',
+    story_text_title: 'Valuta meglio i testi per il contenuto IA',
     story_text_desc: 'ForRealScan ti aiuta a valutare meglio i testi più lunghi: Quali passaggi suonano molto generici o uniformi, dove si mostra la scrittura personale? I passaggi cospicui possono essere contrassegnati e spiegati brevemente – sempre con la chiara nota che si tratta di valutazioni e probabilità.',
     story_check_title: 'Story-Check per screenshot e post',
-    story_check_desc: 'Quando immagine e testo si uniscono – ad esempio in un post sui social media – ForRealScan può verificare se immagine, descrizione e affermazione corrispondono approssimativamente. Questo ti aiuta a riconoscere più velocemente se una storia drammatica sembra davvero plausibile o più come uno scenario fantastico AI.',
+    story_check_desc: 'Quando immagine e testo si uniscono – ad esempio in un post sui social media – ForRealScan può verificare se immagine, descrizione e affermazione corrispondono approssimativamente. Questo ti aiuta a riconoscere più velocemente se una storia drammatica sembra davvero plausibile o più come uno scenario fantastico IA.',
     
     // Retouch & Manipulation
     retouch_title: 'Editing digitale spiegato in modo comprensibile',
@@ -395,6 +490,60 @@ export const translations = {
     // Disclaimer
     disclaimer_title: 'Nota Importante',
     disclaimer_text: 'ForRealScan ti fornisce valutazioni tecniche ben fondate e probabilità. I risultati non sono prove legali, ma ti aiutano a prendere decisioni più consapevoli – e non dovrebbero servire come unica base per accuse o dure allegazioni.',
+    
+    // Modes
+    modes_title: 'Due Modalità – Un Obiettivo: Chiarezza.',
+    mode_v3_title: 'V3 Standard Scan',
+    mode_v3_badge: 'Gratuito',
+    mode_v3_desc: 'Rilevamento IA rapido per controlli quotidiani',
+    mode_v3_feat1: 'Analisi istantanea',
+    mode_v3_feat2: 'Spiegazione semplice da Veritas & Robo',
+    mode_v3_feat3: 'Pubblicità possibile in modalità gratuita',
+    mode_v3_feat4: 'Ideale per controlli quotidiani',
+    
+    mode_v5_title: 'V5 UltraDeepScan',
+    mode_v5_badge: 'Consigliato',
+    mode_v5_desc: 'Analisi profonda ibrida per massima sicurezza',
+    mode_v5_feat1: 'Rilevamento IA V3 + analisi ritocco V4',
+    mode_v5_feat2: 'Attivazione automatica su risultati incerti',
+    mode_v5_feat3: 'Ultra Verdict combina entrambe le analisi',
+    mode_v5_feat4: 'Limitato a 3 scansioni al giorno',
+    
+    // Examples
+    examples_title: 'Riesci a Vedere la Differenza?',
+    examples_subtitle: 'Metti alla prova il tuo occhio – la nostra IA lo sa sempre.',
+    examples_real_label: 'Foto Reale',
+    examples_ai_label: 'Generata da IA',
+    examples_veritas_comment: 'Ombre naturali e riflessi di luce – chiaramente reale.',
+    examples_robo_comment: 'Pattern di pixel e artefatti indicano generazione IA.',
+    
+    // Mini Game
+    game_title: 'Vedi la Differenza?',
+    game_subtitle: 'Testa il tuo occhio – ForRealScan ti mostrerà la soluzione dopo.',
+    game_cta: 'Inizia il Gioco (Prossimamente)',
+    
+    // Use Cases
+    cases_title: 'Per Chi è ForRealScan?',
+    case1_title: 'Influencer & Creator',
+    case1_text: 'Proteggi la tua autenticità e dimostra la genuinità dei tuoi contenuti.',
+    case1_detail1: 'Mostra alla tua community con un risultato ForRealScan che le tue foto sono reali – anche se ritocchi leggermente.',
+    case1_detail2: 'Confronta foto reali con immagini IA per scegliere il tuo stile di immagine più consapevolmente.',
+    case1_detail3: 'Controlla i motivi della campagna prima di condividerli con marchi o agenzie.',
+    case2_title: 'Giornalisti & Fact Checker',
+    case2_text: 'Verifica le immagini rapidamente e in modo trasparente per possibili manipolazioni.',
+    case2_detail1: 'Scansiona foto stampa e screenshot dei social media prima di usarli in articoli o post.',
+    case2_detail2: 'Usa lo Story-Check per vedere se immagine e testo corrispondono approssimativamente.',
+    case2_detail3: 'Documenta la tua revisione con un breve risultato ForRealScan per i tuoi lettori.',
+    case3_title: 'Dating & Social',
+    case3_text: 'Riconosci le foto profilo sospette e la messa in scena irrealistica in anticipo.',
+    case3_detail1: 'Controlla le foto profilo prima di fidarti di qualcuno o condividere informazioni personali.',
+    case3_detail2: 'Riconosci selfie fortemente ritoccati o generati da IA che trasmettono un\'immagine falsa.',
+    case3_detail3: 'Scansiona screenshot di post virali per valutarli meglio prima di condividerli.',
+    case4_title: 'Fotografia & Marketing',
+    case4_text: 'Rendi visibile l\'autenticità delle tue risorse visive.',
+    case4_detail1: 'Mostra ai clienti quali immagini sono foto reali e dove è coinvolta l\'editing digitale.',
+    case4_detail2: 'Scansiona foto di prodotti e motivi di campagna prima della pubblicazione.',
+    case4_detail3: 'Usa i risultati ForRealScan come punto di forza della trasparenza in pitch e presentazioni.',
     
     // Pricing
     pricing_title: 'Scegli il Tuo Piano',
@@ -420,18 +569,18 @@ export const translations = {
     faq_title: 'Domande Frequenti',
     faq_q1: 'ForRealScan è gratuito?',
     faq_a1: 'Sì! Il V3 Standard Scan è gratuito. Premium offre V5 UltraDeepScan illimitati e più funzionalità.',
-    faq_q2: 'Conservate le mie immagini?',
-    faq_a2: 'No. Le tue immagini vengono elaborate solo per l\'analisi e non vengono conservate permanentemente. La privacy è la nostra massima priorità.',
+    faq_q2: 'Quanto sono affidabili le valutazioni?',
+    faq_a2: 'ForRealScan fornisce probabilità ben fondate e indicatori tecnici. In molti test, le immagini IA possono essere riconosciute in modo molto affidabile – ma non c\'è mai una garanzia del 100%. Per questo motivo, ti mostriamo sempre anche intervalli di incertezza e spieghiamo perché un risultato è quello che è, in modo che tu possa valutarlo meglio.',
     faq_q3: 'Qual è la differenza tra V3 e V5?',
-    faq_a3: 'V3 è un rilevamento AI rapido. V5 UltraDeepScan combina rilevamento AI con analisi ritocco per massima sicurezza.',
-    faq_q4: 'Quanto è preciso il rilevamento?',
-    faq_a4: 'I nostri modelli raggiungono oltre il 95% di precisione. V5 UltraDeepScan offre sicurezza aggiuntiva tramite analisi ibrida.',
-    faq_q5: 'Funziona su tutti i dispositivi?',
-    faq_a5: 'Sì! ForRealScan è completamente responsive e funziona su desktop, tablet e smartphone.',
-    faq_q6: 'Perché ci sono annunci in modalità gratuita?',
-    faq_a6: 'Gli annunci ci permettono di offrire la modalità gratuita senza costi. Gli utenti Premium hanno un\'esperienza senza pubblicità.',
-    faq_q7: 'Posso usare ForRealScan commercialmente?',
-    faq_a7: 'Sì! Con un piano Premium, puoi usare ForRealScan illimitatamente per scopi commerciali.',
+    faq_a3: 'V3 è un rilevamento IA rapido. V5 UltraDeepScan combina rilevamento IA con analisi ritocco per massima sicurezza.',
+    faq_q4: 'Funziona su tutti i dispositivi?',
+    faq_a4: 'Sì! ForRealScan è completamente responsive e funziona su desktop, tablet e smartphone.',
+    faq_q5: 'Perché ci sono annunci in modalità gratuita?',
+    faq_a5: 'Gli annunci ci permettono di offrire la modalità gratuita senza costi. Gli utenti Premium hanno un\'esperienza senza pubblicità.',
+    faq_q6: 'Posso usare ForRealScan commercialmente?',
+    faq_a6: 'Sì! Con un piano Premium, puoi usare ForRealScan illimitatamente per scopi commerciali.',
+    faq_q7: 'Conservate le mie immagini?',
+    faq_a7: 'No. Le tue immagini vengono elaborate solo per l\'analisi e non vengono conservate permanentemente. La privacy è la nostra massima priorità.',
     faq_q8: 'Quali formati immagine sono supportati?',
     faq_a8: 'Supportiamo JPG, PNG, WEBP e la maggior parte dei formati immagine comuni fino a 20MB.',
     
@@ -453,64 +602,11 @@ export const translations = {
     language_label: 'Idioma',
     
     // Hero
-    hero_title: '¿Real o IA? ForRealScan te lo dice en segundos.',
-    hero_subtitle: 'Detección de IA de última generación para contenido auténtico. Confía en Veritas & Robo – tus detectives digitales.',
-    hero_cta_primary: 'Iniciar App',
+    hero_title: 'Descubre Cuánta IA Hay en Tus Imágenes',
+    hero_subtitle: 'Sube tu imagen y obtén instantáneamente un valor porcentual – con indicadores de IA, zonas de incertidumbre y detalles técnicos para evaluar mejor lo que es real.',
+    hero_cta_primary: 'Verificar Ahora',
     hero_cta_secondary: 'Ver Ejemplos',
-    
-    // Modes
-    modes_title: 'Dos Modos – Un Objetivo: Verdad.',
-    mode_v3_title: 'V3 Escaneo Estándar',
-    mode_v3_badge: 'Gratis',
-    mode_v3_desc: 'Detección rápida de puntuación IA para verificaciones diarias',
-    mode_v3_feat1: 'Análisis instantáneo',
-    mode_v3_feat2: 'Explicación simple por Veritas & Robo',
-    mode_v3_feat3: 'Anuncios posibles en modo gratuito',
-    mode_v3_feat4: 'Ideal para verificaciones diarias',
-    
-    mode_v5_title: 'V5 UltraDeepScan',
-    mode_v5_badge: 'Recomendado',
-    mode_v5_desc: 'Análisis profundo híbrido para máxima seguridad',
-    mode_v5_feat1: 'Detección IA V3 + análisis de retoque V4',
-    mode_v5_feat2: 'Activación automática en resultados inciertos',
-    mode_v5_feat3: 'Ultra Verdict combina ambos análisis',
-    mode_v5_feat4: 'Limitado a 3 escaneos por día',
-    
-    // Examples
-    examples_title: '¿Puedes Ver la Diferencia?',
-    examples_subtitle: 'Pon a prueba tu ojo – nuestra IA siempre lo sabe.',
-    examples_real_label: 'Foto Real',
-    examples_ai_label: 'Generada por IA',
-    examples_veritas_comment: 'Sombras naturales y reflejos de luz – claramente real.',
-    examples_robo_comment: 'Patrones de píxeles y artefactos indican generación por IA.',
-    
-    // Mini Game
-    game_title: 'Pon a Prueba Tu Ojo – ¿Real o IA?',
-    game_subtitle: 'Próximamente: Nuestro juego interactivo donde distingues imágenes reales de las generadas por IA.',
-    game_cta: 'Próximamente',
-    
-    // Use Cases
-    cases_title: '¿Para Quién es ForRealScan?',
-    case1_title: 'Influencers & Creadores',
-    case1_text: 'Protege tu autenticidad y demuestra la genuinidad de tu contenido.',
-    case1_detail1: 'Muestra a tu comunidad con un resultado ForRealScan que tus fotos son reales – incluso si retoques ligeramente.',
-    case1_detail2: 'Compara fotos reales con imágenes AI para elegir tu propio estilo de imagen más conscientemente.',
-    case1_detail3: 'Verifica motivos de campaña antes de compartirlos con marcas o agencias.',
-    case2_title: 'Periodistas & Verificadores',
-    case2_text: 'Verifica imágenes rápida y transparentemente para posible manipulación.',
-    case2_detail1: 'Escanea fotos de prensa y capturas de pantalla de redes sociales antes de usarlas en artículos o publicaciones.',
-    case2_detail2: 'Usa el Story-Check para ver si imagen y texto coinciden aproximadamente.',
-    case2_detail3: 'Documenta tu revisión con un breve resultado ForRealScan para tus lectores.',
-    case3_title: 'Citas & Social',
-    case3_text: 'Reconoce fotos de perfil sospechosas y escenificación irreal temprano.',
-    case3_detail1: 'Verifica fotos de perfil antes de confiar en alguien o compartir información personal.',
-    case3_detail2: 'Reconoce selfies fuertemente retocados o generados por IA que transmiten una imagen falsa.',
-    case3_detail3: 'Escanea capturas de pantalla de publicaciones virales para evaluarlas mejor antes de compartirlas.',
-    case4_title: 'Fotografía & Marketing',
-    case4_text: 'Haz visible la autenticidad de tus activos visuales.',
-    case4_detail1: 'Muestra a los clientes qué imágenes son fotos reales y dónde está involucrada la edición digital.',
-    case4_detail2: 'Escanea fotos de productos y motivos de campaña antes de la publicación.',
-    case4_detail3: 'Usa los resultados ForRealScan como un plus de transparencia en presentaciones y propuestas.',
+    hero_microcopy: 'Prueba gratuita, sin necesidad de registro.',
     
     // How it works
     how_title: 'Cómo Funciona ForRealScan',
@@ -543,6 +639,60 @@ export const translations = {
     disclaimer_title: 'Nota Importante',
     disclaimer_text: 'ForRealScan te proporciona evaluaciones técnicas bien fundadas y probabilidades. Los resultados no son pruebas legales, pero te ayudan a tomar decisiones más conscientes – y no deben servir como única base para acusaciones o alegaciones duras.',
     
+    // Modes
+    modes_title: 'Dos Modos – Un Objetivo: Claridad.',
+    mode_v3_title: 'V3 Escaneo Estándar',
+    mode_v3_badge: 'Gratis',
+    mode_v3_desc: 'Detección rápida de puntuación IA para verificaciones diarias',
+    mode_v3_feat1: 'Análisis instantáneo',
+    mode_v3_feat2: 'Explicación simple por Veritas & Robo',
+    mode_v3_feat3: 'Anuncios posibles en modo gratuito',
+    mode_v3_feat4: 'Ideal para verificaciones diarias',
+    
+    mode_v5_title: 'V5 UltraDeepScan',
+    mode_v5_badge: 'Recomendado',
+    mode_v5_desc: 'Análisis profundo híbrido para máxima seguridad',
+    mode_v5_feat1: 'Detección IA V3 + análisis de retoque V4',
+    mode_v5_feat2: 'Activación automática en resultados inciertos',
+    mode_v5_feat3: 'Ultra Verdict combina ambos análisis',
+    mode_v5_feat4: 'Limitado a 3 escaneos por día',
+    
+    // Examples
+    examples_title: '¿Puedes Ver la Diferencia?',
+    examples_subtitle: 'Pon a prueba tu ojo – nuestra IA siempre lo sabe.',
+    examples_real_label: 'Foto Real',
+    examples_ai_label: 'Generada por IA',
+    examples_veritas_comment: 'Sombras naturales y reflejos de luz – claramente real.',
+    examples_robo_comment: 'Patrones de píxeles y artefactos indican generación por IA.',
+    
+    // Mini Game
+    game_title: '¿Ves la Diferencia?',
+    game_subtitle: 'Pon a prueba tu ojo – ForRealScan te mostrará la solución después.',
+    game_cta: 'Iniciar Juego (Próximamente)',
+    
+    // Use Cases
+    cases_title: '¿Para Quién es ForRealScan?',
+    case1_title: 'Influencers & Creadores',
+    case1_text: 'Protege tu autenticidad y demuestra la genuinidad de tu contenido.',
+    case1_detail1: 'Muestra a tu comunidad con un resultado ForRealScan que tus fotos son reales – incluso si retoques ligeramente.',
+    case1_detail2: 'Compara fotos reales con imágenes IA para elegir tu propio estilo de imagen más conscientemente.',
+    case1_detail3: 'Verifica motivos de campaña antes de compartirlos con marcas o agencias.',
+    case2_title: 'Periodistas & Verificadores',
+    case2_text: 'Verifica imágenes rápida y transparentemente para posible manipulación.',
+    case2_detail1: 'Escanea fotos de prensa y capturas de pantalla de redes sociales antes de usarlas en artículos o publicaciones.',
+    case2_detail2: 'Usa el Story-Check para ver si imagen y texto coinciden aproximadamente.',
+    case2_detail3: 'Documenta tu revisión con un breve resultado ForRealScan para tus lectores.',
+    case3_title: 'Citas & Social',
+    case3_text: 'Reconoce fotos de perfil sospechosas y escenificación irreal temprano.',
+    case3_detail1: 'Verifica fotos de perfil antes de confiar en alguien o compartir información personal.',
+    case3_detail2: 'Reconoce selfies fuertemente retocados o generados por IA que transmiten una imagen falsa.',
+    case3_detail3: 'Escanea capturas de pantalla de publicaciones virales para evaluarlas mejor antes de compartirlas.',
+    case4_title: 'Fotografía & Marketing',
+    case4_text: 'Haz visible la autenticidad de tus activos visuales.',
+    case4_detail1: 'Muestra a los clientes qué imágenes son fotos reales y dónde está involucrada la edición digital.',
+    case4_detail2: 'Escanea fotos de productos y motivos de campaña antes de la publicación.',
+    case4_detail3: 'Usa los resultados ForRealScan como un plus de transparencia en presentaciones y propuestas.',
+    
     // Pricing
     pricing_title: 'Elige Tu Plan',
     pricing_free_title: 'Gratis',
@@ -567,23 +717,23 @@ export const translations = {
     faq_title: 'Preguntas Frecuentes',
     faq_q1: '¿ForRealScan es gratis?',
     faq_a1: '¡Sí! El V3 Escaneo Estándar es de uso gratuito. Premium ofrece V5 UltraDeepScans ilimitados y más funciones.',
-    faq_q2: '¿Almacenan mis imágenes?',
-    faq_a2: 'No. Tus imágenes solo se procesan para análisis y no se almacenan permanentemente. La privacidad es nuestra máxima prioridad.',
+    faq_q2: '¿Qué tan confiables son las evaluaciones?',
+    faq_a2: 'ForRealScan proporciona probabilidades bien fundamentadas e indicadores técnicos. En muchas pruebas, las imágenes de IA se pueden reconocer de manera muy confiable, pero nunca hay una garantía del 100%. Por eso siempre te mostramos rangos de incertidumbre y explicamos por qué un resultado es como es, para que puedas evaluarlo mejor.',
     faq_q3: '¿Cuál es la diferencia entre V3 y V5?',
-    faq_a3: 'V3 es detección rápida de IA. V5 UltraDeepScan combina detección de IA con análisis de retoque para máxima seguridad.',
-    faq_q4: '¿Qué tan precisa es la detección?',
-    faq_a4: 'Nuestros modelos alcanzan más del 95% de precisión. V5 UltraDeepScan ofrece seguridad adicional mediante análisis híbrido.',
-    faq_q5: '¿Funciona en todos los dispositivos?',
-    faq_a5: '¡Sí! ForRealScan es completamente responsive y funciona en escritorio, tableta y smartphone.',
-    faq_q6: '¿Por qué hay anuncios en modo gratuito?',
-    faq_a6: 'Los anuncios nos permiten ofrecer el modo gratuito sin costo. Los usuarios Premium obtienen una experiencia sin anuncios.',
-    faq_q7: '¿Puedo usar ForRealScan comercialmente?',
-    faq_a7: '¡Sí! Con un plan Premium, puedes usar ForRealScan ilimitadamente para propósitos comerciales.',
-    faq_q8: '¿Qué formatos de imagen se admiten?',
+    faq_a3: 'V3 es una detección IA rápida. V5 UltraDeepScan combina detección IA con análisis de retoque para máxima seguridad.',
+    faq_q4: '¿Funciona en todos los dispositivos?',
+    faq_a4: '¡Sí! ForRealScan es totalmente responsive y funciona en escritorio, tableta y teléfono inteligente.',
+    faq_q5: '¿Por qué hay anuncios en modo gratuito?',
+    faq_a5: 'Los anuncios nos permiten ofrecer el modo gratuito sin costo. Los usuarios Premium obtienen una experiencia sin anuncios.',
+    faq_q6: '¿Puedo usar ForRealScan comercialmente?',
+    faq_a6: '¡Sí! Con un plan Premium, puedes usar ForRealScan ilimitadamente para propósitos comerciales.',
+    faq_q7: '¿Almacenan mis imágenes?',
+    faq_a7: 'No. Tus imágenes solo se procesan para análisis y no se almacenan permanentemente. La privacidad es nuestra máxima prioridad.',
+    faq_q8: '¿Qué formatos de imagen son compatibles?',
     faq_a8: 'Admitimos JPG, PNG, WEBP y la mayoría de los formatos de imagen comunes hasta 20MB.',
     
     // Footer
-    footer_imprint: 'Aviso Legal',
+    footer_imprint: 'Impressum',
     footer_privacy: 'Privacidad',
     footer_contact: 'Contacto',
     footer_copyright: '© {year} ForRealScan. Todos los derechos reservados.',
