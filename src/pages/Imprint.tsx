@@ -20,8 +20,8 @@ const Imprint = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-foreground">Company Information</h2>
             <div className="text-muted-foreground space-y-2">
-              <p><strong className="text-foreground">Service Provider:</strong> ForRealScan</p>
-              <p><strong className="text-foreground">Location:</strong> Italy</p>
+              <p><strong className="text-foreground">Service Provider:</strong> Roland Wolfsgruber</p>
+              <p><strong className="text-foreground">Location:</strong> South Tirol / Italy</p>
               <p><strong className="text-foreground">Email:</strong> <a href="mailto:info@forrealscan.com" className="text-primary hover:underline">info@forrealscan.com</a></p>
             </div>
           </section>
@@ -29,7 +29,7 @@ const Imprint = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-foreground">Responsible for Content</h2>
             <p className="text-muted-foreground">
-              ForRealScan Owner<br />
+              Roland Wolfsgruber<br />
               Email: <a href="mailto:info@forrealscan.com" className="text-primary hover:underline">info@forrealscan.com</a>
             </p>
           </section>
