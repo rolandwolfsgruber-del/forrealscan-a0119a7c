@@ -67,7 +67,7 @@ export const Pricing = ({ language }: PricingProps) => {
           <Card className="border-4 border-robo hover:shadow-[0_0_50px_rgba(59,130,246,0.4)] shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-br from-robo/5 to-robo/10 lg:scale-105">
             <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-robo to-robo-glow opacity-20 blur-3xl" />
             <div className="absolute top-4 right-4">
-              <Badge className="bg-robo text-robo-foreground text-sm px-4 py-1.5 font-semibold">
+              <Badge className="bg-robo text-robo-foreground text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-1.5 font-semibold whitespace-nowrap">
                 {t.pricing_premium_badge}
               </Badge>
             </div>
