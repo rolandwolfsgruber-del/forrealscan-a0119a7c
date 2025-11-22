@@ -72,7 +72,7 @@ export const Pricing = ({ language }: PricingProps) => {
               </Badge>
             </div>
             <CardHeader className="pb-6 relative z-10">
-              <CardTitle className="text-3xl mb-2">{t.pricing_premium_title}</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl mb-2 pr-28 sm:pr-0">{t.pricing_premium_title}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 relative z-10">
               <ul className="space-y-4">
