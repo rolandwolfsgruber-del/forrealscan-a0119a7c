@@ -100,7 +100,7 @@ export const Pricing = ({ language }: PricingProps) => {
               
               <Button 
                 onClick={handlePremiumNotify}
-                className="w-full bg-gradient-to-r from-veritas to-robo hover:opacity-90 h-14 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+                className="w-full bg-gradient-to-r from-veritas to-robo hover:opacity-90 h-auto min-h-12 sm:min-h-14 text-sm sm:text-base md:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all py-3 px-4 whitespace-normal leading-tight"
               >
                 {t.pricing_premium_cta}
               </Button>
