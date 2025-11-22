@@ -1,15 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Gamepad2 } from 'lucide-react';
-
 const Game = () => {
-  return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-4">
+  return <div className="min-h-screen bg-background flex items-center justify-center px-4">
       <div className="container mx-auto max-w-4xl text-center">
-        <Button 
-          variant="ghost" 
-          className="mb-8"
-          onClick={() => window.history.back()}
-        >
+        <Button variant="ghost" className="mb-8" onClick={() => window.history.back()}>
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back
         </Button>
@@ -20,15 +14,13 @@ const Game = () => {
 
         <h1 className="text-4xl sm:text-5xl font-bold mb-6">Coming Soon</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          Our interactive mini-game where you can test your skills at distinguishing real photos from AI-generated images is currently in development. Stay tuned!
+          Teste bald deine Fähigkeit, echte Fotos von KI-Bildern zu unterscheiden – das ForRealScan Mini-Game ist in Vorbereitung
         </p>
 
         <div className="inline-flex items-center gap-2 px-6 py-3 bg-muted rounded-lg">
-          <span className="text-sm text-muted-foreground">Expected launch: Q2 2025</span>
+          <span className="text-sm text-muted-foreground">Expected launch: Q1 2026</span>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Game;
