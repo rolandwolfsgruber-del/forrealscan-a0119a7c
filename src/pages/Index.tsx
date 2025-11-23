@@ -24,6 +24,7 @@ const Index = () => {
       <Header language={language} setLanguage={setLanguage} />
       <main className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
         <Hero language={language} />
+        <VeritasRobo language={language} />
         
         {/* Google AdSense Ad Unit */}
         <div className="container mx-auto px-4">
@@ -40,7 +41,6 @@ const Index = () => {
         
         <UseCases language={language} />
         <HowItWorks language={language} />
-        <VeritasRobo language={language} />
         <StoryCheck language={language} />
         <Retouch language={language} />
         <ShareCards language={language} />
