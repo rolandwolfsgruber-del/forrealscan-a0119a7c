@@ -144,6 +144,33 @@ interface Translations {
   footer_privacy: string;
   footer_contact: string;
   footer_copyright: string;
+  
+  // Veritas & Robo Section
+  veritas_robo_label: string;
+  veritas_robo_title: string;
+  veritas_robo_subtitle: string;
+  
+  veritas_name: string;
+  veritas_subtitle: string;
+  veritas_description: string;
+  veritas_bullet1: string;
+  veritas_bullet2: string;
+  veritas_bullet3: string;
+  
+  robo_name: string;
+  robo_subtitle: string;
+  robo_description: string;
+  robo_bullet1: string;
+  robo_bullet2: string;
+  robo_bullet3: string;
+  
+  veritas_robo_explanation: string;
+  veritas_robo_help_title: string;
+  veritas_robo_help_step1: string;
+  veritas_robo_help_step2: string;
+  veritas_robo_help_step3: string;
+  veritas_robo_disclaimer: string;
+  veritas_robo_closing: string;
 }
 
 export const translations: Record<Language, Translations> = {
@@ -293,6 +320,33 @@ export const translations: Record<Language, Translations> = {
     footer_privacy: 'Datenschutz',
     footer_contact: 'Kontakt',
     footer_copyright: '© {year} ForRealScan. Alle Rechte vorbehalten.',
+    
+    // Veritas & Robo Section
+    veritas_robo_label: 'Die Köpfe hinter deinem Scan',
+    veritas_robo_title: 'Lerne Veritas & Robo kennen',
+    veritas_robo_subtitle: 'Zwei Perspektiven auf jedes Bild: Veritas achtet auf das natürliche Gesamtbild, Robo auf technische Pixelmuster. Gemeinsam erklären sie dir, wie das Ergebnis zustande kommt – verständlich und ohne Fachchinesisch.',
+    
+    veritas_name: 'Veritas',
+    veritas_subtitle: 'der Natur-Blick',
+    veritas_description: 'Konzentriert sich darauf, ob sich ein Bild wie eine echte Aufnahme anfühlt.',
+    veritas_bullet1: 'Licht, Schatten und Reflexionen wirken natürlich.',
+    veritas_bullet2: 'Details wie Haut, Haare und Hintergrund haben Tiefe.',
+    veritas_bullet3: 'Mag kleine Unperfektheiten, wie man sie von echten Fotos kennt.',
+    
+    robo_name: 'Robo',
+    robo_subtitle: 'der Logik-Blick',
+    robo_description: 'Analysiert Muster, Pixel und technische Spuren von KI-Bildern.',
+    robo_bullet1: 'Erkennt auffällige Pixelmuster und Kompressions-Artefakte.',
+    robo_bullet2: 'Achtet auf übertriebene Perfektion und Wiederholungen.',
+    robo_bullet3: 'Spürt Unstimmigkeiten auf, die typisch für KI-generierte Bilder sind.',
+    
+    veritas_robo_explanation: 'Veritas steht für den „Natur-Blick": Licht, Schatten, Tiefe und das Gesamtgefühl eines Bildes. Robo übernimmt den „Logik-Blick": Pixel, Muster und typische Spuren von KI-Generierung. Beide schauen auf dasselbe Bild – aber aus zwei Richtungen – und treffen sich dann in einer gemeinsamen Einschätzung.',
+    veritas_robo_help_title: 'So helfen sie dir:',
+    veritas_robo_help_step1: '1. Zwei Perspektiven – Veritas prüft das Bildgefühl, Robo die technischen Details.',
+    veritas_robo_help_step2: '2. Hinweise für „echt" oder „KI" – Beide suchen nach typischen Spuren, die für oder gegen KI sprechen.',
+    veritas_robo_help_step3: '3. Erklärung in Klartext – Aus den Hinweisen wird eine ruhige, neutrale Erklärung, die du ohne Vorwissen verstehst.',
+    veritas_robo_disclaimer: 'Ohne Modellnamen, ohne Provider-Werbung – nur eine ehrliche Einschätzung, die du nachvollziehen kannst.',
+    veritas_robo_closing: 'Veritas und Robo sehen ein Bild aus zwei Richtungen – am Ende bekommst du eine gemeinsame, ausgewogene Einschätzung pro Scan.',
   },
   
   en: {
@@ -441,6 +495,33 @@ export const translations: Record<Language, Translations> = {
     footer_privacy: 'Privacy',
     footer_contact: 'Contact',
     footer_copyright: '© {year} ForRealScan. All rights reserved.',
+    
+    // Veritas & Robo Section
+    veritas_robo_label: 'The minds behind your scan',
+    veritas_robo_title: 'Meet Veritas & Robo',
+    veritas_robo_subtitle: 'Two perspectives on every image: Veritas focuses on the natural overall picture, Robo on technical pixel patterns. Together they explain how the result came about – understandably and without technical jargon.',
+    
+    veritas_name: 'Veritas',
+    veritas_subtitle: 'the Nature View',
+    veritas_description: 'Focuses on whether an image feels like a real photograph.',
+    veritas_bullet1: 'Light, shadows and reflections appear natural.',
+    veritas_bullet2: 'Details like skin, hair and background have depth.',
+    veritas_bullet3: 'Appreciates small imperfections typical of real photos.',
+    
+    robo_name: 'Robo',
+    robo_subtitle: 'the Logic View',
+    robo_description: 'Analyzes patterns, pixels and technical traces of AI images.',
+    robo_bullet1: 'Detects conspicuous pixel patterns and compression artifacts.',
+    robo_bullet2: 'Watches for excessive perfection and repetitions.',
+    robo_bullet3: 'Spots inconsistencies typical of AI-generated images.',
+    
+    veritas_robo_explanation: 'Veritas stands for the "Nature View": light, shadows, depth and the overall feeling of an image. Robo takes the "Logic View": pixels, patterns and typical traces of AI generation. Both look at the same image – but from two directions – and then meet in a common assessment.',
+    veritas_robo_help_title: 'How they help you:',
+    veritas_robo_help_step1: '1. Two Perspectives – Veritas checks the image feeling, Robo the technical details.',
+    veritas_robo_help_step2: '2. Clues for "real" or "AI" – Both look for typical traces that speak for or against AI.',
+    veritas_robo_help_step3: '3. Explanation in Plain Language – From the clues comes a calm, neutral explanation that you understand without prior knowledge.',
+    veritas_robo_disclaimer: 'No model names, no provider advertising – just an honest assessment you can understand.',
+    veritas_robo_closing: 'Veritas and Robo see an image from two directions – in the end you get a joint, balanced assessment per scan.',
   },
   
   it: {
@@ -589,6 +670,33 @@ export const translations: Record<Language, Translations> = {
     footer_privacy: 'Privacy',
     footer_contact: 'Contatto',
     footer_copyright: '© {year} ForRealScan. Tutti i diritti riservati.',
+    
+    // Veritas & Robo Section
+    veritas_robo_label: 'Le menti dietro la tua scansione',
+    veritas_robo_title: 'Incontra Veritas & Robo',
+    veritas_robo_subtitle: 'Due prospettive su ogni immagine: Veritas si concentra sull\'immagine naturale complessiva, Robo sui modelli tecnici di pixel. Insieme spiegano come è emerso il risultato – comprensibilmente e senza gergo tecnico.',
+    
+    veritas_name: 'Veritas',
+    veritas_subtitle: 'la Vista Naturale',
+    veritas_description: 'Si concentra sul fatto che un\'immagine sembri una fotografia reale.',
+    veritas_bullet1: 'Luce, ombre e riflessi appaiono naturali.',
+    veritas_bullet2: 'Dettagli come pelle, capelli e sfondo hanno profondità.',
+    veritas_bullet3: 'Apprezza piccole imperfezioni tipiche delle foto reali.',
+    
+    robo_name: 'Robo',
+    robo_subtitle: 'la Vista Logica',
+    robo_description: 'Analizza modelli, pixel e tracce tecniche delle immagini IA.',
+    robo_bullet1: 'Rileva modelli di pixel cospicui e artefatti di compressione.',
+    robo_bullet2: 'Osserva la perfezione eccessiva e le ripetizioni.',
+    robo_bullet3: 'Individua incoerenze tipiche delle immagini generate da IA.',
+    
+    veritas_robo_explanation: 'Veritas rappresenta la "Vista Naturale": luce, ombre, profondità e la sensazione complessiva di un\'immagine. Robo assume la "Vista Logica": pixel, modelli e tracce tipiche della generazione IA. Entrambi guardano la stessa immagine – ma da due direzioni – e poi si incontrano in una valutazione comune.',
+    veritas_robo_help_title: 'Come ti aiutano:',
+    veritas_robo_help_step1: '1. Due Prospettive – Veritas controlla la sensazione dell\'immagine, Robo i dettagli tecnici.',
+    veritas_robo_help_step2: '2. Indizi per "reale" o "IA" – Entrambi cercano tracce tipiche che parlano a favore o contro l\'IA.',
+    veritas_robo_help_step3: '3. Spiegazione in Linguaggio Chiaro – Dagli indizi emerge una spiegazione calma e neutrale che comprendi senza conoscenze preliminari.',
+    veritas_robo_disclaimer: 'Nessun nome di modello, nessuna pubblicità di provider – solo una valutazione onesta che puoi comprendere.',
+    veritas_robo_closing: 'Veritas e Robo vedono un\'immagine da due direzioni – alla fine ottieni una valutazione congiunta ed equilibrata per scansione.',
   },
   
   es: {
@@ -737,5 +845,32 @@ export const translations: Record<Language, Translations> = {
     footer_privacy: 'Privacidad',
     footer_contact: 'Contacto',
     footer_copyright: '© {year} ForRealScan. Todos los derechos reservados.',
+    
+    // Veritas & Robo Section
+    veritas_robo_label: 'Las mentes detrás de tu escaneo',
+    veritas_robo_title: 'Conoce a Veritas & Robo',
+    veritas_robo_subtitle: 'Dos perspectivas sobre cada imagen: Veritas se centra en la imagen general natural, Robo en patrones técnicos de píxeles. Juntos explican cómo surgió el resultado – comprensiblemente y sin jerga técnica.',
+    
+    veritas_name: 'Veritas',
+    veritas_subtitle: 'la Vista Natural',
+    veritas_description: 'Se centra en si una imagen se siente como una fotografía real.',
+    veritas_bullet1: 'Luz, sombras y reflejos aparecen naturales.',
+    veritas_bullet2: 'Detalles como piel, cabello y fondo tienen profundidad.',
+    veritas_bullet3: 'Aprecia pequeñas imperfecciones típicas de las fotos reales.',
+    
+    robo_name: 'Robo',
+    robo_subtitle: 'la Vista Lógica',
+    robo_description: 'Analiza patrones, píxeles y rastros técnicos de imágenes de IA.',
+    robo_bullet1: 'Detecta patrones de píxeles conspicuos y artefactos de compresión.',
+    robo_bullet2: 'Observa la perfección excesiva y las repeticiones.',
+    robo_bullet3: 'Detecta inconsistencias típicas de imágenes generadas por IA.',
+    
+    veritas_robo_explanation: 'Veritas representa la "Vista Natural": luz, sombras, profundidad y la sensación general de una imagen. Robo asume la "Vista Lógica": píxeles, patrones y rastros típicos de generación de IA. Ambos miran la misma imagen – pero desde dos direcciones – y luego se encuentran en una evaluación común.',
+    veritas_robo_help_title: 'Cómo te ayudan:',
+    veritas_robo_help_step1: '1. Dos Perspectivas – Veritas verifica la sensación de la imagen, Robo los detalles técnicos.',
+    veritas_robo_help_step2: '2. Pistas para "real" o "IA" – Ambos buscan rastros típicos que hablan a favor o en contra de la IA.',
+    veritas_robo_help_step3: '3. Explicación en Lenguaje Claro – De las pistas surge una explicación calmada y neutral que entiendes sin conocimientos previos.',
+    veritas_robo_disclaimer: 'Sin nombres de modelos, sin publicidad de proveedores – solo una evaluación honesta que puedes entender.',
+    veritas_robo_closing: 'Veritas y Robo ven una imagen desde dos direcciones – al final obtienes una evaluación conjunta y equilibrada por escaneo.',
   },
 };
