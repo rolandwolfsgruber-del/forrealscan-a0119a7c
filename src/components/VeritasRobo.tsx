@@ -61,7 +61,7 @@ export const VeritasRobo = ({ language }: VeritasRoboProps) => {
                 className="w-full rounded-lg bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/20 dark:to-green-900/20 border border-green-200 dark:border-green-800 overflow-hidden"
                 style={{ height: '280px' }}
                 dangerouslySetInnerHTML={{
-                  __html: '<spline-viewer url="https://prod.spline.design/RZDaoDrUZUFxYHC7/scene.splinecode" style="width: 100%; height: 100%;"></spline-viewer>'
+                  __html: '<model-viewer src="/models/veritas-owl.glb" alt="Veritas 3D Modell" auto-rotate camera-controls disable-zoom exposure="1.1" style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden;"></model-viewer>'
                 }}
               />
             </CardContent>
@@ -101,7 +101,7 @@ export const VeritasRobo = ({ language }: VeritasRoboProps) => {
                 className="w-full rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 border border-blue-200 dark:border-blue-800 overflow-hidden"
                 style={{ height: '280px' }}
                 dangerouslySetInnerHTML={{
-                  __html: '<spline-viewer url="https://prod.spline.design/dK3td2XDeszHbzD1/scene.splinecode" style="width: 100%; height: 100%;"></spline-viewer>'
+                  __html: '<model-viewer src="/models/robo.glb" alt="Robo 3D Modell" auto-rotate camera-controls disable-zoom exposure="1.1" style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden;"></model-viewer>'
                 }}
               />
             </CardContent>
