@@ -4,6 +4,7 @@ import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { UseCases } from '@/components/UseCases';
 import { HowItWorks } from '@/components/HowItWorks';
+import { VeritasRobo } from '@/components/VeritasRobo';
 import { StoryCheck } from '@/components/StoryCheck';
 import { Retouch } from '@/components/Retouch';
 import { ShareCards } from '@/components/ShareCards';
@@ -39,6 +40,7 @@ const Index = () => {
         
         <UseCases language={language} />
         <HowItWorks language={language} />
+        <VeritasRobo language={language} />
         <StoryCheck language={language} />
         <Retouch language={language} />
         <ShareCards language={language} />
