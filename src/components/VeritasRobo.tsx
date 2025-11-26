@@ -10,7 +10,7 @@ export const VeritasRobo = ({ language }: VeritasRoboProps) => {
   const t = translations[language];
   
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-background">
+    <section id="veritas-robo" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Intro Block */}
         <div className="text-center mb-12 sm:mb-16">

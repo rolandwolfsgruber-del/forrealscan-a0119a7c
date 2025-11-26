@@ -5,6 +5,8 @@ interface Translations {
   nav_start: string;
   nav_features: string;
   nav_modes: string;
+  nav_veritas_robo: string;
+  nav_game: string;
   nav_pricing: string;
   nav_faq: string;
   cta_app: string;
@@ -179,6 +181,8 @@ export const translations: Record<Language, Translations> = {
     nav_start: 'Start',
     nav_features: 'Funktionen',
     nav_modes: 'Modi',
+    nav_veritas_robo: 'Veritas & Robo',
+    nav_game: 'Spiel',
     nav_pricing: 'Preise',
     nav_faq: 'FAQ',
     cta_app: 'App starten',
@@ -354,6 +358,8 @@ export const translations: Record<Language, Translations> = {
     nav_start: 'Start',
     nav_features: 'Features',
     nav_modes: 'Modes',
+    nav_veritas_robo: 'Veritas & Robo',
+    nav_game: 'Game',
     nav_pricing: 'Pricing',
     nav_faq: 'FAQ',
     cta_app: 'Launch App',
@@ -529,6 +535,8 @@ export const translations: Record<Language, Translations> = {
     nav_start: 'Inizio',
     nav_features: 'Funzioni',
     nav_modes: 'Modalità',
+    nav_veritas_robo: 'Veritas & Robo',
+    nav_game: 'Gioco',
     nav_pricing: 'Prezzi',
     nav_faq: 'FAQ',
     cta_app: 'Avvia App',
@@ -704,6 +712,8 @@ export const translations: Record<Language, Translations> = {
     nav_start: 'Inicio',
     nav_features: 'Funciones',
     nav_modes: 'Modos',
+    nav_veritas_robo: 'Veritas & Robo',
+    nav_game: 'Juego',
     nav_pricing: 'Precios',
     nav_faq: 'FAQ',
     cta_app: 'Iniciar App',

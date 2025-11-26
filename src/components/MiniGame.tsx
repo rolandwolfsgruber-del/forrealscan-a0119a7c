@@ -11,7 +11,7 @@ export const MiniGame = ({ language }: MiniGameProps) => {
   const t = translations[language];
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
+    <section id="game" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <Card className="border-2 border-primary/30 hover:border-primary/60 hover:shadow-[0_0_40px_rgba(34,197,94,0.2)] transition-all duration-300 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/5 to-robo/5 backdrop-blur-sm">
