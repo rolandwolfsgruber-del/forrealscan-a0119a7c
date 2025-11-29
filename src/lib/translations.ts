@@ -255,7 +255,7 @@ export const translations: Record<Language, Translations> = {
     // Mini Game
     game_title: 'Siehst du den Unterschied?',
     game_subtitle: 'Teste dein Auge – ForRealScan zeigt dir anschließend die Auflösung.',
-    game_cta: 'Spiel starten (Demnächst)',
+    game_cta: 'Spiel starten',
     
     // Use Cases
     cases_title: 'Für wen ist ForRealScan?',
@@ -432,7 +432,7 @@ export const translations: Record<Language, Translations> = {
     // Mini Game
     game_title: 'Can You Spot the Difference?',
     game_subtitle: 'Test your eye – ForRealScan will show you the answer afterwards.',
-    game_cta: 'Start Game (Coming Soon)',
+    game_cta: 'Start Game',
     
     // Use Cases
     cases_title: 'Who Is ForRealScan For?',
@@ -609,7 +609,7 @@ export const translations: Record<Language, Translations> = {
     // Mini Game
     game_title: 'Vedi la Differenza?',
     game_subtitle: 'Testa il tuo occhio – ForRealScan ti mostrerà la soluzione dopo.',
-    game_cta: 'Inizia il Gioco (Prossimamente)',
+    game_cta: 'Inizia il Gioco',
     
     // Use Cases
     cases_title: 'Per Chi è ForRealScan?',
@@ -786,7 +786,7 @@ export const translations: Record<Language, Translations> = {
     // Mini Game
     game_title: '¿Ves la Diferencia?',
     game_subtitle: 'Pon a prueba tu ojo – ForRealScan te mostrará la solución después.',
-    game_cta: 'Iniciar Juego (Próximamente)',
+    game_cta: 'Iniciar Juego',
     
     // Use Cases
     cases_title: '¿Para Quién es ForRealScan?',
