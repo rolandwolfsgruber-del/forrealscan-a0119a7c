@@ -2,16 +2,14 @@ import { Gamepad2 } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-
 interface MiniGameProps {
   language: Language;
 }
-
-export const MiniGame = ({ language }: MiniGameProps) => {
+export const MiniGame = ({
+  language
+}: MiniGameProps) => {
   const t = translations[language];
-
-  return (
-    <section id="game" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
+  return <section id="game" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <Card className="border-2 border-primary/30 hover:border-primary/60 hover:shadow-[0_0_40px_rgba(34,197,94,0.2)] transition-all duration-300 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/5 to-robo/5 backdrop-blur-sm">
@@ -27,14 +25,8 @@ export const MiniGame = ({ language }: MiniGameProps) => {
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-6 sm:pt-8">
-              <Button 
-                asChild
-                size="lg"
-                variant="outline"
-                disabled
-                className="w-full sm:w-auto sm:min-w-[260px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl"
-              >
-                <a href="/game">
+              <Button asChild size="lg" variant="outline" disabled className="w-full sm:w-auto sm:min-w-[260px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl">
+                <a href="https://forrealscan-mini-game.vercel.app" className="text-center">
                   {t.game_cta}
                 </a>
               </Button>
@@ -42,6 +34,5 @@ export const MiniGame = ({ language }: MiniGameProps) => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
