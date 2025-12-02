@@ -1,7 +1,6 @@
-import { Zap, Shield, Check } from 'lucide-react';
+import { Shield } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 
 interface ModesProps {
   language: Language;
@@ -15,81 +14,49 @@ export const Modes = ({ language }: ModesProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            {t.modes_title}
+            {t.scan_title}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 max-w-6xl mx-auto">
-          {/* V3 Standard Scan */}
-          <Card className="border-2 border-veritas/30 hover:border-veritas hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] transition-all duration-300 rounded-2xl p-2">
+        <div className="flex justify-center max-w-4xl mx-auto">
+          {/* Hybrid Scan Card */}
+          <Card className="border-2 border-primary hover:border-primary/80 hover:shadow-[0_0_40px_rgba(34,197,94,0.3)] shadow-xl relative overflow-hidden rounded-2xl p-2 w-full">
+            <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-veritas to-robo opacity-15 blur-3xl" />
             <CardHeader>
               <div className="flex items-center justify-between mb-4">
-                <div className="w-16 h-16 rounded-2xl bg-veritas/10 flex items-center justify-center">
-                  <Zap className="w-9 h-9 text-veritas" strokeWidth={2.5} />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-veritas/20 to-robo/20 flex items-center justify-center">
+                  <Shield className="w-9 h-9 text-primary" strokeWidth={2.5} />
                 </div>
-                <Badge variant="secondary" className="bg-veritas/20 text-veritas px-3 py-1">
-                  {t.mode_v3_badge}
-                </Badge>
               </div>
-              <CardTitle className="text-2xl">{t.mode_v3_title}</CardTitle>
-              <CardDescription className="text-base">{t.mode_v3_desc}</CardDescription>
+              <CardTitle className="text-2xl">{t.scan_hybrid_title}</CardTitle>
+              <CardDescription className="text-base">{t.scan_hybrid_desc}</CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-veritas flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v3_feat1}</span>
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-sm text-muted-foreground">{t.scan_hybrid_feat1}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-veritas flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v3_feat2}</span>
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-sm text-muted-foreground">{t.scan_hybrid_feat2}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-veritas flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v3_feat3}</span>
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-sm text-muted-foreground">{t.scan_hybrid_feat3}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-veritas flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v3_feat4}</span>
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-sm text-muted-foreground">{t.scan_hybrid_feat4}</span>
                 </li>
               </ul>
-            </CardContent>
-          </Card>
-
-          {/* V5 UltraDeepScan */}
-          <Card className="border-2 border-robo hover:border-robo hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] shadow-xl relative overflow-hidden rounded-2xl p-2">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-robo to-robo-glow opacity-15 blur-3xl" />
-            <CardHeader>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-16 h-16 rounded-2xl bg-robo/10 flex items-center justify-center">
-                  <Shield className="w-9 h-9 text-robo" strokeWidth={2.5} />
-                </div>
-                <Badge className="bg-robo text-robo-foreground px-3 py-1">
-                  {t.mode_v5_badge}
-                </Badge>
+              
+              {/* Tageslimit Anzeige */}
+              <div className="mt-4 pt-4 border-t border-border">
+                <p className="text-sm text-muted-foreground text-center">
+                  {t.scan_limit_label}
+                </p>
               </div>
-              <CardTitle className="text-2xl">{t.mode_v5_title}</CardTitle>
-              <CardDescription className="text-base">{t.mode_v5_desc}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v5_feat1}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v5_feat2}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v5_feat3}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.mode_v5_feat4}</span>
-                </li>
-              </ul>
             </CardContent>
           </Card>
         </div>

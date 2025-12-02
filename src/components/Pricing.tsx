@@ -92,10 +92,6 @@ export const Pricing = ({ language }: PricingProps) => {
                   <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t.pricing_premium_feat4}</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.pricing_premium_feat5}</span>
-                </li>
               </ul>
               
               <Button 
