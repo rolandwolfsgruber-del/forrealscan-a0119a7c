@@ -226,7 +226,7 @@ export const translations: Record<Language, Translations> = {
     scan_hybrid_feat1: 'Schätzt die KI-Wahrscheinlichkeit deines Bildes (0–100 %).',
     scan_hybrid_feat2: 'Nutzt zusätzliche Forensik-Signale für Manipulation und Retusche.',
     scan_hybrid_feat3: 'Liefert klares Ergebnis: authentisch, KI oder unsicher – mit kurzer Erklärung.',
-    scan_hybrid_feat4: 'Bis zu 5 ForRealScan-Scans pro Tag kostenlos testen.',
+    scan_hybrid_feat4: 'Bis zu 5 Bilder pro Tag mit ForRealScan prüfen.',
     scan_limit_label: 'Tageslimit: 0/5',
     
     // Examples
@@ -269,14 +269,14 @@ export const translations: Record<Language, Translations> = {
     pricing_title: 'Wähle deinen Plan',
     pricing_free_title: 'Kostenlos',
     pricing_free_price: 'Kostenlos',
-    pricing_free_feat1: 'Bis zu 5 ForRealScan-Hybrid-Scans pro Tag kostenlos.',
+    pricing_free_feat1: 'Bis zu 5 Bilder pro Tag mit ForRealScan prüfen.',
     pricing_free_feat2: 'Geplante Werbung unterstützt die kostenlose Nutzung.',
     pricing_free_feat3: 'Kein Konto nötig für die ersten Scans.',
     pricing_free_cta: 'Kostenlos starten',
     
     pricing_premium_badge: 'Bald verfügbar',
     pricing_premium_title: 'Premium – bald verfügbar',
-    pricing_premium_feat1: 'Geplante unbegrenzte ForRealScan-Scans ohne Tageslimit.',
+    pricing_premium_feat1: 'Geplante unbegrenzte ForRealScan-Analysen ohne Tageslimit.',
     pricing_premium_feat2: 'Geplante werbefreie Nutzung.',
     pricing_premium_feat3: 'Geplante erweiterte Scan-Historie und Sammlung.',
     pricing_premium_feat4: 'Geplante Prioritäts-Verarbeitung.',
@@ -395,7 +395,7 @@ export const translations: Record<Language, Translations> = {
     scan_hybrid_feat1: 'Estimates AI probability of your image (0–100%).',
     scan_hybrid_feat2: 'Uses additional forensic signals for manipulation and retouching.',
     scan_hybrid_feat3: 'Delivers clear result: authentic, AI or uncertain – with brief explanation.',
-    scan_hybrid_feat4: 'Test up to 5 ForRealScan scans per day for free.',
+    scan_hybrid_feat4: 'Check up to 5 images per day with ForRealScan.',
     scan_limit_label: 'Daily limit: 0/5',
     
     // Examples
@@ -438,14 +438,14 @@ export const translations: Record<Language, Translations> = {
     pricing_title: 'Choose Your Plan',
     pricing_free_title: 'Free',
     pricing_free_price: 'Free',
-    pricing_free_feat1: 'Up to 5 ForRealScan-Hybrid scans per day for free.',
+    pricing_free_feat1: 'Check up to 5 images per day with ForRealScan.',
     pricing_free_feat2: 'Planned ads support the free version.',
     pricing_free_feat3: 'No account needed for first scans.',
     pricing_free_cta: 'Start Free',
     
     pricing_premium_badge: 'Coming soon',
     pricing_premium_title: 'Premium – coming soon',
-    pricing_premium_feat1: 'Planned unlimited ForRealScan scans without daily limit.',
+    pricing_premium_feat1: 'Planned unlimited ForRealScan analyses without daily limit.',
     pricing_premium_feat2: 'Planned ad-free experience.',
     pricing_premium_feat3: 'Planned extended scan history and collection.',
     pricing_premium_feat4: 'Planned priority processing.',
@@ -564,7 +564,7 @@ export const translations: Record<Language, Translations> = {
     scan_hybrid_feat1: 'Stima la probabilità IA della tua immagine (0–100%).',
     scan_hybrid_feat2: 'Utilizza segnali forensi aggiuntivi per manipolazione e ritocco.',
     scan_hybrid_feat3: 'Fornisce risultato chiaro: autentico, IA o incerto – con breve spiegazione.',
-    scan_hybrid_feat4: 'Testa fino a 5 scansioni ForRealScan al giorno gratuitamente.',
+    scan_hybrid_feat4: 'Controlla fino a 5 immagini al giorno con ForRealScan.',
     scan_limit_label: 'Limite giornaliero: 0/5',
     
     // Examples
@@ -607,14 +607,14 @@ export const translations: Record<Language, Translations> = {
     pricing_title: 'Scegli il Tuo Piano',
     pricing_free_title: 'Gratuito',
     pricing_free_price: 'Gratuito',
-    pricing_free_feat1: 'Fino a 5 scansioni ForRealScan-Hybrid al giorno gratuitamente.',
+    pricing_free_feat1: 'Controlla fino a 5 immagini al giorno con ForRealScan.',
     pricing_free_feat2: 'Pubblicità pianificata supporta la versione gratuita.',
     pricing_free_feat3: 'Nessun account necessario per le prime scansioni.',
     pricing_free_cta: 'Inizia Gratis',
     
     pricing_premium_badge: 'Prossimamente',
     pricing_premium_title: 'Premium – prossimamente',
-    pricing_premium_feat1: 'Scansioni ForRealScan illimitate pianificate senza limite giornaliero.',
+    pricing_premium_feat1: 'Analisi ForRealScan illimitate previste senza limite giornaliero.',
     pricing_premium_feat2: 'Esperienza senza pubblicità pianificata.',
     pricing_premium_feat3: 'Cronologia e raccolta estesa pianificate.',
     pricing_premium_feat4: 'Elaborazione prioritaria pianificata.',
@@ -733,7 +733,7 @@ export const translations: Record<Language, Translations> = {
     scan_hybrid_feat1: 'Estima probabilidad IA de tu imagen (0–100%).',
     scan_hybrid_feat2: 'Usa señales forenses adicionales para manipulación y retoque.',
     scan_hybrid_feat3: 'Proporciona resultado claro: auténtico, IA o incierto – con breve explicación.',
-    scan_hybrid_feat4: 'Prueba hasta 5 escaneos ForRealScan por día gratis.',
+    scan_hybrid_feat4: 'Verifica hasta 5 imágenes por día con ForRealScan.',
     scan_limit_label: 'Límite diario: 0/5',
     
     // Examples
@@ -776,14 +776,14 @@ export const translations: Record<Language, Translations> = {
     pricing_title: 'Elige Tu Plan',
     pricing_free_title: 'Gratis',
     pricing_free_price: 'Gratis',
-    pricing_free_feat1: 'Hasta 5 escaneos ForRealScan-Hybrid por día gratis.',
+    pricing_free_feat1: 'Verifica hasta 5 imágenes por día con ForRealScan.',
     pricing_free_feat2: 'Anuncios planificados soportan la versión gratuita.',
     pricing_free_feat3: 'No se necesita cuenta para los primeros escaneos.',
     pricing_free_cta: 'Comenzar Gratis',
     
     pricing_premium_badge: 'Próximamente',
     pricing_premium_title: 'Premium – próximamente',
-    pricing_premium_feat1: 'Escaneos ForRealScan ilimitados planificados sin límite diario.',
+    pricing_premium_feat1: 'Análisis ForRealScan ilimitados planificados sin límite diario.',
     pricing_premium_feat2: 'Experiencia sin anuncios planificada.',
     pricing_premium_feat3: 'Historial extendido y colección planificados.',
     pricing_premium_feat4: 'Procesamiento prioritario planificado.',
