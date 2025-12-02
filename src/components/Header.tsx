@@ -63,7 +63,7 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
   const navItems = [
     { id: 'start', label: t.nav_start },
     { id: 'how-it-works', label: t.nav_features },
-    { id: 'modes', label: t.nav_modes },
+    { id: 'modes', label: t.nav_scan },
     { id: 'veritas-robo', label: t.nav_veritas_robo },
     { id: 'game', label: t.nav_game },
     { id: 'pricing', label: t.nav_pricing },
