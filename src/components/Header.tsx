@@ -84,7 +84,7 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
             <img 
               src={logoMaster} 
               alt="ForRealScan Logo" 
-              className="h-9 sm:h-12 w-auto"
+              className="h-12 sm:h-14 w-auto drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
             />
           </div>
 
