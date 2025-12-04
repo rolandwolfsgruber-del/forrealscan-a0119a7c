@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, Globe } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
-import logoMaster from '@/assets/logo-master.png';
+import logoMaster from '@/assets/logo-transparent.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -84,7 +84,7 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
             <img 
               src={logoMaster} 
               alt="ForRealScan Logo" 
-              className="h-7 sm:h-10 w-auto"
+              className="h-9 sm:h-12 w-auto"
             />
           </div>
 
