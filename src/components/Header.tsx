@@ -19,6 +19,7 @@ interface HeaderProps {
 export const Header = ({ language, setLanguage }: HeaderProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('start');
+  const [scrolled, setScrolled] = useState(false);
   const t = translations[language];
 
   const scrollToSection = (id: string) => {
@@ -31,6 +32,8 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
+      setScrolled(window.scrollY > 80);
+      
       const sections = ['start', 'how-it-works', 'modes', 'veritas-robo', 'game', 'pricing', 'faq'];
       const scrollPosition = window.scrollY + 100;
 
@@ -75,7 +78,9 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className={`flex-shrink-0 transition-opacity duration-300 ${
+            scrolled ? 'opacity-100' : 'opacity-0'
+          }`}>
             <img 
               src={logoMaster} 
               alt="ForRealScan Logo" 
