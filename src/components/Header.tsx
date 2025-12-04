@@ -178,7 +178,7 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                   activeSection === item.id
-                    ? 'bg-accent text-primary'
+                    ? 'bg-primary text-primary-foreground'
                     : 'text-foreground hover:bg-accent'
                 }`}
               >
