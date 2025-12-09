@@ -61,6 +61,7 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
     { code: 'en', label: 'English' },
     { code: 'it', label: 'Italiano' },
     { code: 'es', label: 'Español' },
+    { code: 'fr', label: 'Français' },
   ];
 
   const navItems = [
