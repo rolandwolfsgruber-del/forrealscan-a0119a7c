@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/coming-soon",
+      "destination": "https://game.forrealscan.com",
+      "permanent": true
+    }
+  ]
+}
