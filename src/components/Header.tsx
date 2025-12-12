@@ -64,12 +64,12 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
     { code: 'fr', label: 'Français' },
   ];
 
-  const navItems = [
+  const navItems: { id: string; label: string; href?: string }[] = [
     { id: 'start', label: t.nav_start },
     { id: 'how-it-works', label: t.nav_features },
     { id: 'modes', label: t.nav_scan },
     { id: 'veritas-robo', label: t.nav_veritas_robo },
-    { id: 'game', label: t.nav_game },
+    { id: 'game', label: t.nav_game, href: 'https://game.forrealscan.com' },
     { id: 'pricing', label: t.nav_pricing },
     { id: 'faq', label: t.nav_faq },
   ];
@@ -92,22 +92,35 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`text-[15px] font-medium transition-all duration-200 relative group ${
-                  activeSection === item.id
-                    ? 'text-primary'
-                    : 'text-foreground hover:text-primary'
-                }`}
-              >
-                {item.label}
-                <span 
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
-                    activeSection === item.id ? 'w-full' : 'w-0 group-hover:w-full'
+              item.href ? (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[15px] font-medium transition-all duration-200 relative group text-foreground hover:text-primary"
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 w-0 group-hover:w-full" />
+                </a>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`text-[15px] font-medium transition-all duration-200 relative group ${
+                    activeSection === item.id
+                      ? 'text-primary'
+                      : 'text-foreground hover:text-primary'
                   }`}
-                />
-              </button>
+                >
+                  {item.label}
+                  <span 
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
+                      activeSection === item.id ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  />
+                </button>
+              )
             ))}
           </nav>
 
@@ -179,17 +192,30 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
         <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-lg">
           <div className="container mx-auto px-4 py-3 space-y-2">
             {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
-                  activeSection === item.id
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-foreground hover:bg-accent'
-                }`}
-              >
-                {item.label}
-              </button>
+              item.href ? (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-colors text-foreground hover:bg-accent"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`block w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
+                    activeSection === item.id
+                      ? 'bg-primary text-primary-foreground'
+                      : 'text-foreground hover:bg-accent'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              )
             ))}
             
             <div className="pt-3 border-t border-border">
