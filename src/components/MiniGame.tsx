@@ -26,7 +26,7 @@ export const MiniGame = ({
             </CardHeader>
             <CardContent className="pt-6 sm:pt-8">
               <Button asChild size="lg" className="w-full sm:w-auto sm:min-w-[260px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-veritas to-robo hover:opacity-90 shadow-[0_0_30px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] transition-all duration-300">
-                <a href="https://forrealscan-mini-game.vercel.app" target="_blank" rel="noopener noreferrer" className="text-center">
+                <a href="https://game.forrealscan.com" target="_blank" rel="noopener noreferrer" className="text-center">
                   {t.game_cta}
                 </a>
               </Button>
