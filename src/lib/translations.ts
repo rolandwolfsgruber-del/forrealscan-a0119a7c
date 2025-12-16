@@ -42,10 +42,17 @@ interface Translations {
   retouch_point2: string;
   retouch_point3: string;
   
-  // ShareCards
+  // ShareCards (Old - kept for compatibility)
   share_title: string;
   share_text: string;
-  
+
+  // ShareCards Visual Showcase (New)
+  sharecard_title: string;
+  sharecard_subtitle: string;
+  sharecard_feature1: string;
+  sharecard_feature2: string;
+  sharecard_feature3: string;
+
   // Disclaimer
   disclaimer_title: string;
   disclaimer_text: string;
@@ -408,10 +415,17 @@ export const translations: Record<Language, Translations> = {
     retouch_point2: 'Auffällige Veränderungen an Gesichtszügen oder Proportionen können vorsichtig benannt werden.',
     retouch_point3: 'Erklärtexte bleiben neutral und sachlich, damit du dir selbst ein Urteil bilden kannst.',
     
-    // ShareCards
+    // ShareCards (Old - kept for compatibility)
     share_title: 'Ergebnisse teilen, wo sie gebraucht werden',
     share_text: 'Scans können als kompakte Ergebnis-Karten geteilt werden, zum Beispiel in Chats oder unter Social-Media-Posts. So machst du deine Einschätzung für andere nachvollziehbar – inklusive Hinweis auf Unsicherheiten.',
-    
+
+    // ShareCards Visual Showcase (New)
+    sharecard_title: 'Dein Ergebnis auf einen Blick',
+    sharecard_subtitle: 'Klare Analysen als kompakte Karte – bereit zum Teilen oder Speichern.',
+    sharecard_feature1: 'Sofort verständlicher Score (0–100%)',
+    sharecard_feature2: 'Detaillierte visuelle Beweisführung',
+    sharecard_feature3: 'Optimiert für Social Media & Chats',
+
     // Disclaimer
     disclaimer_title: 'Wichtiger Hinweis',
     disclaimer_text: 'ForRealScan liefert dir fundierte technische Einschätzungen und Wahrscheinlichkeiten. Die Ergebnisse sind keine juristischen Beweise, helfen dir aber dabei, bewusster zu entscheiden – und sollten nicht als alleinige Grundlage für Vorwürfe oder harte Anschuldigungen dienen.',
@@ -774,10 +788,17 @@ export const translations: Record<Language, Translations> = {
     retouch_point2: 'Conspicuous changes to facial features or proportions can be cautiously named.',
     retouch_point3: 'Explanatory texts remain neutral and factual so you can form your own judgment.',
     
-    // ShareCards
+    // ShareCards (Old - kept for compatibility)
     share_title: 'Share results where they are needed',
     share_text: 'Scans can be shared as compact result cards, for example in chats or under social media posts. This makes your assessment comprehensible for others – including notes on uncertainties.',
-    
+
+    // ShareCards Visual Showcase (New)
+    sharecard_title: 'Your result at a glance',
+    sharecard_subtitle: 'Clear analyses as compact cards – ready to share or save.',
+    sharecard_feature1: 'Instantly understandable score (0–100%)',
+    sharecard_feature2: 'Detailed visual evidence',
+    sharecard_feature3: 'Optimized for social media & chats',
+
     // Disclaimer
     disclaimer_title: 'Important Note',
     disclaimer_text: 'ForRealScan provides you with well-founded technical assessments and probabilities. The results are not legal evidence, but help you make more conscious decisions – and should not serve as the sole basis for accusations or harsh allegations.',
@@ -1140,10 +1161,17 @@ export const translations: Record<Language, Translations> = {
     retouch_point2: 'Cambiamenti cospicui ai lineamenti del viso o alle proporzioni possono essere nominati con cautela.',
     retouch_point3: 'I testi esplicativi rimangono neutrali e fattuali in modo da poter formare il tuo giudizio.',
     
-    // ShareCards
+    // ShareCards (Old - kept for compatibility)
     share_title: 'Condividi i risultati dove sono necessari',
     share_text: 'Le scansioni possono essere condivise come carte risultato compatte, ad esempio in chat o sotto post sui social media. Questo rende la tua valutazione comprensibile per gli altri – incluse note sulle incertezze.',
-    
+
+    // ShareCards Visual Showcase (New)
+    sharecard_title: 'Il tuo risultato a colpo d\'occhio',
+    sharecard_subtitle: 'Analisi chiare come carte compatte – pronte per la condivisione o il salvataggio.',
+    sharecard_feature1: 'Punteggio immediatamente comprensibile (0–100%)',
+    sharecard_feature2: 'Prove visive dettagliate',
+    sharecard_feature3: 'Ottimizzato per social media e chat',
+
     // Disclaimer
     disclaimer_title: 'Nota Importante',
     disclaimer_text: 'ForRealScan ti fornisce valutazioni tecniche ben fondate e probabilità. I risultati non sono prove legali, ma ti aiutano a prendere decisioni più consapevoli – e non dovrebbero servire come unica base per accuse o dure allegazioni.',
@@ -1506,10 +1534,17 @@ export const translations: Record<Language, Translations> = {
     retouch_point2: 'Cambios conspicuos en rasgos faciales o proporciones pueden nombrarse cautelosamente.',
     retouch_point3: 'Los textos explicativos permanecen neutrales y factuales para que puedas formar tu propio juicio.',
     
-    // ShareCards
+    // ShareCards (Old - kept for compatibility)
     share_title: 'Comparte resultados donde sean necesarios',
     share_text: 'Los escaneos pueden compartirse como tarjetas de resultado compactas, por ejemplo en chats o bajo publicaciones en redes sociales. Esto hace que tu evaluación sea comprensible para otros – incluyendo notas sobre incertidumbres.',
-    
+
+    // ShareCards Visual Showcase (New)
+    sharecard_title: 'Tu resultado de un vistazo',
+    sharecard_subtitle: 'Análisis claros como tarjetas compactas – listos para compartir o guardar.',
+    sharecard_feature1: 'Puntuación inmediatamente comprensible (0–100%)',
+    sharecard_feature2: 'Evidencia visual detallada',
+    sharecard_feature3: 'Optimizado para redes sociales y chats',
+
     // Disclaimer
     disclaimer_title: 'Nota Importante',
     disclaimer_text: 'ForRealScan te proporciona evaluaciones técnicas bien fundadas y probabilidades. Los resultados no son pruebas legales, pero te ayudan a tomar decisiones más conscientes – y no deben servir como única base para acusaciones o alegaciones duras.',
@@ -1872,10 +1907,17 @@ export const translations: Record<Language, Translations> = {
     retouch_point2: 'Les changements notables des traits du visage ou des proportions peuvent être mentionnés avec prudence.',
     retouch_point3: 'Les textes explicatifs restent neutres et factuels pour que vous puissiez former votre propre jugement.',
     
-    // ShareCards
+    // ShareCards (Old - kept for compatibility)
     share_title: 'Partagez les résultats là où ils sont nécessaires',
     share_text: 'Les scans peuvent être partagés sous forme de cartes de résultat compactes, par exemple dans des chats ou sous des publications sur les réseaux sociaux. Cela rend votre évaluation compréhensible pour les autres – y compris les notes sur les incertitudes.',
-    
+
+    // ShareCards Visual Showcase (New)
+    sharecard_title: 'Votre résultat en un coup d\'œil',
+    sharecard_subtitle: 'Analyses claires sous forme de cartes compactes – prêtes à partager ou à sauvegarder.',
+    sharecard_feature1: 'Score immédiatement compréhensible (0–100%)',
+    sharecard_feature2: 'Preuves visuelles détaillées',
+    sharecard_feature3: 'Optimisé pour les réseaux sociaux et les chats',
+
     // Disclaimer
     disclaimer_title: 'Note importante',
     disclaimer_text: 'ForRealScan vous fournit des évaluations techniques bien fondées et des probabilités. Les résultats ne sont pas des preuves juridiques, mais vous aident à prendre des décisions plus éclairées – et ne doivent pas servir de base unique pour des accusations ou des allégations sévères.',

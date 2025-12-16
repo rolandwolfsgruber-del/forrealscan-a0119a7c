@@ -6,9 +6,7 @@ import { UseCases } from '@/components/UseCases';
 import { HowItWorks } from '@/components/HowItWorks';
 import { VeritasRobo } from '@/components/VeritasRobo';
 import { StoryCheck } from '@/components/StoryCheck';
-import { Retouch } from '@/components/Retouch';
 import { ShareCards } from '@/components/ShareCards';
-import { Disclaimer } from '@/components/Disclaimer';
 import { Modes } from '@/components/Modes';
 import { Examples } from '@/components/Examples';
 import { MiniGame } from '@/components/MiniGame';
@@ -48,9 +46,7 @@ const Index = () => {
         <UseCases language={language} />
         <HowItWorks language={language} />
         <StoryCheck language={language} />
-        <Retouch language={language} />
         <ShareCards language={language} />
-        <Disclaimer language={language} />
         <Modes language={language} />
         <Examples language={language} />
         <MiniGame language={language} />
