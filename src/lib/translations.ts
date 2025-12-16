@@ -441,17 +441,17 @@ export const translations: Record<Language, Translations> = {
     scan_limit_label: 'Tageslimit: 0/5',
     
     // Examples
-    examples_title: 'Siehst du den Unterschied?',
-    examples_subtitle: 'KI-generierte Bilder werden immer realer, doch ForRealScan hilft dir den Unterschied zu sehen.',
+    examples_title: 'Täuschend echt: Der direkte Vergleich',
+    examples_subtitle: 'KI-generierte Bilder werden immer perfekter. ForRealScan macht die Details sichtbar.',
     examples_real_label: 'Echtes Foto',
     examples_ai_label: 'KI-generiert',
     examples_veritas_comment: 'Natürliche Schatten und Lichtreflexionen – eindeutig echt.',
     examples_robo_comment: 'Pixel-Muster und Artefakte weisen auf KI-Generierung hin.',
     
     // Mini Game
-    game_title: 'Siehst du den Unterschied?',
-    game_subtitle: 'Teste dein Auge – ForRealScan zeigt dir anschließend die Auflösung.',
-    game_cta: 'Spiel starten',
+    game_title: 'Teste dein Auge',
+    game_subtitle: 'Erkennst du Fake oder Realität? Mach jetzt den Selbsttest und finde es heraus.',
+    game_cta: 'Quiz starten',
     
     // Use Cases
     cases_title: 'Für wen ist ForRealScan?',
