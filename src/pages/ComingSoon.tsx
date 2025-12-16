@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Language, translations } from '@/lib/translations';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 
 const ComingSoon = () => {
   const [language] = useState<Language>(() => {

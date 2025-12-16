@@ -12,6 +12,7 @@ import Methodology from "./pages/Methodology";
 import ExamplesPage from "./pages/ExamplesPage";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import { DebugPanel } from "./components/DebugPanel";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <DebugPanel />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/methodology" element={<Methodology />} />

@@ -6,14 +6,13 @@ import { Textarea } from '@/components/ui/textarea';
 import { ArrowLeft, Mail, Send, Globe } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Language, translations } from '@/lib/translations';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const Contact = () => {
   const [language, setLanguage] = useState<Language>(() => {

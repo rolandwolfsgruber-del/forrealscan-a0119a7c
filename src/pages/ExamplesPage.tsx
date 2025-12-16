@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, CheckCircle, AlertTriangle, XCircle, Info, Globe } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +12,6 @@ import {
 import squirrelReal from '@/assets/squirrel-real.jpg';
 import squirrelAi from '@/assets/squirrel-ai.png';
 import butterflyAi from '@/assets/butterfly-ai.webp';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const ExamplesPage = () => {
   const [language, setLanguage] = useState<Language>(() => {

@@ -3,14 +3,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Shield, Eye, Brain, AlertTriangle, Lock, HelpCircle, ExternalLink, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Language, translations } from '@/lib/translations';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const Methodology = () => {
   const [language, setLanguage] = useState<Language>(() => {
