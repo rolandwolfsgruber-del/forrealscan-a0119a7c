@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Language } from '@/lib/translations';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
@@ -17,8 +17,26 @@ import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
 import { AdSense } from '@/components/AdSense';
 
+const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
+
 const Index = () => {
-  const [language, setLanguage] = useState<Language>('de');
+  const [language, setLanguage] = useState<Language>(() => {
+    // Try to get language from localStorage, fallback to browser language or 'de'
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored && ['de', 'en', 'it', 'es', 'fr'].includes(stored)) {
+      return stored as Language;
+    }
+    const browserLang = navigator.language.split('-')[0];
+    if (['de', 'en', 'it', 'es', 'fr'].includes(browserLang)) {
+      return browserLang as Language;
+    }
+    return 'de';
+  });
+
+  // Persist language selection
+  useEffect(() => {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+  }, [language]);
 
   return (
     <div className="min-h-screen bg-background">

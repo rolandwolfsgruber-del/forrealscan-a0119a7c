@@ -35,17 +35,24 @@ export const Examples = ({ language }: ExamplesProps) => {
             <CardContent className="space-y-4">
               {/* Real squirrel photo */}
               <div className="aspect-square rounded-xl overflow-hidden border-2 border-veritas/30 shadow-lg">
-                <img 
-                  src={squirrelImage} 
-                  alt="Real photo of a squirrel in nature" 
+                <img
+                  src={squirrelImage}
+                  alt={t.examples_real_label}
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               {/* Veritas comment with glassmorphism */}
               <div className="bg-veritas/10 border-2 border-veritas/30 rounded-xl p-5 backdrop-blur-sm">
                 <p className="text-sm text-foreground leading-relaxed">
-                  <span className="font-bold text-veritas">Veritas:</span> {t.examples_veritas_comment}
+                  <span className="font-bold text-veritas">Veritas:</span> {t.examples_real_veritas}
+                </p>
+              </div>
+
+              {/* Robo comment for real photo */}
+              <div className="bg-muted/50 border border-border rounded-xl p-5">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-bold text-robo">Robo:</span> {t.examples_real_robo}
                 </p>
               </div>
             </CardContent>
@@ -60,15 +67,22 @@ export const Examples = ({ language }: ExamplesProps) => {
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* AI-generated butterfly photo */}
+              {/* AI-generated squirrel photo */}
               <div className="aspect-square rounded-xl overflow-hidden border-2 border-robo/30 shadow-lg">
-                <img 
-                  src={squirrelAiImage} 
-                  alt="AI-generated photo of a squirrel in autumn forest" 
+                <img
+                  src={squirrelAiImage}
+                  alt={t.examples_ai_label}
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
+              {/* Veritas comment for AI photo */}
+              <div className="bg-muted/50 border border-border rounded-xl p-5">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-bold text-veritas">Veritas:</span> {t.examples_ai1_veritas}
+                </p>
+              </div>
+
               {/* Robo comment with glassmorphism */}
               <div className="bg-robo/10 border-2 border-robo/30 rounded-xl p-5 backdrop-blur-sm">
                 <p className="text-sm text-foreground leading-relaxed">

@@ -166,6 +166,45 @@ interface Translations {
   veritas_robo_help_step3: string;
   veritas_robo_disclaimer: string;
   veritas_robo_closing: string;
+
+  // Examples Page (dedicated page)
+  examples_page_title: string;
+  examples_page_subtitle: string;
+  examples_page_disclaimer: string;
+  examples_page_back: string;
+  examples_page_cta_title: string;
+  examples_page_cta_text: string;
+  examples_page_cta_button: string;
+  examples_page_context_title: string;
+  examples_page_context_p1: string;
+  examples_page_context_p2: string;
+  examples_page_context_p3: string;
+  examples_page_methodology_link: string;
+  examples_page_veritas_says: string;
+  examples_page_robo_says: string;
+  examples_page_context_label: string;
+
+  // Examples - Confidence labels
+  confidence_high: string;
+  confidence_medium: string;
+  confidence_low: string;
+  confidence_label: string;
+
+  // Examples - Real photo specific comments
+  examples_real_veritas: string;
+  examples_real_robo: string;
+  examples_real_explanation: string;
+
+  // Examples - AI photo comments
+  examples_ai1_title: string;
+  examples_ai1_veritas: string;
+  examples_ai1_robo: string;
+  examples_ai1_explanation: string;
+
+  examples_ai2_title: string;
+  examples_ai2_veritas: string;
+  examples_ai2_robo: string;
+  examples_ai2_explanation: string;
 }
 
 export const translations: Record<Language, Translations> = {
@@ -336,8 +375,47 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step3: '3. Erklärung in Klartext – Aus den Hinweisen wird eine ruhige, neutrale Erklärung, die du ohne Vorwissen verstehst.',
     veritas_robo_disclaimer: 'Ohne Modellnamen, ohne Provider-Werbung – nur eine ehrliche Einschätzung, die du nachvollziehen kannst.',
     veritas_robo_closing: 'Veritas und Robo sehen sich jedes Bild aus zwei Richtungen an – am Ende bekommst du eine gemeinsame, ausgewogene Einschätzung pro ForRealScan-Hybrid-Scan.',
+
+    // Examples Page (dedicated page)
+    examples_page_title: 'Beispiel-Analysen',
+    examples_page_subtitle: 'So sehen ForRealScan-Ergebnisse aus – mit Erklärungen, wie du sie interpretieren kannst.',
+    examples_page_disclaimer: 'Hinweis: Das sind Demo-Beispiele (statisch), die zeigen, wie ForRealScan-Ergebnisse aussehen. Für eine echte Analyse lade bitte ein eigenes Bild hoch.',
+    examples_page_back: 'Zurück',
+    examples_page_cta_title: 'Eigene Bilder prüfen?',
+    examples_page_cta_text: 'Teste ForRealScan kostenlos – bis zu 5 Analysen pro Tag, ohne Anmeldung.',
+    examples_page_cta_button: 'Jetzt Bild analysieren',
+    examples_page_context_title: 'Wie du die Ergebnisse nutzen solltest',
+    examples_page_context_p1: 'Die Beispiele oben zeigen, dass ForRealScan sowohl echte Fotos als auch KI-generierte Bilder mit guter Genauigkeit einordnen kann. Trotzdem gilt: Die Ergebnisse sind Orientierungshilfen, keine absoluten Beweise.',
+    examples_page_context_p2: 'Bei Bildern mit mittleren Werten (30-70%) ist besondere Vorsicht geboten. Diese können leicht bearbeitete echte Fotos, teilweise KI-generierte Bilder oder einfach schwer einzuordnende Aufnahmen sein. In solchen Fällen empfehlen wir, weitere Faktoren zu berücksichtigen: Woher stammt das Bild? Wer hat es gepostet? Gibt es andere Versionen?',
+    examples_page_context_p3: 'Mehr über unsere Methodik erfährst du auf der',
+    examples_page_methodology_link: 'Methodik-Seite',
+    examples_page_veritas_says: 'Veritas sagt:',
+    examples_page_robo_says: 'Robo sagt:',
+    examples_page_context_label: 'Einordnung',
+
+    // Examples - Confidence labels
+    confidence_high: 'hoch',
+    confidence_medium: 'mittel',
+    confidence_low: 'niedrig',
+    confidence_label: 'Konfidenz',
+
+    // Examples - Real photo specific comments
+    examples_real_veritas: 'Natürliche Unregelmäßigkeiten in der Fellstruktur. Plausibles Licht- und Schattenspiel. Organisches Bokeh im Hintergrund.',
+    examples_real_robo: 'Keine starken KI-Muster erkannt. Bildrauschen entspricht einer echten Kameraaufnahme. Keine auffälligen Wiederholungsmuster.',
+    examples_real_explanation: 'Dieses Bild zeigt typische Merkmale einer authentischen Naturfotografie: Die Fellstruktur weist natürliche Unregelmäßigkeiten auf, das Bokeh im Hintergrund ist organisch, und das Bildrauschen entspricht dem einer echten Kamera.',
+
+    // Examples - AI photo comments
+    examples_ai1_title: 'KI-generiertes Eichhörnchen',
+    examples_ai1_veritas: 'Das Fell wirkt zu gleichmäßig und „gemalt". Die Augen haben eine unnatürlich perfekte Spiegelung. Der Übergang zum Hintergrund ist zu weich.',
+    examples_ai1_robo: 'Typische GAN-Artefakte in den Fellstrukturen erkannt. Pixelmuster deuten auf Stable Diffusion oder ähnliches Modell hin. Auffällige Glättung in Detailbereichen.',
+    examples_ai1_explanation: 'Obwohl auf den ersten Blick realistisch, zeigt dieses Bild mehrere KI-typische Merkmale: Das Fell ist zu gleichmäßig texturiert, die Augenspiegelungen sind perfekt symmetrisch, und es fehlen die kleinen Unvollkommenheiten echter Fotos.',
+
+    examples_ai2_title: 'KI-generierter Schmetterling',
+    examples_ai2_veritas: 'Die Flügelmuster sind zu perfekt symmetrisch. Die Farben wirken übersättigt und unnatürlich leuchtend. Die Körperstruktur ist anatomisch vereinfacht.',
+    examples_ai2_robo: 'Deutliche Wiederholungsmuster in der Flügelstruktur. Hochfrequenzdetails fehlen komplett. Typische Midjourney/DALL-E Signatur in den Farbübergängen.',
+    examples_ai2_explanation: 'Dieses Bild zeigt die typischen Kennzeichen einer KI-Generierung: übertriebene Farbsättigung, unnatürlich perfekte Symmetrie, und vereinfachte anatomische Details.',
   },
-  
+
   en: {
     // Header
     nav_start: 'Start',
@@ -505,8 +583,47 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step3: '3. Explanation in Plain Language – From the clues comes a calm, neutral explanation that you understand without prior knowledge.',
     veritas_robo_disclaimer: 'No model names, no provider advertising – just an honest assessment you can understand.',
     veritas_robo_closing: 'Veritas and Robo look at every image from two directions – in the end you get a joint, balanced assessment per ForRealScan-Hybrid scan.',
+
+    // Examples Page (dedicated page)
+    examples_page_title: 'Example Analyses',
+    examples_page_subtitle: 'See how ForRealScan results look – with explanations on how to interpret them.',
+    examples_page_disclaimer: 'Note: These are static demo examples showing how ForRealScan results look. For a real analysis, please upload your own image.',
+    examples_page_back: 'Back',
+    examples_page_cta_title: 'Want to check your own images?',
+    examples_page_cta_text: 'Try ForRealScan for free – up to 5 analyses per day, no registration required.',
+    examples_page_cta_button: 'Analyze Image Now',
+    examples_page_context_title: 'How to use these results',
+    examples_page_context_p1: 'The examples above show that ForRealScan can classify both real photos and AI-generated images with good accuracy. However, the results are guides, not absolute proof.',
+    examples_page_context_p2: 'Images with medium values (30-70%) require special caution. These could be lightly edited real photos, partially AI-generated images, or simply hard-to-classify shots. In such cases, we recommend considering additional factors: Where does the image come from? Who posted it? Are there other versions?',
+    examples_page_context_p3: 'Learn more about our methodology on the',
+    examples_page_methodology_link: 'Methodology page',
+    examples_page_veritas_says: 'Veritas says:',
+    examples_page_robo_says: 'Robo says:',
+    examples_page_context_label: 'Context',
+
+    // Examples - Confidence labels
+    confidence_high: 'high',
+    confidence_medium: 'medium',
+    confidence_low: 'low',
+    confidence_label: 'Confidence',
+
+    // Examples - Real photo specific comments
+    examples_real_veritas: 'Natural irregularities in fur texture. Plausible light and shadow interplay. Organic bokeh in the background.',
+    examples_real_robo: 'No strong AI patterns detected. Image noise matches a real camera shot. No conspicuous repetition patterns.',
+    examples_real_explanation: 'This image shows typical characteristics of authentic nature photography: The fur texture has natural irregularities, the background bokeh is organic, and the image noise matches that of a real camera.',
+
+    // Examples - AI photo comments
+    examples_ai1_title: 'AI-Generated Squirrel',
+    examples_ai1_veritas: 'The fur looks too uniform and "painted". The eyes have unnaturally perfect reflections. The transition to the background is too soft.',
+    examples_ai1_robo: 'Typical GAN artifacts detected in fur structures. Pixel patterns suggest Stable Diffusion or similar model. Notable smoothing in detail areas.',
+    examples_ai1_explanation: 'Although realistic at first glance, this image shows several AI-typical characteristics: The fur is too uniformly textured, eye reflections are perfectly symmetrical, and the small imperfections of real photos are missing.',
+
+    examples_ai2_title: 'AI-Generated Butterfly',
+    examples_ai2_veritas: 'The wing patterns are too perfectly symmetrical. The colors appear oversaturated and unnaturally bright. The body structure is anatomically simplified.',
+    examples_ai2_robo: 'Clear repetition patterns in wing structure. High-frequency details completely missing. Typical Midjourney/DALL-E signature in color transitions.',
+    examples_ai2_explanation: 'This image shows typical signs of AI generation: exaggerated color saturation, unnaturally perfect symmetry, and simplified anatomical details.',
   },
-  
+
   it: {
     // Header
     nav_start: 'Inizio',
@@ -674,8 +791,47 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step3: '3. Spiegazione in Linguaggio Chiaro – Dagli indizi emerge una spiegazione calma e neutrale che comprendi senza conoscenze preliminari.',
     veritas_robo_disclaimer: 'Nessun nome di modello, nessuna pubblicità di provider – solo una valutazione onesta che puoi comprendere.',
     veritas_robo_closing: 'Veritas e Robo guardano ogni immagine da due direzioni – alla fine ottieni una valutazione congiunta ed equilibrata per ForRealScan-Hybrid scan.',
+
+    // Examples Page (dedicated page)
+    examples_page_title: 'Analisi di Esempio',
+    examples_page_subtitle: 'Scopri come appaiono i risultati di ForRealScan – con spiegazioni su come interpretarli.',
+    examples_page_disclaimer: 'Nota: questi sono esempi demo statici che mostrano come appaiono i risultati di ForRealScan. Per un\'analisi reale, carica la tua immagine.',
+    examples_page_back: 'Indietro',
+    examples_page_cta_title: 'Vuoi controllare le tue immagini?',
+    examples_page_cta_text: 'Prova ForRealScan gratuitamente – fino a 5 analisi al giorno, senza registrazione.',
+    examples_page_cta_button: 'Analizza immagine ora',
+    examples_page_context_title: 'Come utilizzare questi risultati',
+    examples_page_context_p1: 'Gli esempi sopra mostrano che ForRealScan può classificare sia foto reali che immagini generate da IA con buona accuratezza. Tuttavia, i risultati sono guide, non prove assolute.',
+    examples_page_context_p2: 'Le immagini con valori medi (30-70%) richiedono particolare attenzione. Potrebbero essere foto reali leggermente modificate, immagini parzialmente generate da IA o semplicemente scatti difficili da classificare. In questi casi, consigliamo di considerare fattori aggiuntivi: Da dove viene l\'immagine? Chi l\'ha pubblicata? Esistono altre versioni?',
+    examples_page_context_p3: 'Scopri di più sulla nostra metodologia nella',
+    examples_page_methodology_link: 'pagina Metodologia',
+    examples_page_veritas_says: 'Veritas dice:',
+    examples_page_robo_says: 'Robo dice:',
+    examples_page_context_label: 'Contesto',
+
+    // Examples - Confidence labels
+    confidence_high: 'alta',
+    confidence_medium: 'media',
+    confidence_low: 'bassa',
+    confidence_label: 'Affidabilità',
+
+    // Examples - Real photo specific comments
+    examples_real_veritas: 'Irregolarità naturali nella struttura del pelo. Interazione plausibile di luce e ombre. Bokeh organico sullo sfondo.',
+    examples_real_robo: 'Nessun forte pattern IA rilevato. Il rumore dell\'immagine corrisponde a uno scatto reale. Nessun pattern di ripetizione evidente.',
+    examples_real_explanation: 'Questa immagine mostra caratteristiche tipiche della fotografia naturalistica autentica: La struttura del pelo presenta irregolarità naturali, il bokeh di sfondo è organico e il rumore dell\'immagine corrisponde a quello di una vera fotocamera.',
+
+    // Examples - AI photo comments
+    examples_ai1_title: 'Scoiattolo Generato da IA',
+    examples_ai1_veritas: 'Il pelo appare troppo uniforme e "dipinto". Gli occhi hanno riflessi innaturalmente perfetti. La transizione allo sfondo è troppo morbida.',
+    examples_ai1_robo: 'Rilevati tipici artefatti GAN nelle strutture del pelo. I pattern di pixel suggeriscono Stable Diffusion o modello simile. Levigatura evidente nelle aree di dettaglio.',
+    examples_ai1_explanation: 'Sebbene realistico a prima vista, questa immagine mostra diverse caratteristiche tipiche dell\'IA: Il pelo è texturizzato troppo uniformemente, i riflessi degli occhi sono perfettamente simmetrici e mancano le piccole imperfezioni delle foto reali.',
+
+    examples_ai2_title: 'Farfalla Generata da IA',
+    examples_ai2_veritas: 'I pattern delle ali sono troppo perfettamente simmetrici. I colori appaiono sovrasaturi e innaturalmente brillanti. La struttura corporea è anatomicamente semplificata.',
+    examples_ai2_robo: 'Chiari pattern di ripetizione nella struttura delle ali. Dettagli ad alta frequenza completamente assenti. Tipica firma Midjourney/DALL-E nelle transizioni di colore.',
+    examples_ai2_explanation: 'Questa immagine mostra segni tipici della generazione IA: saturazione del colore esagerata, simmetria innaturalmente perfetta e dettagli anatomici semplificati.',
   },
-  
+
   es: {
     // Header
     nav_start: 'Inicio',
@@ -843,8 +999,47 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step3: '3. Explicación en Lenguaje Claro – De las pistas surge una explicación calmada y neutral que entiendes sin conocimientos previos.',
     veritas_robo_disclaimer: 'Sin nombres de modelos, sin publicidad de proveedores – solo una evaluación honesta que puedes entender.',
     veritas_robo_closing: 'Veritas y Robo miran cada imagen desde dos direcciones – al final obtienes una evaluación conjunta y equilibrada por ForRealScan-Hybrid scan.',
+
+    // Examples Page (dedicated page)
+    examples_page_title: 'Análisis de Ejemplo',
+    examples_page_subtitle: 'Mira cómo se ven los resultados de ForRealScan – con explicaciones sobre cómo interpretarlos.',
+    examples_page_disclaimer: 'Nota: estos son ejemplos de demostración estáticos que muestran cómo se ven los resultados de ForRealScan. Para un análisis real, sube tu propia imagen.',
+    examples_page_back: 'Volver',
+    examples_page_cta_title: '¿Quieres verificar tus propias imágenes?',
+    examples_page_cta_text: 'Prueba ForRealScan gratis – hasta 5 análisis por día, sin necesidad de registro.',
+    examples_page_cta_button: 'Analizar imagen ahora',
+    examples_page_context_title: 'Cómo usar estos resultados',
+    examples_page_context_p1: 'Los ejemplos anteriores muestran que ForRealScan puede clasificar tanto fotos reales como imágenes generadas por IA con buena precisión. Sin embargo, los resultados son guías, no pruebas absolutas.',
+    examples_page_context_p2: 'Las imágenes con valores medios (30-70%) requieren especial precaución. Podrían ser fotos reales ligeramente editadas, imágenes parcialmente generadas por IA o simplemente tomas difíciles de clasificar. En estos casos, recomendamos considerar factores adicionales: ¿De dónde viene la imagen? ¿Quién la publicó? ¿Hay otras versiones?',
+    examples_page_context_p3: 'Aprende más sobre nuestra metodología en la',
+    examples_page_methodology_link: 'página de Metodología',
+    examples_page_veritas_says: 'Veritas dice:',
+    examples_page_robo_says: 'Robo dice:',
+    examples_page_context_label: 'Contexto',
+
+    // Examples - Confidence labels
+    confidence_high: 'alta',
+    confidence_medium: 'media',
+    confidence_low: 'baja',
+    confidence_label: 'Confianza',
+
+    // Examples - Real photo specific comments
+    examples_real_veritas: 'Irregularidades naturales en la textura del pelaje. Interacción plausible de luz y sombras. Bokeh orgánico en el fondo.',
+    examples_real_robo: 'No se detectaron patrones fuertes de IA. El ruido de la imagen coincide con una toma de cámara real. Sin patrones de repetición evidentes.',
+    examples_real_explanation: 'Esta imagen muestra características típicas de la fotografía de naturaleza auténtica: La textura del pelaje tiene irregularidades naturales, el bokeh del fondo es orgánico y el ruido de la imagen coincide con el de una cámara real.',
+
+    // Examples - AI photo comments
+    examples_ai1_title: 'Ardilla Generada por IA',
+    examples_ai1_veritas: 'El pelaje se ve demasiado uniforme y "pintado". Los ojos tienen reflejos antinaturalmente perfectos. La transición al fondo es demasiado suave.',
+    examples_ai1_robo: 'Se detectaron típicos artefactos GAN en las estructuras del pelaje. Los patrones de píxeles sugieren Stable Diffusion o modelo similar. Suavizado notable en áreas de detalle.',
+    examples_ai1_explanation: 'Aunque realista a primera vista, esta imagen muestra varias características típicas de IA: El pelaje tiene textura demasiado uniforme, los reflejos de los ojos son perfectamente simétricos y faltan las pequeñas imperfecciones de las fotos reales.',
+
+    examples_ai2_title: 'Mariposa Generada por IA',
+    examples_ai2_veritas: 'Los patrones de las alas son demasiado perfectamente simétricos. Los colores aparecen sobresaturados y antinaturalmente brillantes. La estructura corporal está anatómicamente simplificada.',
+    examples_ai2_robo: 'Patrones de repetición claros en la estructura de las alas. Detalles de alta frecuencia completamente ausentes. Firma típica de Midjourney/DALL-E en las transiciones de color.',
+    examples_ai2_explanation: 'Esta imagen muestra signos típicos de generación por IA: saturación de color exagerada, simetría antinaturalmente perfecta y detalles anatómicos simplificados.',
   },
-  
+
   fr: {
     // Header
     nav_start: 'Accueil',
@@ -1012,5 +1207,44 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step3: '3. Explication en langage clair – À partir des indices, une explication calme et neutre que vous comprenez sans connaissances préalables.',
     veritas_robo_disclaimer: 'Pas de noms de modèles, pas de publicité de fournisseurs – juste une évaluation honnête que vous pouvez comprendre.',
     veritas_robo_closing: 'Veritas et Robo regardent chaque image sous deux angles – à la fin, vous obtenez une évaluation commune et équilibrée par scan ForRealScan-Hybrid.',
+
+    // Examples Page (dedicated page)
+    examples_page_title: 'Exemples d\'analyses',
+    examples_page_subtitle: 'Découvrez à quoi ressemblent les résultats ForRealScan – avec des explications sur leur interprétation.',
+    examples_page_disclaimer: 'Remarque : il s\'agit d\'exemples de démonstration statiques montrant à quoi ressemblent les résultats ForRealScan. Pour une analyse réelle, téléversez votre propre image.',
+    examples_page_back: 'Retour',
+    examples_page_cta_title: 'Envie de vérifier vos propres images ?',
+    examples_page_cta_text: 'Essayez ForRealScan gratuitement – jusqu\'à 5 analyses par jour, sans inscription.',
+    examples_page_cta_button: 'Analyser une image maintenant',
+    examples_page_context_title: 'Comment utiliser ces résultats',
+    examples_page_context_p1: 'Les exemples ci-dessus montrent que ForRealScan peut classifier avec une bonne précision aussi bien les photos réelles que les images générées par IA. Cependant, les résultats sont des guides, pas des preuves absolues.',
+    examples_page_context_p2: 'Les images avec des valeurs moyennes (30-70%) nécessitent une attention particulière. Il peut s\'agir de photos réelles légèrement retouchées, d\'images partiellement générées par IA ou simplement de clichés difficiles à classifier. Dans ces cas, nous recommandons de considérer d\'autres facteurs : D\'où vient l\'image ? Qui l\'a publiée ? Existe-t-il d\'autres versions ?',
+    examples_page_context_p3: 'En savoir plus sur notre méthodologie sur la',
+    examples_page_methodology_link: 'page Méthodologie',
+    examples_page_veritas_says: 'Veritas dit :',
+    examples_page_robo_says: 'Robo dit :',
+    examples_page_context_label: 'Contexte',
+
+    // Examples - Confidence labels
+    confidence_high: 'élevée',
+    confidence_medium: 'moyenne',
+    confidence_low: 'faible',
+    confidence_label: 'Confiance',
+
+    // Examples - Real photo specific comments
+    examples_real_veritas: 'Irrégularités naturelles dans la texture du pelage. Interaction plausible de la lumière et des ombres. Bokeh organique en arrière-plan.',
+    examples_real_robo: 'Aucun motif IA fort détecté. Le bruit de l\'image correspond à une prise de vue réelle. Aucun motif de répétition évident.',
+    examples_real_explanation: 'Cette image montre des caractéristiques typiques de la photographie de nature authentique : La texture du pelage présente des irrégularités naturelles, le bokeh de l\'arrière-plan est organique et le bruit de l\'image correspond à celui d\'un vrai appareil photo.',
+
+    // Examples - AI photo comments
+    examples_ai1_title: 'Écureuil Généré par IA',
+    examples_ai1_veritas: 'Le pelage semble trop uniforme et « peint ». Les yeux ont des reflets anormalement parfaits. La transition vers l\'arrière-plan est trop douce.',
+    examples_ai1_robo: 'Artefacts GAN typiques détectés dans les structures du pelage. Les motifs de pixels suggèrent Stable Diffusion ou un modèle similaire. Lissage notable dans les zones de détail.',
+    examples_ai1_explanation: 'Bien que réaliste au premier abord, cette image présente plusieurs caractéristiques typiques de l\'IA : Le pelage est texturé de manière trop uniforme, les reflets des yeux sont parfaitement symétriques et les petites imperfections des vraies photos sont absentes.',
+
+    examples_ai2_title: 'Papillon Généré par IA',
+    examples_ai2_veritas: 'Les motifs des ailes sont trop parfaitement symétriques. Les couleurs apparaissent sursaturées et anormalement brillantes. La structure corporelle est anatomiquement simplifiée.',
+    examples_ai2_robo: 'Motifs de répétition clairs dans la structure des ailes. Détails haute fréquence complètement absents. Signature typique de Midjourney/DALL-E dans les transitions de couleurs.',
+    examples_ai2_explanation: 'Cette image montre des signes typiques de génération par IA : saturation des couleurs exagérée, symétrie anormalement parfaite et détails anatomiques simplifiés.',
   },
 };
