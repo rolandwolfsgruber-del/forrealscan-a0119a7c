@@ -382,7 +382,7 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Spiel',
     nav_pricing: 'Preise',
     nav_faq: 'FAQ',
-    cta_app: 'App starten',
+    cta_app: 'Bild jetzt prüfen',
     language_label: 'Sprache',
     
     // Hero
@@ -732,7 +732,7 @@ export const translations: Record<Language, Translations> = {
     game_feature2_text: 'Entdecke typische Artefakte und Merkmale von KI-generierten Bildern.',
     game_feature3_title: 'Vergleiche dich',
     game_feature3_text: 'Sieh, wie gut du im Vergleich zu anderen Spielern abschneidest.',
-    game_start: 'Spiel starten',
+    game_start: 'Quiz starten',
     game_why_title: 'Warum dieses Spiel?',
     game_why_p1: 'KI-generierte Bilder werden immer realistischer und schwerer zu erkennen. Mit dem ForRealScan Mini-Game kannst du spielerisch lernen, worauf du achten musst, um echte von künstlichen Bildern zu unterscheiden.',
     game_why_p2: 'Das Spiel ergänzt die ForRealScan-Analyse: Während der Scan dir technische Hinweise gibt, hilft das Spiel dabei, dein eigenes Urteilsvermögen zu schärfen.',
@@ -755,7 +755,7 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Game',
     nav_pricing: 'Pricing',
     nav_faq: 'FAQ',
-    cta_app: 'Launch App',
+    cta_app: 'Check Image Now',
     language_label: 'Language',
     
     // Hero
@@ -1105,7 +1105,7 @@ export const translations: Record<Language, Translations> = {
     game_feature2_text: 'Discover typical artifacts and characteristics of AI-generated images.',
     game_feature3_title: 'Compare Yourself',
     game_feature3_text: 'See how well you perform compared to other players.',
-    game_start: 'Start Game',
+    game_start: 'Start Quiz',
     game_why_title: 'Why This Game?',
     game_why_p1: 'AI-generated images are becoming increasingly realistic and harder to detect. With the ForRealScan Mini-Game, you can learn playfully what to look for to distinguish real from artificial images.',
     game_why_p2: 'The game complements the ForRealScan analysis: While the scan gives you technical hints, the game helps sharpen your own judgment.',
@@ -1128,7 +1128,7 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Gioco',
     nav_pricing: 'Prezzi',
     nav_faq: 'FAQ',
-    cta_app: 'Avvia App',
+    cta_app: 'Controlla Immagine Ora',
     language_label: 'Lingua',
     
     // Hero
@@ -1478,7 +1478,7 @@ export const translations: Record<Language, Translations> = {
     game_feature2_text: 'Scopri artefatti e caratteristiche tipiche delle immagini generate dall\'IA.',
     game_feature3_title: 'Confrontati',
     game_feature3_text: 'Vedi come ti comporti rispetto agli altri giocatori.',
-    game_start: 'Inizia il Gioco',
+    game_start: 'Inizia il Quiz',
     game_why_title: 'Perché Questo Gioco?',
     game_why_p1: 'Le immagini generate dall\'IA stanno diventando sempre più realistiche e difficili da rilevare. Con il ForRealScan Mini-Game, puoi imparare giocando cosa cercare per distinguere le immagini reali da quelle artificiali.',
     game_why_p2: 'Il gioco complementa l\'analisi ForRealScan: Mentre la scansione ti dà suggerimenti tecnici, il gioco aiuta ad affinare il tuo giudizio personale.',
@@ -1501,7 +1501,7 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Juego',
     nav_pricing: 'Precios',
     nav_faq: 'FAQ',
-    cta_app: 'Iniciar App',
+    cta_app: 'Comprobar Imagen Ahora',
     language_label: 'Idioma',
     
     // Hero
@@ -1851,7 +1851,7 @@ export const translations: Record<Language, Translations> = {
     game_feature2_text: 'Descubre artefactos y características típicas de las imágenes generadas por IA.',
     game_feature3_title: 'Compárate',
     game_feature3_text: 'Mira qué tan bien te desempeñas en comparación con otros jugadores.',
-    game_start: 'Iniciar Juego',
+    game_start: 'Iniciar Quiz',
     game_why_title: '¿Por Qué Este Juego?',
     game_why_p1: 'Las imágenes generadas por IA son cada vez más realistas y difíciles de detectar. Con el ForRealScan Mini-Game, puedes aprender de forma lúdica qué buscar para distinguir imágenes reales de artificiales.',
     game_why_p2: 'El juego complementa el análisis de ForRealScan: Mientras el escaneo te da pistas técnicas, el juego ayuda a afinar tu propio juicio.',
@@ -1874,7 +1874,7 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Jeu',
     nav_pricing: 'Tarifs',
     nav_faq: 'FAQ',
-    cta_app: 'Lancer l\'App',
+    cta_app: 'Vérifier l\'Image Maintenant',
     language_label: 'Langue',
     
     // Hero
@@ -2224,7 +2224,7 @@ export const translations: Record<Language, Translations> = {
     game_feature2_text: 'Découvrez les artefacts et caractéristiques typiques des images générées par IA.',
     game_feature3_title: 'Comparez-vous',
     game_feature3_text: 'Voyez comment vous vous en sortez par rapport aux autres joueurs.',
-    game_start: 'Démarrer le Jeu',
+    game_start: 'Démarrer le Quiz',
     game_why_title: 'Pourquoi ce Jeu ?',
     game_why_p1: 'Les images générées par IA deviennent de plus en plus réalistes et difficiles à détecter. Avec le ForRealScan Mini-Game, vous pouvez apprendre de manière ludique ce qu\'il faut chercher pour distinguer les vraies images des images artificielles.',
     game_why_p2: 'Le jeu complète l\'analyse ForRealScan : Pendant que le scan vous donne des indices techniques, le jeu aide à affûter votre propre jugement.',

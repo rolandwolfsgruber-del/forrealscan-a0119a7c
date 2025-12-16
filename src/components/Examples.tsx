@@ -25,7 +25,7 @@ export const Examples = ({ language }: ExamplesProps) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto">
           {/* Real Photo Example */}
-          <Card className="border-2 border-veritas/40 hover:border-veritas hover:shadow-[0_0_25px_rgba(34,197,94,0.2)] transition-all duration-300 backdrop-blur-sm bg-card/80 rounded-2xl">
+          <Card className="border-2 border-veritas/40 hover:border-veritas hover:shadow-[0_0_25px_rgba(34,197,94,0.2)] hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 backdrop-blur-sm bg-card/80 rounded-2xl cursor-pointer">
             <CardHeader>
               <div className="flex items-center justify-between mb-4">
                 <CardTitle className="text-xl">{t.examples_real_label}</CardTitle>
@@ -59,7 +59,7 @@ export const Examples = ({ language }: ExamplesProps) => {
           </Card>
 
           {/* AI Photo Example */}
-          <Card className="border-2 border-robo/40 hover:border-robo hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] transition-all duration-300 backdrop-blur-sm bg-card/80 rounded-2xl">
+          <Card className="border-2 border-robo/40 hover:border-robo hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 backdrop-blur-sm bg-card/80 rounded-2xl cursor-pointer">
             <CardHeader>
               <div className="flex items-center justify-between mb-4">
                 <CardTitle className="text-xl">{t.examples_ai_label}</CardTitle>
