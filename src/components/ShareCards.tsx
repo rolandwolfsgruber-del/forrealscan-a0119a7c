@@ -30,31 +30,25 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
-              {t.sharecard_title}
-            </h2>
-            <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 text-sm font-medium">
-              <Share2 className="w-4 h-4" />
-              Share
-            </button>
-          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            {t.sharecard_title}
+          </h2>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
             {t.sharecard_subtitle}
           </p>
         </div>
 
-        {/* Share Card Images - Responsive Grid */}
+        {/* Share Card Images - Uniform Grid with Fixed Height */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto mb-12 sm:mb-16">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="group relative bg-transparent aspect-[9/16]"
+              className="group relative bg-transparent h-[500px] w-full flex items-center justify-center"
             >
               <img
                 src={card.image}
                 alt={card.alt}
-                className="w-full h-full object-contain rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]"
+                className="h-full object-contain rounded-2xl drop-shadow-2xl transition-transform duration-300 hover:scale-[1.02] hover:drop-shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
                 loading="lazy"
               />
             </div>
