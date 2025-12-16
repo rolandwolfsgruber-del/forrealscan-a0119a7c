@@ -1,4 +1,4 @@
-import { Share2 } from 'lucide-react';
+import { Share2, Gauge, ScanEye } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 
 interface ShareCardsProps {
@@ -49,28 +49,51 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-slate-900 aspect-[9/16]"
+              className="group relative bg-transparent aspect-[9/16]"
             >
               <img
                 src={card.image}
                 alt={card.alt}
-                className="absolute inset-0 w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]"
                 loading="lazy"
               />
             </div>
           ))}
         </div>
 
-        {/* Features */}
-        <div className="max-w-3xl mx-auto">
-          <ul className="space-y-4">
-            {features.map((feature, index) => (
-              <li key={index} className="flex items-start gap-3 text-lg text-muted-foreground">
-                <span className="text-primary text-2xl mt-0.5 flex-shrink-0">✓</span>
-                <span className="leading-relaxed">{feature}</span>
-              </li>
-            ))}
-          </ul>
+        {/* Features - Icon Grid */}
+        <div className="max-w-5xl mx-auto mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Feature 1: Score */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                <Gauge className="w-8 h-8 text-white" strokeWidth={2.5} />
+              </div>
+              <p className="text-lg font-semibold text-foreground leading-relaxed px-4">
+                {features[0]}
+              </p>
+            </div>
+
+            {/* Feature 2: Evidence */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg">
+                <ScanEye className="w-8 h-8 text-white" strokeWidth={2.5} />
+              </div>
+              <p className="text-lg font-semibold text-foreground leading-relaxed px-4">
+                {features[1]}
+              </p>
+            </div>
+
+            {/* Feature 3: Social */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg">
+                <Share2 className="w-8 h-8 text-white" strokeWidth={2.5} />
+              </div>
+              <p className="text-lg font-semibold text-foreground leading-relaxed px-4">
+                {features[2]}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
