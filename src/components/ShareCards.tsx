@@ -22,11 +22,7 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
     },
   ];
 
-  const features = [
-    t.sharecard_feature1,
-    t.sharecard_feature2,
-    t.sharecard_feature3,
-  ];
+  const features = [t.sharecard_feature1, t.sharecard_feature2, t.sharecard_feature3];
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-background to-muted/20">
@@ -51,7 +47,7 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
               <img
                 src={card.image}
                 alt={card.alt}
-                className="w-full h-full object-cover object-center"
+                className="absolute inset-0 w-full h-full object-cover object-top"
                 loading="lazy"
               />
             </div>
@@ -62,10 +58,7 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
         <div className="max-w-3xl mx-auto">
           <ul className="space-y-4">
             {features.map((feature, index) => (
-              <li
-                key={index}
-                className="flex items-start gap-3 text-lg text-muted-foreground"
-              >
+              <li key={index} className="flex items-start gap-3 text-lg text-muted-foreground">
                 <span className="text-primary text-2xl mt-0.5 flex-shrink-0">✓</span>
                 <span className="leading-relaxed">{feature}</span>
               </li>
