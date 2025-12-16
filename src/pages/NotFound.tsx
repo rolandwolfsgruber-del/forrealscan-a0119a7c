@@ -1,8 +1,25 @@
+import { useState, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Language, translations } from '@/lib/translations';
+
+const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const NotFound = () => {
   const location = useLocation();
+
+  const [language] = useState<Language>(() => {
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored && ['de', 'en', 'it', 'es', 'fr'].includes(stored)) {
+      return stored as Language;
+    }
+    const browserLang = navigator.language.split('-')[0];
+    if (['de', 'en', 'it', 'es', 'fr'].includes(browserLang)) {
+      return browserLang as Language;
+    }
+    return 'de';
+  });
+
+  const t = translations[language];
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
@@ -11,10 +28,10 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
+        <h1 className="mb-4 text-4xl font-bold">{t.notfound_title}</h1>
+        <p className="mb-4 text-xl text-muted-foreground">{t.notfound_message}</p>
         <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
+          {t.notfound_home}
         </a>
       </div>
     </div>

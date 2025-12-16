@@ -205,6 +205,164 @@ interface Translations {
   examples_ai2_veritas: string;
   examples_ai2_robo: string;
   examples_ai2_explanation: string;
+
+  // Common
+  common_back: string;
+
+  // Methodology Page
+  methodology_title: string;
+  methodology_subtitle: string;
+  methodology_cta_scan: string;
+  methodology_cta_examples: string;
+  methodology_what_title: string;
+  methodology_what_p1: string;
+  methodology_what_p2: string;
+  methodology_how_title: string;
+  methodology_how_intro: string;
+  methodology_veritas_title: string;
+  methodology_veritas_text: string;
+  methodology_robo_title: string;
+  methodology_robo_text: string;
+  methodology_how_outro: string;
+  methodology_results_title: string;
+  methodology_results_low_title: string;
+  methodology_results_low_text: string;
+  methodology_results_mid_title: string;
+  methodology_results_mid_text: string;
+  methodology_results_high_title: string;
+  methodology_results_high_text: string;
+  methodology_results_outro: string;
+  methodology_limits_title: string;
+  methodology_limits_intro: string;
+  methodology_limits_compressed: string;
+  methodology_limits_screenshots: string;
+  methodology_limits_hybrid: string;
+  methodology_limits_new_models: string;
+  methodology_limits_professional: string;
+  methodology_limits_outro: string;
+  methodology_responsible_title: string;
+  methodology_responsible_intro: string;
+  methodology_responsible_point1: string;
+  methodology_responsible_point2: string;
+  methodology_responsible_point3: string;
+  methodology_responsible_point4: string;
+  methodology_responsible_outro: string;
+  methodology_privacy_title: string;
+  methodology_privacy_intro: string;
+  methodology_privacy_point1: string;
+  methodology_privacy_point2: string;
+  methodology_privacy_point3: string;
+  methodology_privacy_point4: string;
+  methodology_privacy_link: string;
+  methodology_summary_title: string;
+  methodology_summary_text: string;
+
+  // Privacy Page
+  privacy_title: string;
+  privacy_last_updated: string;
+  privacy_intro: string;
+  privacy_controller_title: string;
+  privacy_controller_provider: string;
+  privacy_controller_location: string;
+  privacy_controller_email: string;
+  privacy_data_title: string;
+  privacy_data_images: string;
+  privacy_data_technical: string;
+  privacy_data_contact: string;
+  privacy_purpose_title: string;
+  privacy_purpose_analysis: string;
+  privacy_purpose_improvement: string;
+  privacy_purpose_communication: string;
+  privacy_purpose_legal: string;
+  privacy_cookies_title: string;
+  privacy_cookies_intro: string;
+  privacy_cookies_essential: string;
+  privacy_cookies_analytics: string;
+  privacy_cookies_advertising: string;
+  privacy_cookies_manage: string;
+  privacy_sharing_title: string;
+  privacy_sharing_intro: string;
+  privacy_sharing_ai: string;
+  privacy_sharing_analytics: string;
+  privacy_sharing_advertising: string;
+  privacy_sharing_legal: string;
+  privacy_rights_title: string;
+  privacy_rights_intro: string;
+  privacy_rights_access: string;
+  privacy_rights_rectification: string;
+  privacy_rights_erasure: string;
+  privacy_rights_portability: string;
+  privacy_rights_object: string;
+  privacy_rights_withdraw: string;
+  privacy_rights_exercise: string;
+  privacy_retention_title: string;
+  privacy_retention_text: string;
+  privacy_security_title: string;
+  privacy_security_text: string;
+  privacy_international_title: string;
+  privacy_international_text: string;
+  privacy_children_title: string;
+  privacy_children_text: string;
+  privacy_changes_title: string;
+  privacy_changes_text: string;
+  privacy_contact_title: string;
+  privacy_contact_text: string;
+
+  // Imprint Page
+  imprint_title: string;
+  imprint_info_title: string;
+  imprint_provider: string;
+  imprint_location: string;
+  imprint_email: string;
+  imprint_responsible_title: string;
+  imprint_dispute_title: string;
+  imprint_dispute_text: string;
+  imprint_disclaimer_title: string;
+  imprint_liability_content_title: string;
+  imprint_liability_content_text: string;
+  imprint_liability_links_title: string;
+  imprint_liability_links_text: string;
+  imprint_copyright_title: string;
+  imprint_copyright_text: string;
+  imprint_contact_title: string;
+  imprint_contact_text: string;
+
+  // Contact Page
+  contact_title: string;
+  contact_subtitle: string;
+  contact_name: string;
+  contact_name_placeholder: string;
+  contact_email: string;
+  contact_email_placeholder: string;
+  contact_message: string;
+  contact_message_placeholder: string;
+  contact_send: string;
+  contact_sending: string;
+  contact_success_title: string;
+  contact_success_message: string;
+  contact_direct: string;
+
+  // Game Page
+  game_page_title: string;
+  game_page_subtitle: string;
+  game_feature1_title: string;
+  game_feature1_text: string;
+  game_feature2_title: string;
+  game_feature2_text: string;
+  game_feature3_title: string;
+  game_feature3_text: string;
+  game_start: string;
+  game_why_title: string;
+  game_why_p1: string;
+  game_why_p2: string;
+
+  // NotFound Page
+  notfound_title: string;
+  notfound_message: string;
+  notfound_home: string;
+
+  // ComingSoon Page
+  comingsoon_redirect: string;
 }
 
 export const translations: Record<Language, Translations> = {
@@ -414,6 +572,164 @@ export const translations: Record<Language, Translations> = {
     examples_ai2_veritas: 'Die Flügelmuster sind zu perfekt symmetrisch. Die Farben wirken übersättigt und unnatürlich leuchtend. Die Körperstruktur ist anatomisch vereinfacht.',
     examples_ai2_robo: 'Deutliche Wiederholungsmuster in der Flügelstruktur. Hochfrequenzdetails fehlen komplett. Typische Midjourney/DALL-E Signatur in den Farbübergängen.',
     examples_ai2_explanation: 'Dieses Bild zeigt die typischen Kennzeichen einer KI-Generierung: übertriebene Farbsättigung, unnatürlich perfekte Symmetrie, und vereinfachte anatomische Details.',
+
+    // Common
+    common_back: 'Zurück',
+
+    // Methodology Page
+    methodology_title: 'Methodik & Technologie',
+    methodology_subtitle: 'Wie ForRealScan KI-generierte Bilder erkennt – transparent erklärt.',
+    methodology_cta_scan: 'Jetzt Scan starten',
+    methodology_cta_examples: 'Beispiele ansehen',
+    methodology_what_title: 'Was ForRealScan macht',
+    methodology_what_p1: 'ForRealScan ist ein Analyse-Tool, das dir hilft, den möglichen KI-Anteil in Bildern einzuschätzen. Der Service kombiniert verschiedene Analysemethoden, um Hinweise darauf zu finden, ob ein Bild mit KI-Technologie generiert oder stark bearbeitet wurde.',
+    methodology_what_p2: 'Wichtig zu verstehen: ForRealScan liefert Wahrscheinlichkeiten und fundierte Einschätzungen – keine absoluten Urteile. Die Technologie zur Bilderzeugung entwickelt sich ständig weiter, und kein Erkennungssystem kann eine hundertprozentige Genauigkeit garantieren.',
+    methodology_how_title: 'So funktioniert der Scan',
+    methodology_how_intro: 'Der ForRealScan-Hybrid kombiniert zwei Analyseperspektiven, symbolisiert durch unsere Maskottchen Veritas und Robo:',
+    methodology_veritas_title: 'Veritas – Der Natur-Blick',
+    methodology_veritas_text: 'Veritas analysiert, ob ein Bild die typischen Eigenschaften einer echten Fotografie aufweist: natürliche Lichtverhältnisse, realistische Schatten, organische Texturen bei Haut und Haaren, sowie die kleinen Unvollkommenheiten, die echte Fotos auszeichnen.',
+    methodology_robo_title: 'Robo – Der Logik-Blick',
+    methodology_robo_text: 'Robo sucht nach technischen Mustern, die für KI-generierte Bilder typisch sind: auffällige Pixelstrukturen, Kompressionsartefakte, übertriebene Perfektion, wiederkehrende Muster und Unstimmigkeiten in Details wie Händen, Zähnen oder Hintergründen.',
+    methodology_how_outro: 'Beide Perspektiven fließen in eine gemeinsame Bewertung ein. Das Ergebnis wird als Prozentangabe dargestellt, ergänzt durch eine verständliche Erklärung, welche Faktoren zur Einschätzung geführt haben.',
+    methodology_results_title: 'Was die Ergebnisse bedeuten',
+    methodology_results_low_title: 'Niedrige KI-Wahrscheinlichkeit (0–30%)',
+    methodology_results_low_text: 'Das Bild zeigt überwiegend Merkmale einer authentischen Fotografie. Natürliche Unregelmäßigkeiten und realistische Details sprechen für ein echtes Foto.',
+    methodology_results_mid_title: 'Mittlere Unsicherheit (30–70%)',
+    methodology_results_mid_text: 'Das Bild enthält sowohl authentische als auch verdächtige Merkmale. Möglich sind leichte Bearbeitung, Filter oder teilweise KI-Unterstützung.',
+    methodology_results_high_title: 'Hohe KI-Wahrscheinlichkeit (70–100%)',
+    methodology_results_high_text: 'Das Bild zeigt deutliche Anzeichen von KI-Generierung oder starker Manipulation. Typische KI-Muster und technische Artefakte wurden erkannt.',
+    methodology_results_outro: 'Jedes Ergebnis wird mit einer kurzen Erklärung versehen, die beschreibt, welche konkreten Merkmale zur Einschätzung geführt haben. So kannst du die Bewertung nachvollziehen und dir ein eigenes Urteil bilden.',
+    methodology_limits_title: 'Grenzen & wann es schwierig wird',
+    methodology_limits_intro: 'Ehrlichkeit ist uns wichtig. ForRealScan hat – wie jedes Erkennungssystem – Grenzen:',
+    methodology_limits_compressed: 'Stark komprimierte Bilder: Bei Bildern, die mehrfach gespeichert oder über Messenger geteilt wurden, gehen wichtige Details verloren.',
+    methodology_limits_screenshots: 'Screenshots: Text und Interface-Elemente erschweren die reine Bildanalyse.',
+    methodology_limits_hybrid: 'Hybride Bilder: Echte Fotos mit KI-Bearbeitung (z.B. Gesichtsfilter, Hintergrundänderungen) sind besonders schwer einzuordnen.',
+    methodology_limits_new_models: 'Neueste KI-Modelle: Die Technologie entwickelt sich rasant. Sehr neue Generierungsmodelle können schwerer erkennbar sein.',
+    methodology_limits_professional: 'Professionelle Fotos: Studio-Aufnahmen mit perfekter Ausleuchtung können fälschlicherweise als "zu perfekt" eingestuft werden.',
+    methodology_limits_outro: 'Wenn ein Ergebnis unsicher ist, zeigt ForRealScan dies deutlich an. In solchen Fällen solltest du zusätzliche Recherche betreiben, bevor du Schlüsse ziehst.',
+    methodology_responsible_title: 'Verantwortungsvoller Umgang',
+    methodology_responsible_intro: 'ForRealScan ist ein Hilfsmittel zur Orientierung – kein Beweisinstrument. Die Ergebnisse sollten:',
+    methodology_responsible_point1: 'Als Ausgangspunkt für weitere Recherche dienen, nicht als abschließendes Urteil',
+    methodology_responsible_point2: 'Nicht allein als Grundlage für Anschuldigungen oder rechtliche Schritte verwendet werden',
+    methodology_responsible_point3: 'Im Kontext betrachtet werden: Quelle, Absender und Situation spielen eine Rolle',
+    methodology_responsible_point4: 'Mit gesundem Menschenverstand interpretiert werden',
+    methodology_responsible_outro: 'Unser Ziel ist es, dir zu helfen, in einer Welt voller manipulierter Bilder bewusstere Entscheidungen zu treffen – nicht, Misstrauen zu säen oder voreilige Schlüsse zu fördern.',
+    methodology_privacy_title: 'Datenschutz bei der Analyse',
+    methodology_privacy_intro: 'Deine Privatsphäre hat Priorität:',
+    methodology_privacy_point1: 'Hochgeladene Bilder werden serverseitig nur zur Analyse verarbeitet und nicht dauerhaft gespeichert',
+    methodology_privacy_point2: 'Ergebnisse und Karten können – je nach Nutzung – lokal auf deinem Gerät in der Sammlung gespeichert werden',
+    methodology_privacy_point3: 'Die Übertragung erfolgt verschlüsselt (HTTPS/TLS)',
+    methodology_privacy_point4: 'Wir verkaufen keine Nutzerdaten',
+    methodology_privacy_link: 'Weitere Details findest du in unserer Datenschutzerklärung.',
+    methodology_summary_title: 'Zusammenfassung',
+    methodology_summary_text: 'ForRealScan analysiert Bilder auf KI-typische Muster und liefert Wahrscheinlichkeiten statt absoluter Urteile. Die Ergebnisse dienen als Orientierung und sollten im Kontext betrachtet werden. Kein Erkennungssystem ist perfekt – ForRealScan zeigt Unsicherheiten transparent an.',
+
+    // Privacy Page
+    privacy_title: 'Datenschutzerklärung',
+    privacy_last_updated: 'Stand: Dezember 2024',
+    privacy_intro: 'ForRealScan verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten in Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) und anderen anwendbaren Datenschutzgesetzen erheben, verwenden und schützen.',
+    privacy_controller_title: '1. Verantwortlicher',
+    privacy_controller_provider: 'Diensteanbieter:',
+    privacy_controller_location: 'Standort:',
+    privacy_controller_email: 'E-Mail:',
+    privacy_data_title: '2. Daten, die wir erheben',
+    privacy_data_images: 'Hochgeladene Bilder: Wenn Sie unseren KI-Analysedienst nutzen, laden Sie Bilder zur Verarbeitung hoch. Diese Bilder werden in Echtzeit verarbeitet und nicht dauerhaft auf unseren Servern gespeichert, es sei denn, Sie speichern Ergebnisse explizit.',
+    privacy_data_technical: 'Technische Daten: Wir erfassen automatisch technische Informationen wie IP-Adresse, Browsertyp, Geräteinformationen und Zugriffszeiten für Sicherheits- und Analysezwecke.',
+    privacy_data_contact: 'Kontaktinformationen: Wenn Sie uns per E-Mail oder Kontaktformular kontaktieren, erfassen wir Ihren Namen, Ihre E-Mail-Adresse und den Inhalt Ihrer Nachricht.',
+    privacy_purpose_title: '3. Zweck der Datenverarbeitung',
+    privacy_purpose_analysis: 'KI-Bildanalyse: Um unseren Kerndienst zur Erkennung von KI-generierten Inhalten in Bildern bereitzustellen.',
+    privacy_purpose_improvement: 'Serviceverbesserung: Um Nutzungsmuster zu analysieren und unsere Servicequalität zu verbessern.',
+    privacy_purpose_communication: 'Kommunikation: Um auf Ihre Anfragen zu antworten und Kundensupport zu bieten.',
+    privacy_purpose_legal: 'Rechtliche Compliance: Um geltende Gesetze und Vorschriften einzuhalten.',
+    privacy_cookies_title: '4. Cookies und Tracking',
+    privacy_cookies_intro: 'Wir verwenden Cookies und ähnliche Tracking-Technologien, um Ihre Erfahrung zu verbessern:',
+    privacy_cookies_essential: 'Essentielle Cookies: Erforderlich für die ordnungsgemäße Funktion der Website.',
+    privacy_cookies_analytics: 'Analyse-Cookies: Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren (z.B. Google Analytics).',
+    privacy_cookies_advertising: 'Werbe-Cookies: Werden verwendet, um relevante Werbung anzuzeigen (z.B. Google AdSense).',
+    privacy_cookies_manage: 'Sie können Cookie-Einstellungen in Ihrem Browser verwalten.',
+    privacy_sharing_title: '5. Datenweitergabe und Dritte',
+    privacy_sharing_intro: 'Wir verkaufen Ihre personenbezogenen Daten nicht. Wir können Daten teilen mit:',
+    privacy_sharing_ai: 'KI-Dienstleister: Drittanbieter-KI-Verarbeitungsdienste, die hochgeladene Bilder analysieren.',
+    privacy_sharing_analytics: 'Analyseanbieter: Dienste wie Google Analytics, um die Website-Nutzung zu verstehen.',
+    privacy_sharing_advertising: 'Werbenetzwerke: Dienste wie Google AdSense zur Anzeige von Werbung.',
+    privacy_sharing_legal: 'Rechtliche Verpflichtungen: Wenn dies gesetzlich vorgeschrieben ist oder zum Schutz unserer Rechte.',
+    privacy_rights_title: '6. Ihre Rechte (DSGVO)',
+    privacy_rights_intro: 'Nach der DSGVO haben Sie folgende Rechte:',
+    privacy_rights_access: 'Auskunftsrecht: Eine Kopie Ihrer personenbezogenen Daten anfordern.',
+    privacy_rights_rectification: 'Recht auf Berichtigung: Ungenaue oder unvollständige Daten korrigieren.',
+    privacy_rights_erasure: 'Recht auf Löschung: Löschung Ihrer personenbezogenen Daten verlangen ("Recht auf Vergessenwerden").',
+    privacy_rights_portability: 'Recht auf Datenübertragbarkeit: Ihre Daten in einem strukturierten, maschinenlesbaren Format erhalten.',
+    privacy_rights_object: 'Widerspruchsrecht: Der Verarbeitung Ihrer Daten für Direktwerbung oder andere Zwecke widersprechen.',
+    privacy_rights_withdraw: 'Recht auf Widerruf der Einwilligung: Die Einwilligung jederzeit widerrufen, wenn die Verarbeitung auf Einwilligung basiert.',
+    privacy_rights_exercise: 'Um diese Rechte auszuüben, kontaktieren Sie uns unter:',
+    privacy_retention_title: '7. Datenspeicherung',
+    privacy_retention_text: 'Wir bewahren Ihre personenbezogenen Daten nur so lange auf, wie es für die in dieser Richtlinie genannten Zwecke erforderlich ist oder gesetzlich vorgeschrieben. Hochgeladene Bilder werden in Echtzeit verarbeitet und sofort nach der Analyse gelöscht, es sei denn, Sie entscheiden sich, Ergebnisse zu speichern.',
+    privacy_security_title: '8. Datensicherheit',
+    privacy_security_text: 'Wir implementieren angemessene technische und organisatorische Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Veränderung zu schützen. Dies umfasst Verschlüsselung, sichere Server und Zugriffskontrollen.',
+    privacy_international_title: '9. Internationale Datenübertragungen',
+    privacy_international_text: 'Ihre Daten können in Länder außerhalb des Europäischen Wirtschaftsraums (EWR) übertragen und dort verarbeitet werden. Wir stellen sicher, dass angemessene Schutzmaßnahmen vorhanden sind, wie z.B. von der Europäischen Kommission genehmigte Standardvertragsklauseln.',
+    privacy_children_title: '10. Datenschutz von Kindern',
+    privacy_children_text: 'Unser Service ist nicht für Kinder unter 16 Jahren bestimmt. Wir erfassen wissentlich keine personenbezogenen Daten von Kindern. Wenn Sie glauben, dass wir Daten von einem Kind erhoben haben, kontaktieren Sie uns bitte umgehend.',
+    privacy_changes_title: '11. Änderungen dieser Richtlinie',
+    privacy_changes_text: 'Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über wesentliche Änderungen informieren, indem wir die neue Richtlinie auf dieser Seite mit einem aktualisierten "Stand"-Datum veröffentlichen.',
+    privacy_contact_title: '12. Kontakt',
+    privacy_contact_text: 'Bei Fragen oder Bedenken zu dieser Datenschutzerklärung oder unseren Datenpraktiken kontaktieren Sie uns bitte unter:',
+
+    // Imprint Page
+    imprint_title: 'Impressum',
+    imprint_info_title: 'Angaben gemäß § 5 TMG',
+    imprint_provider: 'Diensteanbieter:',
+    imprint_location: 'Standort:',
+    imprint_email: 'E-Mail:',
+    imprint_responsible_title: 'Verantwortlich für den Inhalt',
+    imprint_dispute_title: 'EU-Streitschlichtung',
+    imprint_dispute_text: 'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:',
+    imprint_disclaimer_title: 'Haftungsausschluss',
+    imprint_liability_content_title: 'Haftung für Inhalte:',
+    imprint_liability_content_text: 'Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.',
+    imprint_liability_links_title: 'Haftung für Links:',
+    imprint_liability_links_text: 'Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.',
+    imprint_copyright_title: 'Urheberrecht:',
+    imprint_copyright_text: 'Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem italienischen und internationalen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.',
+    imprint_contact_title: 'Kontakt',
+    imprint_contact_text: 'Bei Fragen oder Anliegen erreichen Sie uns unter:',
+
+    // Contact Page
+    contact_title: 'Kontakt',
+    contact_subtitle: 'Haben Sie Fragen? Wir freuen uns von Ihnen zu hören. Senden Sie uns eine Nachricht und wir antworten so schnell wie möglich.',
+    contact_name: 'Name',
+    contact_name_placeholder: 'Ihr Name',
+    contact_email: 'E-Mail',
+    contact_email_placeholder: 'ihre.email@beispiel.de',
+    contact_message: 'Nachricht',
+    contact_message_placeholder: 'Ihre Nachricht...',
+    contact_send: 'Nachricht senden',
+    contact_sending: 'Wird gesendet...',
+    contact_success_title: 'Nachricht gesendet!',
+    contact_success_message: 'Vielen Dank für Ihre Nachricht. Wir melden uns bald bei Ihnen unter',
+    contact_direct: 'Sie können uns auch direkt erreichen unter:',
+
+    // Game Page
+    game_page_title: 'ForRealScan Mini-Game',
+    game_page_subtitle: 'Teste deine Fähigkeit, echte Fotos von KI-generierten Bildern zu unterscheiden. Trainiere dein Auge und lerne, worauf du achten musst.',
+    game_feature1_title: 'Schärfe dein Auge',
+    game_feature1_text: 'Lerne, subtile Unterschiede zwischen echten und KI-Bildern zu erkennen.',
+    game_feature2_title: 'Verstehe KI-Muster',
+    game_feature2_text: 'Entdecke typische Artefakte und Merkmale von KI-generierten Bildern.',
+    game_feature3_title: 'Vergleiche dich',
+    game_feature3_text: 'Sieh, wie gut du im Vergleich zu anderen Spielern abschneidest.',
+    game_start: 'Spiel starten',
+    game_why_title: 'Warum dieses Spiel?',
+    game_why_p1: 'KI-generierte Bilder werden immer realistischer und schwerer zu erkennen. Mit dem ForRealScan Mini-Game kannst du spielerisch lernen, worauf du achten musst, um echte von künstlichen Bildern zu unterscheiden.',
+    game_why_p2: 'Das Spiel ergänzt die ForRealScan-Analyse: Während der Scan dir technische Hinweise gibt, hilft das Spiel dabei, dein eigenes Urteilsvermögen zu schärfen.',
+
+    // NotFound Page
+    notfound_title: '404',
+    notfound_message: 'Seite nicht gefunden',
+    notfound_home: 'Zurück zur Startseite',
+
+    // ComingSoon Page
+    comingsoon_redirect: 'Weiterleitung zu game.forrealscan.com...',
   },
 
   en: {
@@ -622,6 +938,164 @@ export const translations: Record<Language, Translations> = {
     examples_ai2_veritas: 'The wing patterns are too perfectly symmetrical. The colors appear oversaturated and unnaturally bright. The body structure is anatomically simplified.',
     examples_ai2_robo: 'Clear repetition patterns in wing structure. High-frequency details completely missing. Typical Midjourney/DALL-E signature in color transitions.',
     examples_ai2_explanation: 'This image shows typical signs of AI generation: exaggerated color saturation, unnaturally perfect symmetry, and simplified anatomical details.',
+
+    // Common
+    common_back: 'Back',
+
+    // Methodology Page
+    methodology_title: 'Methodology & Technology',
+    methodology_subtitle: 'How ForRealScan detects AI-generated images – transparently explained.',
+    methodology_cta_scan: 'Start Scan Now',
+    methodology_cta_examples: 'View Examples',
+    methodology_what_title: 'What ForRealScan Does',
+    methodology_what_p1: 'ForRealScan is an analysis tool that helps you assess the possible AI content in images. The service combines various analysis methods to find indicators of whether an image was generated with AI technology or heavily edited.',
+    methodology_what_p2: 'Important to understand: ForRealScan provides probabilities and well-founded assessments – not absolute judgments. Image generation technology is constantly evolving, and no detection system can guarantee one hundred percent accuracy.',
+    methodology_how_title: 'How the Scan Works',
+    methodology_how_intro: 'The ForRealScan-Hybrid combines two analysis perspectives, symbolized by our mascots Veritas and Robo:',
+    methodology_veritas_title: 'Veritas – The Nature View',
+    methodology_veritas_text: 'Veritas analyzes whether an image has the typical characteristics of a real photograph: natural lighting, realistic shadows, organic textures in skin and hair, and the small imperfections that distinguish real photos.',
+    methodology_robo_title: 'Robo – The Logic View',
+    methodology_robo_text: 'Robo looks for technical patterns typical of AI-generated images: conspicuous pixel structures, compression artifacts, exaggerated perfection, recurring patterns, and inconsistencies in details like hands, teeth, or backgrounds.',
+    methodology_how_outro: 'Both perspectives flow into a common assessment. The result is displayed as a percentage, supplemented by an understandable explanation of which factors led to the assessment.',
+    methodology_results_title: 'What the Results Mean',
+    methodology_results_low_title: 'Low AI Probability (0–30%)',
+    methodology_results_low_text: 'The image predominantly shows characteristics of authentic photography. Natural irregularities and realistic details suggest a real photo.',
+    methodology_results_mid_title: 'Medium Uncertainty (30–70%)',
+    methodology_results_mid_text: 'The image contains both authentic and suspicious features. Light editing, filters, or partial AI assistance are possible.',
+    methodology_results_high_title: 'High AI Probability (70–100%)',
+    methodology_results_high_text: 'The image shows clear signs of AI generation or heavy manipulation. Typical AI patterns and technical artifacts were detected.',
+    methodology_results_outro: 'Each result is accompanied by a brief explanation describing which specific features led to the assessment. This allows you to understand the evaluation and form your own judgment.',
+    methodology_limits_title: 'Limitations & When It Gets Difficult',
+    methodology_limits_intro: 'Honesty is important to us. ForRealScan has – like any detection system – limitations:',
+    methodology_limits_compressed: 'Heavily compressed images: Images that have been saved multiple times or shared via messenger lose important details.',
+    methodology_limits_screenshots: 'Screenshots: Text and interface elements complicate pure image analysis.',
+    methodology_limits_hybrid: 'Hybrid images: Real photos with AI editing (e.g., face filters, background changes) are particularly difficult to classify.',
+    methodology_limits_new_models: 'Latest AI models: Technology is evolving rapidly. Very new generation models may be harder to detect.',
+    methodology_limits_professional: 'Professional photos: Studio shots with perfect lighting can be incorrectly classified as "too perfect".',
+    methodology_limits_outro: 'When a result is uncertain, ForRealScan clearly indicates this. In such cases, you should do additional research before drawing conclusions.',
+    methodology_responsible_title: 'Responsible Use',
+    methodology_responsible_intro: 'ForRealScan is a guidance tool – not evidence. The results should:',
+    methodology_responsible_point1: 'Serve as a starting point for further research, not as a final verdict',
+    methodology_responsible_point2: 'Not be used alone as the basis for accusations or legal action',
+    methodology_responsible_point3: 'Be considered in context: source, sender, and situation play a role',
+    methodology_responsible_point4: 'Be interpreted with common sense',
+    methodology_responsible_outro: 'Our goal is to help you make more conscious decisions in a world full of manipulated images – not to sow distrust or encourage hasty conclusions.',
+    methodology_privacy_title: 'Privacy During Analysis',
+    methodology_privacy_intro: 'Your privacy is a priority:',
+    methodology_privacy_point1: 'Uploaded images are only processed server-side for analysis and are not permanently stored',
+    methodology_privacy_point2: 'Results and cards can – depending on usage – be stored locally on your device in the collection',
+    methodology_privacy_point3: 'Transmission is encrypted (HTTPS/TLS)',
+    methodology_privacy_point4: 'We do not sell user data',
+    methodology_privacy_link: 'More details can be found in our Privacy Policy.',
+    methodology_summary_title: 'Summary',
+    methodology_summary_text: 'ForRealScan analyzes images for AI-typical patterns and provides probabilities rather than absolute judgments. Results serve as guidance and should be viewed in context. No detection system is perfect – ForRealScan transparently indicates uncertainties.',
+
+    // Privacy Page
+    privacy_title: 'Privacy Policy',
+    privacy_last_updated: 'Last Updated: December 2024',
+    privacy_intro: 'ForRealScan is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.',
+    privacy_controller_title: '1. Data Controller',
+    privacy_controller_provider: 'Service Provider:',
+    privacy_controller_location: 'Location:',
+    privacy_controller_email: 'Email:',
+    privacy_data_title: '2. Data We Collect',
+    privacy_data_images: 'Images You Upload: When you use our AI analysis service, you upload images for processing. These images are processed in real-time and are not permanently stored on our servers unless you explicitly save results.',
+    privacy_data_technical: 'Technical Data: We automatically collect technical information such as IP address, browser type, device information, and access times for security and analytics purposes.',
+    privacy_data_contact: 'Contact Information: If you contact us via email or contact form, we collect your name, email address, and message content.',
+    privacy_purpose_title: '3. Purpose of Data Processing',
+    privacy_purpose_analysis: 'AI Image Analysis: To provide our core service of detecting AI-generated content in images.',
+    privacy_purpose_improvement: 'Service Improvement: To analyze usage patterns and improve our service quality.',
+    privacy_purpose_communication: 'Communication: To respond to your inquiries and provide customer support.',
+    privacy_purpose_legal: 'Legal Compliance: To comply with applicable laws and regulations.',
+    privacy_cookies_title: '4. Cookies and Tracking',
+    privacy_cookies_intro: 'We use cookies and similar tracking technologies to enhance your experience:',
+    privacy_cookies_essential: 'Essential Cookies: Required for the website to function properly.',
+    privacy_cookies_analytics: 'Analytics Cookies: Help us understand how visitors interact with our website (e.g., Google Analytics).',
+    privacy_cookies_advertising: 'Advertising Cookies: Used to display relevant advertisements (e.g., Google AdSense).',
+    privacy_cookies_manage: 'You can manage cookie preferences in your browser settings.',
+    privacy_sharing_title: '5. Data Sharing and Third Parties',
+    privacy_sharing_intro: 'We do not sell your personal data. We may share data with:',
+    privacy_sharing_ai: 'AI Service Providers: Third-party AI processing services that analyze uploaded images.',
+    privacy_sharing_analytics: 'Analytics Providers: Services like Google Analytics to understand website usage.',
+    privacy_sharing_advertising: 'Advertising Networks: Services like Google AdSense for displaying ads.',
+    privacy_sharing_legal: 'Legal Obligations: When required by law or to protect our rights.',
+    privacy_rights_title: '6. Your Rights (GDPR)',
+    privacy_rights_intro: 'Under GDPR, you have the following rights:',
+    privacy_rights_access: 'Right of Access: Request a copy of your personal data.',
+    privacy_rights_rectification: 'Right to Rectification: Correct inaccurate or incomplete data.',
+    privacy_rights_erasure: 'Right to Erasure: Request deletion of your personal data ("right to be forgotten").',
+    privacy_rights_portability: 'Right to Data Portability: Receive your data in a structured, machine-readable format.',
+    privacy_rights_object: 'Right to Object: Object to processing of your data for direct marketing or other purposes.',
+    privacy_rights_withdraw: 'Right to Withdraw Consent: Withdraw consent at any time where processing is based on consent.',
+    privacy_rights_exercise: 'To exercise these rights, contact us at:',
+    privacy_retention_title: '7. Data Retention',
+    privacy_retention_text: 'We retain your personal data only as long as necessary for the purposes outlined in this policy or as required by law. Uploaded images are processed in real-time and deleted immediately after analysis unless you choose to save results.',
+    privacy_security_title: '8. Data Security',
+    privacy_security_text: 'We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, loss, or alteration. This includes encryption, secure servers, and access controls.',
+    privacy_international_title: '9. International Data Transfers',
+    privacy_international_text: 'Your data may be transferred to and processed in countries outside the European Economic Area (EEA). We ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission.',
+    privacy_children_title: '10. Children\'s Privacy',
+    privacy_children_text: 'Our service is not intended for children under 16 years of age. We do not knowingly collect personal data from children. If you believe we have collected data from a child, please contact us immediately.',
+    privacy_changes_title: '11. Changes to This Policy',
+    privacy_changes_text: 'We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated "Last Updated" date.',
+    privacy_contact_title: '12. Contact Us',
+    privacy_contact_text: 'For any questions or concerns about this Privacy Policy or our data practices, please contact us at:',
+
+    // Imprint Page
+    imprint_title: 'Legal Notice',
+    imprint_info_title: 'Information according to § 5 TMG',
+    imprint_provider: 'Service Provider:',
+    imprint_location: 'Location:',
+    imprint_email: 'Email:',
+    imprint_responsible_title: 'Responsible for Content',
+    imprint_dispute_title: 'EU Dispute Resolution',
+    imprint_dispute_text: 'The European Commission provides a platform for online dispute resolution (OS):',
+    imprint_disclaimer_title: 'Disclaimer',
+    imprint_liability_content_title: 'Liability for Content:',
+    imprint_liability_content_text: 'The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents\' accuracy, completeness, or topicality. According to statutory provisions, we are responsible for our own content on these pages. However, we are not obligated to monitor transmitted or stored third-party information or investigate circumstances pointing to illegal activity.',
+    imprint_liability_links_title: 'Liability for Links:',
+    imprint_liability_links_text: 'Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages.',
+    imprint_copyright_title: 'Copyright:',
+    imprint_copyright_text: 'The content and works created by the site operators on these pages are subject to Italian and international copyright law. Duplication, processing, distribution, or any form of commercialization beyond the scope of copyright law requires the prior written consent of the respective author or creator.',
+    imprint_contact_title: 'Contact',
+    imprint_contact_text: 'For questions or concerns, please contact us at:',
+
+    // Contact Page
+    contact_title: 'Contact Us',
+    contact_subtitle: 'Have questions? We\'d love to hear from you. Send us a message and we\'ll respond as soon as possible.',
+    contact_name: 'Name',
+    contact_name_placeholder: 'Your name',
+    contact_email: 'Email',
+    contact_email_placeholder: 'your.email@example.com',
+    contact_message: 'Message',
+    contact_message_placeholder: 'Your message...',
+    contact_send: 'Send Message',
+    contact_sending: 'Sending...',
+    contact_success_title: 'Message Sent!',
+    contact_success_message: 'Thank you for contacting us. We\'ll get back to you soon at',
+    contact_direct: 'You can also reach us directly at:',
+
+    // Game Page
+    game_page_title: 'ForRealScan Mini-Game',
+    game_page_subtitle: 'Test your ability to distinguish real photos from AI-generated images. Train your eye and learn what to look for.',
+    game_feature1_title: 'Sharpen Your Eye',
+    game_feature1_text: 'Learn to recognize subtle differences between real and AI images.',
+    game_feature2_title: 'Understand AI Patterns',
+    game_feature2_text: 'Discover typical artifacts and characteristics of AI-generated images.',
+    game_feature3_title: 'Compare Yourself',
+    game_feature3_text: 'See how well you perform compared to other players.',
+    game_start: 'Start Game',
+    game_why_title: 'Why This Game?',
+    game_why_p1: 'AI-generated images are becoming increasingly realistic and harder to detect. With the ForRealScan Mini-Game, you can learn playfully what to look for to distinguish real from artificial images.',
+    game_why_p2: 'The game complements the ForRealScan analysis: While the scan gives you technical hints, the game helps sharpen your own judgment.',
+
+    // NotFound Page
+    notfound_title: '404',
+    notfound_message: 'Page not found',
+    notfound_home: 'Return to Home',
+
+    // ComingSoon Page
+    comingsoon_redirect: 'Redirecting to game.forrealscan.com...',
   },
 
   it: {
@@ -830,6 +1304,164 @@ export const translations: Record<Language, Translations> = {
     examples_ai2_veritas: 'I pattern delle ali sono troppo perfettamente simmetrici. I colori appaiono sovrasaturi e innaturalmente brillanti. La struttura corporea è anatomicamente semplificata.',
     examples_ai2_robo: 'Chiari pattern di ripetizione nella struttura delle ali. Dettagli ad alta frequenza completamente assenti. Tipica firma Midjourney/DALL-E nelle transizioni di colore.',
     examples_ai2_explanation: 'Questa immagine mostra segni tipici della generazione IA: saturazione del colore esagerata, simmetria innaturalmente perfetta e dettagli anatomici semplificati.',
+
+    // Common
+    common_back: 'Indietro',
+
+    // Methodology Page
+    methodology_title: 'Metodologia e Tecnologia',
+    methodology_subtitle: 'Come ForRealScan rileva le immagini generate dall\'IA – spiegato in modo trasparente.',
+    methodology_cta_scan: 'Avvia Scansione',
+    methodology_cta_examples: 'Vedi Esempi',
+    methodology_what_title: 'Cosa fa ForRealScan',
+    methodology_what_p1: 'ForRealScan è uno strumento di analisi che ti aiuta a valutare il possibile contenuto IA nelle immagini. Il servizio combina vari metodi di analisi per trovare indicatori se un\'immagine è stata generata con tecnologia IA o pesantemente modificata.',
+    methodology_what_p2: 'Importante da capire: ForRealScan fornisce probabilità e valutazioni fondate – non giudizi assoluti. La tecnologia di generazione delle immagini è in continua evoluzione e nessun sistema di rilevamento può garantire una precisione del cento percento.',
+    methodology_how_title: 'Come Funziona la Scansione',
+    methodology_how_intro: 'ForRealScan-Hybrid combina due prospettive di analisi, simboleggiate dalle nostre mascotte Veritas e Robo:',
+    methodology_veritas_title: 'Veritas – La Vista Naturale',
+    methodology_veritas_text: 'Veritas analizza se un\'immagine ha le caratteristiche tipiche di una fotografia reale: illuminazione naturale, ombre realistiche, texture organiche nella pelle e nei capelli, e le piccole imperfezioni che distinguono le foto reali.',
+    methodology_robo_title: 'Robo – La Vista Logica',
+    methodology_robo_text: 'Robo cerca pattern tecnici tipici delle immagini generate dall\'IA: strutture pixel evidenti, artefatti di compressione, perfezione esagerata, pattern ricorrenti e incongruenze nei dettagli come mani, denti o sfondi.',
+    methodology_how_outro: 'Entrambe le prospettive confluiscono in una valutazione comune. Il risultato viene visualizzato come percentuale, integrata da una spiegazione comprensibile dei fattori che hanno portato alla valutazione.',
+    methodology_results_title: 'Cosa Significano i Risultati',
+    methodology_results_low_title: 'Bassa Probabilità IA (0–30%)',
+    methodology_results_low_text: 'L\'immagine mostra prevalentemente caratteristiche di fotografia autentica. Irregolarità naturali e dettagli realistici suggeriscono una foto reale.',
+    methodology_results_mid_title: 'Incertezza Media (30–70%)',
+    methodology_results_mid_text: 'L\'immagine contiene sia caratteristiche autentiche che sospette. Sono possibili modifiche leggere, filtri o assistenza parziale dell\'IA.',
+    methodology_results_high_title: 'Alta Probabilità IA (70–100%)',
+    methodology_results_high_text: 'L\'immagine mostra chiari segni di generazione IA o forte manipolazione. Sono stati rilevati pattern IA tipici e artefatti tecnici.',
+    methodology_results_outro: 'Ogni risultato è accompagnato da una breve spiegazione che descrive quali caratteristiche specifiche hanno portato alla valutazione. Questo ti permette di comprendere la valutazione e formare il tuo giudizio.',
+    methodology_limits_title: 'Limitazioni e Quando Diventa Difficile',
+    methodology_limits_intro: 'L\'onestà è importante per noi. ForRealScan ha – come ogni sistema di rilevamento – delle limitazioni:',
+    methodology_limits_compressed: 'Immagini molto compresse: Le immagini salvate più volte o condivise via messenger perdono dettagli importanti.',
+    methodology_limits_screenshots: 'Screenshot: Testo ed elementi dell\'interfaccia complicano l\'analisi pura dell\'immagine.',
+    methodology_limits_hybrid: 'Immagini ibride: Foto reali con modifiche IA (es. filtri viso, cambi di sfondo) sono particolarmente difficili da classificare.',
+    methodology_limits_new_models: 'Ultimi modelli IA: La tecnologia evolve rapidamente. I modelli di generazione più nuovi possono essere più difficili da rilevare.',
+    methodology_limits_professional: 'Foto professionali: Scatti in studio con illuminazione perfetta possono essere classificati erroneamente come "troppo perfetti".',
+    methodology_limits_outro: 'Quando un risultato è incerto, ForRealScan lo indica chiaramente. In questi casi, dovresti fare ricerche aggiuntive prima di trarre conclusioni.',
+    methodology_responsible_title: 'Uso Responsabile',
+    methodology_responsible_intro: 'ForRealScan è uno strumento di orientamento – non una prova. I risultati dovrebbero:',
+    methodology_responsible_point1: 'Servire come punto di partenza per ulteriori ricerche, non come verdetto finale',
+    methodology_responsible_point2: 'Non essere usati da soli come base per accuse o azioni legali',
+    methodology_responsible_point3: 'Essere considerati nel contesto: fonte, mittente e situazione hanno un ruolo',
+    methodology_responsible_point4: 'Essere interpretati con buon senso',
+    methodology_responsible_outro: 'Il nostro obiettivo è aiutarti a prendere decisioni più consapevoli in un mondo pieno di immagini manipolate – non seminare sfiducia o incoraggiare conclusioni affrettate.',
+    methodology_privacy_title: 'Privacy Durante l\'Analisi',
+    methodology_privacy_intro: 'La tua privacy è una priorità:',
+    methodology_privacy_point1: 'Le immagini caricate vengono elaborate solo lato server per l\'analisi e non vengono memorizzate permanentemente',
+    methodology_privacy_point2: 'I risultati e le schede possono – a seconda dell\'uso – essere salvati localmente sul tuo dispositivo nella collezione',
+    methodology_privacy_point3: 'La trasmissione è crittografata (HTTPS/TLS)',
+    methodology_privacy_point4: 'Non vendiamo dati degli utenti',
+    methodology_privacy_link: 'Maggiori dettagli nella nostra Informativa sulla Privacy.',
+    methodology_summary_title: 'Riepilogo',
+    methodology_summary_text: 'ForRealScan analizza le immagini per pattern tipici dell\'IA e fornisce probabilità invece di giudizi assoluti. I risultati servono come guida e dovrebbero essere visti nel contesto. Nessun sistema di rilevamento è perfetto – ForRealScan indica trasparentemente le incertezze.',
+
+    // Privacy Page
+    privacy_title: 'Informativa sulla Privacy',
+    privacy_last_updated: 'Ultimo aggiornamento: Dicembre 2024',
+    privacy_intro: 'ForRealScan si impegna a proteggere la tua privacy. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR) e altre leggi applicabili sulla protezione dei dati.',
+    privacy_controller_title: '1. Titolare del Trattamento',
+    privacy_controller_provider: 'Fornitore del servizio:',
+    privacy_controller_location: 'Sede:',
+    privacy_controller_email: 'Email:',
+    privacy_data_title: '2. Dati che Raccogliamo',
+    privacy_data_images: 'Immagini caricate: Quando utilizzi il nostro servizio di analisi IA, carichi immagini per l\'elaborazione. Queste immagini vengono elaborate in tempo reale e non vengono memorizzate permanentemente sui nostri server a meno che tu non salvi esplicitamente i risultati.',
+    privacy_data_technical: 'Dati tecnici: Raccogliamo automaticamente informazioni tecniche come indirizzo IP, tipo di browser, informazioni sul dispositivo e tempi di accesso per scopi di sicurezza e analisi.',
+    privacy_data_contact: 'Informazioni di contatto: Se ci contatti via email o modulo di contatto, raccogliamo il tuo nome, indirizzo email e contenuto del messaggio.',
+    privacy_purpose_title: '3. Finalità del Trattamento dei Dati',
+    privacy_purpose_analysis: 'Analisi immagini IA: Per fornire il nostro servizio principale di rilevamento di contenuti generati dall\'IA nelle immagini.',
+    privacy_purpose_improvement: 'Miglioramento del servizio: Per analizzare i pattern di utilizzo e migliorare la qualità del nostro servizio.',
+    privacy_purpose_communication: 'Comunicazione: Per rispondere alle tue richieste e fornire supporto clienti.',
+    privacy_purpose_legal: 'Conformità legale: Per rispettare le leggi e i regolamenti applicabili.',
+    privacy_cookies_title: '4. Cookie e Tracciamento',
+    privacy_cookies_intro: 'Utilizziamo cookie e tecnologie di tracciamento simili per migliorare la tua esperienza:',
+    privacy_cookies_essential: 'Cookie essenziali: Necessari per il corretto funzionamento del sito web.',
+    privacy_cookies_analytics: 'Cookie analitici: Ci aiutano a capire come i visitatori interagiscono con il nostro sito (es. Google Analytics).',
+    privacy_cookies_advertising: 'Cookie pubblicitari: Utilizzati per mostrare annunci pertinenti (es. Google AdSense).',
+    privacy_cookies_manage: 'Puoi gestire le preferenze dei cookie nelle impostazioni del browser.',
+    privacy_sharing_title: '5. Condivisione dei Dati e Terze Parti',
+    privacy_sharing_intro: 'Non vendiamo i tuoi dati personali. Possiamo condividere dati con:',
+    privacy_sharing_ai: 'Fornitori di servizi IA: Servizi di elaborazione IA di terze parti che analizzano le immagini caricate.',
+    privacy_sharing_analytics: 'Fornitori di analisi: Servizi come Google Analytics per comprendere l\'utilizzo del sito.',
+    privacy_sharing_advertising: 'Reti pubblicitarie: Servizi come Google AdSense per la visualizzazione di annunci.',
+    privacy_sharing_legal: 'Obblighi legali: Quando richiesto dalla legge o per proteggere i nostri diritti.',
+    privacy_rights_title: '6. I Tuoi Diritti (GDPR)',
+    privacy_rights_intro: 'Ai sensi del GDPR, hai i seguenti diritti:',
+    privacy_rights_access: 'Diritto di accesso: Richiedere una copia dei tuoi dati personali.',
+    privacy_rights_rectification: 'Diritto di rettifica: Correggere dati inesatti o incompleti.',
+    privacy_rights_erasure: 'Diritto alla cancellazione: Richiedere la cancellazione dei tuoi dati personali ("diritto all\'oblio").',
+    privacy_rights_portability: 'Diritto alla portabilità dei dati: Ricevere i tuoi dati in un formato strutturato e leggibile da macchina.',
+    privacy_rights_object: 'Diritto di opposizione: Opporsi al trattamento dei tuoi dati per marketing diretto o altri scopi.',
+    privacy_rights_withdraw: 'Diritto di revocare il consenso: Revocare il consenso in qualsiasi momento quando il trattamento si basa sul consenso.',
+    privacy_rights_exercise: 'Per esercitare questi diritti, contattaci a:',
+    privacy_retention_title: '7. Conservazione dei Dati',
+    privacy_retention_text: 'Conserviamo i tuoi dati personali solo per il tempo necessario agli scopi descritti in questa informativa o come richiesto dalla legge. Le immagini caricate vengono elaborate in tempo reale e cancellate immediatamente dopo l\'analisi, a meno che tu non scelga di salvare i risultati.',
+    privacy_security_title: '8. Sicurezza dei Dati',
+    privacy_security_text: 'Implementiamo misure tecniche e organizzative appropriate per proteggere i tuoi dati personali da accessi non autorizzati, perdita o alterazione. Questo include crittografia, server sicuri e controlli di accesso.',
+    privacy_international_title: '9. Trasferimenti Internazionali di Dati',
+    privacy_international_text: 'I tuoi dati possono essere trasferiti e trattati in paesi al di fuori dello Spazio Economico Europeo (SEE). Garantiamo che siano in atto salvaguardie appropriate, come le Clausole Contrattuali Standard approvate dalla Commissione Europea.',
+    privacy_children_title: '10. Privacy dei Minori',
+    privacy_children_text: 'Il nostro servizio non è destinato a minori di 16 anni. Non raccogliamo consapevolmente dati personali da minori. Se ritieni che abbiamo raccolto dati da un minore, contattaci immediatamente.',
+    privacy_changes_title: '11. Modifiche a Questa Informativa',
+    privacy_changes_text: 'Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Ti informeremo di modifiche significative pubblicando la nuova informativa su questa pagina con una data "Ultimo aggiornamento" aggiornata.',
+    privacy_contact_title: '12. Contattaci',
+    privacy_contact_text: 'Per qualsiasi domanda o dubbio su questa Informativa sulla Privacy o sulle nostre pratiche relative ai dati, contattaci a:',
+
+    // Imprint Page
+    imprint_title: 'Note Legali',
+    imprint_info_title: 'Informazioni ai sensi del § 5 TMG',
+    imprint_provider: 'Fornitore del servizio:',
+    imprint_location: 'Sede:',
+    imprint_email: 'Email:',
+    imprint_responsible_title: 'Responsabile del Contenuto',
+    imprint_dispute_title: 'Risoluzione delle Controversie UE',
+    imprint_dispute_text: 'La Commissione Europea fornisce una piattaforma per la risoluzione delle controversie online (OS):',
+    imprint_disclaimer_title: 'Disclaimer',
+    imprint_liability_content_title: 'Responsabilità per i contenuti:',
+    imprint_liability_content_text: 'I contenuti delle nostre pagine sono stati creati con la massima cura. Tuttavia, non possiamo garantire l\'accuratezza, la completezza o l\'attualità dei contenuti. Secondo le disposizioni di legge, siamo responsabili dei nostri contenuti su queste pagine. Tuttavia, non siamo obbligati a monitorare le informazioni di terzi trasmesse o memorizzate o a indagare su circostanze che indicano attività illegali.',
+    imprint_liability_links_title: 'Responsabilità per i link:',
+    imprint_liability_links_text: 'La nostra offerta contiene link a siti web esterni di terze parti, sui cui contenuti non abbiamo alcuna influenza. Pertanto, non possiamo assumerci alcuna responsabilità per questi contenuti esterni. Il rispettivo fornitore o operatore delle pagine è sempre responsabile dei contenuti delle pagine collegate.',
+    imprint_copyright_title: 'Diritto d\'autore:',
+    imprint_copyright_text: 'I contenuti e le opere create dagli operatori del sito su queste pagine sono soggetti al diritto d\'autore italiano e internazionale. La duplicazione, l\'elaborazione, la distribuzione o qualsiasi forma di commercializzazione al di fuori dell\'ambito del diritto d\'autore richiede il previo consenso scritto del rispettivo autore o creatore.',
+    imprint_contact_title: 'Contatto',
+    imprint_contact_text: 'Per domande o dubbi, contattaci a:',
+
+    // Contact Page
+    contact_title: 'Contattaci',
+    contact_subtitle: 'Hai domande? Ci farebbe piacere sentirti. Inviaci un messaggio e risponderemo il prima possibile.',
+    contact_name: 'Nome',
+    contact_name_placeholder: 'Il tuo nome',
+    contact_email: 'Email',
+    contact_email_placeholder: 'tua.email@esempio.it',
+    contact_message: 'Messaggio',
+    contact_message_placeholder: 'Il tuo messaggio...',
+    contact_send: 'Invia Messaggio',
+    contact_sending: 'Invio in corso...',
+    contact_success_title: 'Messaggio Inviato!',
+    contact_success_message: 'Grazie per averci contattato. Ti risponderemo presto a',
+    contact_direct: 'Puoi anche raggiungerci direttamente a:',
+
+    // Game Page
+    game_page_title: 'ForRealScan Mini-Game',
+    game_page_subtitle: 'Metti alla prova la tua capacità di distinguere foto reali da immagini generate dall\'IA. Allena il tuo occhio e impara cosa cercare.',
+    game_feature1_title: 'Affina il Tuo Occhio',
+    game_feature1_text: 'Impara a riconoscere le sottili differenze tra immagini reali e IA.',
+    game_feature2_title: 'Comprendi i Pattern dell\'IA',
+    game_feature2_text: 'Scopri artefatti e caratteristiche tipiche delle immagini generate dall\'IA.',
+    game_feature3_title: 'Confrontati',
+    game_feature3_text: 'Vedi come ti comporti rispetto agli altri giocatori.',
+    game_start: 'Inizia il Gioco',
+    game_why_title: 'Perché Questo Gioco?',
+    game_why_p1: 'Le immagini generate dall\'IA stanno diventando sempre più realistiche e difficili da rilevare. Con il ForRealScan Mini-Game, puoi imparare giocando cosa cercare per distinguere le immagini reali da quelle artificiali.',
+    game_why_p2: 'Il gioco complementa l\'analisi ForRealScan: Mentre la scansione ti dà suggerimenti tecnici, il gioco aiuta ad affinare il tuo giudizio personale.',
+
+    // NotFound Page
+    notfound_title: '404',
+    notfound_message: 'Pagina non trovata',
+    notfound_home: 'Torna alla Home',
+
+    // ComingSoon Page
+    comingsoon_redirect: 'Reindirizzamento a game.forrealscan.com...',
   },
 
   es: {
@@ -1038,6 +1670,164 @@ export const translations: Record<Language, Translations> = {
     examples_ai2_veritas: 'Los patrones de las alas son demasiado perfectamente simétricos. Los colores aparecen sobresaturados y antinaturalmente brillantes. La estructura corporal está anatómicamente simplificada.',
     examples_ai2_robo: 'Patrones de repetición claros en la estructura de las alas. Detalles de alta frecuencia completamente ausentes. Firma típica de Midjourney/DALL-E en las transiciones de color.',
     examples_ai2_explanation: 'Esta imagen muestra signos típicos de generación por IA: saturación de color exagerada, simetría antinaturalmente perfecta y detalles anatómicos simplificados.',
+
+    // Common
+    common_back: 'Volver',
+
+    // Methodology Page
+    methodology_title: 'Metodología y Tecnología',
+    methodology_subtitle: 'Cómo ForRealScan detecta imágenes generadas por IA – explicado de forma transparente.',
+    methodology_cta_scan: 'Iniciar Escaneo',
+    methodology_cta_examples: 'Ver Ejemplos',
+    methodology_what_title: 'Qué Hace ForRealScan',
+    methodology_what_p1: 'ForRealScan es una herramienta de análisis que te ayuda a evaluar el posible contenido de IA en imágenes. El servicio combina varios métodos de análisis para encontrar indicadores de si una imagen fue generada con tecnología de IA o muy editada.',
+    methodology_what_p2: 'Importante entender: ForRealScan proporciona probabilidades y evaluaciones fundamentadas – no juicios absolutos. La tecnología de generación de imágenes evoluciona constantemente y ningún sistema de detección puede garantizar una precisión del cien por ciento.',
+    methodology_how_title: 'Cómo Funciona el Escaneo',
+    methodology_how_intro: 'El ForRealScan-Hybrid combina dos perspectivas de análisis, simbolizadas por nuestras mascotas Veritas y Robo:',
+    methodology_veritas_title: 'Veritas – La Vista Natural',
+    methodology_veritas_text: 'Veritas analiza si una imagen tiene las características típicas de una fotografía real: iluminación natural, sombras realistas, texturas orgánicas en piel y cabello, y las pequeñas imperfecciones que distinguen las fotos reales.',
+    methodology_robo_title: 'Robo – La Vista Lógica',
+    methodology_robo_text: 'Robo busca patrones técnicos típicos de imágenes generadas por IA: estructuras de píxeles evidentes, artefactos de compresión, perfección exagerada, patrones recurrentes e inconsistencias en detalles como manos, dientes o fondos.',
+    methodology_how_outro: 'Ambas perspectivas fluyen hacia una evaluación común. El resultado se muestra como porcentaje, complementado con una explicación comprensible de qué factores llevaron a la evaluación.',
+    methodology_results_title: 'Qué Significan los Resultados',
+    methodology_results_low_title: 'Baja Probabilidad de IA (0–30%)',
+    methodology_results_low_text: 'La imagen muestra predominantemente características de fotografía auténtica. Irregularidades naturales y detalles realistas sugieren una foto real.',
+    methodology_results_mid_title: 'Incertidumbre Media (30–70%)',
+    methodology_results_mid_text: 'La imagen contiene características tanto auténticas como sospechosas. Son posibles ediciones ligeras, filtros o asistencia parcial de IA.',
+    methodology_results_high_title: 'Alta Probabilidad de IA (70–100%)',
+    methodology_results_high_text: 'La imagen muestra claras señales de generación por IA o manipulación fuerte. Se detectaron patrones típicos de IA y artefactos técnicos.',
+    methodology_results_outro: 'Cada resultado va acompañado de una breve explicación que describe qué características específicas llevaron a la evaluación. Esto te permite comprender la evaluación y formar tu propio juicio.',
+    methodology_limits_title: 'Limitaciones y Cuándo Se Complica',
+    methodology_limits_intro: 'La honestidad es importante para nosotros. ForRealScan tiene – como cualquier sistema de detección – limitaciones:',
+    methodology_limits_compressed: 'Imágenes muy comprimidas: Las imágenes guardadas múltiples veces o compartidas por messenger pierden detalles importantes.',
+    methodology_limits_screenshots: 'Capturas de pantalla: El texto y los elementos de interfaz complican el análisis puro de la imagen.',
+    methodology_limits_hybrid: 'Imágenes híbridas: Fotos reales con edición de IA (ej. filtros faciales, cambios de fondo) son particularmente difíciles de clasificar.',
+    methodology_limits_new_models: 'Últimos modelos de IA: La tecnología evoluciona rápidamente. Los modelos de generación más nuevos pueden ser más difíciles de detectar.',
+    methodology_limits_professional: 'Fotos profesionales: Tomas de estudio con iluminación perfecta pueden clasificarse incorrectamente como "demasiado perfectas".',
+    methodology_limits_outro: 'Cuando un resultado es incierto, ForRealScan lo indica claramente. En tales casos, debes hacer investigación adicional antes de sacar conclusiones.',
+    methodology_responsible_title: 'Uso Responsable',
+    methodology_responsible_intro: 'ForRealScan es una herramienta de orientación – no una prueba. Los resultados deberían:',
+    methodology_responsible_point1: 'Servir como punto de partida para investigación adicional, no como veredicto final',
+    methodology_responsible_point2: 'No usarse solos como base para acusaciones o acciones legales',
+    methodology_responsible_point3: 'Considerarse en contexto: fuente, remitente y situación juegan un papel',
+    methodology_responsible_point4: 'Interpretarse con sentido común',
+    methodology_responsible_outro: 'Nuestro objetivo es ayudarte a tomar decisiones más conscientes en un mundo lleno de imágenes manipuladas – no sembrar desconfianza o fomentar conclusiones apresuradas.',
+    methodology_privacy_title: 'Privacidad Durante el Análisis',
+    methodology_privacy_intro: 'Tu privacidad es una prioridad:',
+    methodology_privacy_point1: 'Las imágenes subidas solo se procesan en el servidor para análisis y no se almacenan permanentemente',
+    methodology_privacy_point2: 'Los resultados y tarjetas pueden – según el uso – guardarse localmente en tu dispositivo en la colección',
+    methodology_privacy_point3: 'La transmisión está encriptada (HTTPS/TLS)',
+    methodology_privacy_point4: 'No vendemos datos de usuarios',
+    methodology_privacy_link: 'Más detalles en nuestra Política de Privacidad.',
+    methodology_summary_title: 'Resumen',
+    methodology_summary_text: 'ForRealScan analiza imágenes en busca de patrones típicos de IA y proporciona probabilidades en lugar de juicios absolutos. Los resultados sirven como guía y deben verse en contexto. Ningún sistema de detección es perfecto – ForRealScan indica las incertidumbres de forma transparente.',
+
+    // Privacy Page
+    privacy_title: 'Política de Privacidad',
+    privacy_last_updated: 'Última actualización: Diciembre 2024',
+    privacy_intro: 'ForRealScan se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tus datos personales de conformidad con el Reglamento General de Protección de Datos (RGPD) y otras leyes de protección de datos aplicables.',
+    privacy_controller_title: '1. Responsable del Tratamiento',
+    privacy_controller_provider: 'Proveedor del servicio:',
+    privacy_controller_location: 'Ubicación:',
+    privacy_controller_email: 'Email:',
+    privacy_data_title: '2. Datos que Recopilamos',
+    privacy_data_images: 'Imágenes que subes: Cuando usas nuestro servicio de análisis de IA, subes imágenes para procesar. Estas imágenes se procesan en tiempo real y no se almacenan permanentemente en nuestros servidores a menos que guardes explícitamente los resultados.',
+    privacy_data_technical: 'Datos técnicos: Recopilamos automáticamente información técnica como dirección IP, tipo de navegador, información del dispositivo y tiempos de acceso para fines de seguridad y análisis.',
+    privacy_data_contact: 'Información de contacto: Si nos contactas por email o formulario de contacto, recopilamos tu nombre, dirección de email y contenido del mensaje.',
+    privacy_purpose_title: '3. Finalidad del Tratamiento de Datos',
+    privacy_purpose_analysis: 'Análisis de imágenes IA: Para proporcionar nuestro servicio principal de detección de contenido generado por IA en imágenes.',
+    privacy_purpose_improvement: 'Mejora del servicio: Para analizar patrones de uso y mejorar la calidad de nuestro servicio.',
+    privacy_purpose_communication: 'Comunicación: Para responder a tus consultas y proporcionar soporte al cliente.',
+    privacy_purpose_legal: 'Cumplimiento legal: Para cumplir con las leyes y regulaciones aplicables.',
+    privacy_cookies_title: '4. Cookies y Seguimiento',
+    privacy_cookies_intro: 'Usamos cookies y tecnologías de seguimiento similares para mejorar tu experiencia:',
+    privacy_cookies_essential: 'Cookies esenciales: Necesarias para el funcionamiento correcto del sitio web.',
+    privacy_cookies_analytics: 'Cookies analíticas: Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio (ej. Google Analytics).',
+    privacy_cookies_advertising: 'Cookies publicitarias: Se usan para mostrar anuncios relevantes (ej. Google AdSense).',
+    privacy_cookies_manage: 'Puedes gestionar las preferencias de cookies en la configuración de tu navegador.',
+    privacy_sharing_title: '5. Compartición de Datos y Terceros',
+    privacy_sharing_intro: 'No vendemos tus datos personales. Podemos compartir datos con:',
+    privacy_sharing_ai: 'Proveedores de servicios de IA: Servicios de procesamiento de IA de terceros que analizan las imágenes subidas.',
+    privacy_sharing_analytics: 'Proveedores de análisis: Servicios como Google Analytics para entender el uso del sitio.',
+    privacy_sharing_advertising: 'Redes publicitarias: Servicios como Google AdSense para mostrar anuncios.',
+    privacy_sharing_legal: 'Obligaciones legales: Cuando lo requiere la ley o para proteger nuestros derechos.',
+    privacy_rights_title: '6. Tus Derechos (RGPD)',
+    privacy_rights_intro: 'Bajo el RGPD, tienes los siguientes derechos:',
+    privacy_rights_access: 'Derecho de acceso: Solicitar una copia de tus datos personales.',
+    privacy_rights_rectification: 'Derecho de rectificación: Corregir datos inexactos o incompletos.',
+    privacy_rights_erasure: 'Derecho de supresión: Solicitar la eliminación de tus datos personales ("derecho al olvido").',
+    privacy_rights_portability: 'Derecho a la portabilidad de datos: Recibir tus datos en un formato estructurado y legible por máquina.',
+    privacy_rights_object: 'Derecho de oposición: Oponerte al procesamiento de tus datos para marketing directo u otros fines.',
+    privacy_rights_withdraw: 'Derecho a retirar el consentimiento: Retirar el consentimiento en cualquier momento cuando el procesamiento se base en el consentimiento.',
+    privacy_rights_exercise: 'Para ejercer estos derechos, contáctanos en:',
+    privacy_retention_title: '7. Retención de Datos',
+    privacy_retention_text: 'Conservamos tus datos personales solo el tiempo necesario para los fines descritos en esta política o según lo requiera la ley. Las imágenes subidas se procesan en tiempo real y se eliminan inmediatamente después del análisis, a menos que elijas guardar los resultados.',
+    privacy_security_title: '8. Seguridad de Datos',
+    privacy_security_text: 'Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra acceso no autorizado, pérdida o alteración. Esto incluye encriptación, servidores seguros y controles de acceso.',
+    privacy_international_title: '9. Transferencias Internacionales de Datos',
+    privacy_international_text: 'Tus datos pueden ser transferidos y procesados en países fuera del Espacio Económico Europeo (EEE). Aseguramos que existan salvaguardas apropiadas, como las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea.',
+    privacy_children_title: '10. Privacidad de Menores',
+    privacy_children_text: 'Nuestro servicio no está dirigido a menores de 16 años. No recopilamos conscientemente datos personales de menores. Si crees que hemos recopilado datos de un menor, contáctanos inmediatamente.',
+    privacy_changes_title: '11. Cambios en Esta Política',
+    privacy_changes_text: 'Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos de cambios significativos publicando la nueva política en esta página con una fecha de "Última actualización" actualizada.',
+    privacy_contact_title: '12. Contáctanos',
+    privacy_contact_text: 'Para cualquier pregunta o inquietud sobre esta Política de Privacidad o nuestras prácticas de datos, contáctanos en:',
+
+    // Imprint Page
+    imprint_title: 'Aviso Legal',
+    imprint_info_title: 'Información según § 5 TMG',
+    imprint_provider: 'Proveedor del servicio:',
+    imprint_location: 'Ubicación:',
+    imprint_email: 'Email:',
+    imprint_responsible_title: 'Responsable del Contenido',
+    imprint_dispute_title: 'Resolución de Disputas de la UE',
+    imprint_dispute_text: 'La Comisión Europea proporciona una plataforma para la resolución de disputas en línea (OS):',
+    imprint_disclaimer_title: 'Descargo de Responsabilidad',
+    imprint_liability_content_title: 'Responsabilidad por el contenido:',
+    imprint_liability_content_text: 'Los contenidos de nuestras páginas han sido creados con el máximo cuidado. Sin embargo, no podemos garantizar la exactitud, integridad o actualidad de los contenidos. Según las disposiciones legales, somos responsables de nuestro propio contenido en estas páginas. Sin embargo, no estamos obligados a monitorear la información de terceros transmitida o almacenada o investigar circunstancias que indiquen actividad ilegal.',
+    imprint_liability_links_title: 'Responsabilidad por enlaces:',
+    imprint_liability_links_text: 'Nuestra oferta contiene enlaces a sitios web externos de terceros, sobre cuyos contenidos no tenemos influencia. Por lo tanto, no podemos asumir ninguna responsabilidad por estos contenidos externos. El respectivo proveedor u operador de las páginas es siempre responsable de los contenidos de las páginas enlazadas.',
+    imprint_copyright_title: 'Derechos de autor:',
+    imprint_copyright_text: 'El contenido y las obras creadas por los operadores del sitio en estas páginas están sujetos a la ley de derechos de autor italiana e internacional. La duplicación, el procesamiento, la distribución o cualquier forma de comercialización más allá del alcance de la ley de derechos de autor requiere el consentimiento previo por escrito del respectivo autor o creador.',
+    imprint_contact_title: 'Contacto',
+    imprint_contact_text: 'Para preguntas o inquietudes, contáctanos en:',
+
+    // Contact Page
+    contact_title: 'Contáctanos',
+    contact_subtitle: '¿Tienes preguntas? Nos encantaría saber de ti. Envíanos un mensaje y responderemos lo antes posible.',
+    contact_name: 'Nombre',
+    contact_name_placeholder: 'Tu nombre',
+    contact_email: 'Email',
+    contact_email_placeholder: 'tu.email@ejemplo.com',
+    contact_message: 'Mensaje',
+    contact_message_placeholder: 'Tu mensaje...',
+    contact_send: 'Enviar Mensaje',
+    contact_sending: 'Enviando...',
+    contact_success_title: '¡Mensaje Enviado!',
+    contact_success_message: 'Gracias por contactarnos. Te responderemos pronto a',
+    contact_direct: 'También puedes contactarnos directamente en:',
+
+    // Game Page
+    game_page_title: 'ForRealScan Mini-Game',
+    game_page_subtitle: 'Pon a prueba tu capacidad para distinguir fotos reales de imágenes generadas por IA. Entrena tu ojo y aprende qué buscar.',
+    game_feature1_title: 'Afina Tu Ojo',
+    game_feature1_text: 'Aprende a reconocer diferencias sutiles entre imágenes reales y de IA.',
+    game_feature2_title: 'Comprende los Patrones de IA',
+    game_feature2_text: 'Descubre artefactos y características típicas de las imágenes generadas por IA.',
+    game_feature3_title: 'Compárate',
+    game_feature3_text: 'Mira qué tan bien te desempeñas en comparación con otros jugadores.',
+    game_start: 'Iniciar Juego',
+    game_why_title: '¿Por Qué Este Juego?',
+    game_why_p1: 'Las imágenes generadas por IA son cada vez más realistas y difíciles de detectar. Con el ForRealScan Mini-Game, puedes aprender de forma lúdica qué buscar para distinguir imágenes reales de artificiales.',
+    game_why_p2: 'El juego complementa el análisis de ForRealScan: Mientras el escaneo te da pistas técnicas, el juego ayuda a afinar tu propio juicio.',
+
+    // NotFound Page
+    notfound_title: '404',
+    notfound_message: 'Página no encontrada',
+    notfound_home: 'Volver al Inicio',
+
+    // ComingSoon Page
+    comingsoon_redirect: 'Redirigiendo a game.forrealscan.com...',
   },
 
   fr: {
@@ -1246,5 +2036,163 @@ export const translations: Record<Language, Translations> = {
     examples_ai2_veritas: 'Les motifs des ailes sont trop parfaitement symétriques. Les couleurs apparaissent sursaturées et anormalement brillantes. La structure corporelle est anatomiquement simplifiée.',
     examples_ai2_robo: 'Motifs de répétition clairs dans la structure des ailes. Détails haute fréquence complètement absents. Signature typique de Midjourney/DALL-E dans les transitions de couleurs.',
     examples_ai2_explanation: 'Cette image montre des signes typiques de génération par IA : saturation des couleurs exagérée, symétrie anormalement parfaite et détails anatomiques simplifiés.',
+
+    // Common
+    common_back: 'Retour',
+
+    // Methodology Page
+    methodology_title: 'Méthodologie et Technologie',
+    methodology_subtitle: 'Comment ForRealScan détecte les images générées par IA – expliqué de manière transparente.',
+    methodology_cta_scan: 'Lancer le Scan',
+    methodology_cta_examples: 'Voir les Exemples',
+    methodology_what_title: 'Ce que fait ForRealScan',
+    methodology_what_p1: 'ForRealScan est un outil d\'analyse qui vous aide à évaluer le contenu potentiel d\'IA dans les images. Le service combine diverses méthodes d\'analyse pour trouver des indicateurs si une image a été générée avec la technologie IA ou fortement modifiée.',
+    methodology_what_p2: 'Important à comprendre : ForRealScan fournit des probabilités et des évaluations fondées – pas des jugements absolus. La technologie de génération d\'images évolue constamment, et aucun système de détection ne peut garantir une précision de cent pour cent.',
+    methodology_how_title: 'Comment fonctionne le Scan',
+    methodology_how_intro: 'Le ForRealScan-Hybrid combine deux perspectives d\'analyse, symbolisées par nos mascottes Veritas et Robo :',
+    methodology_veritas_title: 'Veritas – La Vue Nature',
+    methodology_veritas_text: 'Veritas analyse si une image a les caractéristiques typiques d\'une vraie photographie : éclairage naturel, ombres réalistes, textures organiques de la peau et des cheveux, et les petites imperfections qui distinguent les vraies photos.',
+    methodology_robo_title: 'Robo – La Vue Logique',
+    methodology_robo_text: 'Robo recherche des motifs techniques typiques des images générées par IA : structures de pixels évidentes, artefacts de compression, perfection exagérée, motifs récurrents et incohérences dans les détails comme les mains, les dents ou les arrière-plans.',
+    methodology_how_outro: 'Les deux perspectives confluent vers une évaluation commune. Le résultat est affiché en pourcentage, complété par une explication compréhensible des facteurs ayant conduit à l\'évaluation.',
+    methodology_results_title: 'Ce que signifient les Résultats',
+    methodology_results_low_title: 'Faible Probabilité IA (0–30%)',
+    methodology_results_low_text: 'L\'image montre principalement des caractéristiques de photographie authentique. Les irrégularités naturelles et les détails réalistes suggèrent une vraie photo.',
+    methodology_results_mid_title: 'Incertitude Moyenne (30–70%)',
+    methodology_results_mid_text: 'L\'image contient à la fois des caractéristiques authentiques et suspectes. Des retouches légères, des filtres ou une assistance partielle de l\'IA sont possibles.',
+    methodology_results_high_title: 'Haute Probabilité IA (70–100%)',
+    methodology_results_high_text: 'L\'image montre des signes clairs de génération par IA ou de forte manipulation. Des motifs IA typiques et des artefacts techniques ont été détectés.',
+    methodology_results_outro: 'Chaque résultat est accompagné d\'une brève explication décrivant quelles caractéristiques spécifiques ont conduit à l\'évaluation. Cela vous permet de comprendre l\'évaluation et de former votre propre jugement.',
+    methodology_limits_title: 'Limitations et Quand ça devient Difficile',
+    methodology_limits_intro: 'L\'honnêteté est importante pour nous. ForRealScan a – comme tout système de détection – des limitations :',
+    methodology_limits_compressed: 'Images très compressées : Les images enregistrées plusieurs fois ou partagées via messenger perdent des détails importants.',
+    methodology_limits_screenshots: 'Captures d\'écran : Le texte et les éléments d\'interface compliquent l\'analyse pure de l\'image.',
+    methodology_limits_hybrid: 'Images hybrides : Les vraies photos avec édition IA (ex. filtres de visage, changements d\'arrière-plan) sont particulièrement difficiles à classifier.',
+    methodology_limits_new_models: 'Derniers modèles IA : La technologie évolue rapidement. Les modèles de génération très récents peuvent être plus difficiles à détecter.',
+    methodology_limits_professional: 'Photos professionnelles : Les prises de vue en studio avec un éclairage parfait peuvent être incorrectement classifiées comme "trop parfaites".',
+    methodology_limits_outro: 'Quand un résultat est incertain, ForRealScan l\'indique clairement. Dans de tels cas, vous devriez faire des recherches supplémentaires avant de tirer des conclusions.',
+    methodology_responsible_title: 'Utilisation Responsable',
+    methodology_responsible_intro: 'ForRealScan est un outil d\'orientation – pas une preuve. Les résultats devraient :',
+    methodology_responsible_point1: 'Servir de point de départ pour des recherches supplémentaires, pas comme verdict final',
+    methodology_responsible_point2: 'Ne pas être utilisés seuls comme base pour des accusations ou des actions légales',
+    methodology_responsible_point3: 'Être considérés dans le contexte : la source, l\'expéditeur et la situation jouent un rôle',
+    methodology_responsible_point4: 'Être interprétés avec bon sens',
+    methodology_responsible_outro: 'Notre objectif est de vous aider à prendre des décisions plus conscientes dans un monde plein d\'images manipulées – pas de semer la méfiance ou d\'encourager des conclusions hâtives.',
+    methodology_privacy_title: 'Confidentialité pendant l\'Analyse',
+    methodology_privacy_intro: 'Votre vie privée est une priorité :',
+    methodology_privacy_point1: 'Les images téléchargées sont uniquement traitées côté serveur pour l\'analyse et ne sont pas stockées de façon permanente',
+    methodology_privacy_point2: 'Les résultats et les cartes peuvent – selon l\'utilisation – être stockés localement sur votre appareil dans la collection',
+    methodology_privacy_point3: 'La transmission est chiffrée (HTTPS/TLS)',
+    methodology_privacy_point4: 'Nous ne vendons pas les données des utilisateurs',
+    methodology_privacy_link: 'Plus de détails dans notre Politique de Confidentialité.',
+    methodology_summary_title: 'Résumé',
+    methodology_summary_text: 'ForRealScan analyse les images à la recherche de motifs typiques de l\'IA et fournit des probabilités plutôt que des jugements absolus. Les résultats servent de guide et doivent être vus dans leur contexte. Aucun système de détection n\'est parfait – ForRealScan indique les incertitudes de manière transparente.',
+
+    // Privacy Page
+    privacy_title: 'Politique de Confidentialité',
+    privacy_last_updated: 'Dernière mise à jour : Décembre 2024',
+    privacy_intro: 'ForRealScan s\'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et autres lois applicables sur la protection des données.',
+    privacy_controller_title: '1. Responsable du Traitement',
+    privacy_controller_provider: 'Fournisseur de service :',
+    privacy_controller_location: 'Localisation :',
+    privacy_controller_email: 'Email :',
+    privacy_data_title: '2. Données que Nous Collectons',
+    privacy_data_images: 'Images téléchargées : Lorsque vous utilisez notre service d\'analyse IA, vous téléchargez des images pour traitement. Ces images sont traitées en temps réel et ne sont pas stockées de façon permanente sur nos serveurs sauf si vous enregistrez explicitement les résultats.',
+    privacy_data_technical: 'Données techniques : Nous collectons automatiquement des informations techniques telles que l\'adresse IP, le type de navigateur, les informations sur l\'appareil et les heures d\'accès à des fins de sécurité et d\'analyse.',
+    privacy_data_contact: 'Informations de contact : Si vous nous contactez par email ou formulaire de contact, nous collectons votre nom, adresse email et contenu du message.',
+    privacy_purpose_title: '3. Finalité du Traitement des Données',
+    privacy_purpose_analysis: 'Analyse d\'images IA : Pour fournir notre service principal de détection de contenu généré par IA dans les images.',
+    privacy_purpose_improvement: 'Amélioration du service : Pour analyser les modèles d\'utilisation et améliorer la qualité de notre service.',
+    privacy_purpose_communication: 'Communication : Pour répondre à vos demandes et fournir un support client.',
+    privacy_purpose_legal: 'Conformité légale : Pour respecter les lois et réglementations applicables.',
+    privacy_cookies_title: '4. Cookies et Suivi',
+    privacy_cookies_intro: 'Nous utilisons des cookies et des technologies de suivi similaires pour améliorer votre expérience :',
+    privacy_cookies_essential: 'Cookies essentiels : Nécessaires au bon fonctionnement du site web.',
+    privacy_cookies_analytics: 'Cookies analytiques : Nous aident à comprendre comment les visiteurs interagissent avec notre site (ex. Google Analytics).',
+    privacy_cookies_advertising: 'Cookies publicitaires : Utilisés pour afficher des publicités pertinentes (ex. Google AdSense).',
+    privacy_cookies_manage: 'Vous pouvez gérer les préférences de cookies dans les paramètres de votre navigateur.',
+    privacy_sharing_title: '5. Partage des Données et Tiers',
+    privacy_sharing_intro: 'Nous ne vendons pas vos données personnelles. Nous pouvons partager des données avec :',
+    privacy_sharing_ai: 'Fournisseurs de services IA : Services tiers de traitement IA qui analysent les images téléchargées.',
+    privacy_sharing_analytics: 'Fournisseurs d\'analyse : Services comme Google Analytics pour comprendre l\'utilisation du site.',
+    privacy_sharing_advertising: 'Réseaux publicitaires : Services comme Google AdSense pour l\'affichage de publicités.',
+    privacy_sharing_legal: 'Obligations légales : Lorsque requis par la loi ou pour protéger nos droits.',
+    privacy_rights_title: '6. Vos Droits (RGPD)',
+    privacy_rights_intro: 'En vertu du RGPD, vous avez les droits suivants :',
+    privacy_rights_access: 'Droit d\'accès : Demander une copie de vos données personnelles.',
+    privacy_rights_rectification: 'Droit de rectification : Corriger des données inexactes ou incomplètes.',
+    privacy_rights_erasure: 'Droit à l\'effacement : Demander la suppression de vos données personnelles ("droit à l\'oubli").',
+    privacy_rights_portability: 'Droit à la portabilité des données : Recevoir vos données dans un format structuré et lisible par machine.',
+    privacy_rights_object: 'Droit d\'opposition : S\'opposer au traitement de vos données pour le marketing direct ou d\'autres fins.',
+    privacy_rights_withdraw: 'Droit de retirer le consentement : Retirer le consentement à tout moment lorsque le traitement est basé sur le consentement.',
+    privacy_rights_exercise: 'Pour exercer ces droits, contactez-nous à :',
+    privacy_retention_title: '7. Conservation des Données',
+    privacy_retention_text: 'Nous conservons vos données personnelles uniquement le temps nécessaire aux fins décrites dans cette politique ou tel que requis par la loi. Les images téléchargées sont traitées en temps réel et supprimées immédiatement après l\'analyse, sauf si vous choisissez d\'enregistrer les résultats.',
+    privacy_security_title: '8. Sécurité des Données',
+    privacy_security_text: 'Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre l\'accès non autorisé, la perte ou l\'altération. Cela inclut le chiffrement, des serveurs sécurisés et des contrôles d\'accès.',
+    privacy_international_title: '9. Transferts Internationaux de Données',
+    privacy_international_text: 'Vos données peuvent être transférées et traitées dans des pays en dehors de l\'Espace Économique Européen (EEE). Nous veillons à ce que des garanties appropriées soient en place, telles que les Clauses Contractuelles Types approuvées par la Commission Européenne.',
+    privacy_children_title: '10. Confidentialité des Enfants',
+    privacy_children_text: 'Notre service n\'est pas destiné aux enfants de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles d\'enfants. Si vous pensez que nous avons collecté des données d\'un enfant, veuillez nous contacter immédiatement.',
+    privacy_changes_title: '11. Modifications de cette Politique',
+    privacy_changes_text: 'Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Nous vous informerons des changements importants en publiant la nouvelle politique sur cette page avec une date de "Dernière mise à jour" actualisée.',
+    privacy_contact_title: '12. Nous Contacter',
+    privacy_contact_text: 'Pour toute question ou préoccupation concernant cette Politique de Confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :',
+
+    // Imprint Page
+    imprint_title: 'Mentions Légales',
+    imprint_info_title: 'Informations selon § 5 TMG',
+    imprint_provider: 'Fournisseur de service :',
+    imprint_location: 'Localisation :',
+    imprint_email: 'Email :',
+    imprint_responsible_title: 'Responsable du Contenu',
+    imprint_dispute_title: 'Résolution des Litiges UE',
+    imprint_dispute_text: 'La Commission Européenne fournit une plateforme pour la résolution des litiges en ligne (OS) :',
+    imprint_disclaimer_title: 'Avertissement',
+    imprint_liability_content_title: 'Responsabilité pour le contenu :',
+    imprint_liability_content_text: 'Les contenus de nos pages ont été créés avec le plus grand soin. Cependant, nous ne pouvons garantir l\'exactitude, l\'exhaustivité ou l\'actualité des contenus. Selon les dispositions légales, nous sommes responsables de notre propre contenu sur ces pages. Cependant, nous ne sommes pas obligés de surveiller les informations de tiers transmises ou stockées ou d\'enquêter sur des circonstances indiquant une activité illégale.',
+    imprint_liability_links_title: 'Responsabilité pour les liens :',
+    imprint_liability_links_text: 'Notre offre contient des liens vers des sites web externes de tiers, sur le contenu desquels nous n\'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune responsabilité pour ces contenus externes. Le fournisseur ou l\'opérateur respectif des pages est toujours responsable du contenu des pages liées.',
+    imprint_copyright_title: 'Droits d\'auteur :',
+    imprint_copyright_text: 'Le contenu et les œuvres créés par les opérateurs du site sur ces pages sont soumis au droit d\'auteur italien et international. La duplication, le traitement, la distribution ou toute forme de commercialisation au-delà de la portée du droit d\'auteur nécessite le consentement écrit préalable de l\'auteur ou créateur respectif.',
+    imprint_contact_title: 'Contact',
+    imprint_contact_text: 'Pour toute question ou préoccupation, contactez-nous à :',
+
+    // Contact Page
+    contact_title: 'Contactez-nous',
+    contact_subtitle: 'Vous avez des questions ? Nous serions ravis de vous entendre. Envoyez-nous un message et nous vous répondrons dès que possible.',
+    contact_name: 'Nom',
+    contact_name_placeholder: 'Votre nom',
+    contact_email: 'Email',
+    contact_email_placeholder: 'votre.email@exemple.fr',
+    contact_message: 'Message',
+    contact_message_placeholder: 'Votre message...',
+    contact_send: 'Envoyer le Message',
+    contact_sending: 'Envoi en cours...',
+    contact_success_title: 'Message Envoyé !',
+    contact_success_message: 'Merci de nous avoir contactés. Nous vous répondrons bientôt à',
+    contact_direct: 'Vous pouvez aussi nous joindre directement à :',
+
+    // Game Page
+    game_page_title: 'ForRealScan Mini-Game',
+    game_page_subtitle: 'Testez votre capacité à distinguer les vraies photos des images générées par IA. Entraînez votre œil et apprenez ce qu\'il faut chercher.',
+    game_feature1_title: 'Affûtez Votre Œil',
+    game_feature1_text: 'Apprenez à reconnaître les différences subtiles entre les images réelles et IA.',
+    game_feature2_title: 'Comprenez les Motifs IA',
+    game_feature2_text: 'Découvrez les artefacts et caractéristiques typiques des images générées par IA.',
+    game_feature3_title: 'Comparez-vous',
+    game_feature3_text: 'Voyez comment vous vous en sortez par rapport aux autres joueurs.',
+    game_start: 'Démarrer le Jeu',
+    game_why_title: 'Pourquoi ce Jeu ?',
+    game_why_p1: 'Les images générées par IA deviennent de plus en plus réalistes et difficiles à détecter. Avec le ForRealScan Mini-Game, vous pouvez apprendre de manière ludique ce qu\'il faut chercher pour distinguer les vraies images des images artificielles.',
+    game_why_p2: 'Le jeu complète l\'analyse ForRealScan : Pendant que le scan vous donne des indices techniques, le jeu aide à affûter votre propre jugement.',
+
+    // NotFound Page
+    notfound_title: '404',
+    notfound_message: 'Page non trouvée',
+    notfound_home: 'Retour à l\'Accueil',
+
+    // ComingSoon Page
+    comingsoon_redirect: 'Redirection vers game.forrealscan.com...',
   },
 };
