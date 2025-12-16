@@ -1,18 +1,76 @@
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Gamepad2, ExternalLink, Eye, Brain, Trophy } from 'lucide-react';
+import { ArrowLeft, Gamepad2, ExternalLink, Eye, Brain, Trophy, Globe } from 'lucide-react';
+import { Language, translations } from '@/lib/translations';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
+const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const Game = () => {
+  const [language, setLanguage] = useState<Language>(() => {
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored && ['de', 'en', 'it', 'es', 'fr'].includes(stored)) {
+      return stored as Language;
+    }
+    const browserLang = navigator.language.split('-')[0];
+    if (['de', 'en', 'it', 'es', 'fr'].includes(browserLang)) {
+      return browserLang as Language;
+    }
+    return 'de';
+  });
+
+  const t = translations[language];
+
+  useEffect(() => {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+  }, [language]);
+
+  const languages: { code: Language; label: string }[] = [
+    { code: 'de', label: 'Deutsch' },
+    { code: 'en', label: 'English' },
+    { code: 'it', label: 'Italiano' },
+    { code: 'es', label: 'Español' },
+    { code: 'fr', label: 'Français' },
+  ];
+
   return (
     <div className="min-h-screen bg-background py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <Button
-          variant="ghost"
-          className="mb-8"
-          onClick={() => window.history.back()}
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Zurück / Back
-        </Button>
+        {/* Header with Back Button and Language Selector */}
+        <div className="flex items-center justify-between mb-8">
+          <Button
+            variant="ghost"
+            onClick={() => window.history.back()}
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            {t.common_back}
+          </Button>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm" className="gap-2">
+                <Globe className="h-4 w-4" />
+                <span className="text-xs uppercase">{language}</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              {languages.map((lang) => (
+                <DropdownMenuItem
+                  key={lang.code}
+                  onClick={() => setLanguage(lang.code)}
+                  className={language === lang.code ? 'bg-accent' : ''}
+                >
+                  {lang.label}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
 
         <div className="text-center mb-12">
           <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-veritas to-robo flex items-center justify-center mx-auto mb-8">
@@ -20,38 +78,33 @@ const Game = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-            ForRealScan Mini-Game
+            {t.game_page_title}
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Teste deine Fähigkeit, echte Fotos von KI-generierten Bildern zu unterscheiden.
-            Trainiere dein Auge und lerne, worauf du achten musst.
-          </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Test your ability to distinguish real photos from AI-generated images.
-            Train your eye and learn what to look for.
+            {t.game_page_subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="bg-card border border-border rounded-xl p-6 text-center">
             <Eye className="w-10 h-10 text-veritas mx-auto mb-4" />
-            <h3 className="font-semibold mb-2">Schärfe dein Auge</h3>
+            <h3 className="font-semibold mb-2">{t.game_feature1_title}</h3>
             <p className="text-sm text-muted-foreground">
-              Lerne, subtile Unterschiede zwischen echten und KI-Bildern zu erkennen.
+              {t.game_feature1_text}
             </p>
           </div>
           <div className="bg-card border border-border rounded-xl p-6 text-center">
             <Brain className="w-10 h-10 text-robo mx-auto mb-4" />
-            <h3 className="font-semibold mb-2">Verstehe KI-Muster</h3>
+            <h3 className="font-semibold mb-2">{t.game_feature2_title}</h3>
             <p className="text-sm text-muted-foreground">
-              Entdecke typische Artefakte und Merkmale von KI-generierten Bildern.
+              {t.game_feature2_text}
             </p>
           </div>
           <div className="bg-card border border-border rounded-xl p-6 text-center">
             <Trophy className="w-10 h-10 text-yellow-500 mx-auto mb-4" />
-            <h3 className="font-semibold mb-2">Vergleiche dich</h3>
+            <h3 className="font-semibold mb-2">{t.game_feature3_title}</h3>
             <p className="text-sm text-muted-foreground">
-              Sieh, wie gut du im Vergleich zu anderen Spielern abschneidest.
+              {t.game_feature3_text}
             </p>
           </div>
         </div>
@@ -68,25 +121,19 @@ const Game = () => {
               rel="noopener noreferrer"
             >
               <Gamepad2 className="mr-2 h-5 w-5" />
-              Spiel starten / Start Game
+              {t.game_start}
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
 
         <div className="mt-16 prose prose-gray max-w-none">
-          <h2 className="text-2xl font-semibold mb-4 text-foreground">Warum dieses Spiel? / Why this game?</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-foreground">{t.game_why_title}</h2>
           <p className="text-muted-foreground mb-4">
-            KI-generierte Bilder werden immer realistischer und schwerer zu erkennen. Mit dem ForRealScan Mini-Game
-            kannst du spielerisch lernen, worauf du achten musst, um echte von künstlichen Bildern zu unterscheiden.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            AI-generated images are becoming increasingly realistic and harder to detect. With the ForRealScan Mini-Game,
-            you can learn playfully what to look for to distinguish real from artificial images.
+            {t.game_why_p1}
           </p>
           <p className="text-muted-foreground">
-            Das Spiel ergänzt die ForRealScan-Analyse: Während der Scan dir technische Hinweise gibt,
-            hilft das Spiel dabei, dein eigenes Urteilsvermögen zu schärfen.
+            {t.game_why_p2}
           </p>
         </div>
       </div>
