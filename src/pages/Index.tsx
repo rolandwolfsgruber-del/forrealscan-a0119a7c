@@ -15,6 +15,7 @@ import { MiniGame } from '@/components/MiniGame';
 import { Pricing } from '@/components/Pricing';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
+import { AdSense } from '@/components/AdSense';
 
 const Index = () => {
   const [language, setLanguage] = useState<Language>('de');
@@ -25,20 +26,7 @@ const Index = () => {
       <main className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
         <Hero language={language} />
         <VeritasRobo language={language} />
-        
-        {/* Google AdSense Ad Unit */}
-        <div className="container mx-auto px-4">
-          <ins className="adsbygoogle"
-               style={{ display: 'block', textAlign: 'center', margin: '40px 0' }}
-               data-ad-client="ca-pub-7086576267073548"
-               data-ad-slot="1234567890"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-          <script dangerouslySetInnerHTML={{
-            __html: '(adsbygoogle = window.adsbygoogle || []).push({});'
-          }} />
-        </div>
-        
+        <AdSense />
         <UseCases language={language} />
         <HowItWorks language={language} />
         <StoryCheck language={language} />
