@@ -626,7 +626,7 @@ export const translations: Record<Language, Translations> = {
 
     // Privacy Page
     privacy_title: 'Datenschutzerklärung',
-    privacy_last_updated: 'Stand: Dezember 2024',
+    privacy_last_updated: 'Stand: Dezember 2025',
     privacy_intro: 'ForRealScan verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten in Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) und anderen anwendbaren Datenschutzgesetzen erheben, verwenden und schützen.',
     privacy_controller_title: '1. Verantwortlicher',
     privacy_controller_provider: 'Diensteanbieter:',
@@ -992,7 +992,7 @@ export const translations: Record<Language, Translations> = {
 
     // Privacy Page
     privacy_title: 'Privacy Policy',
-    privacy_last_updated: 'Last Updated: December 2024',
+    privacy_last_updated: 'Last Updated: December 2025',
     privacy_intro: 'ForRealScan is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.',
     privacy_controller_title: '1. Data Controller',
     privacy_controller_provider: 'Service Provider:',
@@ -1358,7 +1358,7 @@ export const translations: Record<Language, Translations> = {
 
     // Privacy Page
     privacy_title: 'Informativa sulla Privacy',
-    privacy_last_updated: 'Ultimo aggiornamento: Dicembre 2024',
+    privacy_last_updated: 'Ultimo aggiornamento: Dicembre 2025',
     privacy_intro: 'ForRealScan si impegna a proteggere la tua privacy. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR) e altre leggi applicabili sulla protezione dei dati.',
     privacy_controller_title: '1. Titolare del Trattamento',
     privacy_controller_provider: 'Fornitore del servizio:',
@@ -1724,7 +1724,7 @@ export const translations: Record<Language, Translations> = {
 
     // Privacy Page
     privacy_title: 'Política de Privacidad',
-    privacy_last_updated: 'Última actualización: Diciembre 2024',
+    privacy_last_updated: 'Última actualización: Diciembre 2025',
     privacy_intro: 'ForRealScan se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tus datos personales de conformidad con el Reglamento General de Protección de Datos (RGPD) y otras leyes de protección de datos aplicables.',
     privacy_controller_title: '1. Responsable del Tratamiento',
     privacy_controller_provider: 'Proveedor del servicio:',
@@ -2090,7 +2090,7 @@ export const translations: Record<Language, Translations> = {
 
     // Privacy Page
     privacy_title: 'Politique de Confidentialité',
-    privacy_last_updated: 'Dernière mise à jour : Décembre 2024',
+    privacy_last_updated: 'Dernière mise à jour : Décembre 2025',
     privacy_intro: 'ForRealScan s\'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et autres lois applicables sur la protection des données.',
     privacy_controller_title: '1. Responsable du Traitement',
     privacy_controller_provider: 'Fournisseur de service :',
