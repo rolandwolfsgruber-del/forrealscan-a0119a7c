@@ -1,5 +1,6 @@
 import { Language, translations } from '@/lib/translations';
 import { FileText, Shield, Mail, BookOpen, Images } from 'lucide-react';
+import { BUILD_ID, BUILD_TIME } from '@/lib/buildInfo';
 
 interface FooterProps {
   language: Language;
@@ -79,15 +80,18 @@ export const Footer = ({ language }: FooterProps) => {
           </div>
 
           {/* Bottom Row: Email and Copyright */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-2 pt-4 border-t border-border">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 pt-4 border-t border-border">
             <a
               href="mailto:info@forrealscan.com"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               info@forrealscan.com
             </a>
-            <div className="text-xs sm:text-sm text-muted-foreground text-center md:text-right">
-              {t.footer_copyright.replace('{year}', currentYear.toString())}
+            <div className="flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-muted-foreground text-center md:text-right">
+              <span>{t.footer_copyright.replace('{year}', currentYear.toString())}</span>
+              <span className="text-[11px] text-muted-foreground/80 font-mono">
+                Build: {BUILD_ID} · {BUILD_TIME}
+              </span>
             </div>
           </div>
         </div>

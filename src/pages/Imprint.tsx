@@ -2,14 +2,13 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Globe } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const Imprint = () => {
   const [language, setLanguage] = useState<Language>(() => {

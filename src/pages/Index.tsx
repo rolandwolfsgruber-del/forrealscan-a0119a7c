@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Language } from '@/lib/translations';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { UseCases } from '@/components/UseCases';
@@ -14,8 +15,6 @@ import { Pricing } from '@/components/Pricing';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
 import { AdSense } from '@/components/AdSense';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
 
 const Index = () => {
   const [language, setLanguage] = useState<Language>(() => {

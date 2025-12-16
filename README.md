@@ -60,6 +60,15 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Build metadata
+
+Set the following environment variables to stamp builds and populate `/public/build.json` during `npm run build`:
+
+- `VITE_BUILD_ID`
+- `VITE_BUILD_TIME`
+
+If they are not provided, the build metadata falls back to `dev` values so the UI can still render build information locally.
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/6065d628-4938-4bce-ba2b-4ba0a054f152) and click on Share -> Publish.

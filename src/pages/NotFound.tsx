@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import { Language, translations } from '@/lib/translations';
-
-const LANGUAGE_STORAGE_KEY = 'forrealscan-language';
+import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 
 const NotFound = () => {
   const location = useLocation();
