@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Shield, Eye, Brain, AlertTriangle, Lock, HelpCircle } from 'lucide-react';
+import { ArrowLeft, Shield, Eye, Brain, AlertTriangle, Lock, HelpCircle, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Methodology = () => {
   return (
@@ -11,13 +12,27 @@ const Methodology = () => {
           onClick={() => window.history.back()}
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Zurück / Back
+          Zurück
         </Button>
 
         <h1 className="text-4xl font-bold mb-4">Methodik & Technologie</h1>
-        <p className="text-xl text-muted-foreground mb-12">
+        <p className="text-xl text-muted-foreground mb-6">
           Wie ForRealScan KI-generierte Bilder erkennt – transparent erklärt.
         </p>
+
+        <div className="flex flex-wrap gap-3 mb-12">
+          <Button asChild>
+            <a href="https://app.forrealscan.com" target="_blank" rel="noopener noreferrer">
+              Jetzt Scan starten
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link to="/examples">
+              Beispiele ansehen
+            </Link>
+          </Button>
+        </div>
 
         <div className="prose prose-gray max-w-none space-y-12">
           {/* Section 1: What ForRealScan Does */}
@@ -33,15 +48,10 @@ const Methodology = () => {
               Der Service kombiniert verschiedene Analysemethoden, um Hinweise darauf zu finden, ob ein Bild
               mit KI-Technologie generiert oder stark bearbeitet wurde.
             </p>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground">
               Wichtig zu verstehen: ForRealScan liefert <strong className="text-foreground">Wahrscheinlichkeiten und fundierte Einschätzungen</strong> –
               keine absoluten Urteile. Die Technologie zur Bilderzeugung entwickelt sich ständig weiter,
               und kein Erkennungssystem kann eine hundertprozentige Genauigkeit garantieren.
-            </p>
-            <p className="text-muted-foreground">
-              ForRealScan is an analysis tool that helps you estimate the potential AI share in images.
-              The service combines various analysis methods to find indications of whether an image was
-              generated with AI technology or heavily edited.
             </p>
           </section>
 
@@ -73,15 +83,10 @@ const Methodology = () => {
               </p>
             </div>
 
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground">
               Beide Perspektiven fließen in eine gemeinsame Bewertung ein. Das Ergebnis wird als
               Prozentangabe dargestellt, ergänzt durch eine verständliche Erklärung, welche Faktoren
               zur Einschätzung geführt haben.
-            </p>
-            <p className="text-muted-foreground">
-              The ForRealScan-Hybrid combines two analysis perspectives. Veritas analyzes natural photographic
-              qualities while Robo searches for technical patterns typical of AI-generated images. Both
-              perspectives flow into a combined assessment.
             </p>
           </section>
 
@@ -200,10 +205,10 @@ const Methodology = () => {
               Deine Privatsphäre hat Priorität:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-              <li>Hochgeladene Bilder werden nur für die Analyse verarbeitet</li>
-              <li>Bilder werden nach der Analyse nicht dauerhaft gespeichert</li>
+              <li>Hochgeladene Bilder werden serverseitig nur zur Analyse verarbeitet und nicht dauerhaft gespeichert</li>
+              <li>Ergebnisse und Karten können – je nach Nutzung – lokal auf deinem Gerät in der Sammlung gespeichert werden</li>
+              <li>Die Übertragung erfolgt verschlüsselt (HTTPS/TLS)</li>
               <li>Wir verkaufen keine Nutzerdaten</li>
-              <li>Die Analyse erfolgt verschlüsselt</li>
             </ul>
             <p className="text-muted-foreground">
               Weitere Details findest du in unserer <a href="/privacy" className="text-primary hover:underline">Datenschutzerklärung</a>.
