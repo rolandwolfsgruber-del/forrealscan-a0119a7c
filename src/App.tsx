@@ -8,6 +8,8 @@ import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 import Game from "./pages/Game";
+import Methodology from "./pages/Methodology";
+import ExamplesPage from "./pages/ExamplesPage";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
 
@@ -21,6 +23,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/methodology" element={<Methodology />} />
+          <Route path="/examples" element={<ExamplesPage />} />
           <Route path="/imprint" element={<Imprint />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/contact" element={<Contact />} />

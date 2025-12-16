@@ -2,23 +2,72 @@ import { Check } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { APP_URL } from '@/lib/config';
-import { useToast } from '@/hooks/use-toast';
 
 interface PricingProps {
   language: Language;
 }
 
+// Premium feature translations (simplified, without "coming soon" language)
+const premiumFeatures: Record<Language, { title: string; features: string[]; cta: string }> = {
+  de: {
+    title: 'Premium',
+    features: [
+      'Unbegrenzte ForRealScan-Analysen ohne Tageslimit',
+      'Werbefreie Nutzung',
+      'Erweiterte Scan-Historie und Sammlung',
+      'Prioritäts-Verarbeitung für schnellere Ergebnisse',
+    ],
+    cta: 'Premium anfragen',
+  },
+  en: {
+    title: 'Premium',
+    features: [
+      'Unlimited ForRealScan analyses without daily limit',
+      'Ad-free experience',
+      'Extended scan history and collection',
+      'Priority processing for faster results',
+    ],
+    cta: 'Inquire about Premium',
+  },
+  it: {
+    title: 'Premium',
+    features: [
+      'Analisi ForRealScan illimitate senza limite giornaliero',
+      'Esperienza senza pubblicità',
+      'Cronologia e raccolta estesa',
+      'Elaborazione prioritaria per risultati più veloci',
+    ],
+    cta: 'Richiedi Premium',
+  },
+  es: {
+    title: 'Premium',
+    features: [
+      'Análisis ForRealScan ilimitados sin límite diario',
+      'Experiencia sin anuncios',
+      'Historial y colección extendidos',
+      'Procesamiento prioritario para resultados más rápidos',
+    ],
+    cta: 'Consultar Premium',
+  },
+  fr: {
+    title: 'Premium',
+    features: [
+      'Analyses ForRealScan illimitées sans limite quotidienne',
+      'Expérience sans publicité',
+      'Historique et collection étendus',
+      'Traitement prioritaire pour des résultats plus rapides',
+    ],
+    cta: 'Demander Premium',
+  },
+};
+
 export const Pricing = ({ language }: PricingProps) => {
   const t = translations[language];
-  const { toast } = useToast();
+  const premium = premiumFeatures[language];
 
-  const handlePremiumNotify = () => {
-    toast({
-      title: t.pricing_premium_coming_soon_title,
-      description: t.pricing_premium_coming_soon_message,
-    });
+  const handlePremiumInquiry = () => {
+    window.location.href = 'mailto:info@forrealscan.com?subject=Premium%20Anfrage%20/%20Premium%20Inquiry';
   };
 
   return (
@@ -54,7 +103,7 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="text-sm text-muted-foreground">{t.pricing_free_feat3}</span>
                 </li>
               </ul>
-              
+
               <Button asChild variant="outline" className="w-full h-12 text-base rounded-xl">
                 <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                   {t.pricing_free_cta}
@@ -63,42 +112,27 @@ export const Pricing = ({ language }: PricingProps) => {
             </CardContent>
           </Card>
 
-          {/* Premium Plan - Coming Soon Card */}
+          {/* Premium Plan */}
           <Card className="border-4 border-robo hover:shadow-[0_0_50px_rgba(59,130,246,0.4)] shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-br from-robo/5 to-robo/10 lg:scale-105">
             <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-robo to-robo-glow opacity-20 blur-3xl" />
-            <div className="absolute top-4 right-4">
-              <Badge className="bg-robo text-robo-foreground text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-1.5 font-semibold whitespace-nowrap">
-                {t.pricing_premium_badge}
-              </Badge>
-            </div>
             <CardHeader className="pb-6 relative z-10">
-              <CardTitle className="text-2xl sm:text-3xl mb-2 pr-28 sm:pr-0">{t.pricing_premium_title}</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl mb-2">{premium.title}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 relative z-10">
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.pricing_premium_feat1}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.pricing_premium_feat2}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.pricing_premium_feat3}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t.pricing_premium_feat4}</span>
-                </li>
+                {premium.features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-robo flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground">{feature}</span>
+                  </li>
+                ))}
               </ul>
-              
-              <Button 
-                onClick={handlePremiumNotify}
+
+              <Button
+                onClick={handlePremiumInquiry}
                 className="w-full bg-gradient-to-r from-veritas to-robo hover:opacity-90 h-auto min-h-12 sm:min-h-14 text-sm sm:text-base md:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all py-3 px-4 whitespace-normal leading-tight"
               >
-                {t.pricing_premium_cta}
+                {premium.cta}
               </Button>
             </CardContent>
           </Card>
