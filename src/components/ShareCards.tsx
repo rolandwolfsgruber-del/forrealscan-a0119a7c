@@ -9,15 +9,15 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
 
   const cards = [
     {
-      image: '/share-cards/skater-1-percent.jpg',
+      image: '/share-cards/skater-1-percent.png',
       alt: 'ForRealScan Result: 1% AI Probability (Real Photo)',
     },
     {
-      image: '/share-cards/car-40-percent.jpg',
+      image: '/share-cards/car-40-percent.png',
       alt: 'ForRealScan Result: 40% AI Probability (Uncertain)',
     },
     {
-      image: '/share-cards/fashion-99-percent.jpg',
+      image: '/share-cards/fashion-99-percent.png',
       alt: 'ForRealScan Result: 99% AI Probability (AI Generated)',
     },
   ];
