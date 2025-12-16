@@ -42,12 +42,12 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-card aspect-[9/16]"
+              className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-slate-900 aspect-[9/16]"
             >
               <img
                 src={card.image}
                 alt={card.alt}
-                className="absolute inset-0 w-full h-full object-cover object-top"
+                className="absolute inset-0 w-full h-full object-contain"
                 loading="lazy"
               />
             </div>
