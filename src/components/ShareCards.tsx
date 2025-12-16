@@ -1,3 +1,4 @@
+import { Share2 } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 
 interface ShareCardsProps {
@@ -29,9 +30,15 @@ export const ShareCards = ({ language }: ShareCardsProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-            {t.sharecard_title}
-          </h2>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
+              {t.sharecard_title}
+            </h2>
+            <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 text-sm font-medium">
+              <Share2 className="w-4 h-4" />
+              Share
+            </button>
+          </div>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
             {t.sharecard_subtitle}
           </p>
