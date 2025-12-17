@@ -71,11 +71,11 @@ export const Hero = ({
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[450px] md:w-[600px] md:h-[550px]">
                 {/* Veritas Glow (Left/Green) - Now Pulsing */}
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] rounded-full blur-[80px] sm:blur-[100px] animate-pulse-glow" style={{
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] rounded-full blur-[60px] sm:blur-[70px] animate-pulse-glow" style={{
                 background: 'radial-gradient(circle, #22c55e 0%, transparent 70%)'
               }} />
                 {/* Robo Glow (Right/Blue) - Now Pulsing with delay */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] rounded-full blur-[80px] sm:blur-[100px] animate-pulse-glow" style={{
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] rounded-full blur-[60px] sm:blur-[70px] animate-pulse-glow" style={{
                 background: 'radial-gradient(circle, #3b82f6 0%, transparent 70%)',
                 animationDelay: '2s'
               }} />
@@ -92,14 +92,14 @@ export const Hero = ({
           }}>
               {/* Inner glow on hover */}
               <div className="absolute inset-[3px] sm:inset-[4px] rounded-[40px] sm:rounded-[60px] md:rounded-[70px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
-              boxShadow: '0 0 60px 10px rgba(34, 197, 94, 0.3), 0 0 60px 10px rgba(59, 130, 246, 0.3)'
+              boxShadow: '0 0 30px 5px rgba(34, 197, 94, 0.15), 0 0 30px 5px rgba(59, 130, 246, 0.15)'
             }} />
 
               {/* Dark Container */}
               <div className="relative bg-[#0f1a20] rounded-[40px] sm:rounded-[60px] md:rounded-[70px] p-3 sm:p-4 md:p-6 shadow-2xl w-[220px] sm:w-[280px] md:w-[360px] aspect-square flex items-center justify-center overflow-hidden">
                 {/* Scan Line Effect */}
                 <div className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-veritas to-transparent opacity-70 animate-scan-line pointer-events-none" style={{
-                boxShadow: '0 0 20px 5px rgba(34, 197, 94, 0.5)'
+                boxShadow: '0 0 10px 3px rgba(34, 197, 94, 0.3)'
               }} />
 
                 {/* ForRealScan Master Logo */}
