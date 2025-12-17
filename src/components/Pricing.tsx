@@ -104,7 +104,7 @@ export const Pricing = ({ language }: PricingProps) => {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.15) 0%, transparent 70%)',
+                  background: 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.08) 0%, transparent 70%)',
                 }}
               />
 
@@ -141,10 +141,10 @@ export const Pricing = ({ language }: PricingProps) => {
 
           {/* Premium Plan */}
           <AnimatedSection delay={150}>
-            <Card className="group border-4 border-robo hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-br from-robo/5 to-robo/10 lg:scale-105 h-full transition-all duration-500">
+            <Card className="group border-4 border-robo hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] shadow-2xl relative overflow-hidden rounded-2xl bg-gradient-to-br from-robo/3 to-robo/5 lg:scale-105 h-full transition-all duration-500">
               {/* Animated gradient background */}
-              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-robo to-robo-glow opacity-20 blur-3xl animate-pulse-glow" />
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-veritas to-veritas-glow opacity-15 blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }} />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-robo to-robo-glow opacity-8 blur-3xl animate-pulse-glow" />
+              <div className="absolute bottom-0 left-0 w-28 h-28 bg-gradient-to-tr from-veritas to-veritas-glow opacity-6 blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }} />
 
               {/* Floating Badge */}
               <div className="absolute -top-1 -right-1 z-20">

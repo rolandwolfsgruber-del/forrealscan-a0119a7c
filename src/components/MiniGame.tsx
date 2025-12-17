@@ -25,10 +25,10 @@ export const MiniGame = ({ language }: MiniGameProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection animation="fade-scale">
-            <Card className="group border-2 border-primary/30 hover:border-primary/60 hover:shadow-[0_0_25px_rgba(34,197,94,0.15)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/5 to-robo/5 backdrop-blur-sm relative overflow-hidden">
+            <Card className="group border-2 border-primary/30 hover:border-primary/60 hover:shadow-[0_0_25px_rgba(34,197,94,0.15)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/3 to-robo/3 backdrop-blur-sm relative overflow-hidden">
               {/* Animated gradient background orbs */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-veritas to-veritas-glow opacity-10 blur-3xl animate-pulse-glow" />
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-robo to-robo-glow opacity-10 blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }} />
+              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-veritas to-veritas-glow opacity-5 blur-3xl animate-pulse-glow" />
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-robo to-robo-glow opacity-5 blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }} />
 
               <CardHeader className="relative z-10">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-6 sm:mb-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/30 to-robo/30 flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
