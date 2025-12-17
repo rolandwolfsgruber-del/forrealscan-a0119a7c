@@ -25,7 +25,7 @@ export const MiniGame = ({ language }: MiniGameProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection animation="fade-scale">
-            <Card className="group border-2 border-primary/30 hover:border-primary/60 hover:shadow-[0_0_50px_rgba(34,197,94,0.3)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/5 to-robo/5 backdrop-blur-sm relative overflow-hidden">
+            <Card className="group border-2 border-primary/30 hover:border-primary/60 hover:shadow-[0_0_25px_rgba(34,197,94,0.15)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-veritas/5 to-robo/5 backdrop-blur-sm relative overflow-hidden">
               {/* Animated gradient background orbs */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-veritas to-veritas-glow opacity-10 blur-3xl animate-pulse-glow" />
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-robo to-robo-glow opacity-10 blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }} />
@@ -47,7 +47,7 @@ export const MiniGame = ({ language }: MiniGameProps) => {
                 <Button
                   asChild
                   size="lg"
-                  className="w-full sm:w-auto sm:min-w-[260px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-veritas to-robo hover:opacity-90 shadow-[0_0_30px_rgba(34,197,94,0.4)] hover:shadow-[0_0_50px_rgba(34,197,94,0.6)] transition-all duration-300 relative overflow-hidden group/btn"
+                  className="w-full sm:w-auto sm:min-w-[260px] h-12 sm:h-14 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-veritas to-robo hover:opacity-90 shadow-[0_0_15px_rgba(34,197,94,0.2)] hover:shadow-[0_0_25px_rgba(34,197,94,0.3)] transition-all duration-300 relative overflow-hidden group/btn"
                 >
                   <a href="https://game.forrealscan.com" target="_blank" rel="noopener noreferrer" className="text-center">
                     {/* Shimmer effect */}
