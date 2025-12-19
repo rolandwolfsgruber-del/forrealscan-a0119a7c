@@ -4,12 +4,14 @@ import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface UseCasesProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const UseCases = ({ language }: UseCasesProps) => {
+export const UseCases = ({ language, theme }: UseCasesProps) => {
   const t = translations[language];
   const [openCards, setOpenCards] = useState<number[]>([]);
 

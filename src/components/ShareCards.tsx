@@ -1,11 +1,13 @@
 import { Share2, Gauge, ScanEye } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
+import { Theme } from '@/components/ThemeToggle';
 
 interface ShareCardsProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const ShareCards = ({ language }: ShareCardsProps) => {
+export const ShareCards = ({ language, theme }: ShareCardsProps) => {
   const t = translations[language];
 
   const cards = [

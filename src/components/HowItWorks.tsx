@@ -2,12 +2,14 @@ import { Scale, MessageSquare, AlertTriangle } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface HowItWorksProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const HowItWorks = ({ language }: HowItWorksProps) => {
+export const HowItWorks = ({ language, theme }: HowItWorksProps) => {
   const t = translations[language];
 
   const steps = [

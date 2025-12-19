@@ -3,12 +3,14 @@ import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface MiniGameProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const MiniGame = ({ language }: MiniGameProps) => {
+export const MiniGame = ({ language, theme }: MiniGameProps) => {
   const t = translations[language];
 
   return (

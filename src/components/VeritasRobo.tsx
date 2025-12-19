@@ -1,12 +1,14 @@
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface VeritasRoboProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const VeritasRobo = ({ language }: VeritasRoboProps) => {
+export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
   const t = translations[language];
 
   return (

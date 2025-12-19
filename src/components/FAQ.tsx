@@ -6,12 +6,14 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface FAQProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const FAQ = ({ language }: FAQProps) => {
+export const FAQ = ({ language, theme }: FAQProps) => {
   const t = translations[language];
 
   const faqs = [

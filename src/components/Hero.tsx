@@ -3,11 +3,15 @@ import { Button } from '@/components/ui/button';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
 import logoMaster from '@/assets/logo-master.png';
+import { Theme } from '@/components/ThemeToggle';
+
 interface HeroProps {
   language: Language;
+  theme?: Theme;
 }
 export const Hero = ({
-  language
+  language,
+  theme
 }: HeroProps) => {
   const t = translations[language];
   const logoRef = useRef<HTMLDivElement>(null);

@@ -4,12 +4,14 @@ import { Badge } from '@/components/ui/badge';
 import { AnimatedSection } from '@/components/ui/animated-section';
 import squirrelImage from '@/assets/squirrel-real.jpg';
 import squirrelAiImage from '@/assets/squirrel-ai.png';
+import { Theme } from '@/components/ThemeToggle';
 
 interface ExamplesProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const Examples = ({ language }: ExamplesProps) => {
+export const Examples = ({ language, theme }: ExamplesProps) => {
   const t = translations[language];
 
   return (

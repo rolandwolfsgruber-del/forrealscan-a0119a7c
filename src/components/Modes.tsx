@@ -1,12 +1,14 @@
 import { Shield } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Theme } from '@/components/ThemeToggle';
 
 interface ModesProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const Modes = ({ language }: ModesProps) => {
+export const Modes = ({ language, theme }: ModesProps) => {
   const t = translations[language];
 
   return (

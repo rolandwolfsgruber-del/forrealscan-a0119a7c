@@ -10,13 +10,17 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { ThemeToggle, Theme } from '@/components/ThemeToggle';
+import { cn } from '@/lib/utils';
 
 interface HeaderProps {
   language: Language;
   setLanguage: (lang: Language) => void;
+  theme: Theme;
+  onThemeToggle: () => void;
 }
 
-export const Header = ({ language, setLanguage }: HeaderProps) => {
+export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('start');
   const [scrolled, setScrolled] = useState(false);
@@ -75,7 +79,10 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/5">
+    <header className={cn(
+      "fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/5 transition-colors duration-500",
+      theme === 'robo' ? "bg-[#0c0f1e]/80" : "bg-white/70"
+    )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
@@ -124,8 +131,10 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
             ))}
           </nav>
 
-          {/* Right side - Language + CTA */}
+          {/* Right side - Theme Toggle + Language + CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle theme={theme} onToggle={onThemeToggle} />
+
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="gap-2">
@@ -153,8 +162,10 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
             </Button>
           </div>
 
-          {/* Mobile menu button - Language and Menu */}
-          <div className="md:hidden flex items-center gap-2">
+          {/* Mobile menu button - Theme, Language and Menu */}
+          <div className="md:hidden flex items-center gap-1">
+            <ThemeToggle theme={theme} onToggle={onThemeToggle} size="sm" />
+
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="gap-1 px-2 h-9">
@@ -174,7 +185,7 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            
+
             <Button
               variant="ghost"
               size="icon"
@@ -189,7 +200,10 @@ export const Header = ({ language, setLanguage }: HeaderProps) => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-lg">
+        <div className={cn(
+          "md:hidden border-t border-border backdrop-blur-lg transition-colors duration-500",
+          theme === 'robo' ? "bg-[#0c0f1e]/95" : "bg-white/95"
+        )}>
           <div className="container mx-auto px-4 py-3 space-y-2">
             {navItems.map((item) => (
               item.href ? (

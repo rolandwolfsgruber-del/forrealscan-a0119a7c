@@ -4,9 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { APP_URL } from '@/lib/config';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface PricingProps {
   language: Language;
+  theme?: Theme;
 }
 
 // Premium feature translations (simplified, without "coming soon" language)
@@ -68,7 +70,7 @@ const premiumFeatures: Record<Language, { title: string; features: string[]; cta
   },
 };
 
-export const Pricing = ({ language }: PricingProps) => {
+export const Pricing = ({ language, theme }: PricingProps) => {
   const t = translations[language];
   const premium = premiumFeatures[language];
 

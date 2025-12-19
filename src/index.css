@@ -157,3 +157,115 @@ a.lovable,
     visibility: hidden !important;
     pointer-events: none !important;
 }
+
+/* Theme Toggle Transitions */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Veritas Theme (Light Mode - Nature/Trust Green) */
+.theme-veritas {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --veritas: 142 76% 36%;
+  --veritas-foreground: 0 0% 100%;
+  --veritas-glow: 142 76% 45%;
+  --robo: 210 100% 56%;
+  --robo-foreground: 0 0% 100%;
+  --robo-glow: 210 100% 65%;
+  --primary: 142 76% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 100% 56%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 142 76% 36%;
+  --gradient-veritas: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 45%));
+  --gradient-robo: linear-gradient(135deg, hsl(210 100% 56%), hsl(210 100% 65%));
+  --gradient-hero: linear-gradient(135deg, hsl(142 76% 36%), hsl(210 100% 56%));
+}
+
+/* Robo Theme (Dark Mode - Cyberpunk/Tech Blue) */
+.theme-robo {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 8%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 47% 8%;
+  --popover-foreground: 210 40% 98%;
+  --veritas: 142 76% 45%;
+  --veritas-foreground: 0 0% 100%;
+  --veritas-glow: 142 76% 55%;
+  --robo: 210 100% 65%;
+  --robo-foreground: 0 0% 100%;
+  --robo-glow: 210 100% 75%;
+  --primary: 210 100% 65%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 210 100% 65%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 20%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 210 100% 65%;
+  --gradient-veritas: linear-gradient(135deg, hsl(142 76% 45%), hsl(142 76% 55%));
+  --gradient-robo: linear-gradient(135deg, hsl(210 100% 65%), hsl(210 100% 75%));
+  --gradient-hero: linear-gradient(135deg, hsl(210 100% 50%), hsl(260 100% 60%));
+}
+
+/* Theme-specific gradient backgrounds */
+.theme-veritas .theme-bg-gradient {
+  background: linear-gradient(135deg,
+    hsl(142 76% 95%) 0%,
+    hsl(142 76% 98%) 50%,
+    hsl(0 0% 100%) 100%
+  );
+}
+
+.theme-robo .theme-bg-gradient {
+  background: linear-gradient(135deg,
+    hsl(222 47% 6%) 0%,
+    hsl(230 50% 10%) 50%,
+    hsl(260 50% 8%) 100%
+  );
+}
+
+/* Theme header backgrounds */
+.theme-veritas .theme-header-bg {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-robo .theme-header-bg {
+  background-color: rgba(12, 15, 30, 0.8);
+}
+
+/* Theme footer backgrounds */
+.theme-veritas .theme-footer-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.theme-robo .theme-footer-bg {
+  background-color: rgba(12, 15, 30, 0.5);
+}
+
+/* Smooth transitions for all theme-dependent elements */
+.transition-theme {
+  transition: background-color 0.5s ease,
+              color 0.5s ease,
+              border-color 0.5s ease,
+              box-shadow 0.5s ease;
+}
