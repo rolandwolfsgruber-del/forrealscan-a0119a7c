@@ -3,18 +3,17 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { ArrowLeft, Mail, Send, Globe } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Language, translations } from '@/lib/translations';
 import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { SubPageHeader } from '@/components/SubPageHeader';
+import { Footer } from '@/components/Footer';
+import { useTheme } from '@/hooks/useTheme';
 
 const Contact = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const [language, setLanguage] = useState<Language>(() => {
     const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
     if (stored && ['de', 'en', 'it', 'es', 'fr'].includes(stored)) {
@@ -32,14 +31,6 @@ const Contact = () => {
   useEffect(() => {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   }, [language]);
-
-  const languages: { code: Language; label: string }[] = [
-    { code: 'de', label: 'Deutsch' },
-    { code: 'en', label: 'English' },
-    { code: 'it', label: 'Italiano' },
-    { code: 'es', label: 'Español' },
-    { code: 'fr', label: 'Français' },
-  ];
 
   const [formData, setFormData] = useState({
     name: '',
@@ -72,40 +63,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background py-20 px-4">
-      <div className="container mx-auto max-w-2xl">
-        {/* Header with Back Button and Language Selector */}
-        <div className="flex items-center justify-between mb-8">
-          <Button
-            variant="ghost"
-            onClick={() => window.history.back()}
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            {t.common_back}
-          </Button>
+    <div className="min-h-screen bg-background flex flex-col">
+      <div className="flex-1 py-20 px-4">
+        <div className="container mx-auto max-w-2xl">
+          <SubPageHeader
+            language={language}
+            setLanguage={setLanguage}
+            theme={theme}
+            onThemeToggle={toggleTheme}
+            backLabel={t.common_back}
+          />
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <Globe className="h-4 w-4" />
-                <span className="text-xs uppercase">{language}</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              {languages.map((lang) => (
-                <DropdownMenuItem
-                  key={lang.code}
-                  onClick={() => setLanguage(lang.code)}
-                  className={language === lang.code ? 'bg-accent' : ''}
-                >
-                  {lang.label}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-
-        <div className="text-center mb-12">
+          <div className="text-center mb-12">
           <Mail className="w-16 h-16 mx-auto mb-4 text-primary" />
           <h1 className="text-4xl font-bold mb-4">{t.contact_title}</h1>
           <p className="text-muted-foreground text-lg">
@@ -185,7 +154,9 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        </div>
       </div>
+      <Footer language={language} theme={theme} />
     </div>
   );
 };

@@ -13,10 +13,15 @@ import ExamplesPage from "./pages/ExamplesPage";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
 import { DebugPanel } from "./components/DebugPanel";
+import { useThemeBodyClass } from "./hooks/useTheme";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
+  // Apply theme class to body for all pages
+  useThemeBodyClass();
+
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -38,6 +43,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;

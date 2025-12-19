@@ -2,7 +2,6 @@ import { Language, translations } from '@/lib/translations';
 import { FileText, Shield, Mail, BookOpen, Images } from 'lucide-react';
 import { BUILD_ID, BUILD_TIME } from '@/lib/buildInfo';
 import { Theme } from '@/components/ThemeToggle';
-import { cn } from '@/lib/utils';
 
 interface FooterProps {
   language: Language;
@@ -24,10 +23,7 @@ export const Footer = ({ language, theme }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={cn(
-      "border-t border-border py-8 sm:py-10 md:py-12 transition-colors duration-500",
-      theme === 'robo' ? "bg-[#0c0f1e]/50" : "bg-white/50"
-    )}>
+    <footer className="border-t border-border py-8 sm:py-10 md:py-12 transition-colors duration-500 theme-footer-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6">
           {/* Top Row: Logo and Main Links */}
@@ -45,20 +41,14 @@ export const Footer = ({ language, theme }: FooterProps) => {
             <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
               <a
                 href="/methodology"
-                className={cn(
-                  "flex items-center gap-2 transition-colors duration-500",
-                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
-                )}
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
               >
                 <BookOpen className="w-4 h-4" />
                 {ft.methodology}
               </a>
               <a
                 href="/examples"
-                className={cn(
-                  "flex items-center gap-2 transition-colors duration-500",
-                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
-                )}
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
               >
                 <Images className="w-4 h-4" />
                 {ft.examples}
@@ -69,30 +59,21 @@ export const Footer = ({ language, theme }: FooterProps) => {
             <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
               <a
                 href="/imprint"
-                className={cn(
-                  "flex items-center gap-2 transition-colors duration-500",
-                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
-                )}
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
               >
                 <FileText className="w-4 h-4" />
                 {t.footer_imprint}
               </a>
               <a
                 href="/privacy"
-                className={cn(
-                  "flex items-center gap-2 transition-colors duration-500",
-                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
-                )}
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
               >
                 <Shield className="w-4 h-4" />
                 {t.footer_privacy}
               </a>
               <a
                 href="/contact"
-                className={cn(
-                  "flex items-center gap-2 transition-colors duration-500",
-                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
-                )}
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
               >
                 <Mail className="w-4 h-4" />
                 {t.footer_contact || 'Contact'}
@@ -104,22 +85,13 @@ export const Footer = ({ language, theme }: FooterProps) => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 pt-4 border-t border-border">
             <a
               href="mailto:info@forrealscan.com"
-              className={cn(
-                "text-sm transition-colors duration-500",
-                theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
-              )}
+              className="text-sm transition-colors duration-500 text-muted-foreground hover:text-primary"
             >
               info@forrealscan.com
             </a>
-            <div className={cn(
-              "flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-center md:text-right transition-colors duration-500",
-              theme === 'robo' ? "text-gray-400" : "text-[#777]"
-            )}>
+            <div className="flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-center md:text-right transition-colors duration-500 text-muted-foreground">
               <span>{t.footer_copyright.replace('{year}', currentYear.toString())}</span>
-              <span className={cn(
-                "text-[11px] font-mono transition-colors duration-500",
-                theme === 'robo' ? "text-gray-500" : "text-[#999]"
-              )}>
+              <span className="text-[11px] font-mono transition-colors duration-500 opacity-70">
                 Build: {BUILD_ID} · {BUILD_TIME}
               </span>
             </div>
