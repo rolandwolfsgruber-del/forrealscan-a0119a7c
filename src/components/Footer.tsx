@@ -1,9 +1,12 @@
 import { Language, translations } from '@/lib/translations';
 import { FileText, Shield, Mail, BookOpen, Images } from 'lucide-react';
 import { BUILD_ID, BUILD_TIME } from '@/lib/buildInfo';
+import { Theme } from '@/components/ThemeToggle';
+import { cn } from '@/lib/utils';
 
 interface FooterProps {
   language: Language;
+  theme: Theme;
 }
 
 // Footer-specific translations for new pages
@@ -15,13 +18,16 @@ const footerTranslations: Record<Language, { methodology: string; examples: stri
   fr: { methodology: 'Méthodologie', examples: 'Exemples' },
 };
 
-export const Footer = ({ language }: FooterProps) => {
+export const Footer = ({ language, theme }: FooterProps) => {
   const t = translations[language];
   const ft = footerTranslations[language];
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-muted/50 border-t border-border py-8 sm:py-10 md:py-12">
+    <footer className={cn(
+      "border-t border-border py-8 sm:py-10 md:py-12 transition-colors duration-500",
+      theme === 'robo' ? "bg-[#0c0f1e]/50" : "bg-white/50"
+    )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6">
           {/* Top Row: Logo and Main Links */}
@@ -39,14 +45,20 @@ export const Footer = ({ language }: FooterProps) => {
             <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
               <a
                 href="/methodology"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className={cn(
+                  "flex items-center gap-2 transition-colors duration-500",
+                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
+                )}
               >
                 <BookOpen className="w-4 h-4" />
                 {ft.methodology}
               </a>
               <a
                 href="/examples"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className={cn(
+                  "flex items-center gap-2 transition-colors duration-500",
+                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
+                )}
               >
                 <Images className="w-4 h-4" />
                 {ft.examples}
@@ -57,21 +69,30 @@ export const Footer = ({ language }: FooterProps) => {
             <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
               <a
                 href="/imprint"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className={cn(
+                  "flex items-center gap-2 transition-colors duration-500",
+                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
+                )}
               >
                 <FileText className="w-4 h-4" />
                 {t.footer_imprint}
               </a>
               <a
                 href="/privacy"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className={cn(
+                  "flex items-center gap-2 transition-colors duration-500",
+                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
+                )}
               >
                 <Shield className="w-4 h-4" />
                 {t.footer_privacy}
               </a>
               <a
                 href="/contact"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className={cn(
+                  "flex items-center gap-2 transition-colors duration-500",
+                  theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
+                )}
               >
                 <Mail className="w-4 h-4" />
                 {t.footer_contact || 'Contact'}
@@ -83,13 +104,22 @@ export const Footer = ({ language }: FooterProps) => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 pt-4 border-t border-border">
             <a
               href="mailto:info@forrealscan.com"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              className={cn(
+                "text-sm transition-colors duration-500",
+                theme === 'robo' ? "text-gray-400 hover:text-robo" : "text-[#777] hover:text-veritas"
+              )}
             >
               info@forrealscan.com
             </a>
-            <div className="flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-muted-foreground text-center md:text-right">
+            <div className={cn(
+              "flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-center md:text-right transition-colors duration-500",
+              theme === 'robo' ? "text-gray-400" : "text-[#777]"
+            )}>
               <span>{t.footer_copyright.replace('{year}', currentYear.toString())}</span>
-              <span className="text-[11px] text-muted-foreground/80 font-mono">
+              <span className={cn(
+                "text-[11px] font-mono transition-colors duration-500",
+                theme === 'robo' ? "text-gray-500" : "text-[#999]"
+              )}>
                 Build: {BUILD_ID} · {BUILD_TIME}
               </span>
             </div>

@@ -2,12 +2,14 @@ import { FileText, ImageIcon } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Theme } from '@/components/ThemeToggle';
 
 interface StoryCheckProps {
   language: Language;
+  theme?: Theme;
 }
 
-export const StoryCheck = ({ language }: StoryCheckProps) => {
+export const StoryCheck = ({ language, theme }: StoryCheckProps) => {
   const t = translations[language];
 
   const cards = [
