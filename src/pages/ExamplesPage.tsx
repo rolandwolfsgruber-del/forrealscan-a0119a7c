@@ -1,19 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, CheckCircle, AlertTriangle, XCircle, Info, Globe } from 'lucide-react';
+import { CheckCircle, AlertTriangle, XCircle, Info } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { SubPageHeader } from '@/components/SubPageHeader';
+import { Footer } from '@/components/Footer';
+import { useTheme } from '@/hooks/useTheme';
 import squirrelReal from '@/assets/squirrel-real.jpg';
 import squirrelAi from '@/assets/squirrel-ai.png';
 import butterflyAi from '@/assets/butterfly-ai.webp';
 
 const ExamplesPage = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const [language, setLanguage] = useState<Language>(() => {
     // Try to get language from localStorage, fallback to browser language or 'de'
     const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
@@ -33,14 +32,6 @@ const ExamplesPage = () => {
   useEffect(() => {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   }, [language]);
-
-  const languages: { code: Language; label: string }[] = [
-    { code: 'de', label: 'Deutsch' },
-    { code: 'en', label: 'English' },
-    { code: 'it', label: 'Italiano' },
-    { code: 'es', label: 'Español' },
-    { code: 'fr', label: 'Français' },
-  ];
 
   const examples = [
     {
@@ -101,40 +92,18 @@ const ExamplesPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background py-20 px-4">
-      <div className="container mx-auto max-w-5xl">
-        {/* Header with Back Button and Language Selector */}
-        <div className="flex items-center justify-between mb-8">
-          <Button
-            variant="ghost"
-            onClick={() => window.history.back()}
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            {t.examples_page_back}
-          </Button>
+    <div className="min-h-screen bg-background flex flex-col">
+      <div className="flex-1 py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <SubPageHeader
+            language={language}
+            setLanguage={setLanguage}
+            theme={theme}
+            onThemeToggle={toggleTheme}
+            backLabel={t.examples_page_back}
+          />
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <Globe className="h-4 w-4" />
-                <span className="text-xs uppercase">{language}</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              {languages.map((lang) => (
-                <DropdownMenuItem
-                  key={lang.code}
-                  onClick={() => setLanguage(lang.code)}
-                  className={language === lang.code ? 'bg-accent' : ''}
-                >
-                  {lang.label}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-
-        {/* Page Title */}
+          {/* Page Title */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">{t.examples_page_title}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -256,7 +225,9 @@ const ExamplesPage = () => {
             </a>.
           </p>
         </div>
+        </div>
       </div>
+      <Footer language={language} theme={theme} />
     </div>
   );
 };

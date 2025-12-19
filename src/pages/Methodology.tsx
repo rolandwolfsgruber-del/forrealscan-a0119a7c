@@ -1,17 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Shield, Eye, Brain, AlertTriangle, Lock, HelpCircle, ExternalLink, Globe } from 'lucide-react';
+import { Shield, Eye, Brain, AlertTriangle, Lock, HelpCircle, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Language, translations } from '@/lib/translations';
 import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { SubPageHeader } from '@/components/SubPageHeader';
+import { Footer } from '@/components/Footer';
+import { useTheme } from '@/hooks/useTheme';
 
 const Methodology = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const [language, setLanguage] = useState<Language>(() => {
     const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
     if (stored && ['de', 'en', 'it', 'es', 'fr'].includes(stored)) {
@@ -30,49 +29,19 @@ const Methodology = () => {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   }, [language]);
 
-  const languages: { code: Language; label: string }[] = [
-    { code: 'de', label: 'Deutsch' },
-    { code: 'en', label: 'English' },
-    { code: 'it', label: 'Italiano' },
-    { code: 'es', label: 'Español' },
-    { code: 'fr', label: 'Français' },
-  ];
-
   return (
-    <div className="min-h-screen bg-background py-20 px-4">
-      <div className="container mx-auto max-w-4xl">
-        {/* Header with Back Button and Language Selector */}
-        <div className="flex items-center justify-between mb-8">
-          <Button
-            variant="ghost"
-            onClick={() => window.history.back()}
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            {t.common_back}
-          </Button>
+    <div className="min-h-screen bg-background flex flex-col">
+      <div className="flex-1 py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <SubPageHeader
+            language={language}
+            setLanguage={setLanguage}
+            theme={theme}
+            onThemeToggle={toggleTheme}
+            backLabel={t.common_back}
+          />
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <Globe className="h-4 w-4" />
-                <span className="text-xs uppercase">{language}</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              {languages.map((lang) => (
-                <DropdownMenuItem
-                  key={lang.code}
-                  onClick={() => setLanguage(lang.code)}
-                  className={language === lang.code ? 'bg-accent' : ''}
-                >
-                  {lang.label}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-
-        <h1 className="text-4xl font-bold mb-4">{t.methodology_title}</h1>
+          <h1 className="text-4xl font-bold mb-4">{t.methodology_title}</h1>
         <p className="text-xl text-muted-foreground mb-6">
           {t.methodology_subtitle}
         </p>
@@ -247,7 +216,9 @@ const Methodology = () => {
             </p>
           </section>
         </div>
+        </div>
       </div>
+      <Footer language={language} theme={theme} />
     </div>
   );
 };
