@@ -30,7 +30,7 @@ export const StoryCheck = ({ language, theme }: StoryCheckProps) => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-muted/20 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"

@@ -79,7 +79,7 @@ export const Pricing = ({ language, theme }: PricingProps) => {
   };
 
   return (
-    <section id="pricing" className="py-12 sm:py-16 md:py-20 bg-background relative overflow-hidden">
+    <section id="pricing" className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"

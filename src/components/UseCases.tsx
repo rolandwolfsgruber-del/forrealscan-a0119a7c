@@ -57,10 +57,10 @@ export const UseCases = ({ language, theme }: UseCasesProps) => {
   ];
 
   return (
-    <section id="use-cases" className="py-12 sm:py-16 md:py-20 bg-muted/20 relative overflow-hidden">
-      {/* Subtle background pattern */}
+    <section id="use-cases" className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+      {/* Subtle background pattern - semi-transparent to show spores */}
       <div
-        className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"
+        className="absolute inset-0 bg-muted/10 opacity-[0.02] dark:opacity-[0.04]"
         style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
           backgroundSize: '40px 40px',
