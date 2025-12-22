@@ -57,8 +57,7 @@ export const Hero = ({
     setIsHovering(true);
   };
   return <section id="start" className="relative min-h-[85vh] sm:min-h-screen flex items-center justify-center overflow-hidden pt-14 sm:pt-16">
-      {/* Background gradient with subtle pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-muted/20" />
+      {/* Background - transparent to show spores */}
 
       {/* Subtle dot pattern overlay */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]" style={{

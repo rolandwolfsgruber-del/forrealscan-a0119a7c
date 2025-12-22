@@ -12,7 +12,7 @@ export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
   const t = translations[language];
 
   return (
-    <section id="veritas-robo" className="py-12 sm:py-16 md:py-20 bg-background relative overflow-hidden">
+    <section id="veritas-robo" className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"

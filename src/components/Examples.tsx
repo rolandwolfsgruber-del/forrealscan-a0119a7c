@@ -15,7 +15,7 @@ export const Examples = ({ language, theme }: ExamplesProps) => {
   const t = translations[language];
 
   return (
-    <section id="examples" className="py-12 sm:py-16 md:py-20 bg-muted/30 relative overflow-hidden">
+    <section id="examples" className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"

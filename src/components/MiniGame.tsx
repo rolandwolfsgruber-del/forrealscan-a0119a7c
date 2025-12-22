@@ -14,7 +14,7 @@ export const MiniGame = ({ language, theme }: MiniGameProps) => {
   const t = translations[language];
 
   return (
-    <section id="game" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background relative overflow-hidden">
+    <section id="game" className="py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"

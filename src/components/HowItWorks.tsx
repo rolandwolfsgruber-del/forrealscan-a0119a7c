@@ -37,8 +37,8 @@ export const HowItWorks = ({ language, theme }: HowItWorksProps) => {
   ];
 
   return (
-    <section id="how-it-works" className="py-12 sm:py-16 md:py-20 bg-background relative overflow-hidden">
-      {/* Subtle background pattern */}
+    <section id="how-it-works" className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+      {/* Subtle background pattern - semi-transparent to show spores */}
       <div
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"
         style={{
