@@ -13,6 +13,7 @@ import ExamplesPage from "./pages/ExamplesPage";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
 import { DebugPanel } from "./components/DebugPanel";
+import { SporeEffect } from "./components/SporeEffect";
 import { useThemeBodyClass } from "./hooks/useTheme";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => {
   return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <SporeEffect />
       <Toaster />
       <Sonner />
       <BrowserRouter>
