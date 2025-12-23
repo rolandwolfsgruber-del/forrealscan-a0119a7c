@@ -31,7 +31,7 @@ const Methodology = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <div className="flex-1 py-20 px-4">
+      <div className="flex-1 py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <SubPageHeader
             language={language}

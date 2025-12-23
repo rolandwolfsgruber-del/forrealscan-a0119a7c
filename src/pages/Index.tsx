@@ -78,7 +78,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background transition-colors duration-500">
       <Header language={language} setLanguage={setLanguage} theme={theme} onThemeToggle={handleThemeToggle} />
-      <main className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
+      <main className="relative z-10 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
         <Hero language={language} theme={theme} />
         <VeritasRobo language={language} theme={theme} />
         <AdSense />
