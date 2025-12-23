@@ -70,8 +70,8 @@ export const SporeEffect = () => {
           x,
           y,
           size: MIN_SIZE + Math.random() * (MAX_SIZE - MIN_SIZE),
-          speedX: (Math.random() - 0.5) * 0.5,
-          speedY: (Math.random() - 0.5) * 0.5 - 0.2, // Slight upward drift
+          speedX: (Math.random() - 0.5) * 0.3,
+          speedY: (Math.random() - 0.5) * 0.3 - 0.15, // Slight upward drift
           opacity: 0.4 + Math.random() * 0.3, // 0.4-0.7 for subtle effect
           hue: Math.random() * 20, // Variation in hue
           pulsePhase: Math.random() * Math.PI * 2,
@@ -115,8 +115,8 @@ export const SporeEffect = () => {
           if (distance < MOUSE_INFLUENCE_RADIUS && distance > 0) {
             const force = (MOUSE_INFLUENCE_RADIUS - distance) / MOUSE_INFLUENCE_RADIUS;
             const angle = Math.atan2(dy, dx);
-            spore.speedX += Math.cos(angle) * force * MOUSE_REPEL_STRENGTH * 0.05;
-            spore.speedY += Math.sin(angle) * force * MOUSE_REPEL_STRENGTH * 0.05;
+            spore.speedX += Math.cos(angle) * force * MOUSE_REPEL_STRENGTH * 0.03;
+            spore.speedY += Math.sin(angle) * force * MOUSE_REPEL_STRENGTH * 0.03;
           }
         }
 
@@ -136,13 +136,13 @@ export const SporeEffect = () => {
           spore.attractY = Math.random() * canvas.height;
         } else {
           // Gentle attraction towards target
-          spore.speedX += (dxAttract / distanceAttract) * 0.02;
-          spore.speedY += (dyAttract / distanceAttract) * 0.02;
+          spore.speedX += (dxAttract / distanceAttract) * 0.015;
+          spore.speedY += (dyAttract / distanceAttract) * 0.015;
         }
 
         // Apply velocity damping
-        spore.speedX *= 0.98;
-        spore.speedY *= 0.98;
+        spore.speedX *= 0.96;
+        spore.speedY *= 0.96;
 
         // Update position
         spore.x += spore.speedX;
