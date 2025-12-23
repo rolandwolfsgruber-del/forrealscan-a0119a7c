@@ -15,18 +15,13 @@ interface Spore {
   targetY: number;
   attractX: number; // Attraction point
   attractY: number;
-  trailX: number[]; // Trail effect
-  trailY: number[];
 }
 
-const SPORE_COUNT = 60; // Increased for better distribution
-const MIN_SIZE = 6;
-const MAX_SIZE = 18;
-const MOUSE_INFLUENCE_RADIUS = 200; // Radius of mouse influence
-const MOUSE_REPEL_STRENGTH = 4; // How strongly spores are pushed away
-const SPORE_INTERACTION_RADIUS = 80; // Spores interact with each other
-const SPORE_INTERACTION_STRENGTH = 0.05; // Gentle interaction
-const TRAIL_LENGTH = 8; // Number of trail positions to remember
+const SPORE_COUNT = 30; // Reduced for better performance
+const MIN_SIZE = 4;
+const MAX_SIZE = 12;
+const MOUSE_INFLUENCE_RADIUS = 150; // Radius of mouse influence
+const MOUSE_REPEL_STRENGTH = 2; // How strongly spores are pushed away
 
 export const SporeEffect = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -41,14 +36,10 @@ export const SporeEffect = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size to full document height (not just viewport)
+    // Set canvas size to viewport (not full document)
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
-      canvas.height = Math.max(
-        document.documentElement.scrollHeight,
-        document.body.scrollHeight,
-        window.innerHeight
-      );
+      canvas.height = window.innerHeight;
     };
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
@@ -79,19 +70,17 @@ export const SporeEffect = () => {
           x,
           y,
           size: MIN_SIZE + Math.random() * (MAX_SIZE - MIN_SIZE),
-          speedX: (Math.random() - 0.5) * 0.8,
-          speedY: (Math.random() - 0.5) * 0.8 - 0.3, // Slight upward drift
-          opacity: 0.5 + Math.random() * 0.4, // 0.5-0.9 for better visibility
-          hue: Math.random() * 30, // Variation in hue
+          speedX: (Math.random() - 0.5) * 0.5,
+          speedY: (Math.random() - 0.5) * 0.5 - 0.2, // Slight upward drift
+          opacity: 0.4 + Math.random() * 0.3, // 0.4-0.7 for subtle effect
+          hue: Math.random() * 20, // Variation in hue
           pulsePhase: Math.random() * Math.PI * 2,
-          pulseSpeed: 0.02 + Math.random() * 0.02,
+          pulseSpeed: 0.015 + Math.random() * 0.015,
           side,
           targetX: x,
           targetY: y,
-          attractX: x + (Math.random() - 0.5) * 200,
-          attractY: y + (Math.random() - 0.5) * 200,
-          trailX: Array(TRAIL_LENGTH).fill(x),
-          trailY: Array(TRAIL_LENGTH).fill(y),
+          attractX: x + (Math.random() - 0.5) * 150,
+          attractY: y + (Math.random() - 0.5) * 150,
         };
       });
     };
@@ -112,23 +101,11 @@ export const SporeEffect = () => {
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mouseleave', handleMouseLeave);
 
-    // Handle scroll to update canvas height and mouse position
-    const handleScroll = () => {
-      resizeCanvas();
-    };
-    window.addEventListener('scroll', handleScroll);
-
     // Animation loop
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      sporesRef.current.forEach((spore, index) => {
-        // Update trail positions
-        spore.trailX.pop();
-        spore.trailX.unshift(spore.x);
-        spore.trailY.pop();
-        spore.trailY.unshift(spore.y);
-
+      sporesRef.current.forEach((spore) => {
         // Apply mouse repulsion if mouse is present
         if (mouseRef.current) {
           const dx = spore.x - mouseRef.current.x;
@@ -138,28 +115,10 @@ export const SporeEffect = () => {
           if (distance < MOUSE_INFLUENCE_RADIUS && distance > 0) {
             const force = (MOUSE_INFLUENCE_RADIUS - distance) / MOUSE_INFLUENCE_RADIUS;
             const angle = Math.atan2(dy, dx);
-            spore.speedX += Math.cos(angle) * force * MOUSE_REPEL_STRENGTH * 0.1;
-            spore.speedY += Math.sin(angle) * force * MOUSE_REPEL_STRENGTH * 0.1;
+            spore.speedX += Math.cos(angle) * force * MOUSE_REPEL_STRENGTH * 0.05;
+            spore.speedY += Math.sin(angle) * force * MOUSE_REPEL_STRENGTH * 0.05;
           }
         }
-
-        // Spore-to-spore interaction (gentle attraction/repulsion)
-        sporesRef.current.forEach((otherSpore, otherIndex) => {
-          if (index === otherIndex) return;
-
-          const dx = otherSpore.x - spore.x;
-          const dy = otherSpore.y - spore.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-
-          if (distance < SPORE_INTERACTION_RADIUS && distance > 0) {
-            const force = (SPORE_INTERACTION_RADIUS - distance) / SPORE_INTERACTION_RADIUS;
-            // Gentle repulsion at close range, slight attraction at medium range
-            const interactionForce = distance < 40 ? -force : force * 0.3;
-            const angle = Math.atan2(dy, dx);
-            spore.speedX += Math.cos(angle) * interactionForce * SPORE_INTERACTION_STRENGTH;
-            spore.speedY += Math.sin(angle) * interactionForce * SPORE_INTERACTION_STRENGTH;
-          }
-        });
 
         // Organic movement towards attraction point
         const dxAttract = spore.attractX - spore.x;
@@ -214,56 +173,21 @@ export const SporeEffect = () => {
         // Left side: Veritas green (hsl 142)
         // Right side: Robo blue (hsl 210)
         const isLeft = spore.side === 'left';
-        const baseHue = isLeft ? 142 + spore.hue * 0.3 : 210 + spore.hue * 0.5;
-        const saturation = isLeft ? 80 : 90;
-        const lightness = isLeft ? 55 : 65;
+        const baseHue = isLeft ? 142 + spore.hue : 210 + spore.hue;
+        const saturation = isLeft ? 75 : 85;
+        const lightness = isLeft ? 60 : 65;
 
         const currentOpacity = spore.opacity * pulseFactor;
         const currentSize = spore.size * pulseFactor;
 
-        // Draw trail (fading copies of previous positions)
-        for (let i = 1; i < spore.trailX.length; i++) {
-          const trailOpacity = currentOpacity * (1 - i / spore.trailX.length) * 0.3;
-          const trailSize = currentSize * (1 - i / spore.trailX.length * 0.5);
-
-          const trailGradient = ctx.createRadialGradient(
-            spore.trailX[i], spore.trailY[i], 0,
-            spore.trailX[i], spore.trailY[i], trailSize * 2
-          );
-          trailGradient.addColorStop(0, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${trailOpacity})`);
-          trailGradient.addColorStop(1, `hsla(${baseHue}, ${saturation}%, ${lightness}%, 0)`);
-
-          ctx.beginPath();
-          ctx.arc(spore.trailX[i], spore.trailY[i], trailSize * 2, 0, Math.PI * 2);
-          ctx.fillStyle = trailGradient;
-          ctx.fill();
-        }
-
-        // Enable blur for soft glow effect
-        ctx.filter = 'blur(1px)';
-
-        // Draw outer glow (larger, softer)
-        const outerGlowGradient = ctx.createRadialGradient(
-          spore.x, spore.y, 0,
-          spore.x, spore.y, currentSize * 5
-        );
-        outerGlowGradient.addColorStop(0, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.8})`);
-        outerGlowGradient.addColorStop(0.3, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.5})`);
-        outerGlowGradient.addColorStop(0.6, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.2})`);
-        outerGlowGradient.addColorStop(1, `hsla(${baseHue}, ${saturation}%, ${lightness}%, 0)`);
-
-        ctx.beginPath();
-        ctx.arc(spore.x, spore.y, currentSize * 5, 0, Math.PI * 2);
-        ctx.fillStyle = outerGlowGradient;
-        ctx.fill();
-
-        // Draw middle glow
+        // Simple rendering: outer glow + core (no blur filter for performance)
+        // Draw outer glow
         const glowGradient = ctx.createRadialGradient(
           spore.x, spore.y, 0,
           spore.x, spore.y, currentSize * 3
         );
-        glowGradient.addColorStop(0, `hsla(${baseHue}, ${saturation}%, ${lightness + 10}%, ${currentOpacity})`);
-        glowGradient.addColorStop(0.5, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.6})`);
+        glowGradient.addColorStop(0, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.6})`);
+        glowGradient.addColorStop(0.5, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.3})`);
         glowGradient.addColorStop(1, `hsla(${baseHue}, ${saturation}%, ${lightness}%, 0)`);
 
         ctx.beginPath();
@@ -271,21 +195,17 @@ export const SporeEffect = () => {
         ctx.fillStyle = glowGradient;
         ctx.fill();
 
-        // Reset filter for sharp core
-        ctx.filter = 'none';
-
-        // Draw core (inner bright part) - sharp and bright
+        // Draw core
         const coreGradient = ctx.createRadialGradient(
           spore.x, spore.y, 0,
-          spore.x, spore.y, currentSize * 1.2
+          spore.x, spore.y, currentSize
         );
-        coreGradient.addColorStop(0, `hsla(${baseHue}, 100%, ${lightness + 30}%, ${currentOpacity})`);
-        coreGradient.addColorStop(0.3, `hsla(${baseHue}, ${saturation + 10}%, ${lightness + 15}%, ${currentOpacity * 0.9})`);
-        coreGradient.addColorStop(0.7, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.6})`);
+        coreGradient.addColorStop(0, `hsla(${baseHue}, 100%, ${lightness + 20}%, ${currentOpacity * 0.9})`);
+        coreGradient.addColorStop(0.5, `hsla(${baseHue}, ${saturation}%, ${lightness}%, ${currentOpacity * 0.7})`);
         coreGradient.addColorStop(1, `hsla(${baseHue}, ${saturation}%, ${lightness - 10}%, 0)`);
 
         ctx.beginPath();
-        ctx.arc(spore.x, spore.y, currentSize * 1.2, 0, Math.PI * 2);
+        ctx.arc(spore.x, spore.y, currentSize, 0, Math.PI * 2);
         ctx.fillStyle = coreGradient;
         ctx.fill();
       });
@@ -297,7 +217,6 @@ export const SporeEffect = () => {
 
     return () => {
       window.removeEventListener('resize', resizeCanvas);
-      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseleave', handleMouseLeave);
       if (animationFrameRef.current) {
