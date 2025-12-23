@@ -22,7 +22,7 @@ const ComingSoon = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-[#0a192f] to-[#020c1b]">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-[#0a192f] to-[#020c1b] relative z-10">
       <p className="text-white">{t.comingsoon_redirect}</p>
     </div>
   );

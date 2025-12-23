@@ -228,7 +228,7 @@ export const SporeEffect = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 z-[1]"
+      className="fixed inset-0 z-0"
       style={{
         position: 'fixed',
         top: 0,
