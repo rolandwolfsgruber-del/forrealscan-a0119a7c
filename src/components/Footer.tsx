@@ -89,12 +89,9 @@ export const Footer = ({ language, theme }: FooterProps) => {
             >
               info@forrealscan.com
             </a>
-            <div className="flex flex-col sm:flex-row items-center gap-2 text-xs sm:text-sm text-center md:text-right transition-colors duration-500 text-muted-foreground">
-              <span>{t.footer_copyright.replace('{year}', currentYear.toString())}</span>
-              <span className="text-[11px] font-mono transition-colors duration-500 opacity-70">
-                Build: {BUILD_ID} · {BUILD_TIME}
-              </span>
-            </div>
+            <span className="text-xs sm:text-sm text-center md:text-right transition-colors duration-500 text-muted-foreground">
+              {t.footer_copyright.replace('{year}', currentYear.toString())}
+            </span>
           </div>
         </div>
       </div>
