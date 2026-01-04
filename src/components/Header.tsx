@@ -89,10 +89,12 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
           <div className={`flex-shrink-0 transition-opacity duration-300 ${
             scrolled ? 'opacity-100' : 'opacity-0'
           }`}>
-            <img 
-              src={logoMaster} 
-              alt="ForRealScan Logo" 
+            <img
+              src={logoMaster}
+              alt="ForRealScan Logo"
               className="h-12 sm:h-14 w-auto drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+              width={56}
+              height={56}
             />
           </div>
 

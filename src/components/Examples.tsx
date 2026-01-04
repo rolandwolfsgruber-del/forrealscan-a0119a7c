@@ -62,6 +62,9 @@ export const Examples = ({ language, theme }: ExamplesProps) => {
                     src={squirrelImage}
                     alt={t.examples_real_label}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={600}
+                    loading="lazy"
                   />
                 </div>
 
@@ -106,6 +109,9 @@ export const Examples = ({ language, theme }: ExamplesProps) => {
                     src={squirrelAiImage}
                     alt={t.examples_ai_label}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={600}
+                    loading="lazy"
                   />
                 </div>
 

@@ -106,9 +106,15 @@ export const Hero = ({
               }} />
 
                 {/* ForRealScan Master Logo */}
-                <img alt="ForRealScan Logo" className="w-full h-auto object-contain relative z-10 transition-transform duration-300 group-hover:scale-105" style={{
-                imageRendering: 'crisp-edges'
-              }} src="/lovable-uploads/ed0e1459-52f3-4131-9d2f-c4342e615982.png" />
+                <img
+                  alt="ForRealScan Logo"
+                  className="w-full h-auto object-contain relative z-10 transition-transform duration-300 group-hover:scale-105"
+                  style={{ imageRendering: 'crisp-edges' }}
+                  src="/lovable-uploads/ed0e1459-52f3-4131-9d2f-c4342e615982.png"
+                  width={360}
+                  height={360}
+                  fetchPriority="high"
+                />
               </div>
             </div>
           </div>
