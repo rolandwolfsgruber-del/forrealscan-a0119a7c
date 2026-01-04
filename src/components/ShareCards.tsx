@@ -14,14 +14,20 @@ export const ShareCards = ({ language, theme }: ShareCardsProps) => {
     {
       image: '/share-cards/skater-1-percent.png',
       alt: 'ForRealScan Result: 1% AI Probability (Real Photo)',
+      width: 300,
+      height: 550,
     },
     {
       image: '/share-cards/car-40-percent.png',
       alt: 'ForRealScan Result: 40% AI Probability (Uncertain)',
+      width: 337,
+      height: 550,
     },
     {
       image: '/share-cards/fashion-99-percent.png',
       alt: 'ForRealScan Result: 99% AI Probability (AI Generated)',
+      width: 247,
+      height: 550,
     },
   ];
 
@@ -52,6 +58,9 @@ export const ShareCards = ({ language, theme }: ShareCardsProps) => {
                 alt={card.alt}
                 className="max-h-full w-auto object-contain shadow-2xl rounded-2xl hover:scale-[1.02] transition-transform"
                 loading="lazy"
+                width={card.width}
+                height={card.height}
+                decoding="async"
               />
             </div>
           ))}

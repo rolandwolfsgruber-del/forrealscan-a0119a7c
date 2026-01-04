@@ -135,6 +135,9 @@ const ExamplesPage = () => {
                     src={example.image}
                     alt={example.title}
                     className="w-full h-full object-cover"
+                    width={600}
+                    height={600}
+                    loading="lazy"
                   />
                   {/* Score Badge */}
                   <div className="absolute top-4 right-4">
