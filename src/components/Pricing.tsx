@@ -78,7 +78,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-12 text-base rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground transition-all duration-300"
+                  className="w-full h-12 text-base rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground hover:text-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_guest_cta}
@@ -187,7 +187,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground transition-all duration-300"
+                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground hover:text-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
@@ -197,29 +197,30 @@ export const Pricing = ({ language }: PricingProps) => {
             </Card>
           </AnimatedSection>
 
-          {/* Plus Package - Featured */}
+          {/* Plus Package */}
           <AnimatedSection delay={300}>
-            <Card className="group border border-robo/30 hover:border-robo/60 hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-robo/8 via-robo/5 to-transparent dark:from-robo/15 dark:via-robo/10 dark:to-robo/5">
+            <Card className="group border border-veritas/15 hover:border-veritas/40 hover:shadow-[0_0_20px_rgba(34,197,94,0.1)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-veritas/5 via-transparent to-transparent dark:from-veritas/8 dark:via-transparent dark:to-transparent">
               <div
-                className="absolute inset-0 opacity-100 transition-opacity duration-500 pointer-events-none"
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 50%)",
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.1) 0%, transparent 60%)",
                 }}
               />
 
               <CardHeader className="pb-3 relative z-10 text-center">
                 <CardTitle className="text-lg">{t.pricing_plus_name}</CardTitle>
-                <p className="text-3xl font-bold text-robo mt-2">{packages.plus.price}</p>
+                <p className="text-3xl font-bold text-veritas mt-2">{packages.plus.price}</p>
               </CardHeader>
               <CardContent className="space-y-4 relative z-10 text-center">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground">
-                  <Coins className="w-5 h-5 text-robo" />
+                  <Coins className="w-5 h-5 text-veritas" />
                   <span className="font-medium">{t.pricing_plus_credits}</span>
                 </div>
 
                 <Button
                   asChild
-                  className="w-full h-11 rounded-xl bg-robo hover:bg-robo/90 text-white shadow-[0_0_15px_rgba(59,130,246,0.25)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300"
+                  variant="outline"
+                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground hover:text-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
@@ -252,7 +253,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground transition-all duration-300"
+                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground hover:text-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
