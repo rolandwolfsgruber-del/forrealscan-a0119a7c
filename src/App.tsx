@@ -12,8 +12,13 @@ import Methodology from "./pages/Methodology";
 import ExamplesPage from "./pages/ExamplesPage";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import Terms from "./pages/Terms";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 import { DebugPanel } from "./components/DebugPanel";
 import { SporeEffect } from "./components/SporeEffect";
+import { CookieConsent } from "./components/CookieConsent";
 import { useThemeBodyClass } from "./hooks/useTheme";
 
 const queryClient = new QueryClient();
@@ -39,9 +44,14 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/game" element={<Game />} />
           <Route path="/coming-soon" element={<ComingSoon />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogArticle />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
