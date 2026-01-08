@@ -105,22 +105,31 @@ interface Translations {
   
   // Pricing
   pricing_title: string;
-  pricing_free_title: string;
-  pricing_free_price: string;
-  pricing_free_feat1: string;
-  pricing_free_feat2: string;
-  pricing_free_feat3: string;
-  pricing_free_cta: string;
-  pricing_premium_badge: string;
-  pricing_premium_title: string;
-  pricing_premium_feat1: string;
-  pricing_premium_feat2: string;
-  pricing_premium_feat3: string;
-  pricing_premium_feat4: string;
-  pricing_premium_feat5: string;
-  pricing_premium_cta: string;
-  pricing_premium_coming_soon_title: string;
-  pricing_premium_coming_soon_message: string;
+  pricing_guest_title: string;
+  pricing_guest_credits: string;
+  pricing_guest_feat1: string;
+  pricing_guest_feat2: string;
+  pricing_guest_cta: string;
+  pricing_account_title: string;
+  pricing_account_credits: string;
+  pricing_account_feat1: string;
+  pricing_account_feat2: string;
+  pricing_account_feat3: string;
+  pricing_account_cta: string;
+  pricing_info_title: string;
+  pricing_info_guest: string;
+  pricing_info_account: string;
+  pricing_packages_title: string;
+  pricing_starter_name: string;
+  pricing_starter_credits: string;
+  pricing_plus_name: string;
+  pricing_plus_credits: string;
+  pricing_pro_name: string;
+  pricing_pro_credits: string;
+  pricing_package_cta: string;
+  pricing_trust_onetime: string;
+  pricing_trust_nosub: string;
+  pricing_trust_secure: string;
   
   // FAQ
   faq_title: string;
@@ -477,24 +486,32 @@ export const translations: Record<Language, Translations> = {
     case4_detail3: 'Nutze ForRealScan-Hybrid-Ergebnisse als Transparenz-Pluspunkt in Pitches und Präsentationen.',
     
     // Pricing
-    pricing_title: 'Wähle deinen Plan',
-    pricing_free_title: 'Kostenlos',
-    pricing_free_price: 'Kostenlos',
-    pricing_free_feat1: 'Bis zu 5 Bilder pro Tag mit ForRealScan prüfen.',
-    pricing_free_feat2: 'Geplante Werbung unterstützt die kostenlose Nutzung.',
-    pricing_free_feat3: 'Kein Konto nötig für die ersten Scans.',
-    pricing_free_cta: 'Kostenlos starten',
-    
-    pricing_premium_badge: 'Bald verfügbar',
-    pricing_premium_title: 'Premium – bald verfügbar',
-    pricing_premium_feat1: 'Geplante unbegrenzte ForRealScan-Analysen ohne Tageslimit.',
-    pricing_premium_feat2: 'Geplante werbefreie Nutzung.',
-    pricing_premium_feat3: 'Geplante erweiterte Scan-Historie und Sammlung.',
-    pricing_premium_feat4: 'Geplante Prioritäts-Verarbeitung.',
-    pricing_premium_feat5: '',
-    pricing_premium_cta: 'Benachrichtige mich, wenn Premium startet',
-    pricing_premium_coming_soon_title: 'Premium in Vorbereitung',
-    pricing_premium_coming_soon_message: 'Premium befindet sich in Vorbereitung. Wir informieren dich, sobald es startet.',
+    pricing_title: 'Credits & Preise',
+    pricing_guest_title: 'Gast-Modus',
+    pricing_guest_credits: '3 Credits / Tag',
+    pricing_guest_feat1: 'Kein Konto erforderlich',
+    pricing_guest_feat2: 'Gerätgebunden',
+    pricing_guest_cta: 'Jetzt starten',
+    pricing_account_title: 'Mit Konto',
+    pricing_account_credits: '5 Credits / Tag',
+    pricing_account_feat1: 'Geräteübergreifend nutzbar',
+    pricing_account_feat2: 'Credit-Pakete kaufbar',
+    pricing_account_feat3: 'Sammlung & Historie',
+    pricing_account_cta: 'Konto erstellen',
+    pricing_info_title: 'So funktioniert es',
+    pricing_info_guest: 'Gast-Modus: 3 kostenlose Credits pro Tag auf diesem Gerät.',
+    pricing_info_account: 'Mit Konto: 5 kostenlose Credits pro Tag plus optionale Credit-Pakete für Zusatz-Scans.',
+    pricing_packages_title: 'Mehr Credits benötigt?',
+    pricing_starter_name: 'Starter-Paket',
+    pricing_starter_credits: '20 Credits',
+    pricing_plus_name: 'Plus-Paket',
+    pricing_plus_credits: '50 Credits',
+    pricing_pro_name: 'Pro-Paket',
+    pricing_pro_credits: '100 Credits',
+    pricing_package_cta: 'Credits holen',
+    pricing_trust_onetime: 'Einmalzahlung',
+    pricing_trust_nosub: 'Kein Abo',
+    pricing_trust_secure: 'Sichere Zahlung',
     
     // FAQ
     faq_title: 'Häufig gestellte Fragen',
@@ -850,24 +867,32 @@ export const translations: Record<Language, Translations> = {
     case4_detail3: 'Use ForRealScan-Hybrid results as a transparency plus in pitches and presentations.',
     
     // Pricing
-    pricing_title: 'Choose Your Plan',
-    pricing_free_title: 'Free',
-    pricing_free_price: 'Free',
-    pricing_free_feat1: 'Check up to 5 images per day with ForRealScan.',
-    pricing_free_feat2: 'Planned ads support the free version.',
-    pricing_free_feat3: 'No account needed for first scans.',
-    pricing_free_cta: 'Start Free',
-    
-    pricing_premium_badge: 'Coming soon',
-    pricing_premium_title: 'Premium – coming soon',
-    pricing_premium_feat1: 'Planned unlimited ForRealScan analyses without daily limit.',
-    pricing_premium_feat2: 'Planned ad-free experience.',
-    pricing_premium_feat3: 'Planned extended scan history and collection.',
-    pricing_premium_feat4: 'Planned priority processing.',
-    pricing_premium_feat5: '',
-    pricing_premium_cta: 'Notify me when Premium launches',
-    pricing_premium_coming_soon_title: 'Premium in Preparation',
-    pricing_premium_coming_soon_message: 'Premium is not available yet. We will inform you as soon as it launches.',
+    pricing_title: 'Credits & Pricing',
+    pricing_guest_title: 'Guest Mode',
+    pricing_guest_credits: '3 Credits / Day',
+    pricing_guest_feat1: 'No account required',
+    pricing_guest_feat2: 'Device-bound',
+    pricing_guest_cta: 'Start Now',
+    pricing_account_title: 'With Account',
+    pricing_account_credits: '5 Credits / Day',
+    pricing_account_feat1: 'Use across devices',
+    pricing_account_feat2: 'Purchase credit packages',
+    pricing_account_feat3: 'Collection & History',
+    pricing_account_cta: 'Create Account',
+    pricing_info_title: 'How it works',
+    pricing_info_guest: 'Guest Mode: 3 free credits per day on this device.',
+    pricing_info_account: 'With Account: 5 free credits per day plus optional credit packages for extra scans.',
+    pricing_packages_title: 'Need more credits?',
+    pricing_starter_name: 'Starter Package',
+    pricing_starter_credits: '20 Credits',
+    pricing_plus_name: 'Plus Package',
+    pricing_plus_credits: '50 Credits',
+    pricing_pro_name: 'Pro Package',
+    pricing_pro_credits: '100 Credits',
+    pricing_package_cta: 'Get Credits',
+    pricing_trust_onetime: 'One-time payment',
+    pricing_trust_nosub: 'No subscription',
+    pricing_trust_secure: 'Secure payment',
     
     // FAQ
     faq_title: 'Frequently Asked Questions',
@@ -1223,24 +1248,32 @@ export const translations: Record<Language, Translations> = {
     case4_detail3: 'Usa i risultati ForRealScan-Hybrid come punto di forza della trasparenza in pitch e presentazioni.',
     
     // Pricing
-    pricing_title: 'Scegli il Tuo Piano',
-    pricing_free_title: 'Gratuito',
-    pricing_free_price: 'Gratuito',
-    pricing_free_feat1: 'Controlla fino a 5 immagini al giorno con ForRealScan.',
-    pricing_free_feat2: 'Pubblicità pianificata supporta la versione gratuita.',
-    pricing_free_feat3: 'Nessun account necessario per le prime scansioni.',
-    pricing_free_cta: 'Inizia Gratis',
-    
-    pricing_premium_badge: 'Prossimamente',
-    pricing_premium_title: 'Premium – prossimamente',
-    pricing_premium_feat1: 'Analisi ForRealScan illimitate previste senza limite giornaliero.',
-    pricing_premium_feat2: 'Esperienza senza pubblicità pianificata.',
-    pricing_premium_feat3: 'Cronologia e raccolta estesa pianificate.',
-    pricing_premium_feat4: 'Elaborazione prioritaria pianificata.',
-    pricing_premium_feat5: '',
-    pricing_premium_cta: 'Avvisami quando Premium sarà disponibile',
-    pricing_premium_coming_soon_title: 'Premium in Preparazione',
-    pricing_premium_coming_soon_message: 'Premium non è ancora disponibile. Ti informeremo non appena sarà lanciato.',
+    pricing_title: 'Crediti & Prezzi',
+    pricing_guest_title: 'Modalità Ospite',
+    pricing_guest_credits: '3 Crediti / Giorno',
+    pricing_guest_feat1: 'Nessun account richiesto',
+    pricing_guest_feat2: 'Legato al dispositivo',
+    pricing_guest_cta: 'Inizia ora',
+    pricing_account_title: 'Con Account',
+    pricing_account_credits: '5 Crediti / Giorno',
+    pricing_account_feat1: 'Utilizzo su più dispositivi',
+    pricing_account_feat2: 'Acquista pacchetti crediti',
+    pricing_account_feat3: 'Raccolta & Cronologia',
+    pricing_account_cta: 'Crea Account',
+    pricing_info_title: 'Come funziona',
+    pricing_info_guest: 'Modalità Ospite: 3 crediti gratuiti al giorno su questo dispositivo.',
+    pricing_info_account: 'Con Account: 5 crediti gratuiti al giorno più pacchetti crediti opzionali per scansioni extra.',
+    pricing_packages_title: 'Hai bisogno di più crediti?',
+    pricing_starter_name: 'Pacchetto Starter',
+    pricing_starter_credits: '20 Crediti',
+    pricing_plus_name: 'Pacchetto Plus',
+    pricing_plus_credits: '50 Crediti',
+    pricing_pro_name: 'Pacchetto Pro',
+    pricing_pro_credits: '100 Crediti',
+    pricing_package_cta: 'Ottieni Crediti',
+    pricing_trust_onetime: 'Pagamento unico',
+    pricing_trust_nosub: 'Nessun abbonamento',
+    pricing_trust_secure: 'Pagamento sicuro',
     
     // FAQ
     faq_title: 'Domande Frequenti',
@@ -1596,24 +1629,32 @@ export const translations: Record<Language, Translations> = {
     case4_detail3: 'Usa los resultados ForRealScan-Hybrid como un plus de transparencia en presentaciones y propuestas.',
     
     // Pricing
-    pricing_title: 'Elige Tu Plan',
-    pricing_free_title: 'Gratis',
-    pricing_free_price: 'Gratis',
-    pricing_free_feat1: 'Verifica hasta 5 imágenes por día con ForRealScan.',
-    pricing_free_feat2: 'Anuncios planificados soportan la versión gratuita.',
-    pricing_free_feat3: 'No se necesita cuenta para los primeros escaneos.',
-    pricing_free_cta: 'Comenzar Gratis',
-    
-    pricing_premium_badge: 'Próximamente',
-    pricing_premium_title: 'Premium – próximamente',
-    pricing_premium_feat1: 'Análisis ForRealScan ilimitados planificados sin límite diario.',
-    pricing_premium_feat2: 'Experiencia sin anuncios planificada.',
-    pricing_premium_feat3: 'Historial extendido y colección planificados.',
-    pricing_premium_feat4: 'Procesamiento prioritario planificado.',
-    pricing_premium_feat5: '',
-    pricing_premium_cta: 'Avísame cuando Premium esté disponible',
-    pricing_premium_coming_soon_title: 'Premium en Preparación',
-    pricing_premium_coming_soon_message: 'Premium aún no está disponible. Te informaremos tan pronto como se lance.',
+    pricing_title: 'Créditos & Precios',
+    pricing_guest_title: 'Modo Invitado',
+    pricing_guest_credits: '3 Créditos / Día',
+    pricing_guest_feat1: 'Sin cuenta requerida',
+    pricing_guest_feat2: 'Vinculado al dispositivo',
+    pricing_guest_cta: 'Comenzar ahora',
+    pricing_account_title: 'Con Cuenta',
+    pricing_account_credits: '5 Créditos / Día',
+    pricing_account_feat1: 'Uso en múltiples dispositivos',
+    pricing_account_feat2: 'Compra paquetes de créditos',
+    pricing_account_feat3: 'Colección & Historial',
+    pricing_account_cta: 'Crear Cuenta',
+    pricing_info_title: 'Cómo funciona',
+    pricing_info_guest: 'Modo Invitado: 3 créditos gratis por día en este dispositivo.',
+    pricing_info_account: 'Con Cuenta: 5 créditos gratis por día más paquetes de créditos opcionales para escaneos adicionales.',
+    pricing_packages_title: '¿Necesitas más créditos?',
+    pricing_starter_name: 'Paquete Starter',
+    pricing_starter_credits: '20 Créditos',
+    pricing_plus_name: 'Paquete Plus',
+    pricing_plus_credits: '50 Créditos',
+    pricing_pro_name: 'Paquete Pro',
+    pricing_pro_credits: '100 Créditos',
+    pricing_package_cta: 'Obtener Créditos',
+    pricing_trust_onetime: 'Pago único',
+    pricing_trust_nosub: 'Sin suscripción',
+    pricing_trust_secure: 'Pago seguro',
     
     // FAQ
     faq_title: 'Preguntas Frecuentes',
@@ -1969,24 +2010,32 @@ export const translations: Record<Language, Translations> = {
     case4_detail3: 'Utilisez les résultats ForRealScan-Hybrid comme atout de transparence dans vos présentations.',
     
     // Pricing
-    pricing_title: 'Choisissez votre formule',
-    pricing_free_title: 'Gratuit',
-    pricing_free_price: 'Gratuit',
-    pricing_free_feat1: 'Vérifiez jusqu\'à 5 images par jour avec ForRealScan.',
-    pricing_free_feat2: 'Les publicités prévues soutiennent la version gratuite.',
-    pricing_free_feat3: 'Pas de compte nécessaire pour les premiers scans.',
-    pricing_free_cta: 'Commencer gratuitement',
-    
-    pricing_premium_badge: 'Bientôt disponible',
-    pricing_premium_title: 'Premium – bientôt disponible',
-    pricing_premium_feat1: 'Analyses ForRealScan illimitées prévues sans limite quotidienne.',
-    pricing_premium_feat2: 'Expérience sans publicité prévue.',
-    pricing_premium_feat3: 'Historique étendu et collection prévus.',
-    pricing_premium_feat4: 'Traitement prioritaire prévu.',
-    pricing_premium_feat5: '',
-    pricing_premium_cta: 'Prévenez-moi au lancement de Premium',
-    pricing_premium_coming_soon_title: 'Premium en préparation',
-    pricing_premium_coming_soon_message: 'Premium n\'est pas encore disponible. Nous vous informerons dès son lancement.',
+    pricing_title: 'Crédits & Tarifs',
+    pricing_guest_title: 'Mode Invité',
+    pricing_guest_credits: '3 Crédits / Jour',
+    pricing_guest_feat1: 'Aucun compte requis',
+    pricing_guest_feat2: 'Lié à l\'appareil',
+    pricing_guest_cta: 'Commencer',
+    pricing_account_title: 'Avec Compte',
+    pricing_account_credits: '5 Crédits / Jour',
+    pricing_account_feat1: 'Utilisation multi-appareils',
+    pricing_account_feat2: 'Achat de packs de crédits',
+    pricing_account_feat3: 'Collection & Historique',
+    pricing_account_cta: 'Créer un Compte',
+    pricing_info_title: 'Comment ça marche',
+    pricing_info_guest: 'Mode Invité : 3 crédits gratuits par jour sur cet appareil.',
+    pricing_info_account: 'Avec Compte : 5 crédits gratuits par jour plus packs de crédits optionnels pour des scans supplémentaires.',
+    pricing_packages_title: 'Besoin de plus de crédits ?',
+    pricing_starter_name: 'Pack Starter',
+    pricing_starter_credits: '20 Crédits',
+    pricing_plus_name: 'Pack Plus',
+    pricing_plus_credits: '50 Crédits',
+    pricing_pro_name: 'Pack Pro',
+    pricing_pro_credits: '100 Crédits',
+    pricing_package_cta: 'Obtenir des Crédits',
+    pricing_trust_onetime: 'Paiement unique',
+    pricing_trust_nosub: 'Sans abonnement',
+    pricing_trust_secure: 'Paiement sécurisé',
     
     // FAQ
     faq_title: 'Questions fréquentes',
