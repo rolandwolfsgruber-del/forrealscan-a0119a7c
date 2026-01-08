@@ -1,10 +1,10 @@
-import { Check, Coins, Info, Shield, CreditCard, UserCircle, Smartphone } from 'lucide-react';
-import { Language, translations } from '@/lib/translations';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { APP_URL } from '@/lib/config';
-import { AnimatedSection } from '@/components/ui/animated-section';
-import { Theme } from '@/components/ThemeToggle';
+import { Check, Coins, Info, Shield, CreditCard, UserCircle, Smartphone } from "lucide-react";
+import { Language, translations } from "@/lib/translations";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { APP_URL } from "@/lib/config";
+import { AnimatedSection } from "@/components/ui/animated-section";
+import { Theme } from "@/components/ThemeToggle";
 
 interface PricingProps {
   language: Language;
@@ -13,9 +13,9 @@ interface PricingProps {
 
 // Credit package prices (same for all languages)
 const packages = {
-  starter: { price: '1,49 €', credits: 20 },
-  plus: { price: '2,99 €', credits: 50 },
-  pro: { price: '4,99 €', credits: 100 },
+  starter: { price: "1,49 €", credits: 20 },
+  plus: { price: "2,99 €", credits: 50 },
+  pro: { price: "4,99 €", credits: 100 },
 };
 
 export const Pricing = ({ language }: PricingProps) => {
@@ -28,7 +28,7 @@ export const Pricing = ({ language }: PricingProps) => {
         className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"
         style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
-          backgroundSize: '40px 40px',
+          backgroundSize: "40px 40px",
         }}
       />
 
@@ -50,7 +50,7 @@ export const Pricing = ({ language }: PricingProps) => {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.08) 0%, transparent 70%)',
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.08) 0%, transparent 70%)",
                 }}
               />
 
@@ -75,7 +75,11 @@ export const Pricing = ({ language }: PricingProps) => {
                   </li>
                 </ul>
 
-                <Button asChild variant="outline" className="w-full h-12 text-base rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full h-12 text-base rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300"
+                >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_guest_cta}
                   </a>
@@ -90,7 +94,7 @@ export const Pricing = ({ language }: PricingProps) => {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 70%)',
+                  background: "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 70%)",
                 }}
               />
 
@@ -119,7 +123,10 @@ export const Pricing = ({ language }: PricingProps) => {
                   </li>
                 </ul>
 
-                <Button asChild className="w-full h-12 text-base rounded-xl bg-gradient-to-r from-robo to-robo-glow hover:opacity-90 transition-all duration-300">
+                <Button
+                  asChild
+                  className="w-full h-12 text-base rounded-xl bg-gradient-to-r from-robo to-robo-glow hover:opacity-90 transition-all duration-300"
+                >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_account_cta}
                   </a>
@@ -163,7 +170,7 @@ export const Pricing = ({ language }: PricingProps) => {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)',
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)",
                 }}
               />
 
@@ -177,7 +184,11 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="font-medium">{t.pricing_starter_credits}</span>
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300"
+                >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
                   </a>
@@ -192,7 +203,7 @@ export const Pricing = ({ language }: PricingProps) => {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)',
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)",
                 }}
               />
 
@@ -206,7 +217,11 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="font-medium">{t.pricing_plus_credits}</span>
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300"
+                >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
                   </a>
@@ -221,7 +236,7 @@ export const Pricing = ({ language }: PricingProps) => {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)',
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)",
                 }}
               />
 
@@ -235,7 +250,11 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="font-medium">{t.pricing_pro_credits}</span>
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300"
+                >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
                   </a>
