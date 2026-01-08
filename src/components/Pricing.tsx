@@ -78,7 +78,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-12 text-base rounded-xl hover:bg-veritas hover:text-white hover:border-veritas transition-all duration-300"
+                  className="w-full h-12 text-base rounded-xl border-2 hover:border-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_guest_cta}
@@ -125,7 +125,8 @@ export const Pricing = ({ language }: PricingProps) => {
 
                 <Button
                   asChild
-                  className="w-full h-12 text-base rounded-xl bg-gradient-to-r from-robo to-robo-glow hover:opacity-90 transition-all duration-300"
+                  variant="outline"
+                  className="w-full h-12 text-base rounded-xl border-2 hover:border-robo transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_account_cta}
@@ -187,7 +188,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl hover:bg-veritas hover:text-white hover:border-veritas transition-all duration-300"
+                  className="w-full h-11 rounded-xl border-2 hover:border-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
@@ -220,7 +221,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl hover:bg-veritas hover:text-white hover:border-veritas transition-all duration-300"
+                  className="w-full h-11 rounded-xl border-2 hover:border-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
@@ -253,7 +254,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl hover:bg-veritas hover:text-white hover:border-veritas transition-all duration-300"
+                  className="w-full h-11 rounded-xl border-2 hover:border-veritas transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
