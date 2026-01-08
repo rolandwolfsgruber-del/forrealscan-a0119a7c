@@ -1,5 +1,5 @@
 import { Language, translations } from '@/lib/translations';
-import { FileText, Shield, Mail, BookOpen, Images } from 'lucide-react';
+import { FileText, Shield, Mail, BookOpen, Images, Users, ScrollText, Newspaper } from 'lucide-react';
 import { BUILD_ID, BUILD_TIME } from '@/lib/buildInfo';
 import { Theme } from '@/components/ThemeToggle';
 
@@ -9,12 +9,18 @@ interface FooterProps {
 }
 
 // Footer-specific translations for new pages
-const footerTranslations: Record<Language, { methodology: string; examples: string }> = {
-  de: { methodology: 'Methodik', examples: 'Beispiele' },
-  en: { methodology: 'Methodology', examples: 'Examples' },
-  it: { methodology: 'Metodologia', examples: 'Esempi' },
-  es: { methodology: 'Metodología', examples: 'Ejemplos' },
-  fr: { methodology: 'Méthodologie', examples: 'Exemples' },
+const footerTranslations: Record<Language, {
+  methodology: string;
+  examples: string;
+  about: string;
+  terms: string;
+  blog: string;
+}> = {
+  de: { methodology: 'Methodik', examples: 'Beispiele', about: 'Über uns', terms: 'AGB', blog: 'Blog' },
+  en: { methodology: 'Methodology', examples: 'Examples', about: 'About', terms: 'Terms', blog: 'Blog' },
+  it: { methodology: 'Metodologia', examples: 'Esempi', about: 'Chi siamo', terms: 'Termini', blog: 'Blog' },
+  es: { methodology: 'Metodología', examples: 'Ejemplos', about: 'Nosotros', terms: 'Términos', blog: 'Blog' },
+  fr: { methodology: 'Méthodologie', examples: 'Exemples', about: 'À propos', terms: 'CGU', blog: 'Blog' },
 };
 
 export const Footer = ({ language, theme }: FooterProps) => {
@@ -40,6 +46,20 @@ export const Footer = ({ language, theme }: FooterProps) => {
             {/* Content Links */}
             <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
               <a
+                href="/about"
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
+              >
+                <Users className="w-4 h-4" />
+                {ft.about}
+              </a>
+              <a
+                href="/blog"
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
+              >
+                <Newspaper className="w-4 h-4" />
+                {ft.blog}
+              </a>
+              <a
                 href="/methodology"
                 className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
               >
@@ -63,6 +83,13 @@ export const Footer = ({ language, theme }: FooterProps) => {
               >
                 <FileText className="w-4 h-4" />
                 {t.footer_imprint}
+              </a>
+              <a
+                href="/terms"
+                className="flex items-center gap-2 transition-colors duration-500 text-muted-foreground hover:text-primary"
+              >
+                <ScrollText className="w-4 h-4" />
+                {ft.terms}
               </a>
               <a
                 href="/privacy"
