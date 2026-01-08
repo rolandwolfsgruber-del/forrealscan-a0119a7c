@@ -46,17 +46,17 @@ export const Pricing = ({ language }: PricingProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto mb-8">
           {/* Guest Mode Card */}
           <AnimatedSection delay={0}>
-            <Card className="group border-2 border-border hover:border-veritas/40 hover:shadow-xl transition-all duration-500 rounded-2xl h-full relative overflow-hidden">
+            <Card className="group border border-veritas/20 hover:border-veritas/50 hover:shadow-[0_0_30px_rgba(34,197,94,0.15)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-veritas/5 via-transparent to-transparent dark:from-veritas/10 dark:via-veritas/5 dark:to-transparent">
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.08) 0%, transparent 70%)",
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.12) 0%, transparent 60%)",
                 }}
               />
 
               <CardHeader className="pb-4 relative z-10">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-veritas/20 to-veritas/10 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-veritas/30 to-veritas/10 flex items-center justify-center shadow-[0_0_15px_rgba(34,197,94,0.2)]">
                     <Smartphone className="w-5 h-5 text-veritas" />
                   </div>
                   <CardTitle className="text-xl">{t.pricing_guest_title}</CardTitle>
@@ -78,7 +78,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-12 text-base rounded-xl border-2 hover:border-veritas transition-all duration-300"
+                  className="w-full h-12 text-base rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_guest_cta}
@@ -90,17 +90,17 @@ export const Pricing = ({ language }: PricingProps) => {
 
           {/* With Account Card */}
           <AnimatedSection delay={100}>
-            <Card className="group border-2 border-robo/50 hover:border-robo hover:shadow-xl transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-robo/5 to-transparent">
+            <Card className="group border border-robo/30 hover:border-robo/60 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-robo/5 via-robo/5 to-transparent dark:from-robo/15 dark:via-robo/10 dark:to-robo/5">
               <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                className="absolute inset-0 opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 70%)",
+                  background: "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)",
                 }}
               />
 
               <CardHeader className="pb-4 relative z-10">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-robo/20 to-robo/10 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-robo/40 to-robo/20 flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.3)]">
                     <UserCircle className="w-5 h-5 text-robo" />
                   </div>
                   <CardTitle className="text-xl">{t.pricing_account_title}</CardTitle>
@@ -125,8 +125,7 @@ export const Pricing = ({ language }: PricingProps) => {
 
                 <Button
                   asChild
-                  variant="outline"
-                  className="w-full h-12 text-base rounded-xl border-2 hover:border-robo transition-all duration-300"
+                  className="w-full h-12 text-base rounded-xl bg-robo hover:bg-robo/90 text-white shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_account_cta}
@@ -167,17 +166,17 @@ export const Pricing = ({ language }: PricingProps) => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-8">
           {/* Starter Package */}
           <AnimatedSection delay={250}>
-            <Card className="group border-2 border-border hover:border-veritas/40 hover:shadow-lg transition-all duration-500 rounded-2xl h-full relative overflow-hidden">
+            <Card className="group border border-veritas/15 hover:border-veritas/40 hover:shadow-[0_0_20px_rgba(34,197,94,0.1)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-veritas/5 via-transparent to-transparent dark:from-veritas/8 dark:via-transparent dark:to-transparent">
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)",
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.1) 0%, transparent 60%)",
                 }}
               />
 
               <CardHeader className="pb-3 relative z-10 text-center">
                 <CardTitle className="text-lg">{t.pricing_starter_name}</CardTitle>
-                <p className="text-3xl font-bold text-foreground mt-2">{packages.starter.price}</p>
+                <p className="text-3xl font-bold text-veritas mt-2">{packages.starter.price}</p>
               </CardHeader>
               <CardContent className="space-y-4 relative z-10 text-center">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground">
@@ -188,7 +187,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl border-2 hover:border-veritas transition-all duration-300"
+                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
@@ -198,30 +197,29 @@ export const Pricing = ({ language }: PricingProps) => {
             </Card>
           </AnimatedSection>
 
-          {/* Plus Package */}
+          {/* Plus Package - Featured */}
           <AnimatedSection delay={300}>
-            <Card className="group border-2 border-border hover:border-veritas/40 hover:shadow-lg transition-all duration-500 rounded-2xl h-full relative overflow-hidden">
+            <Card className="group border border-robo/30 hover:border-robo/60 hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-robo/8 via-robo/5 to-transparent dark:from-robo/15 dark:via-robo/10 dark:to-robo/5">
               <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                className="absolute inset-0 opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)",
+                  background: "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 50%)",
                 }}
               />
 
               <CardHeader className="pb-3 relative z-10 text-center">
                 <CardTitle className="text-lg">{t.pricing_plus_name}</CardTitle>
-                <p className="text-3xl font-bold text-foreground mt-2">{packages.plus.price}</p>
+                <p className="text-3xl font-bold text-robo mt-2">{packages.plus.price}</p>
               </CardHeader>
               <CardContent className="space-y-4 relative z-10 text-center">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground">
-                  <Coins className="w-5 h-5 text-veritas" />
+                  <Coins className="w-5 h-5 text-robo" />
                   <span className="font-medium">{t.pricing_plus_credits}</span>
                 </div>
 
                 <Button
                   asChild
-                  variant="outline"
-                  className="w-full h-11 rounded-xl border-2 hover:border-veritas transition-all duration-300"
+                  className="w-full h-11 rounded-xl bg-robo hover:bg-robo/90 text-white shadow-[0_0_15px_rgba(59,130,246,0.25)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
@@ -233,17 +231,17 @@ export const Pricing = ({ language }: PricingProps) => {
 
           {/* Pro Package */}
           <AnimatedSection delay={350}>
-            <Card className="group border-2 border-border hover:border-veritas/40 hover:shadow-lg transition-all duration-500 rounded-2xl h-full relative overflow-hidden">
+            <Card className="group border border-veritas/15 hover:border-veritas/40 hover:shadow-[0_0_20px_rgba(34,197,94,0.1)] transition-all duration-500 rounded-2xl h-full relative overflow-hidden bg-gradient-to-br from-veritas/5 via-transparent to-transparent dark:from-veritas/8 dark:via-transparent dark:to-transparent">
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 70%)",
+                  background: "radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.1) 0%, transparent 60%)",
                 }}
               />
 
               <CardHeader className="pb-3 relative z-10 text-center">
                 <CardTitle className="text-lg">{t.pricing_pro_name}</CardTitle>
-                <p className="text-3xl font-bold text-foreground mt-2">{packages.pro.price}</p>
+                <p className="text-3xl font-bold text-veritas mt-2">{packages.pro.price}</p>
               </CardHeader>
               <CardContent className="space-y-4 relative z-10 text-center">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground">
@@ -254,7 +252,7 @@ export const Pricing = ({ language }: PricingProps) => {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-11 rounded-xl border-2 hover:border-veritas transition-all duration-300"
+                  className="w-full h-11 rounded-xl border border-veritas/30 hover:border-veritas hover:bg-veritas/10 text-foreground transition-all duration-300"
                 >
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
