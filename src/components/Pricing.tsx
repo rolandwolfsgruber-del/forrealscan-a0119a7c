@@ -75,7 +75,7 @@ export const Pricing = ({ language }: PricingProps) => {
                   </li>
                 </ul>
 
-                <Button asChild variant="outline" className="w-full h-12 text-base rounded-xl hover:bg-veritas/10 hover:border-veritas transition-all duration-300">
+                <Button asChild variant="outline" className="w-full h-12 text-base rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_guest_cta}
                   </a>
@@ -132,7 +132,7 @@ export const Pricing = ({ language }: PricingProps) => {
         {/* Info Box */}
         <AnimatedSection delay={150}>
           <div className="max-w-4xl mx-auto mb-12">
-            <div className="bg-gradient-to-r from-slate-800/50 to-slate-900/50 dark:from-slate-800/80 dark:to-slate-900/80 rounded-2xl p-6 border border-slate-700/50">
+            <div className="bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-800/80 dark:to-slate-900/80 rounded-2xl p-6 border border-slate-300 dark:border-slate-700/50">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-veritas/20 to-robo/20 flex items-center justify-center flex-shrink-0">
                   <Info className="w-5 h-5 text-veritas" />
@@ -177,7 +177,7 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="font-medium">{t.pricing_starter_credits}</span>
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/10 hover:border-veritas transition-all duration-300">
+                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
                   </a>
@@ -206,7 +206,7 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="font-medium">{t.pricing_plus_credits}</span>
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/10 hover:border-veritas transition-all duration-300">
+                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
                   </a>
@@ -235,7 +235,7 @@ export const Pricing = ({ language }: PricingProps) => {
                   <span className="font-medium">{t.pricing_pro_credits}</span>
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/10 hover:border-veritas transition-all duration-300">
+                <Button asChild variant="outline" className="w-full h-11 rounded-xl hover:bg-veritas/20 hover:border-veritas transition-all duration-300">
                   <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                     {t.pricing_package_cta}
                   </a>
