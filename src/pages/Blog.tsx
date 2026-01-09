@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.png';
 import deepfakesVerstehenImg from '@/assets/deepfakes-verstehen.png';
 import medienkompetenzImg from '@/assets/medienkompetenz.png';
+import kiBildgeneratorenImg from '@/assets/ki-bildgeneratoren.png';
 
 export interface BlogArticle {
   id: string;
@@ -244,6 +245,7 @@ const articles: BlogArticle[] = [
     date: '2025-12-20',
     readTime: 12,
     category: 'technology',
+    image: kiBildgeneratorenImg,
   },
   {
     id: 'authentizitaet-pruefen',
