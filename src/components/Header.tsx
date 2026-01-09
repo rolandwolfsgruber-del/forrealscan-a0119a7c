@@ -287,6 +287,8 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
               size="icon"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="h-9 w-9"
+              aria-label={mobileMenuOpen ? 'Menü schließen' : 'Menü öffnen'}
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
