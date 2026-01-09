@@ -41,6 +41,7 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('start');
   const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const t = translations[language];
   const ht = headerTranslations[language];
 
@@ -55,7 +56,13 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 80);
-      
+
+      // Calculate scroll progress (0-100)
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      setScrollProgress(Math.min(100, Math.max(0, progress)));
+
       const sections = ['start', 'how-it-works', 'modes', 'veritas-robo', 'game', 'pricing', 'faq'];
       const scrollPosition = window.scrollY + 100;
 
@@ -128,6 +135,12 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
       "fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/5 transition-colors duration-500",
       theme === 'robo' ? "bg-[#0c0f1e]/80" : "bg-white/70"
     )}>
+      {/* Scroll Progress Indicator */}
+      <div
+        className="absolute top-0 left-0 h-[2px] sm:h-[3px] bg-gradient-to-r from-veritas to-robo transition-all duration-150 ease-out"
+        style={{ width: `${scrollProgress}%` }}
+        aria-hidden="true"
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
