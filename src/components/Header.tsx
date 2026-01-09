@@ -233,7 +233,7 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="gap-2">
+                <Button variant="ghost" size="sm" className="gap-2" aria-label="Sprache wählen">
                   <Globe className="h-4 w-4" />
                   <span className="text-xs uppercase">{language}</span>
                 </Button>
@@ -264,7 +264,7 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="gap-1 px-2 h-9">
+                <Button variant="ghost" size="sm" className="gap-1 px-2 h-9" aria-label="Sprache wählen">
                   <Globe className="h-4 w-4" />
                   <span className="text-xs uppercase">{language}</span>
                 </Button>
