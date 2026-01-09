@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { useTheme } from '@/hooks/useTheme';
 import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.png';
 
 export interface BlogArticle {
   id: string;
@@ -217,6 +218,7 @@ const articles: BlogArticle[] = [
     date: '2026-01-05',
     readTime: 8,
     category: 'guide',
+    image: kiBilderErkennenImg,
   },
   {
     id: 'deepfakes-verstehen',
@@ -305,8 +307,12 @@ const Blog = () => {
                 to={`/blog/${article.slug}`}
                 className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
               >
-                <div className="aspect-video bg-gradient-to-br from-veritas/20 to-robo/20 flex items-center justify-center">
-                  <BookOpen className="w-16 h-16 text-muted-foreground/30" />
+                <div className="aspect-video bg-gradient-to-br from-veritas/20 to-robo/20 flex items-center justify-center overflow-hidden">
+                  {article.image ? (
+                    <img src={article.image} alt={t.articles[article.id]?.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <BookOpen className="w-16 h-16 text-muted-foreground/30" />
+                  )}
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
