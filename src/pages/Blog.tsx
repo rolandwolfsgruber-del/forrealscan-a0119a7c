@@ -8,6 +8,7 @@ import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.png';
 import deepfakesVerstehenImg from '@/assets/deepfakes-verstehen.png';
+import medienkompetenzImg from '@/assets/medienkompetenz.png';
 
 export interface BlogArticle {
   id: string;
@@ -235,6 +236,7 @@ const articles: BlogArticle[] = [
     date: '2025-12-28',
     readTime: 7,
     category: 'guide',
+    image: medienkompetenzImg,
   },
   {
     id: 'ki-bildgeneratoren-vergleich',
