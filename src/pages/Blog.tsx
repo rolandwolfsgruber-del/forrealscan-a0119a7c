@@ -7,6 +7,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.png';
+import deepfakesVerstehenImg from '@/assets/deepfakes-verstehen.png';
 
 export interface BlogArticle {
   id: string;
@@ -226,6 +227,7 @@ const articles: BlogArticle[] = [
     date: '2026-01-02',
     readTime: 10,
     category: 'technology',
+    image: deepfakesVerstehenImg,
   },
   {
     id: 'medienkompetenz-digital',
