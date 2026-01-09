@@ -2,8 +2,8 @@ import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { AnimatedSection } from '@/components/ui/animated-section';
-import squirrelImage from '@/assets/squirrel-real.jpg';
-import squirrelAiImage from '@/assets/squirrel-ai.png';
+import squirrelImage from '@/assets/squirrel-real.webp';
+import squirrelAiImage from '@/assets/squirrel-ai.webp';
 import { Theme } from '@/components/ThemeToggle';
 
 interface ExamplesProps {

@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, Globe, ChevronDown, BookOpen, Images, Users, Newspaper, Gamepad2 } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
-import logoMaster from '@/assets/logo-transparent.png';
+import logoMaster from '@/assets/logo-transparent.webp';
 import {
   DropdownMenu,
   DropdownMenuContent,

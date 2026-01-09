@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
-import logoMaster from '@/assets/logo-master.png';
+import logoMaster from '@/assets/logo-master.webp';
 import { Theme } from '@/components/ThemeToggle';
 
 interface HeroProps {
@@ -105,12 +105,14 @@ export const Hero = ({
                 boxShadow: '0 0 10px 3px rgba(34, 197, 94, 0.3)'
               }} />
 
-                {/* ForRealScan Master Logo */}
+                {/* ForRealScan Master Logo - Responsive with srcset */}
                 <img
                   alt="ForRealScan - KI-Erkennungstool zur Analyse von Bild-Authentizität, zeigt stilisiertes Auge mit Veritas (grün) und Robo (blau) Elementen"
                   className="w-full h-auto object-contain relative z-10 transition-transform duration-300 group-hover:scale-105"
                   style={{ imageRendering: 'crisp-edges' }}
-                  src="/lovable-uploads/ed0e1459-52f3-4131-9d2f-c4342e615982.png"
+                  src="/lovable-uploads/ed0e1459-52f3-4131-9d2f-c4342e615982.webp"
+                  srcSet="/lovable-uploads/hero-logo-400w.webp 400w, /lovable-uploads/hero-logo-800w.webp 800w, /lovable-uploads/hero-logo-1200w.webp 1200w"
+                  sizes="(max-width: 640px) 220px, (max-width: 768px) 280px, 360px"
                   width={360}
                   height={360}
                   fetchPriority="high"

@@ -169,9 +169,9 @@ export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
                   </li>
                 </ul>
 
-                {/* Veritas 3D Viewer - Lazy Loaded */}
+                {/* Veritas 3D Viewer - Lazy Loaded (Draco compressed) */}
                 <Lazy3DModel
-                  src="/models/veritas-owl.glb"
+                  src="/models/veritas-owl-compressed.glb"
                   alt="Veritas 3D Modell"
                   colorClass="green"
                 />
@@ -216,9 +216,9 @@ export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
                   </li>
                 </ul>
 
-                {/* Robo 3D Viewer - Lazy Loaded */}
+                {/* Robo 3D Viewer - Lazy Loaded (Draco compressed) */}
                 <Lazy3DModel
-                  src="/models/robo.glb"
+                  src="/models/robo-compressed.glb"
                   alt="Robo 3D Modell"
                   colorClass="blue"
                 />

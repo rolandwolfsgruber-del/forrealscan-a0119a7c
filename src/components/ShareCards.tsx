@@ -12,19 +12,25 @@ export const ShareCards = ({ language, theme }: ShareCardsProps) => {
 
   const cards = [
     {
-      image: '/share-cards/skater-1-percent.png',
+      image: '/share-cards/skater-1-percent.webp',
+      srcSet: '/share-cards/skater-1-percent-400w.webp 400w, /share-cards/skater-1-percent-800w.webp 800w',
+      sizes: '(max-width: 768px) 300px, 300px',
       alt: 'ForRealScan Result: 1% AI Probability (Real Photo)',
       width: 300,
       height: 550,
     },
     {
-      image: '/share-cards/car-40-percent.png',
+      image: '/share-cards/car-40-percent.webp',
+      srcSet: '/share-cards/car-40-percent-400w.webp 400w, /share-cards/car-40-percent-800w.webp 800w',
+      sizes: '(max-width: 768px) 337px, 337px',
       alt: 'ForRealScan Result: 40% AI Probability (Uncertain)',
       width: 337,
       height: 550,
     },
     {
-      image: '/share-cards/fashion-99-percent.png',
+      image: '/share-cards/fashion-99-percent.webp',
+      srcSet: '/share-cards/fashion-99-percent-400w.webp 400w, /share-cards/fashion-99-percent-800w.webp 800w',
+      sizes: '(max-width: 768px) 247px, 247px',
       alt: 'ForRealScan Result: 99% AI Probability (AI Generated)',
       width: 247,
       height: 550,
@@ -55,6 +61,8 @@ export const ShareCards = ({ language, theme }: ShareCardsProps) => {
             >
               <img
                 src={card.image}
+                srcSet={card.srcSet}
+                sizes={card.sizes}
                 alt={card.alt}
                 className="max-h-full w-auto object-contain shadow-2xl rounded-2xl hover:scale-[1.02] transition-transform"
                 loading="lazy"
