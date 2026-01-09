@@ -1,12 +1,104 @@
+import { useState, useEffect, useRef } from 'react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedSection } from '@/components/ui/animated-section';
 import { Theme } from '@/components/ThemeToggle';
+import { Loader2 } from 'lucide-react';
 
 interface VeritasRoboProps {
   language: Language;
   theme?: Theme;
 }
+
+// Lazy 3D Model Component with IntersectionObserver
+const Lazy3DModel = ({
+  src,
+  alt,
+  colorClass
+}: {
+  src: string;
+  alt: string;
+  colorClass: 'green' | 'blue';
+}) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '100px', threshold: 0.1 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Listen for model-viewer load event
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const handleLoad = () => setIsLoaded(true);
+    const container = containerRef.current;
+    const modelViewer = container?.querySelector('model-viewer');
+
+    if (modelViewer) {
+      modelViewer.addEventListener('load', handleLoad);
+      return () => modelViewer.removeEventListener('load', handleLoad);
+    }
+  }, [isVisible]);
+
+  const gradientClass = colorClass === 'green'
+    ? 'from-green-50 to-green-100 dark:from-green-950/20 dark:to-green-900/20 border-green-200 dark:border-green-800 group-hover:border-green-400'
+    : 'from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 border-blue-200 dark:border-blue-800 group-hover:border-blue-400';
+
+  const spinnerColor = colorClass === 'green' ? 'text-green-500' : 'text-blue-500';
+
+  return (
+    <div
+      ref={containerRef}
+      className={`w-full rounded-lg bg-gradient-to-br ${gradientClass} border overflow-hidden transition-colors duration-300 relative`}
+      style={{ height: '280px' }}
+    >
+      {/* Loading Skeleton */}
+      {!isLoaded && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-transparent to-transparent">
+          <div className="flex flex-col items-center gap-3">
+            <Loader2 className={`w-8 h-8 ${spinnerColor} animate-spin`} />
+            <span className="text-sm text-muted-foreground">3D lädt...</span>
+          </div>
+        </div>
+      )}
+
+      {/* Model Viewer - only render when visible */}
+      {isVisible && (
+        <div
+          className={`w-full h-full transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+          dangerouslySetInnerHTML={{
+            __html: `<model-viewer
+              src="${src}"
+              alt="${alt}"
+              auto-rotate
+              camera-controls
+              disable-zoom
+              exposure="1.1"
+              loading="lazy"
+              style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden;">
+            </model-viewer>`
+          }}
+        />
+      )}
+    </div>
+  );
+};
 
 export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
   const t = translations[language];
@@ -77,14 +169,11 @@ export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
                   </li>
                 </ul>
 
-                {/* Veritas 3D Viewer */}
-                <div
-                  id="veritas-3d-container"
-                  className="w-full rounded-lg bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/20 dark:to-green-900/20 border border-green-200 dark:border-green-800 overflow-hidden group-hover:border-green-400 transition-colors duration-300"
-                  style={{ height: '280px' }}
-                  dangerouslySetInnerHTML={{
-                    __html: '<model-viewer src="/models/veritas-owl.glb" alt="Veritas 3D Modell" auto-rotate camera-controls disable-zoom exposure="1.1" style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden;"></model-viewer>'
-                  }}
+                {/* Veritas 3D Viewer - Lazy Loaded */}
+                <Lazy3DModel
+                  src="/models/veritas-owl.glb"
+                  alt="Veritas 3D Modell"
+                  colorClass="green"
                 />
               </CardContent>
             </Card>
@@ -127,14 +216,11 @@ export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
                   </li>
                 </ul>
 
-                {/* Robo 3D Viewer */}
-                <div
-                  id="robo-3d-container"
-                  className="w-full rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 border border-blue-200 dark:border-blue-800 overflow-hidden group-hover:border-blue-400 transition-colors duration-300"
-                  style={{ height: '280px' }}
-                  dangerouslySetInnerHTML={{
-                    __html: '<model-viewer src="/models/robo.glb" alt="Robo 3D Modell" auto-rotate camera-controls disable-zoom exposure="1.1" style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden;"></model-viewer>'
-                  }}
+                {/* Robo 3D Viewer - Lazy Loaded */}
+                <Lazy3DModel
+                  src="/models/robo.glb"
+                  alt="Robo 3D Modell"
+                  colorClass="blue"
                 />
               </CardContent>
             </Card>
