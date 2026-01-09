@@ -10,6 +10,7 @@ import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.png';
 import deepfakesVerstehenImg from '@/assets/deepfakes-verstehen.png';
 import medienkompetenzImg from '@/assets/medienkompetenz.png';
 import kiBildgeneratorenImg from '@/assets/ki-bildgeneratoren.png';
+import authentizitaetPruefenImg from '@/assets/authentizitaet-pruefen.png';
 
 export interface BlogArticle {
   id: string;
@@ -253,6 +254,7 @@ const articles: BlogArticle[] = [
     date: '2025-12-15',
     readTime: 6,
     category: 'tips',
+    image: authentizitaetPruefenImg,
   },
 ];
 
