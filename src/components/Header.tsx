@@ -149,7 +149,7 @@ export const Header = ({ language, setLanguage, theme, onThemeToggle }: HeaderPr
           }`}>
             <img
               src={logoMaster}
-              alt="ForRealScan Logo"
+              alt="ForRealScan - Zurück zur Startseite"
               className="h-12 sm:h-14 w-auto drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
               width={56}
               height={56}
