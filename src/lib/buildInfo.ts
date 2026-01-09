@@ -6,6 +6,7 @@ export const BUILD_JSON_URL = '/build.json';
 
 export const logBuildBanner = () => {
   if (typeof window === 'undefined') return;
+  if (!import.meta.env.DEV) return;
 
   const host = window.location.host || 'unknown-host';
   const banner = `[ForRealScan] build=${BUILD_ID} time=${BUILD_TIME} host=${host}`;

@@ -18,7 +18,9 @@ export const AdSense = ({ className = '' }: AdSenseProps) => {
         // @ts-expect-error adsbygoogle is loaded externally
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {
-        console.error('AdSense error:', e);
+        if (import.meta.env.DEV) {
+          console.error('AdSense error:', e);
+        }
       }
     }
   }, []);
