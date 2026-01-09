@@ -119,9 +119,9 @@ export const Hero = ({
             </div>
           </div>
 
-          {/* Headline with Gradient Text */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 leading-tight px-2 bg-gradient-to-r from-foreground via-foreground to-foreground bg-clip-text">
-            <span className="bg-gradient-to-r from-veritas via-foreground to-robo bg-clip-text text-transparent">
+          {/* Headline with Animated Gradient Text */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 leading-tight px-2">
+            <span className="animated-gradient-text">
               {t.hero_title}
             </span>
           </h1>
