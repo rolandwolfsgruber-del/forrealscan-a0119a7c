@@ -6,8 +6,8 @@ import { LANGUAGE_STORAGE_KEY } from '@/lib/constants';
 import { SubPageHeader } from '@/components/SubPageHeader';
 import { Footer } from '@/components/Footer';
 import { useTheme } from '@/hooks/useTheme';
-import squirrelReal from '@/assets/squirrel-real.jpg';
-import squirrelAi from '@/assets/squirrel-ai.png';
+import squirrelReal from '@/assets/squirrel-real.webp';
+import squirrelAi from '@/assets/squirrel-ai.webp';
 import butterflyAi from '@/assets/butterfly-ai.webp';
 
 const ExamplesPage = () => {

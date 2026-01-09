@@ -6,11 +6,11 @@ import { Footer } from '@/components/Footer';
 import { useTheme } from '@/hooks/useTheme';
 import { Calendar, Clock, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.png';
-import deepfakesVerstehenImg from '@/assets/deepfakes-verstehen.png';
-import medienkompetenzImg from '@/assets/medienkompetenz.png';
-import kiBildgeneratorenImg from '@/assets/ki-bildgeneratoren.png';
-import authentizitaetPruefenImg from '@/assets/authentizitaet-pruefen.png';
+import kiBilderErkennenImg from '@/assets/ki-bilder-erkennen.webp';
+import deepfakesVerstehenImg from '@/assets/deepfakes-verstehen.webp';
+import medienkompetenzImg from '@/assets/medienkompetenz.webp';
+import kiBildgeneratorenImg from '@/assets/ki-bildgeneratoren.webp';
+import authentizitaetPruefenImg from '@/assets/authentizitaet-pruefen.webp';
 
 export interface BlogArticle {
   id: string;
