@@ -12,10 +12,8 @@ const getInitialTheme = (): Theme => {
   if (stored && ['veritas', 'robo'].includes(stored)) {
     return stored as Theme;
   }
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    return 'robo';
-  }
-  return 'veritas';
+  // First visit: Always dark mode (Robo) as signature look
+  return 'robo';
 };
 
 /**
@@ -47,21 +45,10 @@ export const useThemeBodyClass = () => {
       }
     };
 
-    // Listen for system preference changes
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleSystemChange = () => {
-      const stored = localStorage.getItem(THEME_STORAGE_KEY);
-      if (!stored) {
-        applyTheme();
-      }
-    };
-
     window.addEventListener('storage', handleStorageChange);
-    mediaQuery.addEventListener('change', handleSystemChange);
 
     return () => {
       window.removeEventListener('storage', handleStorageChange);
-      mediaQuery.removeEventListener('change', handleSystemChange);
     };
   }, []);
 };
@@ -78,19 +65,6 @@ export const useTheme = () => {
     localStorage.setItem(THEME_STORAGE_KEY, theme);
     applyThemeToBody(theme);
   }, [theme]);
-
-  // Listen for system preference changes
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e: MediaQueryListEvent) => {
-      const stored = localStorage.getItem(THEME_STORAGE_KEY);
-      if (!stored) {
-        setTheme(e.matches ? 'robo' : 'veritas');
-      }
-    };
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
 
   const toggleTheme = useCallback(() => {
     setTheme(prev => prev === 'veritas' ? 'robo' : 'veritas');
