@@ -37,11 +37,8 @@ const Index = () => {
     if (stored && ['veritas', 'robo'].includes(stored)) {
       return stored as Theme;
     }
-    // Fallback to system preference
-    if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'robo';
-    }
-    return 'veritas';
+    // First visit: Always dark mode (Robo) as signature look
+    return 'robo';
   });
 
   // Persist language selection
@@ -56,20 +53,6 @@ const Index = () => {
     document.body.classList.remove('theme-veritas', 'theme-robo');
     document.body.classList.add(`theme-${theme}`);
   }, [theme]);
-
-  // Listen for system preference changes
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e: MediaQueryListEvent) => {
-      // Only update if user hasn't explicitly set a preference
-      const stored = localStorage.getItem(THEME_STORAGE_KEY);
-      if (!stored) {
-        setTheme(e.matches ? 'robo' : 'veritas');
-      }
-    };
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
 
   const handleThemeToggle = () => {
     setTheme(prev => prev === 'veritas' ? 'robo' : 'veritas');
