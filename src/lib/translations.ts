@@ -282,48 +282,118 @@ interface Translations {
   methodology_subtitle: string;
   methodology_cta_scan: string;
   methodology_cta_examples: string;
-  methodology_what_title: string;
-  methodology_what_p1: string;
-  methodology_what_p2: string;
-  methodology_how_title: string;
-  methodology_how_intro: string;
+  
+  // Section 1: Three Modes
+  methodology_modes_title: string;
+  methodology_modes_intro: string;
+  methodology_mode_image_name: string;
+  methodology_mode_image_question: string;
+  methodology_mode_image_method: string;
+  methodology_mode_image_credits: string;
+  methodology_mode_image_output: string;
+  methodology_mode_story_name: string;
+  methodology_mode_story_question: string;
+  methodology_mode_story_method: string;
+  methodology_mode_story_credits: string;
+  methodology_mode_story_output: string;
+  methodology_mode_full_name: string;
+  methodology_mode_full_question: string;
+  methodology_mode_full_method: string;
+  methodology_mode_full_credits: string;
+  methodology_mode_full_output: string;
+  methodology_modes_outro: string;
+  methodology_modes_table_question: string;
+  methodology_modes_table_method: string;
+  methodology_modes_table_credits: string;
+  methodology_modes_table_output: string;
+  
+  // Section 2: Dual System
+  methodology_dual_title: string;
+  methodology_dual_intro: string;
   methodology_veritas_title: string;
-  methodology_veritas_text: string;
+  methodology_veritas_color: string;
+  methodology_veritas_intro: string;
+  methodology_veritas_point1: string;
+  methodology_veritas_point2: string;
+  methodology_veritas_point3: string;
+  methodology_veritas_point4: string;
+  methodology_veritas_point5: string;
   methodology_robo_title: string;
-  methodology_robo_text: string;
-  methodology_how_outro: string;
+  methodology_robo_color: string;
+  methodology_robo_intro: string;
+  methodology_robo_point1: string;
+  methodology_robo_point2: string;
+  methodology_robo_point3: string;
+  methodology_robo_point4: string;
+  methodology_robo_point5: string;
+  methodology_robo_point6: string;
+  methodology_dual_cooperation: string;
+  methodology_dual_cooperation_text: string;
+  
+  // Section 3: Understanding Results
   methodology_results_title: string;
+  methodology_results_intro: string;
+  methodology_results_scale_title: string;
   methodology_results_low_title: string;
   methodology_results_low_text: string;
   methodology_results_mid_title: string;
   methodology_results_mid_text: string;
   methodology_results_high_title: string;
   methodology_results_high_text: string;
-  methodology_results_outro: string;
+  methodology_confidence_title: string;
+  methodology_confidence_intro: string;
+  methodology_confidence_very_high: string;
+  methodology_confidence_high: string;
+  methodology_confidence_moderate: string;
+  methodology_confidence_low: string;
+  methodology_sources_title: string;
+  methodology_sources_intro: string;
+  methodology_sources_tier_a: string;
+  methodology_sources_tier_b: string;
+  methodology_sources_tier_c: string;
+  
+  // Section 4: Limitations
   methodology_limits_title: string;
   methodology_limits_intro: string;
+  methodology_hardscenes_title: string;
+  methodology_hardscenes_intro: string;
+  methodology_hardscenes_landscape: string;
+  methodology_hardscenes_nightsky: string;
+  methodology_hardscenes_artwork: string;
+  methodology_hardscenes_abstract: string;
+  methodology_hardscenes_outro: string;
+  methodology_other_limits_title: string;
   methodology_limits_compressed: string;
   methodology_limits_screenshots: string;
   methodology_limits_hybrid: string;
   methodology_limits_new_models: string;
   methodology_limits_professional: string;
   methodology_limits_outro: string;
+  
+  // Section 5: Responsible Use
   methodology_responsible_title: string;
   methodology_responsible_intro: string;
+  methodology_responsible_subtitle: string;
   methodology_responsible_point1: string;
   methodology_responsible_point2: string;
   methodology_responsible_point3: string;
   methodology_responsible_point4: string;
   methodology_responsible_outro: string;
+  
+  // Section 6: Privacy
   methodology_privacy_title: string;
   methodology_privacy_intro: string;
-  methodology_privacy_point1: string;
-  methodology_privacy_point2: string;
-  methodology_privacy_point3: string;
-  methodology_privacy_point4: string;
+  methodology_privacy_local: string;
+  methodology_privacy_server: string;
+  methodology_privacy_no_training: string;
+  methodology_privacy_encryption: string;
+  methodology_privacy_no_sale: string;
   methodology_privacy_link: string;
+  
+  // Section 7: Summary
   methodology_summary_title: string;
   methodology_summary_text: string;
+  methodology_summary_tagline: string;
 
   // Privacy Page
   privacy_title: string;
