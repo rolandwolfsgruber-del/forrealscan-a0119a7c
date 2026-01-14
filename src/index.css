@@ -535,3 +535,232 @@ body {
     transform: none;
   }
 }
+
+/* ============================================
+   VERITAS & ROBO EYECATCHER - Immersive Worlds
+   ============================================ */
+
+/* Veritas Forest World */
+.veritas-world {
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(34, 197, 94, 0.1) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 50%, rgba(22, 101, 52, 0.2) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(5, 46, 22, 0.95) 0%, rgba(2, 26, 13, 0.98) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.veritas-world::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(74, 222, 128, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(74, 222, 128, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px, 40px 40px;
+  animation: forest-drift 20s ease-in-out infinite;
+}
+
+@keyframes forest-drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-10px, -5px); }
+}
+
+/* Firefly particles for Veritas */
+.firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, rgba(134, 239, 172, 0.9) 0%, rgba(74, 222, 128, 0.4) 50%, transparent 70%);
+  border-radius: 50%;
+  animation: firefly-float 4s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(134, 239, 172, 0.8), 0 0 12px rgba(74, 222, 128, 0.4);
+}
+
+.firefly:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s; animation-duration: 5s; }
+.firefly:nth-child(2) { top: 60%; left: 25%; animation-delay: 1s; animation-duration: 4s; }
+.firefly:nth-child(3) { top: 40%; left: 70%; animation-delay: 2s; animation-duration: 6s; }
+.firefly:nth-child(4) { top: 75%; left: 80%; animation-delay: 0.5s; animation-duration: 5s; }
+.firefly:nth-child(5) { top: 30%; left: 50%; animation-delay: 1.5s; animation-duration: 4.5s; }
+.firefly:nth-child(6) { top: 85%; left: 40%; animation-delay: 2.5s; animation-duration: 5.5s; }
+
+@keyframes firefly-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(10px, -15px) scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-5px, -25px) scale(0.8);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(15px, -10px) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+/* Light rays for Veritas */
+.light-ray {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(134, 239, 172, 0.3) 0%, transparent 100%);
+  transform-origin: top;
+  animation: ray-fade 8s ease-in-out infinite;
+}
+
+.light-ray:nth-child(1) { left: 20%; animation-delay: 0s; }
+.light-ray:nth-child(2) { left: 45%; animation-delay: 2s; }
+.light-ray:nth-child(3) { left: 70%; animation-delay: 4s; }
+
+@keyframes ray-fade {
+  0%, 100% { opacity: 0.1; transform: scaleY(0.5); }
+  50% { opacity: 0.3; transform: scaleY(1); }
+}
+
+/* Robo Cyber World */
+.robo-world {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(8, 12, 30, 0.98) 0%, rgba(3, 7, 18, 1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Grid pattern for Robo */
+.robo-world::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  animation: grid-pulse 4s ease-in-out infinite;
+}
+
+@keyframes grid-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Scan line for Robo */
+.robo-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), rgba(139, 92, 246, 0.6), transparent);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
+  animation: cyber-scan 4s ease-in-out infinite;
+}
+
+@keyframes cyber-scan {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Digital particles for Robo */
+.cyber-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(59, 130, 246, 0.8);
+  border-radius: 50%;
+  animation: cyber-float 6s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.6);
+}
+
+.cyber-particle:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.cyber-particle:nth-child(2) { top: 30%; left: 80%; animation-delay: 1s; }
+.cyber-particle:nth-child(3) { top: 70%; left: 15%; animation-delay: 2s; }
+.cyber-particle:nth-child(4) { top: 50%; left: 60%; animation-delay: 0.5s; }
+.cyber-particle:nth-child(5) { top: 90%; left: 45%; animation-delay: 1.5s; }
+.cyber-particle:nth-child(6) { top: 25%; left: 35%; animation-delay: 2.5s; }
+
+@keyframes cyber-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.5);
+    opacity: 1;
+  }
+}
+
+/* Neon glow border for Robo card */
+.robo-neon-border {
+  position: relative;
+}
+
+.robo-neon-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.5));
+  border-radius: inherit;
+  z-index: -1;
+  animation: neon-pulse 3s ease-in-out infinite;
+  filter: blur(4px);
+}
+
+@keyframes neon-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Veritas organic glow border */
+.veritas-organic-border {
+  position: relative;
+}
+
+.veritas-organic-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(ellipse at 30% 100%, rgba(34, 197, 94, 0.4) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 0%, rgba(74, 222, 128, 0.3) 0%, transparent 50%);
+  border-radius: inherit;
+  z-index: -1;
+  animation: organic-pulse 5s ease-in-out infinite;
+  filter: blur(6px);
+}
+
+@keyframes organic-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.02); }
+}
+
+/* Mobile: Reduce particles */
+@media (max-width: 768px) {
+  .firefly:nth-child(n+4) { display: none; }
+  .cyber-particle:nth-child(n+4) { display: none; }
+  .light-ray:nth-child(n+2) { display: none; }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .firefly,
+  .cyber-particle,
+  .light-ray,
+  .robo-scan-line,
+  .veritas-world::before,
+  .robo-world::before,
+  .robo-neon-border::after,
+  .veritas-organic-border::after {
+    animation: none;
+  }
+  .firefly, .cyber-particle { opacity: 0.5; }
+  .robo-scan-line { display: none; }
+}

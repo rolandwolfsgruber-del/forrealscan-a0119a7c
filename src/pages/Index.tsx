@@ -3,10 +3,10 @@ import { Language } from '@/lib/translations';
 import { LANGUAGE_STORAGE_KEY, THEME_STORAGE_KEY } from '@/lib/constants';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
-import { UseCases } from '@/components/UseCases';
 import { HowItWorks } from '@/components/HowItWorks';
-import { VeritasRobo } from '@/components/VeritasRobo';
 import { StoryCheck } from '@/components/StoryCheck';
+import { VeritasRobo } from '@/components/VeritasRobo';
+import { UseCases } from '@/components/UseCases';
 import { ShareCards } from '@/components/ShareCards';
 import { Modes } from '@/components/Modes';
 import { Examples } from '@/components/Examples';
@@ -14,7 +14,6 @@ import { MiniGame } from '@/components/MiniGame';
 import { Pricing } from '@/components/Pricing';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
-import { AdSense } from '@/components/AdSense';
 import { Theme } from '@/components/ThemeToggle';
 
 const Index = () => {
@@ -63,11 +62,10 @@ const Index = () => {
       <Header language={language} setLanguage={setLanguage} theme={theme} onThemeToggle={handleThemeToggle} />
       <main id="main-content" className="relative z-10 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
         <Hero language={language} theme={theme} />
-        <VeritasRobo language={language} theme={theme} />
-        <AdSense />
-        <UseCases language={language} theme={theme} />
         <HowItWorks language={language} theme={theme} />
         <StoryCheck language={language} theme={theme} />
+        <VeritasRobo language={language} theme={theme} />
+        <UseCases language={language} theme={theme} />
         <ShareCards language={language} theme={theme} />
         <Modes language={language} theme={theme} />
         <Examples language={language} theme={theme} />

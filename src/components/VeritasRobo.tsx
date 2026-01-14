@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { Language, translations } from '@/lib/translations';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedSection } from '@/components/ui/animated-section';
 import { Theme } from '@/components/ThemeToggle';
 import { Loader2 } from 'lucide-react';
@@ -56,24 +55,20 @@ const Lazy3DModel = ({
     }
   }, [isVisible]);
 
-  const gradientClass = colorClass === 'green'
-    ? 'from-green-50 to-green-100 dark:from-green-950/20 dark:to-green-900/20 border-green-200 dark:border-green-800 group-hover:border-green-400'
-    : 'from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 border-blue-200 dark:border-blue-800 group-hover:border-blue-400';
-
-  const spinnerColor = colorClass === 'green' ? 'text-green-500' : 'text-blue-500';
+  const spinnerColor = colorClass === 'green' ? 'text-green-400' : 'text-blue-400';
 
   return (
     <div
       ref={containerRef}
-      className={`w-full rounded-lg bg-gradient-to-br ${gradientClass} border overflow-hidden transition-colors duration-300 relative`}
+      className="w-full rounded-xl overflow-hidden transition-all duration-300 relative bg-transparent"
       style={{ height: '280px' }}
     >
       {/* Loading Skeleton */}
       {!isLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-transparent to-transparent">
+        <div className="absolute inset-0 flex items-center justify-center">
           <div className="flex flex-col items-center gap-3">
             <Loader2 className={`w-8 h-8 ${spinnerColor} animate-spin`} />
-            <span className="text-sm text-muted-foreground">3D lädt...</span>
+            <span className="text-sm text-white/60">3D lädt...</span>
           </div>
         </div>
       )}
@@ -91,7 +86,7 @@ const Lazy3DModel = ({
               disable-zoom
               exposure="1.1"
               loading="lazy"
-              style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden;">
+              style="width: 100%; height: 100%; border-radius: 16px; overflow: hidden; --poster-color: transparent;">
             </model-viewer>`
           }}
         />
@@ -100,20 +95,49 @@ const Lazy3DModel = ({
   );
 };
 
-export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
+// Firefly particles component for Veritas
+const Fireflies = () => (
+  <div className="absolute inset-0 pointer-events-none overflow-hidden">
+    <div className="firefly" />
+    <div className="firefly" />
+    <div className="firefly" />
+    <div className="firefly" />
+    <div className="firefly" />
+    <div className="firefly" />
+  </div>
+);
+
+// Light rays component for Veritas
+const LightRays = () => (
+  <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-60">
+    <div className="light-ray" />
+    <div className="light-ray" />
+    <div className="light-ray" />
+  </div>
+);
+
+// Cyber particles component for Robo
+const CyberParticles = () => (
+  <div className="absolute inset-0 pointer-events-none overflow-hidden">
+    <div className="cyber-particle" />
+    <div className="cyber-particle" />
+    <div className="cyber-particle" />
+    <div className="cyber-particle" />
+    <div className="cyber-particle" />
+    <div className="cyber-particle" />
+  </div>
+);
+
+// Scan line component for Robo
+const ScanLine = () => (
+  <div className="robo-scan-line" />
+);
+
+export const VeritasRobo = ({ language }: VeritasRoboProps) => {
   const t = translations[language];
 
   return (
     <section id="veritas-robo" className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]"
-        style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
-          backgroundSize: '40px 40px',
-        }}
-      />
-
       <div className="container mx-auto px-4 relative z-10">
         {/* Intro Block */}
         <AnimatedSection className="text-center mb-12 sm:mb-16">
@@ -130,100 +154,104 @@ export const VeritasRobo = ({ language, theme }: VeritasRoboProps) => {
           </p>
         </AnimatedSection>
 
-        {/* Two Cards Side by Side */}
+        {/* Two Cards Side by Side - Immersive Worlds */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-          {/* Veritas Card */}
+          {/* Veritas Card - Forest World */}
           <AnimatedSection delay={0} animation="fade-left">
-            <Card className="group border-t-4 border-t-green-500 hover:shadow-2xl transition-all duration-500 h-full relative overflow-hidden">
-              {/* Hover glow */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{
-                  background: 'radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.2) 0%, transparent 70%)',
-                }}
-              />
+            <div className="veritas-world veritas-organic-border rounded-2xl p-6 sm:p-8 h-full transition-all duration-500 hover:scale-[1.02]">
+              {/* Atmospheric Effects */}
+              <Fireflies />
+              <LightRays />
 
-              <CardHeader className="relative z-10">
-                <div className="flex items-center gap-2 mb-2">
-                  <CardTitle className="text-xl sm:text-2xl group-hover:text-veritas transition-colors duration-300">{t.veritas_name}</CardTitle>
-                  <span className="text-muted-foreground">·</span>
-                  <span className="text-sm text-muted-foreground">{t.veritas_subtitle}</span>
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Header */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-3 mb-2">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-green-400">
+                      {t.veritas_name}
+                    </h3>
+                    <span className="text-white/40">·</span>
+                    <span className="text-sm text-green-300/70">{t.veritas_subtitle}</span>
+                  </div>
+                  <p className="text-white/70 text-sm sm:text-base">
+                    {t.veritas_description}
+                  </p>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  {t.veritas_description}
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4 relative z-10">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2 group/item">
-                    <span className="text-green-500 mt-1 group-hover/item:scale-125 transition-transform">•</span>
-                    <span>{t.veritas_bullet1}</span>
+
+                {/* Bullet Points */}
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start gap-3 group">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-green-400 shadow-lg shadow-green-400/50 group-hover:scale-150 transition-transform" />
+                    <span className="text-white/90">{t.veritas_bullet1}</span>
                   </li>
-                  <li className="flex items-start gap-2 group/item">
-                    <span className="text-green-500 mt-1 group-hover/item:scale-125 transition-transform">•</span>
-                    <span>{t.veritas_bullet2}</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-green-400 shadow-lg shadow-green-400/50 group-hover:scale-150 transition-transform" />
+                    <span className="text-white/90">{t.veritas_bullet2}</span>
                   </li>
-                  <li className="flex items-start gap-2 group/item">
-                    <span className="text-green-500 mt-1 group-hover/item:scale-125 transition-transform">•</span>
-                    <span>{t.veritas_bullet3}</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-green-400 shadow-lg shadow-green-400/50 group-hover:scale-150 transition-transform" />
+                    <span className="text-white/90">{t.veritas_bullet3}</span>
                   </li>
                 </ul>
 
-                {/* Veritas 3D Viewer - Lazy Loaded (Draco compressed) */}
+                {/* 3D Model */}
                 <Lazy3DModel
                   src="/models/veritas-owl-compressed.glb"
                   alt="Veritas 3D Modell"
                   colorClass="green"
                 />
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </AnimatedSection>
 
-          {/* Robo Card */}
+          {/* Robo Card - Cyber World */}
           <AnimatedSection delay={150} animation="fade-right">
-            <Card className="group border-t-4 border-t-blue-500 hover:shadow-2xl transition-all duration-500 h-full relative overflow-hidden">
-              {/* Hover glow */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{
-                  background: 'radial-gradient(circle at 50% 100%, rgba(59, 130, 246, 0.2) 0%, transparent 70%)',
-                }}
-              />
+            <div className="robo-world robo-neon-border rounded-2xl p-6 sm:p-8 h-full transition-all duration-500 hover:scale-[1.02]">
+              {/* Atmospheric Effects */}
+              <CyberParticles />
+              <ScanLine />
 
-              <CardHeader className="relative z-10">
-                <div className="flex items-center gap-2 mb-2">
-                  <CardTitle className="text-xl sm:text-2xl group-hover:text-robo transition-colors duration-300">{t.robo_name}</CardTitle>
-                  <span className="text-muted-foreground">·</span>
-                  <span className="text-sm text-muted-foreground">{t.robo_subtitle}</span>
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Header */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-3 mb-2">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-blue-400">
+                      {t.robo_name}
+                    </h3>
+                    <span className="text-white/40">·</span>
+                    <span className="text-sm text-blue-300/70">{t.robo_subtitle}</span>
+                  </div>
+                  <p className="text-white/70 text-sm sm:text-base">
+                    {t.robo_description}
+                  </p>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  {t.robo_description}
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4 relative z-10">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2 group/item">
-                    <span className="text-blue-500 mt-1 group-hover/item:scale-125 transition-transform">•</span>
-                    <span>{t.robo_bullet1}</span>
+
+                {/* Bullet Points */}
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start gap-3 group">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-blue-400 shadow-lg shadow-blue-400/50 group-hover:scale-150 transition-transform" />
+                    <span className="text-white/90">{t.robo_bullet1}</span>
                   </li>
-                  <li className="flex items-start gap-2 group/item">
-                    <span className="text-blue-500 mt-1 group-hover/item:scale-125 transition-transform">•</span>
-                    <span>{t.robo_bullet2}</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-blue-400 shadow-lg shadow-blue-400/50 group-hover:scale-150 transition-transform" />
+                    <span className="text-white/90">{t.robo_bullet2}</span>
                   </li>
-                  <li className="flex items-start gap-2 group/item">
-                    <span className="text-blue-500 mt-1 group-hover/item:scale-125 transition-transform">•</span>
-                    <span>{t.robo_bullet3}</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-blue-400 shadow-lg shadow-blue-400/50 group-hover:scale-150 transition-transform" />
+                    <span className="text-white/90">{t.robo_bullet3}</span>
                   </li>
                 </ul>
 
-                {/* Robo 3D Viewer - Lazy Loaded (Draco compressed) */}
+                {/* 3D Model */}
                 <Lazy3DModel
                   src="/models/robo-compressed.glb"
                   alt="Robo 3D Modell"
                   colorClass="blue"
                 />
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
 
