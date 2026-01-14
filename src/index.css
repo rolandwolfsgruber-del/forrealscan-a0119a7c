@@ -27,6 +27,11 @@ All colors MUST be HSL.
     --robo-foreground: 0 0% 100%;
     --robo-glow: 210 100% 65%;
 
+    /* FullScan - Premium Purple */
+    --fullscan: 270 70% 55%;
+    --fullscan-foreground: 0 0% 100%;
+    --fullscan-glow: 270 70% 65%;
+
     --primary: 142 76% 36%;
     --primary-foreground: 0 0% 100%;
 
@@ -89,6 +94,11 @@ All colors MUST be HSL.
     --robo: 210 100% 65%;
     --robo-foreground: 0 0% 100%;
     --robo-glow: 210 100% 75%;
+
+    /* FullScan - Premium Purple */
+    --fullscan: 270 70% 60%;
+    --fullscan-foreground: 0 0% 100%;
+    --fullscan-glow: 270 70% 70%;
 
     --primary: 142 76% 45%;
     --primary-foreground: 0 0% 100%;
@@ -312,5 +322,216 @@ body {
     animation: none;
     background: linear-gradient(90deg, hsl(var(--veritas)), hsl(var(--robo)));
     background-size: 100% auto;
+  }
+}
+
+/* ============================================
+   SCAN MODE CARDS - Premium Design System
+   ============================================ */
+
+/* Premium Badge Animation */
+@keyframes premium-gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes premium-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Premium Badge - Dark Mode */
+.premium-badge-dark {
+  background: linear-gradient(135deg,
+    #00d4ff 0%,
+    #3b82f6 35%,
+    #8b5cf6 65%,
+    #3b82f6 100%
+  );
+  background-size: 200% 200%;
+  animation: premium-gradient-rotate 3s ease infinite;
+  color: white;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  box-shadow:
+    0 0 12px rgba(0, 212, 255, 0.4),
+    0 2px 8px rgba(59, 130, 246, 0.3);
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-badge-dark::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: premium-shimmer 2.5s infinite;
+}
+
+/* Premium Badge - Light Mode */
+.premium-badge-light {
+  background: linear-gradient(135deg,
+    #6b9d5b 0%,
+    #8bb260 30%,
+    #c9b458 70%,
+    #8bb260 100%
+  );
+  background-size: 200% 200%;
+  animation: premium-gradient-rotate 4s ease infinite;
+  color: white;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 10px rgba(107, 157, 91, 0.35);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Credit Badge - Light Mode */
+.credit-badge-light {
+  background: linear-gradient(135deg,
+    rgba(53, 198, 107, 0.12) 0%,
+    rgba(46, 155, 255, 0.08) 100%
+  );
+  border: 1px solid rgba(53, 198, 107, 0.35);
+  color: #35c66b;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(53, 198, 107, 0.15);
+}
+
+/* Credit Badge - Dark Mode */
+.credit-badge-dark {
+  background: linear-gradient(135deg,
+    rgba(91, 127, 255, 0.15) 0%,
+    rgba(46, 155, 255, 0.1) 100%
+  );
+  border: 1px solid rgba(91, 127, 255, 0.45);
+  color: #5b7fff;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  box-shadow: 0 0 12px rgba(91, 127, 255, 0.2);
+}
+
+/* Card Glow Effects - Light Mode */
+.card-glow-veritas-light {
+  box-shadow:
+    0 4px 16px rgba(53, 198, 107, 0.1),
+    0 0 0 1px rgba(53, 198, 107, 0.1);
+}
+
+.card-glow-veritas-light:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 24px rgba(53, 198, 107, 0.15),
+    0 0 0 1px rgba(53, 198, 107, 0.2);
+}
+
+.card-glow-robo-light {
+  box-shadow:
+    0 4px 16px rgba(46, 155, 255, 0.1),
+    0 0 0 1px rgba(46, 155, 255, 0.1);
+}
+
+.card-glow-robo-light:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 24px rgba(46, 155, 255, 0.15),
+    0 0 0 1px rgba(46, 155, 255, 0.2);
+}
+
+.card-glow-fullscan-light {
+  box-shadow:
+    0 4px 16px rgba(139, 92, 246, 0.1),
+    0 0 0 1px rgba(139, 92, 246, 0.1);
+}
+
+.card-glow-fullscan-light:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 24px rgba(139, 92, 246, 0.15),
+    0 0 0 1px rgba(139, 92, 246, 0.2);
+}
+
+/* Card Glow Effects - Dark Mode */
+.card-glow-veritas-dark {
+  box-shadow:
+    0 4px 20px rgba(53, 198, 107, 0.15),
+    0 0 0 1px rgba(53, 198, 107, 0.15);
+}
+
+.card-glow-veritas-dark:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 28px rgba(53, 198, 107, 0.25),
+    0 0 20px rgba(53, 198, 107, 0.1);
+}
+
+.card-glow-robo-dark {
+  box-shadow:
+    0 4px 20px rgba(91, 127, 255, 0.15),
+    0 0 0 1px rgba(91, 127, 255, 0.15);
+}
+
+.card-glow-robo-dark:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 28px rgba(91, 127, 255, 0.25),
+    0 0 20px rgba(91, 127, 255, 0.1);
+}
+
+.card-glow-fullscan-dark {
+  box-shadow:
+    0 4px 20px rgba(139, 92, 246, 0.2),
+    0 0 0 1px rgba(139, 92, 246, 0.2);
+}
+
+.card-glow-fullscan-dark:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 28px rgba(139, 92, 246, 0.3),
+    0 0 20px rgba(139, 92, 246, 0.15),
+    0 0 40px rgba(139, 92, 246, 0.1);
+}
+
+/* Reduced motion for card animations */
+@media (prefers-reduced-motion: reduce) {
+  .premium-badge-dark,
+  .premium-badge-light {
+    animation: none;
+  }
+  .premium-badge-dark::after {
+    animation: none;
+  }
+  .card-glow-veritas-light:hover,
+  .card-glow-robo-light:hover,
+  .card-glow-fullscan-light:hover,
+  .card-glow-veritas-dark:hover,
+  .card-glow-robo-dark:hover,
+  .card-glow-fullscan-dark:hover {
+    transform: none;
   }
 }

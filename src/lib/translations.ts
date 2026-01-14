@@ -59,31 +59,63 @@ interface Translations {
   
   // Scan Modes
   scan_section_title: string;
+  scan_section_subtitle: string;
   scan_compare_link: string;
   scan_most_popular: string;
+  scan_premium_badge: string;
   scan_cta: string;
+  // Category Headers
+  scan_cat_learn: string;
+  scan_cat_get: string;
+  scan_cat_ideal: string;
   // ImageScan
   scan_image_title: string;
+  scan_image_subtitle: string;
   scan_image_desc: string;
-  scan_image_feat1: string;
-  scan_image_feat2: string;
   scan_image_credits: string;
   scan_image_credits_value: string;
+  scan_image_learn_1: string;
+  scan_image_learn_2: string;
+  scan_image_learn_3: string;
+  scan_image_learn_4: string;
+  scan_image_get_1: string;
+  scan_image_get_2: string;
+  scan_image_get_3: string;
+  scan_image_ideal_1: string;
+  scan_image_ideal_2: string;
+  scan_image_ideal_3: string;
   // StoryScan
   scan_story_title: string;
+  scan_story_subtitle: string;
   scan_story_desc: string;
-  scan_story_feat1: string;
-  scan_story_feat2: string;
   scan_story_credits: string;
   scan_story_credits_value: string;
+  scan_story_learn_1: string;
+  scan_story_learn_2: string;
+  scan_story_learn_3: string;
+  scan_story_learn_4: string;
+  scan_story_get_1: string;
+  scan_story_get_2: string;
+  scan_story_get_3: string;
+  scan_story_ideal_1: string;
+  scan_story_ideal_2: string;
+  scan_story_ideal_3: string;
   // FullScan
   scan_full_title: string;
+  scan_full_subtitle: string;
   scan_full_desc: string;
-  scan_full_feat1: string;
-  scan_full_feat2: string;
-  scan_full_feat3: string;
   scan_full_credits: string;
   scan_full_credits_value: string;
+  scan_full_learn_1: string;
+  scan_full_learn_2: string;
+  scan_full_learn_3: string;
+  scan_full_get_1: string;
+  scan_full_get_2: string;
+  scan_full_get_3: string;
+  scan_full_get_4: string;
+  scan_full_ideal_1: string;
+  scan_full_ideal_2: string;
+  scan_full_ideal_3: string;
   
   // Examples
   examples_title: string;
@@ -458,32 +490,64 @@ export const translations: Record<Language, Translations> = {
     disclaimer_text: 'ForRealScan liefert dir fundierte technische Einschätzungen und Wahrscheinlichkeiten. Die Ergebnisse sind keine juristischen Beweise, helfen dir aber dabei, bewusster zu entscheiden – und sollten nicht als alleinige Grundlage für Vorwürfe oder harte Anschuldigungen dienen.',
     
     // Scan Modes
-    scan_section_title: 'Wähle deinen Scan-Modus',
+    scan_section_title: 'Was möchtest du prüfen?',
+    scan_section_subtitle: 'Wähle das passende Paket für deine Analyse',
     scan_compare_link: 'Modi vergleichen',
     scan_most_popular: 'Beliebt',
+    scan_premium_badge: '💎💎💎',
     scan_cta: 'Scan starten',
+    // Category Headers
+    scan_cat_learn: 'WAS DU ERFÄHRST',
+    scan_cat_get: 'DU ERHÄLTST',
+    scan_cat_ideal: 'IDEAL FÜR',
     // ImageScan
     scan_image_title: 'ImageScan',
-    scan_image_desc: 'Schnelle KI-Erkennung für Einzelbilder.',
-    scan_image_feat1: 'Veritas-Analyse: Technische Bildsignale',
-    scan_image_feat2: 'Ideal für schnelle Checks',
+    scan_image_subtitle: 'Ist mein Bild echt oder KI-generiert?',
+    scan_image_desc: 'KI-Analyse mit forensischen Signalen',
     scan_image_credits: 'Credit',
     scan_image_credits_value: '1',
+    scan_image_learn_1: 'KI-Wahrscheinlichkeit in % (Midjourney, DALL-E, Flux, Stable Diffusion, ChatGPT, Leonardo, Firefly & mehr)',
+    scan_image_learn_2: 'Verdict: Echt / KI-generiert / Unklar',
+    scan_image_learn_3: '3-5 bildspezifische Hinweise',
+    scan_image_learn_4: 'Visuelle Auffälligkeiten (Gesichter, Hände, Texturen, Beleuchtung)',
+    scan_image_get_1: 'Ergebnis-Karte',
+    scan_image_get_2: 'Share-Karte zum Teilen',
+    scan_image_get_3: '3-5 Key-Findings',
+    scan_image_ideal_1: 'Schnelle Prüfung einzelner Bilder',
+    scan_image_ideal_2: 'Social Media Posts checken',
+    scan_image_ideal_3: 'Verdächtige Profilbilder entlarven',
     // StoryScan
     scan_story_title: 'StoryScan',
-    scan_story_desc: 'Für Stories und Social-Media-Posts.',
-    scan_story_feat1: 'Veritas + Kontext-Analyse',
-    scan_story_feat2: 'Multi-Frame Unterstützung',
+    scan_story_subtitle: 'Stimmt diese Story / Behauptung?',
+    scan_story_desc: 'Fact-Check mit Quellen-Verifizierung',
     scan_story_credits: 'Credits',
     scan_story_credits_value: '2',
+    scan_story_learn_1: 'Faktencheck mit Quellennachweis',
+    scan_story_learn_2: 'Accuracy-Einschätzung (z.B. "70-85% korrekt")',
+    scan_story_learn_3: 'Was stimmt ✓ / Was fehlt oder irreführt ⚠',
+    scan_story_learn_4: 'Verifizierte Quellen mit Links',
+    scan_story_get_1: 'Ergebnis-Karte',
+    scan_story_get_2: 'Share-Karte zum Teilen',
+    scan_story_get_3: 'PDF-Report (1 Seite)',
+    scan_story_ideal_1: 'Virale Behauptungen prüfen',
+    scan_story_ideal_2: 'News-Meldungen verifizieren',
+    scan_story_ideal_3: 'Kettenbriefe & Gerüchte entlarven',
     // FullScan
     scan_full_title: 'FullScan',
-    scan_full_desc: 'Maximale Genauigkeit mit Veritas & Robo.',
-    scan_full_feat1: 'Komplette Veritas + Robo Analyse',
-    scan_full_feat2: 'Detaillierte Erklärungen',
-    scan_full_feat3: 'Höchste Erkennungsrate',
+    scan_full_subtitle: 'Komplett-Check (Bild + Kontext)',
+    scan_full_desc: 'Bild-Analyse + Quellen-Check in einem',
     scan_full_credits: 'Credits',
     scan_full_credits_value: '3',
+    scan_full_learn_1: 'Komplette Bildanalyse (wie ImageScan)',
+    scan_full_learn_2: 'Vollständiger Faktencheck (wie StoryScan)',
+    scan_full_learn_3: '⚠ Konflikt-Erkennung: Warnt wenn echtes Bild mit falschem Kontext ODER KI-Bild mit richtigem Kontext verwendet wird',
+    scan_full_get_1: 'Ergebnis-Karte',
+    scan_full_get_2: 'Share-Karte zum Teilen',
+    scan_full_get_3: 'PDF-Report mit allen Details',
+    scan_full_get_4: '3-5 Key-Findings',
+    scan_full_ideal_1: 'Verdächtige Bild-Text-Kombinationen',
+    scan_full_ideal_2: 'Professionelle Verifikation',
+    scan_full_ideal_3: 'Wenn du auf Nummer sicher gehen willst',
     
     // Examples
     examples_title: 'Täuschend echt: Der direkte Vergleich',
@@ -857,32 +921,64 @@ export const translations: Record<Language, Translations> = {
     disclaimer_text: 'ForRealScan provides you with well-founded technical assessments and probabilities. The results are not legal evidence, but help you make more conscious decisions – and should not serve as the sole basis for accusations or harsh allegations.',
     
     // Scan Modes
-    scan_section_title: 'Choose Your Scan Mode',
+    scan_section_title: 'What do you want to check?',
+    scan_section_subtitle: 'Choose the right package for your analysis',
     scan_compare_link: 'Compare Modes',
     scan_most_popular: 'Popular',
+    scan_premium_badge: '💎💎💎',
     scan_cta: 'Start Scan',
+    // Category Headers
+    scan_cat_learn: 'WHAT YOU\'LL LEARN',
+    scan_cat_get: 'WHAT YOU GET',
+    scan_cat_ideal: 'IDEAL FOR',
     // ImageScan
     scan_image_title: 'ImageScan',
-    scan_image_desc: 'Quick AI detection for single images.',
-    scan_image_feat1: 'Veritas analysis: Technical image signals',
-    scan_image_feat2: 'Ideal for quick checks',
+    scan_image_subtitle: 'Is my image real or AI-generated?',
+    scan_image_desc: 'AI analysis with forensic signals',
     scan_image_credits: 'Credit',
     scan_image_credits_value: '1',
+    scan_image_learn_1: 'AI probability in % (Midjourney, DALL-E, Flux, Stable Diffusion, ChatGPT, Leonardo, Firefly & more)',
+    scan_image_learn_2: 'Verdict: Real / AI-generated / Unclear',
+    scan_image_learn_3: '3-5 image-specific hints',
+    scan_image_learn_4: 'Visual anomalies (faces, hands, textures, lighting)',
+    scan_image_get_1: 'Result card',
+    scan_image_get_2: 'Share card for sharing',
+    scan_image_get_3: '3-5 Key findings',
+    scan_image_ideal_1: 'Quick check of single images',
+    scan_image_ideal_2: 'Check social media posts',
+    scan_image_ideal_3: 'Expose suspicious profile pictures',
     // StoryScan
     scan_story_title: 'StoryScan',
-    scan_story_desc: 'For stories and social media posts.',
-    scan_story_feat1: 'Veritas + context analysis',
-    scan_story_feat2: 'Multi-frame support',
+    scan_story_subtitle: 'Is this story / claim true?',
+    scan_story_desc: 'Fact-check with source verification',
     scan_story_credits: 'Credits',
     scan_story_credits_value: '2',
+    scan_story_learn_1: 'Fact-check with source references',
+    scan_story_learn_2: 'Accuracy estimate (e.g. "70-85% correct")',
+    scan_story_learn_3: 'What\'s true ✓ / What\'s missing or misleading ⚠',
+    scan_story_learn_4: 'Verified sources with links',
+    scan_story_get_1: 'Result card',
+    scan_story_get_2: 'Share card for sharing',
+    scan_story_get_3: 'PDF report (1 page)',
+    scan_story_ideal_1: 'Check viral claims',
+    scan_story_ideal_2: 'Verify news reports',
+    scan_story_ideal_3: 'Expose chain letters & rumors',
     // FullScan
     scan_full_title: 'FullScan',
-    scan_full_desc: 'Maximum accuracy with Veritas & Robo.',
-    scan_full_feat1: 'Complete Veritas + Robo analysis',
-    scan_full_feat2: 'Detailed explanations',
-    scan_full_feat3: 'Highest detection rate',
+    scan_full_subtitle: 'Complete check (Image + Context)',
+    scan_full_desc: 'Image analysis + source check in one',
     scan_full_credits: 'Credits',
     scan_full_credits_value: '3',
+    scan_full_learn_1: 'Complete image analysis (like ImageScan)',
+    scan_full_learn_2: 'Full fact-check (like StoryScan)',
+    scan_full_learn_3: '⚠ Conflict detection: Warns when real image is used with false context OR AI image with correct context',
+    scan_full_get_1: 'Result card',
+    scan_full_get_2: 'Share card for sharing',
+    scan_full_get_3: 'PDF report with all details',
+    scan_full_get_4: '3-5 Key findings',
+    scan_full_ideal_1: 'Suspicious image-text combinations',
+    scan_full_ideal_2: 'Professional verification',
+    scan_full_ideal_3: 'When you want to be absolutely sure',
     
     // Examples
     examples_title: 'Can You Spot the Difference?',
@@ -1256,32 +1352,64 @@ export const translations: Record<Language, Translations> = {
     disclaimer_text: 'ForRealScan ti fornisce valutazioni tecniche ben fondate e probabilità. I risultati non sono prove legali, ma ti aiutano a prendere decisioni più consapevoli – e non dovrebbero servire come unica base per accuse o dure allegazioni.',
     
     // Scan Modes
-    scan_section_title: 'Scegli la Tua Modalità di Scan',
+    scan_section_title: 'Cosa vuoi verificare?',
+    scan_section_subtitle: 'Scegli il pacchetto giusto per la tua analisi',
     scan_compare_link: 'Confronta Modalità',
     scan_most_popular: 'Popolare',
+    scan_premium_badge: '💎💎💎',
     scan_cta: 'Avvia Scan',
+    // Category Headers
+    scan_cat_learn: 'COSA SCOPRIRAI',
+    scan_cat_get: 'COSA OTTIENI',
+    scan_cat_ideal: 'IDEALE PER',
     // ImageScan
     scan_image_title: 'ImageScan',
-    scan_image_desc: 'Rilevamento IA rapido per immagini singole.',
-    scan_image_feat1: 'Analisi Veritas: Segnali tecnici dell\'immagine',
-    scan_image_feat2: 'Ideale per controlli rapidi',
+    scan_image_subtitle: 'La mia immagine è reale o generata dall\'IA?',
+    scan_image_desc: 'Analisi IA con segnali forensi',
     scan_image_credits: 'Credit',
     scan_image_credits_value: '1',
+    scan_image_learn_1: 'Probabilità IA in % (Midjourney, DALL-E, Flux, Stable Diffusion, ChatGPT, Leonardo, Firefly e altri)',
+    scan_image_learn_2: 'Verdetto: Reale / Generato dall\'IA / Incerto',
+    scan_image_learn_3: '3-5 indicazioni specifiche dell\'immagine',
+    scan_image_learn_4: 'Anomalie visive (volti, mani, texture, illuminazione)',
+    scan_image_get_1: 'Scheda risultato',
+    scan_image_get_2: 'Scheda condivisione',
+    scan_image_get_3: '3-5 risultati chiave',
+    scan_image_ideal_1: 'Verifica rapida di singole immagini',
+    scan_image_ideal_2: 'Controllare post sui social media',
+    scan_image_ideal_3: 'Smascherare foto profilo sospette',
     // StoryScan
     scan_story_title: 'StoryScan',
-    scan_story_desc: 'Per storie e post sui social media.',
-    scan_story_feat1: 'Veritas + analisi del contesto',
-    scan_story_feat2: 'Supporto multi-frame',
+    scan_story_subtitle: 'Questa storia / affermazione è vera?',
+    scan_story_desc: 'Fact-check con verifica delle fonti',
     scan_story_credits: 'Credits',
     scan_story_credits_value: '2',
+    scan_story_learn_1: 'Fact-check con riferimenti alle fonti',
+    scan_story_learn_2: 'Stima di accuratezza (es. "70-85% corretto")',
+    scan_story_learn_3: 'Cosa è vero ✓ / Cosa manca o fuorvia ⚠',
+    scan_story_learn_4: 'Fonti verificate con link',
+    scan_story_get_1: 'Scheda risultato',
+    scan_story_get_2: 'Scheda condivisione',
+    scan_story_get_3: 'Report PDF (1 pagina)',
+    scan_story_ideal_1: 'Verificare affermazioni virali',
+    scan_story_ideal_2: 'Verificare notizie',
+    scan_story_ideal_3: 'Smascherare catene e voci',
     // FullScan
     scan_full_title: 'FullScan',
-    scan_full_desc: 'Massima precisione con Veritas & Robo.',
-    scan_full_feat1: 'Analisi completa Veritas + Robo',
-    scan_full_feat2: 'Spiegazioni dettagliate',
-    scan_full_feat3: 'Tasso di rilevamento più alto',
+    scan_full_subtitle: 'Controllo completo (Immagine + Contesto)',
+    scan_full_desc: 'Analisi immagine + verifica fonti in uno',
     scan_full_credits: 'Credits',
     scan_full_credits_value: '3',
+    scan_full_learn_1: 'Analisi completa dell\'immagine (come ImageScan)',
+    scan_full_learn_2: 'Fact-check completo (come StoryScan)',
+    scan_full_learn_3: '⚠ Rilevamento conflitti: Avvisa quando un\'immagine reale viene usata con contesto falso O un\'immagine IA con contesto corretto',
+    scan_full_get_1: 'Scheda risultato',
+    scan_full_get_2: 'Scheda condivisione',
+    scan_full_get_3: 'Report PDF con tutti i dettagli',
+    scan_full_get_4: '3-5 risultati chiave',
+    scan_full_ideal_1: 'Combinazioni sospette immagine-testo',
+    scan_full_ideal_2: 'Verifica professionale',
+    scan_full_ideal_3: 'Quando vuoi andare sul sicuro',
     
     // Examples
     examples_title: 'Riesci a Vedere la Differenza?',
@@ -1655,32 +1783,64 @@ export const translations: Record<Language, Translations> = {
     disclaimer_text: 'ForRealScan te proporciona evaluaciones técnicas bien fundadas y probabilidades. Los resultados no son pruebas legales, pero te ayudan a tomar decisiones más conscientes – y no deben servir como única base para acusaciones o alegaciones duras.',
     
     // Scan Modes
-    scan_section_title: 'Elige Tu Modo de Scan',
+    scan_section_title: '¿Qué quieres verificar?',
+    scan_section_subtitle: 'Elige el paquete adecuado para tu análisis',
     scan_compare_link: 'Comparar Modos',
     scan_most_popular: 'Popular',
+    scan_premium_badge: '💎💎💎',
     scan_cta: 'Iniciar Scan',
+    // Category Headers
+    scan_cat_learn: 'QUÉ DESCUBRIRÁS',
+    scan_cat_get: 'QUÉ OBTIENES',
+    scan_cat_ideal: 'IDEAL PARA',
     // ImageScan
     scan_image_title: 'ImageScan',
-    scan_image_desc: 'Detección rápida de IA para imágenes individuales.',
-    scan_image_feat1: 'Análisis Veritas: Señales técnicas de imagen',
-    scan_image_feat2: 'Ideal para verificaciones rápidas',
+    scan_image_subtitle: '¿Mi imagen es real o generada por IA?',
+    scan_image_desc: 'Análisis de IA con señales forenses',
     scan_image_credits: 'Credit',
     scan_image_credits_value: '1',
+    scan_image_learn_1: 'Probabilidad de IA en % (Midjourney, DALL-E, Flux, Stable Diffusion, ChatGPT, Leonardo, Firefly y más)',
+    scan_image_learn_2: 'Veredicto: Real / Generada por IA / Incierto',
+    scan_image_learn_3: '3-5 indicaciones específicas de la imagen',
+    scan_image_learn_4: 'Anomalías visuales (rostros, manos, texturas, iluminación)',
+    scan_image_get_1: 'Tarjeta de resultado',
+    scan_image_get_2: 'Tarjeta para compartir',
+    scan_image_get_3: '3-5 hallazgos clave',
+    scan_image_ideal_1: 'Verificación rápida de imágenes individuales',
+    scan_image_ideal_2: 'Revisar publicaciones en redes sociales',
+    scan_image_ideal_3: 'Desenmascarar fotos de perfil sospechosas',
     // StoryScan
     scan_story_title: 'StoryScan',
-    scan_story_desc: 'Para historias y publicaciones en redes sociales.',
-    scan_story_feat1: 'Veritas + análisis de contexto',
-    scan_story_feat2: 'Soporte multi-frame',
+    scan_story_subtitle: '¿Es cierta esta historia / afirmación?',
+    scan_story_desc: 'Verificación de hechos con fuentes',
     scan_story_credits: 'Credits',
     scan_story_credits_value: '2',
+    scan_story_learn_1: 'Verificación con referencias de fuentes',
+    scan_story_learn_2: 'Estimación de precisión (ej. "70-85% correcto")',
+    scan_story_learn_3: 'Qué es verdad ✓ / Qué falta o engaña ⚠',
+    scan_story_learn_4: 'Fuentes verificadas con enlaces',
+    scan_story_get_1: 'Tarjeta de resultado',
+    scan_story_get_2: 'Tarjeta para compartir',
+    scan_story_get_3: 'Informe PDF (1 página)',
+    scan_story_ideal_1: 'Verificar afirmaciones virales',
+    scan_story_ideal_2: 'Verificar noticias',
+    scan_story_ideal_3: 'Desenmascarar cadenas y rumores',
     // FullScan
     scan_full_title: 'FullScan',
-    scan_full_desc: 'Máxima precisión con Veritas & Robo.',
-    scan_full_feat1: 'Análisis completo Veritas + Robo',
-    scan_full_feat2: 'Explicaciones detalladas',
-    scan_full_feat3: 'Mayor tasa de detección',
+    scan_full_subtitle: 'Verificación completa (Imagen + Contexto)',
+    scan_full_desc: 'Análisis de imagen + verificación de fuentes en uno',
     scan_full_credits: 'Credits',
     scan_full_credits_value: '3',
+    scan_full_learn_1: 'Análisis completo de imagen (como ImageScan)',
+    scan_full_learn_2: 'Verificación completa de hechos (como StoryScan)',
+    scan_full_learn_3: '⚠ Detección de conflictos: Avisa cuando una imagen real se usa con contexto falso O imagen IA con contexto correcto',
+    scan_full_get_1: 'Tarjeta de resultado',
+    scan_full_get_2: 'Tarjeta para compartir',
+    scan_full_get_3: 'Informe PDF con todos los detalles',
+    scan_full_get_4: '3-5 hallazgos clave',
+    scan_full_ideal_1: 'Combinaciones sospechosas imagen-texto',
+    scan_full_ideal_2: 'Verificación profesional',
+    scan_full_ideal_3: 'Cuando quieres estar seguro',
     
     // Examples
     examples_title: '¿Puedes Ver la Diferencia?',
@@ -2054,32 +2214,64 @@ export const translations: Record<Language, Translations> = {
     disclaimer_text: 'ForRealScan vous fournit des évaluations techniques bien fondées et des probabilités. Les résultats ne sont pas des preuves juridiques, mais vous aident à prendre des décisions plus éclairées – et ne doivent pas servir de base unique pour des accusations ou des allégations sévères.',
     
     // Scan Modes
-    scan_section_title: 'Choisissez Votre Mode de Scan',
+    scan_section_title: 'Que voulez-vous vérifier ?',
+    scan_section_subtitle: 'Choisissez le forfait adapté à votre analyse',
     scan_compare_link: 'Comparer les Modes',
     scan_most_popular: 'Populaire',
+    scan_premium_badge: '💎💎💎',
     scan_cta: 'Démarrer le Scan',
+    // Category Headers
+    scan_cat_learn: 'CE QUE VOUS APPRENDREZ',
+    scan_cat_get: 'CE QUE VOUS OBTENEZ',
+    scan_cat_ideal: 'IDÉAL POUR',
     // ImageScan
     scan_image_title: 'ImageScan',
-    scan_image_desc: 'Détection rapide d\'IA pour images individuelles.',
-    scan_image_feat1: 'Analyse Veritas : Signaux techniques d\'image',
-    scan_image_feat2: 'Idéal pour des vérifications rapides',
+    scan_image_subtitle: 'Mon image est-elle réelle ou générée par IA ?',
+    scan_image_desc: 'Analyse IA avec signaux forensiques',
     scan_image_credits: 'Credit',
     scan_image_credits_value: '1',
+    scan_image_learn_1: 'Probabilité IA en % (Midjourney, DALL-E, Flux, Stable Diffusion, ChatGPT, Leonardo, Firefly et plus)',
+    scan_image_learn_2: 'Verdict : Réel / Généré par IA / Incertain',
+    scan_image_learn_3: '3-5 indices spécifiques à l\'image',
+    scan_image_learn_4: 'Anomalies visuelles (visages, mains, textures, éclairage)',
+    scan_image_get_1: 'Carte de résultat',
+    scan_image_get_2: 'Carte de partage',
+    scan_image_get_3: '3-5 découvertes clés',
+    scan_image_ideal_1: 'Vérification rapide d\'images individuelles',
+    scan_image_ideal_2: 'Vérifier les publications sur les réseaux sociaux',
+    scan_image_ideal_3: 'Démasquer les photos de profil suspectes',
     // StoryScan
     scan_story_title: 'StoryScan',
-    scan_story_desc: 'Pour les stories et publications sur réseaux sociaux.',
-    scan_story_feat1: 'Veritas + analyse contextuelle',
-    scan_story_feat2: 'Support multi-frame',
+    scan_story_subtitle: 'Cette histoire / affirmation est-elle vraie ?',
+    scan_story_desc: 'Vérification des faits avec sources',
     scan_story_credits: 'Credits',
     scan_story_credits_value: '2',
+    scan_story_learn_1: 'Vérification avec références des sources',
+    scan_story_learn_2: 'Estimation de précision (ex. "70-85% correct")',
+    scan_story_learn_3: 'Ce qui est vrai ✓ / Ce qui manque ou induit en erreur ⚠',
+    scan_story_learn_4: 'Sources vérifiées avec liens',
+    scan_story_get_1: 'Carte de résultat',
+    scan_story_get_2: 'Carte de partage',
+    scan_story_get_3: 'Rapport PDF (1 page)',
+    scan_story_ideal_1: 'Vérifier les affirmations virales',
+    scan_story_ideal_2: 'Vérifier les informations',
+    scan_story_ideal_3: 'Démasquer les chaînes et rumeurs',
     // FullScan
     scan_full_title: 'FullScan',
-    scan_full_desc: 'Précision maximale avec Veritas & Robo.',
-    scan_full_feat1: 'Analyse complète Veritas + Robo',
-    scan_full_feat2: 'Explications détaillées',
-    scan_full_feat3: 'Taux de détection le plus élevé',
+    scan_full_subtitle: 'Vérification complète (Image + Contexte)',
+    scan_full_desc: 'Analyse d\'image + vérification des sources en un',
     scan_full_credits: 'Credits',
     scan_full_credits_value: '3',
+    scan_full_learn_1: 'Analyse d\'image complète (comme ImageScan)',
+    scan_full_learn_2: 'Vérification complète des faits (comme StoryScan)',
+    scan_full_learn_3: '⚠ Détection de conflits : Avertit quand une image réelle est utilisée avec un faux contexte OU une image IA avec un contexte correct',
+    scan_full_get_1: 'Carte de résultat',
+    scan_full_get_2: 'Carte de partage',
+    scan_full_get_3: 'Rapport PDF avec tous les détails',
+    scan_full_get_4: '3-5 découvertes clés',
+    scan_full_ideal_1: 'Combinaisons suspectes image-texte',
+    scan_full_ideal_2: 'Vérification professionnelle',
+    scan_full_ideal_3: 'Quand vous voulez être sûr',
     
     // Examples
     examples_title: 'Voyez-vous la différence ?',

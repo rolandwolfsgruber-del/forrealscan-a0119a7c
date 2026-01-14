@@ -29,6 +29,11 @@ export default {
           foreground: "hsl(var(--robo-foreground))",
           glow: "hsl(var(--robo-glow))",
         },
+        fullscan: {
+          DEFAULT: "hsl(var(--fullscan))",
+          foreground: "hsl(var(--fullscan-foreground))",
+          glow: "hsl(var(--fullscan-glow))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
