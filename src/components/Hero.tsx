@@ -70,24 +70,43 @@ export const Hero = ({
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo with Animated Gradient Border & Glow Effect */}
           <div className="relative mb-8 sm:mb-12 md:mb-16 flex justify-center animate-blur-to-sharp">
-            {/* Animated Glow Behind Container */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] md:w-[600px] md:h-[600px]">
-                {/* Veritas Glow (Left/Green) - Diagonal positioned */}
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] rounded-full blur-[60px] sm:blur-[70px] animate-pulse-glow sm:left-[-5%] sm:top-[40%]" style={{
-                background: 'radial-gradient(circle, #22c55e 0%, transparent 70%)'
-              }} />
-                {/* Robo Glow (Right/Blue) - Diagonal positioned with delay */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] rounded-full blur-[60px] sm:blur-[70px] animate-pulse-glow sm:right-[-5%] sm:top-[60%]" style={{
-                background: 'radial-gradient(circle, #3b82f6 0%, transparent 70%)',
-                animationDelay: '2s'
-              }} />
-                {/* Third Glow (White/Neutral) - Breaks symmetry, desktop only */}
-                <div
-                  className="absolute right-[10%] top-[15%] w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[180px] md:h-[180px] rounded-full blur-[50px] sm:blur-[60px] hidden sm:block"
-                  style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%)' }}
-                />
-              </div>
+            {/* ===== HALO GLOW SYSTEM ===== */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+              {/* Layer 2: Ambient Glow (hinten, Desktop only) */}
+              <div
+                className="absolute w-[500px] h-[500px] md:w-[650px] md:h-[650px] rounded-full blur-[120px] animate-pulse-glow hidden sm:block"
+                style={{
+                  background: 'radial-gradient(circle, rgba(34,197,94,0.35) 0%, rgba(59,130,246,0.25) 50%, transparent 70%)',
+                  transform: 'translateY(12%)',
+                  mixBlendMode: 'screen',
+                  opacity: 0.3,
+                  willChange: 'transform, opacity'
+                }}
+              />
+
+              {/* Layer 1: Conic Halo (vorne, rotierend) */}
+              <div
+                className="absolute w-[350px] h-[350px] sm:w-[420px] sm:h-[420px] md:w-[550px] md:h-[550px] rounded-full blur-[70px] sm:blur-[80px] animate-halo-glow"
+                style={{
+                  background: `conic-gradient(
+                    from 180deg at 50% 55%,
+                    rgba(34, 197, 94, 0.5) 0deg,
+                    rgba(34, 197, 94, 0.45) 45deg,
+                    rgba(47, 163, 107, 0.42) 90deg,
+                    rgba(59, 130, 246, 0.42) 135deg,
+                    rgba(59, 130, 246, 0.5) 180deg,
+                    rgba(59, 130, 246, 0.45) 225deg,
+                    rgba(47, 163, 107, 0.42) 270deg,
+                    rgba(34, 197, 94, 0.42) 315deg,
+                    rgba(34, 197, 94, 0.5) 360deg
+                  )`,
+                  clipPath: 'ellipse(50% 45% at 50% 55%)',
+                  mixBlendMode: 'screen',
+                  willChange: 'transform, opacity'
+                }}
+              />
+
             </div>
 
             {/* Animated Gradient Border Container */}

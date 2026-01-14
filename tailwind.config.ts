@@ -136,6 +136,20 @@ export default {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.05)" },
         },
+        "halo-rotate": {
+          "0%": {
+            transform: "translateY(12%) rotate(0deg)",
+            opacity: "0.5",
+          },
+          "50%": {
+            transform: "translateY(12%) rotate(180deg)",
+            opacity: "0.7",
+          },
+          "100%": {
+            transform: "translateY(12%) rotate(360deg)",
+            opacity: "0.5",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -149,6 +163,7 @@ export default {
         "shimmer": "shimmer 2s linear infinite",
         "scan-line": "scan-line 4s ease-in-out infinite",
         "badge-pulse": "badge-pulse 2s ease-in-out infinite",
+        "halo-glow": "halo-rotate 30s linear infinite",
       },
     },
   },
