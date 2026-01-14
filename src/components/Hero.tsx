@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Language, translations } from '@/lib/translations';
 import { APP_URL } from '@/lib/config';
-import logoMaster from '@/assets/logo-master.webp';
+// Logo import removed - using responsive srcset in public folder
 import { Theme } from '@/components/ThemeToggle';
 
 interface HeroProps {
@@ -69,7 +69,7 @@ export const Hero = ({
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6 sm:pt-20 sm:pb-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo with Animated Gradient Border & Glow Effect */}
-          <div className="relative mb-8 sm:mb-12 md:mb-16 flex justify-center">
+          <div className="relative mb-8 sm:mb-12 md:mb-16 flex justify-center animate-blur-to-sharp">
             {/* Animated Glow Behind Container */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] md:w-[600px] md:h-[600px]">
@@ -91,10 +91,10 @@ export const Hero = ({
             </div>
 
             {/* Animated Gradient Border Container */}
-            <div ref={logoRef} onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="relative z-10 p-[2px] sm:p-[3px] rounded-[42px] sm:rounded-[62px] md:rounded-[72px] cursor-pointer group animate-blur-to-sharp" style={{
+            <div ref={logoRef} onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="relative z-10 p-[2px] sm:p-[3px] rounded-[42px] sm:rounded-[62px] md:rounded-[72px] cursor-pointer group" style={{
             background: 'linear-gradient(135deg, #22c55e, #3b82f6, #22c55e, #3b82f6)',
             backgroundSize: '300% 300%',
-            animation: 'gradient-rotate 4s linear infinite',
+            animation: 'gradient-border-flow 4s ease-in-out infinite',
             transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
             transition: isHovering ? 'none' : 'transform 0.5s ease-out'
           }}>
