@@ -73,7 +73,7 @@ export const Hero = ({ language, theme }: HeroProps) => {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6 sm:pt-20 sm:pb-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo with Animated Gradient Border & Glow Effect */}
-          <div className="relative mb-8 sm:mb-12 md:mb-16 flex justify-center animate-blur-to-sharp">
+          <div className="relative mb-12 sm:mb-16 md:mb-20 flex justify-center animate-blur-to-sharp">
             {/* ===== HALO GLOW SYSTEM ===== */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               {/* Layer 2: Ambient Glow (hinten, Desktop only) */}
