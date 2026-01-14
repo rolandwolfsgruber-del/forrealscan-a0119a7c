@@ -125,8 +125,10 @@ export const Modes = ({ language, theme }: ModesProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2">
-            {t.scan_section_title}
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
+            <span className="bg-gradient-to-r from-veritas to-robo bg-clip-text text-transparent">
+              {t.scan_section_title}
+            </span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
             {t.scan_section_subtitle}
