@@ -89,10 +89,9 @@ export const Hero = ({ language, theme }: HeroProps) => {
 
               {/* Layer 1: Conic Halo (vorne, rotierend) */}
               <div
-                className="absolute w-[280px] h-[280px] sm:w-[460px] sm:h-[460px] md:w-[560px] md:h-[560px] animate-halo-glow"
+                className="absolute w-[280px] h-[280px] sm:w-[460px] sm:h-[460px] md:w-[560px] md:h-[560px] rounded-full animate-halo-glow"
                 style={{
                   background: "conic-gradient(from 180deg at 50% 55%, rgba(34, 197, 94, 0.5) 0deg, rgba(47, 163, 107, 0.42) 90deg, rgba(59, 130, 246, 0.5) 180deg, rgba(47, 163, 107, 0.42) 270deg, rgba(34, 197, 94, 0.5) 360deg)",
-                  clipPath: "ellipse(50% 45% at 50% 55%)",
                   filter: "blur(80px)",
                   mixBlendMode: "screen",
                   willChange: "transform",
