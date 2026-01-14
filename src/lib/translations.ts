@@ -57,15 +57,33 @@ interface Translations {
   disclaimer_title: string;
   disclaimer_text: string;
   
-  // Scan
-  scan_title: string;
-  scan_hybrid_title: string;
-  scan_hybrid_desc: string;
-  scan_hybrid_feat1: string;
-  scan_hybrid_feat2: string;
-  scan_hybrid_feat3: string;
-  scan_hybrid_feat4: string;
-  scan_limit_label: string;
+  // Scan Modes
+  scan_section_title: string;
+  scan_compare_link: string;
+  scan_most_popular: string;
+  scan_cta: string;
+  // ImageScan
+  scan_image_title: string;
+  scan_image_desc: string;
+  scan_image_feat1: string;
+  scan_image_feat2: string;
+  scan_image_credits: string;
+  scan_image_credits_value: string;
+  // StoryScan
+  scan_story_title: string;
+  scan_story_desc: string;
+  scan_story_feat1: string;
+  scan_story_feat2: string;
+  scan_story_credits: string;
+  scan_story_credits_value: string;
+  // FullScan
+  scan_full_title: string;
+  scan_full_desc: string;
+  scan_full_feat1: string;
+  scan_full_feat2: string;
+  scan_full_feat3: string;
+  scan_full_credits: string;
+  scan_full_credits_value: string;
   
   // Examples
   examples_title: string;
@@ -396,7 +414,7 @@ export const translations: Record<Language, Translations> = {
     
     // Hero
     hero_title: 'Erkenne, wie viel KI in deinen Bildern steckt',
-    hero_subtitle: 'Lade dein Bild hoch und erhalte mit dem ForRealScan-Hybrid einen Prozentwert – mit KI-Hinweisen, Unsicherheitszonen und technischen Details, damit du besser einschätzen kannst, was echt ist.',
+    hero_subtitle: 'Lade dein Bild hoch und erhalte mit ForRealScan einen Prozentwert – mit KI-Hinweisen, Unsicherheitszonen und technischen Details, damit du besser einschätzen kannst, was echt ist.',
     hero_cta_primary: 'Jetzt prüfen',
     hero_cta_secondary: 'Beispiele ansehen',
     hero_microcopy: 'Kostenlos testen, keine Anmeldung nötig.',
@@ -404,11 +422,11 @@ export const translations: Record<Language, Translations> = {
     // How it works
     how_title: 'Wie funktioniert ForRealScan?',
     how_step1_title: 'Wahrscheinlichkeiten statt harte Urteile',
-    how_step1_text: 'Der ForRealScan-Hybrid zeigt dir eine geschätzte Wahrscheinlichkeit, ob KI-Generierung oder starke Bearbeitung im Spiel ist. Es geht um fundierte Hinweise – nicht um endgültige Urteile.',
+    how_step1_text: 'ForRealScan zeigt dir eine geschätzte Wahrscheinlichkeit, ob KI-Generierung oder starke Bearbeitung im Spiel ist. Es geht um fundierte Hinweise – nicht um endgültige Urteile.',
     how_step2_title: 'Echte Erklärungen statt nur Prozentzahlen',
-    how_step2_text: 'Mit dem Hybrid-Scan erhältst du verständliche Erklärungen: Welche Bild- oder Textstellen wirken eher natürlich, welche eher KI-typisch und warum.',
+    how_step2_text: 'Mit ForRealScan erhältst du verständliche Erklärungen: Welche Bild- oder Textstellen wirken eher natürlich, welche eher KI-typisch und warum.',
     how_step3_title: 'Unsicherheits-Zonen werden klar markiert',
-    how_step3_text: 'Wenn ein Ergebnis unsicher ist – zum Beispiel bei schwierigen Bildern – weist der ForRealScan-Hybrid deutlich darauf hin, statt Sicherheit vorzutäuschen.',
+    how_step3_text: 'Wenn ein Ergebnis unsicher ist – zum Beispiel bei schwierigen Bildern – weist ForRealScan deutlich darauf hin, statt Sicherheit vorzutäuschen.',
     
     // Story Check & Text
     story_title: 'Bilder, Texte und Story im Zusammenspiel prüfen',
@@ -439,15 +457,33 @@ export const translations: Record<Language, Translations> = {
     disclaimer_title: 'Wichtiger Hinweis',
     disclaimer_text: 'ForRealScan liefert dir fundierte technische Einschätzungen und Wahrscheinlichkeiten. Die Ergebnisse sind keine juristischen Beweise, helfen dir aber dabei, bewusster zu entscheiden – und sollten nicht als alleinige Grundlage für Vorwürfe oder harte Anschuldigungen dienen.',
     
-    // Scan
-    scan_title: 'Ein Scan – maximale Klarheit.',
-    scan_hybrid_title: 'ForRealScan (Hybrid-Scan)',
-    scan_hybrid_desc: 'Kombinierte Bild- und Forensik-Analyse für dein Bild.',
-    scan_hybrid_feat1: 'Schätzt die KI-Wahrscheinlichkeit deines Bildes (0–100 %).',
-    scan_hybrid_feat2: 'Nutzt zusätzliche Forensik-Signale für Manipulation und Retusche.',
-    scan_hybrid_feat3: 'Liefert klares Ergebnis: authentisch, KI oder unsicher – mit kurzer Erklärung.',
-    scan_hybrid_feat4: 'Bis zu 5 Bilder pro Tag mit ForRealScan prüfen.',
-    scan_limit_label: 'Tageslimit: 0/5',
+    // Scan Modes
+    scan_section_title: 'Wähle deinen Scan-Modus',
+    scan_compare_link: 'Modi vergleichen',
+    scan_most_popular: 'Beliebt',
+    scan_cta: 'Scan starten',
+    // ImageScan
+    scan_image_title: 'ImageScan',
+    scan_image_desc: 'Schnelle KI-Erkennung für Einzelbilder.',
+    scan_image_feat1: 'Veritas-Analyse: Technische Bildsignale',
+    scan_image_feat2: 'Ideal für schnelle Checks',
+    scan_image_credits: 'Credit',
+    scan_image_credits_value: '1',
+    // StoryScan
+    scan_story_title: 'StoryScan',
+    scan_story_desc: 'Für Stories und Social-Media-Posts.',
+    scan_story_feat1: 'Veritas + Kontext-Analyse',
+    scan_story_feat2: 'Multi-Frame Unterstützung',
+    scan_story_credits: 'Credits',
+    scan_story_credits_value: '2',
+    // FullScan
+    scan_full_title: 'FullScan',
+    scan_full_desc: 'Maximale Genauigkeit mit Veritas & Robo.',
+    scan_full_feat1: 'Komplette Veritas + Robo Analyse',
+    scan_full_feat2: 'Detaillierte Erklärungen',
+    scan_full_feat3: 'Höchste Erkennungsrate',
+    scan_full_credits: 'Credits',
+    scan_full_credits_value: '3',
     
     // Examples
     examples_title: 'Täuschend echt: Der direkte Vergleich',
@@ -466,24 +502,24 @@ export const translations: Record<Language, Translations> = {
     cases_title: 'Für wen ist ForRealScan?',
     case1_title: 'Influencer & Creator',
     case1_text: 'Schütze deine Authentizität und beweise die Echtheit deiner Inhalte.',
-    case1_detail1: 'Zeige deiner Community mit einem ForRealScan-Hybrid-Ergebnis, dass deine Fotos echt sind – selbst wenn du leicht retuschierst.',
+    case1_detail1: 'Zeige deiner Community mit einem ForRealScan-Ergebnis, dass deine Fotos echt sind – selbst wenn du leicht retuschierst.',
     case1_detail2: 'Vergleiche echte Fotos mit KI-Bildern, um deinen eigenen Bildstil bewusster zu wählen.',
-    case1_detail3: 'Prüfe Kampagnenmotive mit dem Hybrid-Scan, bevor du sie mit Marken oder Agenturen teilst.',
+    case1_detail3: 'Prüfe Kampagnenmotive mit ForRealScan, bevor du sie mit Marken oder Agenturen teilst.',
     case2_title: 'Journalisten & Fact Checker',
     case2_text: 'Überprüfe Bildmaterial schnell und transparent auf mögliche Manipulation.',
-    case2_detail1: 'Scanne Pressefotos mit dem Hybrid-Scan, bevor du sie in Artikeln verwendest.',
+    case2_detail1: 'Scanne Pressefotos mit ForRealScan, bevor du sie in Artikeln verwendest.',
     case2_detail2: 'Nutze den Story-Check, um zu sehen, ob Bild und Text grob zueinander passen.',
-    case2_detail3: 'Dokumentiere deine Prüfung mit einem knappen ForRealScan-Hybrid-Ergebnis für deine Leser:innen.',
+    case2_detail3: 'Dokumentiere deine Prüfung mit einem knappen ForRealScan-Ergebnis für deine Leser:innen.',
     case3_title: 'Dating & Social',
     case3_text: 'Erkenne verdächtige Profilbilder und unrealistische Inszenierungen frühzeitig.',
-    case3_detail1: 'Prüfe Profilbilder mit dem Hybrid-Scan, bevor du jemandem vertraust.',
+    case3_detail1: 'Prüfe Profilbilder mit ForRealScan, bevor du jemandem vertraust.',
     case3_detail2: 'Erkenne stark retuschierte oder KI-erzeugte Selfies, die ein falsches Bild vermitteln.',
     case3_detail3: 'Scanne Screenshots von viralen Posts, um sie vor dem Teilen besser einschätzen zu können.',
     case4_title: 'Fotografie & Marketing',
     case4_text: 'Mache die Authentizität deiner visuellen Assets sichtbar.',
     case4_detail1: 'Zeige Kund:innen, welche Bilder echte Fotos sind und wo digitale Bearbeitung im Spiel ist.',
-    case4_detail2: 'Scanne Produktfotos und Kampagnenmotive mit dem Hybrid-Scan vor der Veröffentlichung.',
-    case4_detail3: 'Nutze ForRealScan-Hybrid-Ergebnisse als Transparenz-Pluspunkt in Pitches und Präsentationen.',
+    case4_detail2: 'Scanne Produktfotos und Kampagnenmotive mit ForRealScan vor der Veröffentlichung.',
+    case4_detail3: 'Nutze ForRealScan-Ergebnisse als Transparenz-Pluspunkt in Pitches und Präsentationen.',
     
     // Pricing
     pricing_title: 'Credits & Preise',
@@ -516,11 +552,11 @@ export const translations: Record<Language, Translations> = {
     // FAQ
     faq_title: 'Häufig gestellte Fragen',
     faq_q1: 'Ist ForRealScan kostenlos?',
-    faq_a1: 'Ja! Der ForRealScan-Hybrid-Scan ist bis zu 5-mal pro Tag kostenlos nutzbar. Premium bietet unbegrenzte Scans und weitere Features.',
+    faq_a1: 'Ja! ForRealScan ist bis zu 5-mal pro Tag kostenlos nutzbar. Premium bietet unbegrenzte Scans und weitere Features.',
     faq_q2: 'Wie zuverlässig sind die Einschätzungen?',
     faq_a2: 'ForRealScan liefert dir fundierte Wahrscheinlichkeiten und technische Hinweise. In vielen Tests können KI-Bilder sehr zuverlässig erkannt werden – trotzdem gibt es nie eine Garantie von 100 %. Deshalb zeigen wir dir immer auch Unsicherheitsbereiche und erklären, warum ein Ergebnis so ausfällt, damit du es besser einordnen kannst.',
     faq_q3: 'Gibt es verschiedene Scan-Modi?',
-    faq_a3: 'Früher gab es zwei Modi, heute nutzt ForRealScan einen Hybrid-Scan, der Bildanalyse und Forensik kombiniert – du musst nichts auswählen. Der Hybrid-Scan liefert dir automatisch die beste verfügbare Einschätzung.',
+    faq_a3: 'Ja! ForRealScan bietet drei Modi: ImageScan für schnelle Einzelbild-Checks, StoryScan für Social-Media-Posts und FullScan für maximale Genauigkeit mit der kompletten Veritas & Robo Analyse.',
     faq_q4: 'Funktioniert es auf allen Geräten?',
     faq_a4: 'Ja! ForRealScan ist vollständig responsiv und funktioniert auf Desktop, Tablet und Smartphone.',
     faq_q5: 'Warum gibt es Werbung im Free-Modus?',
@@ -563,7 +599,7 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step2: '2. Hinweise für „echt" oder „KI" – Beide suchen nach typischen Spuren, die für oder gegen KI sprechen.',
     veritas_robo_help_step3: '3. Erklärung in Klartext – Aus den Hinweisen wird eine ruhige, neutrale Erklärung, die du ohne Vorwissen verstehst.',
     veritas_robo_disclaimer: 'Ohne Modellnamen, ohne Provider-Werbung – nur eine ehrliche Einschätzung, die du nachvollziehen kannst.',
-    veritas_robo_closing: 'Veritas und Robo sehen sich jedes Bild aus zwei Richtungen an – am Ende bekommst du eine gemeinsame, ausgewogene Einschätzung pro ForRealScan-Hybrid-Scan.',
+    veritas_robo_closing: 'Veritas und Robo sehen sich jedes Bild aus zwei Richtungen an – am Ende bekommst du eine gemeinsame, ausgewogene Einschätzung pro ForRealScan.',
 
     // Examples Page (dedicated page)
     examples_page_title: 'Beispiel-Analysen',
@@ -616,7 +652,7 @@ export const translations: Record<Language, Translations> = {
     methodology_what_p1: 'ForRealScan ist ein Analyse-Tool, das dir hilft, den möglichen KI-Anteil in Bildern einzuschätzen. Der Service kombiniert verschiedene Analysemethoden, um Hinweise darauf zu finden, ob ein Bild mit KI-Technologie generiert oder stark bearbeitet wurde.',
     methodology_what_p2: 'Wichtig zu verstehen: ForRealScan liefert Wahrscheinlichkeiten und fundierte Einschätzungen – keine absoluten Urteile. Die Technologie zur Bilderzeugung entwickelt sich ständig weiter, und kein Erkennungssystem kann eine hundertprozentige Genauigkeit garantieren.',
     methodology_how_title: 'So funktioniert der Scan',
-    methodology_how_intro: 'Der ForRealScan-Hybrid kombiniert zwei Analyseperspektiven, symbolisiert durch unsere Maskottchen Veritas und Robo:',
+    methodology_how_intro: 'ForRealScan kombiniert zwei Analyseperspektiven, symbolisiert durch unsere Maskottchen Veritas und Robo:',
     methodology_veritas_title: 'Veritas – Der Natur-Blick',
     methodology_veritas_text: 'Veritas analysiert, ob ein Bild die typischen Eigenschaften einer echten Fotografie aufweist: natürliche Lichtverhältnisse, realistische Schatten, organische Texturen bei Haut und Haaren, sowie die kleinen Unvollkommenheiten, die echte Fotos auszeichnen.',
     methodology_robo_title: 'Robo – Der Logik-Blick',
@@ -777,7 +813,7 @@ export const translations: Record<Language, Translations> = {
     
     // Hero
     hero_title: 'Discover How Much AI is in Your Images',
-    hero_subtitle: 'Upload your image and get a percentage value with the ForRealScan-Hybrid – with AI indicators, uncertainty zones, and technical details to help you better assess what\'s real.',
+    hero_subtitle: 'Upload your image and get a percentage value with ForRealScan – with AI indicators, uncertainty zones, and technical details to help you better assess what\'s real.',
     hero_cta_primary: 'Check Now',
     hero_cta_secondary: 'View Examples',
     hero_microcopy: 'Try for free, no registration required.',
@@ -785,11 +821,11 @@ export const translations: Record<Language, Translations> = {
     // How it works
     how_title: 'How ForRealScan Works',
     how_step1_title: 'Probabilities instead of hard judgments',
-    how_step1_text: 'The ForRealScan-Hybrid shows you an estimated probability of whether AI generation or heavy editing is involved. It\'s about well-founded hints – not final judgments.',
+    how_step1_text: 'ForRealScan shows you an estimated probability of whether AI generation or heavy editing is involved. It\'s about well-founded hints – not final judgments.',
     how_step2_title: 'Real explanations instead of just percentages',
-    how_step2_text: 'With the Hybrid scan, you get understandable explanations: Which image or text parts seem more natural, which are more typical of AI and why.',
+    how_step2_text: 'With ForRealScan, you get understandable explanations: Which image or text parts seem more natural, which are more typical of AI and why.',
     how_step3_title: 'Uncertainty zones are clearly marked',
-    how_step3_text: 'If a result is uncertain – for example with difficult images – the ForRealScan-Hybrid clearly points this out instead of pretending certainty.',
+    how_step3_text: 'If a result is uncertain – for example with difficult images – ForRealScan clearly points this out instead of pretending certainty.',
     
     // Story Check & Text
     story_title: 'Check images, texts and story in interplay',
@@ -820,15 +856,33 @@ export const translations: Record<Language, Translations> = {
     disclaimer_title: 'Important Note',
     disclaimer_text: 'ForRealScan provides you with well-founded technical assessments and probabilities. The results are not legal evidence, but help you make more conscious decisions – and should not serve as the sole basis for accusations or harsh allegations.',
     
-    // Scan
-    scan_title: 'One Scan – Maximum Clarity.',
-    scan_hybrid_title: 'ForRealScan (Hybrid-Scan)',
-    scan_hybrid_desc: 'Combined image and forensic analysis for your image.',
-    scan_hybrid_feat1: 'Estimates AI probability of your image (0–100%).',
-    scan_hybrid_feat2: 'Uses additional forensic signals for manipulation and retouching.',
-    scan_hybrid_feat3: 'Delivers clear result: authentic, AI or uncertain – with brief explanation.',
-    scan_hybrid_feat4: 'Check up to 5 images per day with ForRealScan.',
-    scan_limit_label: 'Daily limit: 0/5',
+    // Scan Modes
+    scan_section_title: 'Choose Your Scan Mode',
+    scan_compare_link: 'Compare Modes',
+    scan_most_popular: 'Popular',
+    scan_cta: 'Start Scan',
+    // ImageScan
+    scan_image_title: 'ImageScan',
+    scan_image_desc: 'Quick AI detection for single images.',
+    scan_image_feat1: 'Veritas analysis: Technical image signals',
+    scan_image_feat2: 'Ideal for quick checks',
+    scan_image_credits: 'Credit',
+    scan_image_credits_value: '1',
+    // StoryScan
+    scan_story_title: 'StoryScan',
+    scan_story_desc: 'For stories and social media posts.',
+    scan_story_feat1: 'Veritas + context analysis',
+    scan_story_feat2: 'Multi-frame support',
+    scan_story_credits: 'Credits',
+    scan_story_credits_value: '2',
+    // FullScan
+    scan_full_title: 'FullScan',
+    scan_full_desc: 'Maximum accuracy with Veritas & Robo.',
+    scan_full_feat1: 'Complete Veritas + Robo analysis',
+    scan_full_feat2: 'Detailed explanations',
+    scan_full_feat3: 'Highest detection rate',
+    scan_full_credits: 'Credits',
+    scan_full_credits_value: '3',
     
     // Examples
     examples_title: 'Can You Spot the Difference?',
@@ -847,24 +901,24 @@ export const translations: Record<Language, Translations> = {
     cases_title: 'Who Is ForRealScan For?',
     case1_title: 'Influencers & Creators',
     case1_text: 'Protect your authenticity and prove the genuineness of your content.',
-    case1_detail1: 'Show your community with a ForRealScan-Hybrid result that your photos are real – even if you retouch slightly.',
+    case1_detail1: 'Show your community with a ForRealScan result that your photos are real – even if you retouch slightly.',
     case1_detail2: 'Compare real photos with AI images to choose your own image style more consciously.',
-    case1_detail3: 'Check campaign motifs with the Hybrid scan before sharing them with brands or agencies.',
+    case1_detail3: 'Check campaign motifs with ForRealScan before sharing them with brands or agencies.',
     case2_title: 'Journalists & Fact Checkers',
     case2_text: 'Verify image material quickly and transparently for possible manipulation.',
-    case2_detail1: 'Scan press photos with the Hybrid scan before using them in articles.',
+    case2_detail1: 'Scan press photos with ForRealScan before using them in articles.',
     case2_detail2: 'Use the Story-Check to see if image and text roughly match.',
-    case2_detail3: 'Document your review with a brief ForRealScan-Hybrid result for your readers.',
+    case2_detail3: 'Document your review with a brief ForRealScan result for your readers.',
     case3_title: 'Dating & Social',
     case3_text: 'Recognize suspicious profile pictures and unrealistic staging early.',
-    case3_detail1: 'Check profile pictures with the Hybrid scan before you trust someone.',
+    case3_detail1: 'Check profile pictures with ForRealScan before you trust someone.',
     case3_detail2: 'Recognize heavily retouched or AI-generated selfies that convey a false image.',
     case3_detail3: 'Scan screenshots of viral posts to better assess them before sharing.',
     case4_title: 'Photography & Marketing',
     case4_text: 'Make the authenticity of your visual assets visible.',
     case4_detail1: 'Show clients which images are real photos and where digital editing is involved.',
-    case4_detail2: 'Scan product photos and campaign motifs with the Hybrid scan before publication.',
-    case4_detail3: 'Use ForRealScan-Hybrid results as a transparency plus in pitches and presentations.',
+    case4_detail2: 'Scan product photos and campaign motifs with ForRealScan before publication.',
+    case4_detail3: 'Use ForRealScan results as a transparency plus in pitches and presentations.',
     
     // Pricing
     pricing_title: 'Credits & Pricing',
@@ -897,11 +951,11 @@ export const translations: Record<Language, Translations> = {
     // FAQ
     faq_title: 'Frequently Asked Questions',
     faq_q1: 'Is ForRealScan free?',
-    faq_a1: 'Yes! The ForRealScan-Hybrid scan is free to use up to 5 times per day. Premium offers unlimited scans and more features.',
+    faq_a1: 'Yes! ForRealScan is free to use up to 5 times per day. Premium offers unlimited scans and more features.',
     faq_q2: 'How reliable are the assessments?',
     faq_a2: 'ForRealScan provides you with well-founded probabilities and technical indicators. In many tests, AI images can be recognized very reliably – but there is never a 100% guarantee. That\'s why we always show you uncertainty ranges and explain why a result turns out the way it does, so you can better evaluate it.',
     faq_q3: 'Are there different scan modes?',
-    faq_a3: 'Previously there were two modes, today ForRealScan uses a Hybrid scan that combines image analysis and forensics – you don\'t have to choose anything. The Hybrid scan automatically delivers the best available assessment.',
+    faq_a3: 'Yes! ForRealScan offers three modes: ImageScan for quick single-image checks, StoryScan for social media posts, and FullScan for maximum accuracy with the complete Veritas & Robo analysis.',
     faq_q4: 'Does it work on all devices?',
     faq_a4: 'Yes! ForRealScan is fully responsive and works on desktop, tablet, and smartphone.',
     faq_q5: 'Why are there ads in free mode?',
@@ -944,7 +998,7 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step2: '2. Clues for "real" or "AI" – Both look for typical traces that speak for or against AI.',
     veritas_robo_help_step3: '3. Explanation in Plain Language – From the clues comes a calm, neutral explanation that you understand without prior knowledge.',
     veritas_robo_disclaimer: 'No model names, no provider advertising – just an honest assessment you can understand.',
-    veritas_robo_closing: 'Veritas and Robo look at every image from two directions – in the end you get a joint, balanced assessment per ForRealScan-Hybrid scan.',
+    veritas_robo_closing: 'Veritas and Robo look at every image from two directions – in the end you get a joint, balanced assessment per ForRealScan.',
 
     // Examples Page (dedicated page)
     examples_page_title: 'Example Analyses',
@@ -997,7 +1051,7 @@ export const translations: Record<Language, Translations> = {
     methodology_what_p1: 'ForRealScan is an analysis tool that helps you assess the possible AI content in images. The service combines various analysis methods to find indicators of whether an image was generated with AI technology or heavily edited.',
     methodology_what_p2: 'Important to understand: ForRealScan provides probabilities and well-founded assessments – not absolute judgments. Image generation technology is constantly evolving, and no detection system can guarantee one hundred percent accuracy.',
     methodology_how_title: 'How the Scan Works',
-    methodology_how_intro: 'The ForRealScan-Hybrid combines two analysis perspectives, symbolized by our mascots Veritas and Robo:',
+    methodology_how_intro: 'ForRealScan combines two analysis perspectives, symbolized by our mascots Veritas and Robo:',
     methodology_veritas_title: 'Veritas – The Nature View',
     methodology_veritas_text: 'Veritas analyzes whether an image has the typical characteristics of a real photograph: natural lighting, realistic shadows, organic textures in skin and hair, and the small imperfections that distinguish real photos.',
     methodology_robo_title: 'Robo – The Logic View',
@@ -1158,7 +1212,7 @@ export const translations: Record<Language, Translations> = {
     
     // Hero
     hero_title: 'Riconosci quanta IA c\'è nelle tue immagini',
-    hero_subtitle: 'Carica la tua immagine e ottieni un valore percentuale con ForRealScan-Hybrid – con indicatori IA, zone di incertezza e dettagli tecnici per valutare meglio ciò che è reale.',
+    hero_subtitle: 'Carica la tua immagine e ottieni un valore percentuale con ForRealScan – con indicatori IA, zone di incertezza e dettagli tecnici per valutare meglio ciò che è reale.',
     hero_cta_primary: 'Verifica Ora',
     hero_cta_secondary: 'Vedi Esempi',
     hero_microcopy: 'Prova gratuita, nessuna registrazione richiesta.',
@@ -1166,11 +1220,11 @@ export const translations: Record<Language, Translations> = {
     // How it works
     how_title: 'Come Funziona ForRealScan',
     how_step1_title: 'Probabilità invece di giudizi duri',
-    how_step1_text: 'ForRealScan-Hybrid ti mostra una probabilità stimata se è coinvolta la generazione IA o un\'editing pesante. Si tratta di suggerimenti fondati – non giudizi finali.',
+    how_step1_text: 'ForRealScan ti mostra una probabilità stimata se è coinvolta la generazione IA o un\'editing pesante. Si tratta di suggerimenti fondati – non giudizi finali.',
     how_step2_title: 'Spiegazioni reali invece di sole percentuali',
-    how_step2_text: 'Con Hybrid scan, ottieni spiegazioni comprensibili: Quali parti di immagine o testo sembrano più naturali, quali sono più tipiche dell\'IA e perché.',
+    how_step2_text: 'Con ForRealScan, ottieni spiegazioni comprensibili: Quali parti di immagine o testo sembrano più naturali, quali sono più tipiche dell\'IA e perché.',
     how_step3_title: 'Le zone di incertezza sono chiaramente marcate',
-    how_step3_text: 'Se un risultato è incerto – ad esempio con immagini difficili – ForRealScan-Hybrid lo indica chiaramente invece di fingere certezza.',
+    how_step3_text: 'Se un risultato è incerto – ad esempio con immagini difficili – ForRealScan lo indica chiaramente invece di fingere certezza.',
     
     // Story Check & Text
     story_title: 'Controlla immagini, testi e storia nell\'interazione',
@@ -1201,15 +1255,33 @@ export const translations: Record<Language, Translations> = {
     disclaimer_title: 'Nota Importante',
     disclaimer_text: 'ForRealScan ti fornisce valutazioni tecniche ben fondate e probabilità. I risultati non sono prove legali, ma ti aiutano a prendere decisioni più consapevoli – e non dovrebbero servire come unica base per accuse o dure allegazioni.',
     
-    // Scan
-    scan_title: 'Un Scan – Massima Chiarezza.',
-    scan_hybrid_title: 'ForRealScan (Hybrid-Scan)',
-    scan_hybrid_desc: 'Analisi combinata di immagini e forensi per la tua immagine.',
-    scan_hybrid_feat1: 'Stima la probabilità IA della tua immagine (0–100%).',
-    scan_hybrid_feat2: 'Utilizza segnali forensi aggiuntivi per manipolazione e ritocco.',
-    scan_hybrid_feat3: 'Fornisce risultato chiaro: autentico, IA o incerto – con breve spiegazione.',
-    scan_hybrid_feat4: 'Controlla fino a 5 immagini al giorno con ForRealScan.',
-    scan_limit_label: 'Limite giornaliero: 0/5',
+    // Scan Modes
+    scan_section_title: 'Scegli la Tua Modalità di Scan',
+    scan_compare_link: 'Confronta Modalità',
+    scan_most_popular: 'Popolare',
+    scan_cta: 'Avvia Scan',
+    // ImageScan
+    scan_image_title: 'ImageScan',
+    scan_image_desc: 'Rilevamento IA rapido per immagini singole.',
+    scan_image_feat1: 'Analisi Veritas: Segnali tecnici dell\'immagine',
+    scan_image_feat2: 'Ideale per controlli rapidi',
+    scan_image_credits: 'Credit',
+    scan_image_credits_value: '1',
+    // StoryScan
+    scan_story_title: 'StoryScan',
+    scan_story_desc: 'Per storie e post sui social media.',
+    scan_story_feat1: 'Veritas + analisi del contesto',
+    scan_story_feat2: 'Supporto multi-frame',
+    scan_story_credits: 'Credits',
+    scan_story_credits_value: '2',
+    // FullScan
+    scan_full_title: 'FullScan',
+    scan_full_desc: 'Massima precisione con Veritas & Robo.',
+    scan_full_feat1: 'Analisi completa Veritas + Robo',
+    scan_full_feat2: 'Spiegazioni dettagliate',
+    scan_full_feat3: 'Tasso di rilevamento più alto',
+    scan_full_credits: 'Credits',
+    scan_full_credits_value: '3',
     
     // Examples
     examples_title: 'Riesci a Vedere la Differenza?',
@@ -1228,24 +1300,24 @@ export const translations: Record<Language, Translations> = {
     cases_title: 'Per Chi è ForRealScan?',
     case1_title: 'Influencer & Creator',
     case1_text: 'Proteggi la tua autenticità e dimostra la genuinità dei tuoi contenuti.',
-    case1_detail1: 'Mostra alla tua community con un risultato ForRealScan-Hybrid che le tue foto sono reali – anche se ritocchi leggermente.',
+    case1_detail1: 'Mostra alla tua community con un risultato ForRealScan che le tue foto sono reali – anche se ritocchi leggermente.',
     case1_detail2: 'Confronta foto reali con immagini IA per scegliere il tuo stile di immagine più consapevolmente.',
-    case1_detail3: 'Controlla i motivi della campagna con Hybrid scan prima di condividerli con marchi o agenzie.',
+    case1_detail3: 'Controlla i motivi della campagna con ForRealScan prima di condividerli con marchi o agenzie.',
     case2_title: 'Giornalisti & Fact Checker',
     case2_text: 'Verifica le immagini rapidamente e in modo trasparente per possibili manipolazioni.',
-    case2_detail1: 'Scansiona foto stampa con Hybrid scan prima di usarle in articoli.',
+    case2_detail1: 'Scansiona foto stampa con ForRealScan prima di usarle in articoli.',
     case2_detail2: 'Usa lo Story-Check per vedere se immagine e testo corrispondono approssimativamente.',
-    case2_detail3: 'Documenta la tua revisione con un breve risultato ForRealScan-Hybrid per i tuoi lettori.',
+    case2_detail3: 'Documenta la tua revisione con un breve risultato ForRealScan per i tuoi lettori.',
     case3_title: 'Dating & Social',
     case3_text: 'Riconosci le foto profilo sospette e la messa in scena irrealistica in anticipo.',
-    case3_detail1: 'Controlla le foto profilo con Hybrid scan prima di fidarti di qualcuno.',
+    case3_detail1: 'Controlla le foto profilo con ForRealScan prima di fidarti di qualcuno.',
     case3_detail2: 'Riconosci selfie fortemente ritoccati o generati da IA che trasmettono un\'immagine falsa.',
     case3_detail3: 'Scansiona screenshot di post virali per valutarli meglio prima di condividerli.',
     case4_title: 'Fotografia & Marketing',
     case4_text: 'Rendi visibile l\'autenticità delle tue risorse visive.',
     case4_detail1: 'Mostra ai clienti quali immagini sono foto reali e dove è coinvolta l\'editing digitale.',
-    case4_detail2: 'Scansiona foto di prodotti e motivi di campagna con Hybrid scan prima della pubblicazione.',
-    case4_detail3: 'Usa i risultati ForRealScan-Hybrid come punto di forza della trasparenza in pitch e presentazioni.',
+    case4_detail2: 'Scansiona foto di prodotti e motivi di campagna con ForRealScan prima della pubblicazione.',
+    case4_detail3: 'Usa i risultati ForRealScan come punto di forza della trasparenza in pitch e presentazioni.',
     
     // Pricing
     pricing_title: 'Crediti & Prezzi',
@@ -1278,11 +1350,11 @@ export const translations: Record<Language, Translations> = {
     // FAQ
     faq_title: 'Domande Frequenti',
     faq_q1: 'ForRealScan è gratuito?',
-    faq_a1: 'Sì! ForRealScan-Hybrid scan è gratuito fino a 5 volte al giorno. Premium offre scansioni illimitate e più funzionalità.',
+    faq_a1: 'Sì! ForRealScan è gratuito fino a 5 volte al giorno. Premium offre scansioni illimitate e più funzionalità.',
     faq_q2: 'Quanto sono affidabili le valutazioni?',
     faq_a2: 'ForRealScan fornisce probabilità ben fondate e indicatori tecnici. In molti test, le immagini IA possono essere riconosciute in modo molto affidabile – ma non c\'è mai una garanzia del 100%. Per questo motivo, ti mostriamo sempre anche intervalli di incertezza e spieghiamo perché un risultato è quello che è, in modo che tu possa valutarlo meglio.',
     faq_q3: 'Ci sono diverse modalità di scansione?',
-    faq_a3: 'In precedenza c\'erano due modalità, oggi ForRealScan utilizza un Hybrid scan che combina analisi di immagini e forensi – non devi scegliere nulla. L\'Hybrid scan fornisce automaticamente la migliore valutazione disponibile.',
+    faq_a3: 'Sì! ForRealScan offre tre modalità: ImageScan per controlli rapidi di singole immagini, StoryScan per post sui social media, e FullScan per la massima precisione con l\'analisi completa Veritas & Robo.',
     faq_q4: 'Funziona su tutti i dispositivi?',
     faq_a4: 'Sì! ForRealScan è completamente responsive e funziona su desktop, tablet e smartphone.',
     faq_q5: 'Perché ci sono annunci in modalità gratuita?',
@@ -1325,7 +1397,7 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step2: '2. Indizi per "reale" o "IA" – Entrambi cercano tracce tipiche che parlano a favore o contro l\'IA.',
     veritas_robo_help_step3: '3. Spiegazione in Linguaggio Chiaro – Dagli indizi emerge una spiegazione calma e neutrale che comprendi senza conoscenze preliminari.',
     veritas_robo_disclaimer: 'Nessun nome di modello, nessuna pubblicità di provider – solo una valutazione onesta che puoi comprendere.',
-    veritas_robo_closing: 'Veritas e Robo guardano ogni immagine da due direzioni – alla fine ottieni una valutazione congiunta ed equilibrata per ForRealScan-Hybrid scan.',
+    veritas_robo_closing: 'Veritas e Robo guardano ogni immagine da due direzioni – alla fine ottieni una valutazione congiunta ed equilibrata per ForRealScan.',
 
     // Examples Page (dedicated page)
     examples_page_title: 'Analisi di Esempio',
@@ -1378,7 +1450,7 @@ export const translations: Record<Language, Translations> = {
     methodology_what_p1: 'ForRealScan è uno strumento di analisi che ti aiuta a valutare il possibile contenuto IA nelle immagini. Il servizio combina vari metodi di analisi per trovare indicatori se un\'immagine è stata generata con tecnologia IA o pesantemente modificata.',
     methodology_what_p2: 'Importante da capire: ForRealScan fornisce probabilità e valutazioni fondate – non giudizi assoluti. La tecnologia di generazione delle immagini è in continua evoluzione e nessun sistema di rilevamento può garantire una precisione del cento percento.',
     methodology_how_title: 'Come Funziona la Scansione',
-    methodology_how_intro: 'ForRealScan-Hybrid combina due prospettive di analisi, simboleggiate dalle nostre mascotte Veritas e Robo:',
+    methodology_how_intro: 'ForRealScan combina due prospettive di analisi, simboleggiate dalle nostre mascotte Veritas e Robo:',
     methodology_veritas_title: 'Veritas – La Vista Naturale',
     methodology_veritas_text: 'Veritas analizza se un\'immagine ha le caratteristiche tipiche di una fotografia reale: illuminazione naturale, ombre realistiche, texture organiche nella pelle e nei capelli, e le piccole imperfezioni che distinguono le foto reali.',
     methodology_robo_title: 'Robo – La Vista Logica',
@@ -1539,7 +1611,7 @@ export const translations: Record<Language, Translations> = {
     
     // Hero
     hero_title: 'Descubre Cuánta IA Hay en Tus Imágenes',
-    hero_subtitle: 'Sube tu imagen y obtén un valor porcentual con ForRealScan-Hybrid – con indicadores de IA, zonas de incertidumbre y detalles técnicos para evaluar mejor lo que es real.',
+    hero_subtitle: 'Sube tu imagen y obtén un valor porcentual con ForRealScan – con indicadores de IA, zonas de incertidumbre y detalles técnicos para evaluar mejor lo que es real.',
     hero_cta_primary: 'Verificar Ahora',
     hero_cta_secondary: 'Ver Ejemplos',
     hero_microcopy: 'Prueba gratuita, sin necesidad de registro.',
@@ -1547,11 +1619,11 @@ export const translations: Record<Language, Translations> = {
     // How it works
     how_title: 'Cómo Funciona ForRealScan',
     how_step1_title: 'Probabilidades en lugar de juicios duros',
-    how_step1_text: 'ForRealScan-Hybrid te muestra una probabilidad estimada de si está involucrada la generación de IA o edición pesada. Se trata de pistas bien fundadas – no juicios finales.',
+    how_step1_text: 'ForRealScan te muestra una probabilidad estimada de si está involucrada la generación de IA o edición pesada. Se trata de pistas bien fundadas – no juicios finales.',
     how_step2_title: 'Explicaciones reales en lugar de solo porcentajes',
-    how_step2_text: 'Con Hybrid scan, obtienes explicaciones comprensibles: ¿Qué partes de imagen o texto parecen más naturales, cuáles son más típicas de IA y por qué.',
+    how_step2_text: 'Con ForRealScan, obtienes explicaciones comprensibles: ¿Qué partes de imagen o texto parecen más naturales, cuáles son más típicas de IA y por qué.',
     how_step3_title: 'Las zonas de incertidumbre se marcan claramente',
-    how_step3_text: 'Si un resultado es incierto – por ejemplo con imágenes difíciles – ForRealScan-Hybrid lo señala claramente en lugar de fingir certeza.',
+    how_step3_text: 'Si un resultado es incierto – por ejemplo con imágenes difíciles – ForRealScan lo señala claramente en lugar de fingir certeza.',
     
     // Story Check & Text
     story_title: 'Verifica imágenes, textos e historia en interacción',
@@ -1582,15 +1654,33 @@ export const translations: Record<Language, Translations> = {
     disclaimer_title: 'Nota Importante',
     disclaimer_text: 'ForRealScan te proporciona evaluaciones técnicas bien fundadas y probabilidades. Los resultados no son pruebas legales, pero te ayudan a tomar decisiones más conscientes – y no deben servir como única base para acusaciones o alegaciones duras.',
     
-    // Scan
-    scan_title: 'Un Scan – Máxima Claridad.',
-    scan_hybrid_title: 'ForRealScan (Hybrid-Scan)',
-    scan_hybrid_desc: 'Análisis combinado de imagen y forense para tu imagen.',
-    scan_hybrid_feat1: 'Estima probabilidad IA de tu imagen (0–100%).',
-    scan_hybrid_feat2: 'Usa señales forenses adicionales para manipulación y retoque.',
-    scan_hybrid_feat3: 'Proporciona resultado claro: auténtico, IA o incierto – con breve explicación.',
-    scan_hybrid_feat4: 'Verifica hasta 5 imágenes por día con ForRealScan.',
-    scan_limit_label: 'Límite diario: 0/5',
+    // Scan Modes
+    scan_section_title: 'Elige Tu Modo de Scan',
+    scan_compare_link: 'Comparar Modos',
+    scan_most_popular: 'Popular',
+    scan_cta: 'Iniciar Scan',
+    // ImageScan
+    scan_image_title: 'ImageScan',
+    scan_image_desc: 'Detección rápida de IA para imágenes individuales.',
+    scan_image_feat1: 'Análisis Veritas: Señales técnicas de imagen',
+    scan_image_feat2: 'Ideal para verificaciones rápidas',
+    scan_image_credits: 'Credit',
+    scan_image_credits_value: '1',
+    // StoryScan
+    scan_story_title: 'StoryScan',
+    scan_story_desc: 'Para historias y publicaciones en redes sociales.',
+    scan_story_feat1: 'Veritas + análisis de contexto',
+    scan_story_feat2: 'Soporte multi-frame',
+    scan_story_credits: 'Credits',
+    scan_story_credits_value: '2',
+    // FullScan
+    scan_full_title: 'FullScan',
+    scan_full_desc: 'Máxima precisión con Veritas & Robo.',
+    scan_full_feat1: 'Análisis completo Veritas + Robo',
+    scan_full_feat2: 'Explicaciones detalladas',
+    scan_full_feat3: 'Mayor tasa de detección',
+    scan_full_credits: 'Credits',
+    scan_full_credits_value: '3',
     
     // Examples
     examples_title: '¿Puedes Ver la Diferencia?',
@@ -1609,24 +1699,24 @@ export const translations: Record<Language, Translations> = {
     cases_title: '¿Para Quién es ForRealScan?',
     case1_title: 'Influencers & Creadores',
     case1_text: 'Protege tu autenticidad y demuestra la genuinidad de tu contenido.',
-    case1_detail1: 'Muestra a tu comunidad con un resultado ForRealScan-Hybrid que tus fotos son reales – incluso si retoques ligeramente.',
+    case1_detail1: 'Muestra a tu comunidad con un resultado ForRealScan que tus fotos son reales – incluso si retoques ligeramente.',
     case1_detail2: 'Compara fotos reales con imágenes IA para elegir tu propio estilo de imagen más conscientemente.',
-    case1_detail3: 'Verifica motivos de campaña con Hybrid scan antes de compartirlos con marcas o agencias.',
+    case1_detail3: 'Verifica motivos de campaña con ForRealScan antes de compartirlos con marcas o agencias.',
     case2_title: 'Periodistas & Verificadores',
     case2_text: 'Verifica imágenes rápida y transparentemente para posible manipulación.',
-    case2_detail1: 'Escanea fotos de prensa con Hybrid scan antes de usarlas en artículos.',
+    case2_detail1: 'Escanea fotos de prensa con ForRealScan antes de usarlas en artículos.',
     case2_detail2: 'Usa el Story-Check para ver si imagen y texto coinciden aproximadamente.',
-    case2_detail3: 'Documenta tu revisión con un breve resultado ForRealScan-Hybrid para tus lectores.',
+    case2_detail3: 'Documenta tu revisión con un breve resultado ForRealScan para tus lectores.',
     case3_title: 'Citas & Social',
     case3_text: 'Reconoce fotos de perfil sospechosas y escenificación irreal temprano.',
-    case3_detail1: 'Verifica fotos de perfil con Hybrid scan antes de confiar en alguien.',
+    case3_detail1: 'Verifica fotos de perfil con ForRealScan antes de confiar en alguien.',
     case3_detail2: 'Reconoce selfies fuertemente retocados o generados por IA que transmiten una imagen falsa.',
     case3_detail3: 'Escanea capturas de pantalla de publicaciones virales para evaluarlas mejor antes de compartirlas.',
     case4_title: 'Fotografía & Marketing',
     case4_text: 'Haz visible la autenticidad de tus activos visuales.',
     case4_detail1: 'Muestra a los clientes qué imágenes son fotos reales y dónde está involucrada la edición digital.',
-    case4_detail2: 'Escanea fotos de productos y motivos de campaña con Hybrid scan antes de la publicación.',
-    case4_detail3: 'Usa los resultados ForRealScan-Hybrid como un plus de transparencia en presentaciones y propuestas.',
+    case4_detail2: 'Escanea fotos de productos y motivos de campaña con ForRealScan antes de la publicación.',
+    case4_detail3: 'Usa los resultados ForRealScan como un plus de transparencia en presentaciones y propuestas.',
     
     // Pricing
     pricing_title: 'Créditos & Precios',
@@ -1659,11 +1749,11 @@ export const translations: Record<Language, Translations> = {
     // FAQ
     faq_title: 'Preguntas Frecuentes',
     faq_q1: '¿ForRealScan es gratis?',
-    faq_a1: '¡Sí! ForRealScan-Hybrid scan es gratis hasta 5 veces por día. Premium ofrece escaneos ilimitados y más funciones.',
+    faq_a1: '¡Sí! ForRealScan es gratis hasta 5 veces por día. Premium ofrece escaneos ilimitados y más funciones.',
     faq_q2: '¿Qué tan confiables son las evaluaciones?',
     faq_a2: 'ForRealScan proporciona probabilidades bien fundamentadas e indicadores técnicos. En muchas pruebas, las imágenes de IA se pueden reconocer de manera muy confiable, pero nunca hay una garantía del 100%. Por eso siempre te mostramos rangos de incertidumbre y explicamos por qué un resultado es como es, para que puedas evaluarlo mejor.',
     faq_q3: '¿Hay diferentes modos de escaneo?',
-    faq_a3: 'Anteriormente había dos modos, hoy ForRealScan utiliza un Hybrid scan que combina análisis de imagen y forense – no tienes que elegir nada. El Hybrid scan proporciona automáticamente la mejor evaluación disponible.',
+    faq_a3: '¡Sí! ForRealScan ofrece tres modos: ImageScan para verificaciones rápidas de imágenes individuales, StoryScan para publicaciones en redes sociales, y FullScan para máxima precisión con el análisis completo de Veritas & Robo.',
     faq_q4: '¿Funciona en todos los dispositivos?',
     faq_a4: '¡Sí! ForRealScan es totalmente responsive y funciona en escritorio, tableta y teléfono inteligente.',
     faq_q5: '¿Por qué hay anuncios en modo gratuito?',
@@ -1706,7 +1796,7 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step2: '2. Pistas para "real" o "IA" – Ambos buscan rastros típicos que hablan a favor o en contra de la IA.',
     veritas_robo_help_step3: '3. Explicación en Lenguaje Claro – De las pistas surge una explicación calmada y neutral que entiendes sin conocimientos previos.',
     veritas_robo_disclaimer: 'Sin nombres de modelos, sin publicidad de proveedores – solo una evaluación honesta que puedes entender.',
-    veritas_robo_closing: 'Veritas y Robo miran cada imagen desde dos direcciones – al final obtienes una evaluación conjunta y equilibrada por ForRealScan-Hybrid scan.',
+    veritas_robo_closing: 'Veritas y Robo miran cada imagen desde dos direcciones – al final obtienes una evaluación conjunta y equilibrada por ForRealScan.',
 
     // Examples Page (dedicated page)
     examples_page_title: 'Análisis de Ejemplo',
@@ -1759,7 +1849,7 @@ export const translations: Record<Language, Translations> = {
     methodology_what_p1: 'ForRealScan es una herramienta de análisis que te ayuda a evaluar el posible contenido de IA en imágenes. El servicio combina varios métodos de análisis para encontrar indicadores de si una imagen fue generada con tecnología de IA o muy editada.',
     methodology_what_p2: 'Importante entender: ForRealScan proporciona probabilidades y evaluaciones fundamentadas – no juicios absolutos. La tecnología de generación de imágenes evoluciona constantemente y ningún sistema de detección puede garantizar una precisión del cien por ciento.',
     methodology_how_title: 'Cómo Funciona el Escaneo',
-    methodology_how_intro: 'El ForRealScan-Hybrid combina dos perspectivas de análisis, simbolizadas por nuestras mascotas Veritas y Robo:',
+    methodology_how_intro: 'ForRealScan combina dos perspectivas de análisis, simbolizadas por nuestras mascotas Veritas y Robo:',
     methodology_veritas_title: 'Veritas – La Vista Natural',
     methodology_veritas_text: 'Veritas analiza si una imagen tiene las características típicas de una fotografía real: iluminación natural, sombras realistas, texturas orgánicas en piel y cabello, y las pequeñas imperfecciones que distinguen las fotos reales.',
     methodology_robo_title: 'Robo – La Vista Lógica',
@@ -1920,7 +2010,7 @@ export const translations: Record<Language, Translations> = {
     
     // Hero
     hero_title: 'Découvrez la part d\'IA dans vos images',
-    hero_subtitle: 'Téléchargez votre image et obtenez un pourcentage avec ForRealScan-Hybrid – avec des indicateurs IA, des zones d\'incertitude et des détails techniques pour mieux évaluer ce qui est réel.',
+    hero_subtitle: 'Téléchargez votre image et obtenez un pourcentage avec ForRealScan – avec des indicateurs IA, des zones d\'incertitude et des détails techniques pour mieux évaluer ce qui est réel.',
     hero_cta_primary: 'Vérifier maintenant',
     hero_cta_secondary: 'Voir les exemples',
     hero_microcopy: 'Essai gratuit, sans inscription.',
@@ -1928,11 +2018,11 @@ export const translations: Record<Language, Translations> = {
     // How it works
     how_title: 'Comment fonctionne ForRealScan',
     how_step1_title: 'Des probabilités plutôt que des jugements catégoriques',
-    how_step1_text: 'ForRealScan-Hybrid vous montre une probabilité estimée de génération IA ou de retouche importante. Il s\'agit d\'indices fondés – pas de verdicts définitifs.',
+    how_step1_text: 'ForRealScan vous montre une probabilité estimée de génération IA ou de retouche importante. Il s\'agit d\'indices fondés – pas de verdicts définitifs.',
     how_step2_title: 'De vraies explications, pas seulement des pourcentages',
-    how_step2_text: 'Avec le scan Hybrid, vous obtenez des explications compréhensibles : quelles parties de l\'image ou du texte semblent plus naturelles, lesquelles sont plus typiques de l\'IA et pourquoi.',
+    how_step2_text: 'Avec ForRealScan, vous obtenez des explications compréhensibles : quelles parties de l\'image ou du texte semblent plus naturelles, lesquelles sont plus typiques de l\'IA et pourquoi.',
     how_step3_title: 'Les zones d\'incertitude sont clairement marquées',
-    how_step3_text: 'Si un résultat est incertain – par exemple avec des images difficiles – ForRealScan-Hybrid le signale clairement au lieu de feindre la certitude.',
+    how_step3_text: 'Si un résultat est incertain – par exemple avec des images difficiles – ForRealScan le signale clairement au lieu de feindre la certitude.',
     
     // Story Check & Text
     story_title: 'Vérifiez images, textes et récits ensemble',
@@ -1963,15 +2053,33 @@ export const translations: Record<Language, Translations> = {
     disclaimer_title: 'Note importante',
     disclaimer_text: 'ForRealScan vous fournit des évaluations techniques bien fondées et des probabilités. Les résultats ne sont pas des preuves juridiques, mais vous aident à prendre des décisions plus éclairées – et ne doivent pas servir de base unique pour des accusations ou des allégations sévères.',
     
-    // Scan
-    scan_title: 'Un Scan – Une clarté maximale.',
-    scan_hybrid_title: 'ForRealScan (Hybrid-Scan)',
-    scan_hybrid_desc: 'Analyse combinée d\'image et forensique pour votre image.',
-    scan_hybrid_feat1: 'Estime la probabilité IA de votre image (0–100%).',
-    scan_hybrid_feat2: 'Utilise des signaux forensiques supplémentaires pour la manipulation et la retouche.',
-    scan_hybrid_feat3: 'Fournit un résultat clair : authentique, IA ou incertain – avec une brève explication.',
-    scan_hybrid_feat4: 'Vérifiez jusqu\'à 5 images par jour avec ForRealScan.',
-    scan_limit_label: 'Limite quotidienne : 0/5',
+    // Scan Modes
+    scan_section_title: 'Choisissez Votre Mode de Scan',
+    scan_compare_link: 'Comparer les Modes',
+    scan_most_popular: 'Populaire',
+    scan_cta: 'Démarrer le Scan',
+    // ImageScan
+    scan_image_title: 'ImageScan',
+    scan_image_desc: 'Détection rapide d\'IA pour images individuelles.',
+    scan_image_feat1: 'Analyse Veritas : Signaux techniques d\'image',
+    scan_image_feat2: 'Idéal pour des vérifications rapides',
+    scan_image_credits: 'Credit',
+    scan_image_credits_value: '1',
+    // StoryScan
+    scan_story_title: 'StoryScan',
+    scan_story_desc: 'Pour les stories et publications sur réseaux sociaux.',
+    scan_story_feat1: 'Veritas + analyse contextuelle',
+    scan_story_feat2: 'Support multi-frame',
+    scan_story_credits: 'Credits',
+    scan_story_credits_value: '2',
+    // FullScan
+    scan_full_title: 'FullScan',
+    scan_full_desc: 'Précision maximale avec Veritas & Robo.',
+    scan_full_feat1: 'Analyse complète Veritas + Robo',
+    scan_full_feat2: 'Explications détaillées',
+    scan_full_feat3: 'Taux de détection le plus élevé',
+    scan_full_credits: 'Credits',
+    scan_full_credits_value: '3',
     
     // Examples
     examples_title: 'Voyez-vous la différence ?',
@@ -1990,24 +2098,24 @@ export const translations: Record<Language, Translations> = {
     cases_title: 'À qui s\'adresse ForRealScan ?',
     case1_title: 'Influenceurs & Créateurs',
     case1_text: 'Protégez votre authenticité et prouvez la véracité de vos contenus.',
-    case1_detail1: 'Montrez à votre communauté avec un résultat ForRealScan-Hybrid que vos photos sont réelles – même si vous retouchez légèrement.',
+    case1_detail1: 'Montrez à votre communauté avec un résultat ForRealScan que vos photos sont réelles – même si vous retouchez légèrement.',
     case1_detail2: 'Comparez des photos réelles avec des images IA pour choisir votre propre style d\'image plus consciemment.',
-    case1_detail3: 'Vérifiez les visuels de campagne avec le scan Hybrid avant de les partager avec des marques ou des agences.',
+    case1_detail3: 'Vérifiez les visuels de campagne avec ForRealScan avant de les partager avec des marques ou des agences.',
     case2_title: 'Journalistes & Vérificateurs',
     case2_text: 'Vérifiez rapidement et de manière transparente les images pour détecter d\'éventuelles manipulations.',
-    case2_detail1: 'Scannez les photos de presse avec le scan Hybrid avant de les utiliser dans des articles.',
+    case2_detail1: 'Scannez les photos de presse avec ForRealScan avant de les utiliser dans des articles.',
     case2_detail2: 'Utilisez le Story-Check pour voir si l\'image et le texte correspondent approximativement.',
-    case2_detail3: 'Documentez votre vérification avec un bref résultat ForRealScan-Hybrid pour vos lecteurs.',
+    case2_detail3: 'Documentez votre vérification avec un bref résultat ForRealScan pour vos lecteurs.',
     case3_title: 'Rencontres & Social',
     case3_text: 'Reconnaissez tôt les photos de profil suspectes et les mises en scène irréalistes.',
-    case3_detail1: 'Vérifiez les photos de profil avec le scan Hybrid avant de faire confiance à quelqu\'un.',
+    case3_detail1: 'Vérifiez les photos de profil avec ForRealScan avant de faire confiance à quelqu\'un.',
     case3_detail2: 'Reconnaissez les selfies fortement retouchés ou générés par IA qui transmettent une fausse image.',
     case3_detail3: 'Scannez les captures d\'écran de publications virales pour mieux les évaluer avant de les partager.',
     case4_title: 'Photographie & Marketing',
     case4_text: 'Rendez visible l\'authenticité de vos visuels.',
     case4_detail1: 'Montrez aux clients quelles images sont de vraies photos et où l\'édition numérique est impliquée.',
-    case4_detail2: 'Scannez les photos de produits et les visuels de campagne avec le scan Hybrid avant publication.',
-    case4_detail3: 'Utilisez les résultats ForRealScan-Hybrid comme atout de transparence dans vos présentations.',
+    case4_detail2: 'Scannez les photos de produits et les visuels de campagne avec ForRealScan avant publication.',
+    case4_detail3: 'Utilisez les résultats ForRealScan comme atout de transparence dans vos présentations.',
     
     // Pricing
     pricing_title: 'Crédits & Tarifs',
@@ -2040,11 +2148,11 @@ export const translations: Record<Language, Translations> = {
     // FAQ
     faq_title: 'Questions fréquentes',
     faq_q1: 'ForRealScan est-il gratuit ?',
-    faq_a1: 'Oui ! Le scan ForRealScan-Hybrid est gratuit jusqu\'à 5 fois par jour. Premium offre des scans illimités et plus de fonctionnalités.',
+    faq_a1: 'Oui ! ForRealScan est gratuit jusqu\'à 5 fois par jour. Premium offre des scans illimités et plus de fonctionnalités.',
     faq_q2: 'Quelle est la fiabilité des évaluations ?',
     faq_a2: 'ForRealScan vous fournit des probabilités bien fondées et des indicateurs techniques. Dans de nombreux tests, les images IA peuvent être reconnues de manière très fiable – mais il n\'y a jamais de garantie à 100%. C\'est pourquoi nous vous montrons toujours les zones d\'incertitude et expliquons pourquoi un résultat est tel qu\'il est, afin que vous puissiez mieux l\'évaluer.',
     faq_q3: 'Y a-t-il différents modes de scan ?',
-    faq_a3: 'Auparavant, il y avait deux modes, aujourd\'hui ForRealScan utilise un scan Hybrid qui combine l\'analyse d\'image et la forensique – vous n\'avez rien à choisir. Le scan Hybrid fournit automatiquement la meilleure évaluation disponible.',
+    faq_a3: 'Oui ! ForRealScan propose trois modes : ImageScan pour des vérifications rapides d\'images individuelles, StoryScan pour les publications sur les réseaux sociaux, et FullScan pour une précision maximale avec l\'analyse complète Veritas & Robo.',
     faq_q4: 'Fonctionne-t-il sur tous les appareils ?',
     faq_a4: 'Oui ! ForRealScan est entièrement responsive et fonctionne sur ordinateur, tablette et smartphone.',
     faq_q5: 'Pourquoi y a-t-il des publicités en mode gratuit ?',
@@ -2087,7 +2195,7 @@ export const translations: Record<Language, Translations> = {
     veritas_robo_help_step2: '2. Indices pour « réel » ou « IA » – Les deux recherchent des traces typiques qui parlent pour ou contre l\'IA.',
     veritas_robo_help_step3: '3. Explication en langage clair – À partir des indices, une explication calme et neutre que vous comprenez sans connaissances préalables.',
     veritas_robo_disclaimer: 'Pas de noms de modèles, pas de publicité de fournisseurs – juste une évaluation honnête que vous pouvez comprendre.',
-    veritas_robo_closing: 'Veritas et Robo regardent chaque image sous deux angles – à la fin, vous obtenez une évaluation commune et équilibrée par scan ForRealScan-Hybrid.',
+    veritas_robo_closing: 'Veritas et Robo regardent chaque image sous deux angles – à la fin, vous obtenez une évaluation commune et équilibrée par ForRealScan.',
 
     // Examples Page (dedicated page)
     examples_page_title: 'Exemples d\'analyses',
@@ -2140,7 +2248,7 @@ export const translations: Record<Language, Translations> = {
     methodology_what_p1: 'ForRealScan est un outil d\'analyse qui vous aide à évaluer le contenu potentiel d\'IA dans les images. Le service combine diverses méthodes d\'analyse pour trouver des indicateurs si une image a été générée avec la technologie IA ou fortement modifiée.',
     methodology_what_p2: 'Important à comprendre : ForRealScan fournit des probabilités et des évaluations fondées – pas des jugements absolus. La technologie de génération d\'images évolue constamment, et aucun système de détection ne peut garantir une précision de cent pour cent.',
     methodology_how_title: 'Comment fonctionne le Scan',
-    methodology_how_intro: 'Le ForRealScan-Hybrid combine deux perspectives d\'analyse, symbolisées par nos mascottes Veritas et Robo :',
+    methodology_how_intro: 'ForRealScan combine deux perspectives d\'analyse, symbolisées par nos mascottes Veritas et Robo :',
     methodology_veritas_title: 'Veritas – La Vue Nature',
     methodology_veritas_text: 'Veritas analyse si une image a les caractéristiques typiques d\'une vraie photographie : éclairage naturel, ombres réalistes, textures organiques de la peau et des cheveux, et les petites imperfections qui distinguent les vraies photos.',
     methodology_robo_title: 'Robo – La Vue Logique',
