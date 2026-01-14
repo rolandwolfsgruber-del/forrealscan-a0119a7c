@@ -513,15 +513,15 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Spiel',
     nav_pricing: 'Preise',
     nav_faq: 'FAQ',
-    cta_app: 'Bild jetzt prüfen',
+    cta_app: 'Scan starten',
     language_label: 'Sprache',
-    
+
     // Hero
-    hero_title: 'Erkenne, wie viel KI in deinen Bildern steckt',
-    hero_subtitle: 'Lade dein Bild hoch und erhalte mit ForRealScan einen Prozentwert – mit KI-Hinweisen, Unsicherheitszonen und technischen Details, damit du besser einschätzen kannst, was echt ist.',
-    hero_cta_primary: 'Jetzt prüfen',
+    hero_title: 'Echt oder KI? Die Wahrheit in Sekunden.',
+    hero_subtitle: 'Bilder. Stories. Kontext. Drei Scan-Modi machen sichtbar, was Augen übersehen.',
+    hero_cta_primary: 'Scan starten',
     hero_cta_secondary: 'Beispiele ansehen',
-    hero_microcopy: 'Kostenlos testen, keine Anmeldung nötig.',
+    hero_microcopy: 'Kostenlos. Ohne Anmeldung.',
     
     // How it works
     how_title: 'Wie funktioniert ForRealScan?',
@@ -1016,15 +1016,15 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Game',
     nav_pricing: 'Pricing',
     nav_faq: 'FAQ',
-    cta_app: 'Check Image Now',
+    cta_app: 'Start Scan',
     language_label: 'Language',
-    
+
     // Hero
-    hero_title: 'Discover How Much AI is in Your Images',
-    hero_subtitle: 'Upload your image and get a percentage value with ForRealScan – with AI indicators, uncertainty zones, and technical details to help you better assess what\'s real.',
-    hero_cta_primary: 'Check Now',
+    hero_title: 'Real or AI? The truth in seconds.',
+    hero_subtitle: 'Images. Stories. Context. Three scan modes reveal what eyes overlook.',
+    hero_cta_primary: 'Start Scan',
     hero_cta_secondary: 'View Examples',
-    hero_microcopy: 'Try for free, no registration required.',
+    hero_microcopy: 'Free. No signup required.',
     
     // How it works
     how_title: 'How ForRealScan Works',
@@ -1519,15 +1519,15 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Gioco',
     nav_pricing: 'Prezzi',
     nav_faq: 'FAQ',
-    cta_app: 'Controlla Immagine Ora',
+    cta_app: 'Inizia scansione',
     language_label: 'Lingua',
-    
+
     // Hero
-    hero_title: 'Riconosci quanta IA c\'è nelle tue immagini',
-    hero_subtitle: 'Carica la tua immagine e ottieni un valore percentuale con ForRealScan – con indicatori IA, zone di incertezza e dettagli tecnici per valutare meglio ciò che è reale.',
-    hero_cta_primary: 'Verifica Ora',
+    hero_title: 'Reale o IA? La verità in pochi secondi.',
+    hero_subtitle: 'Immagini. Storie. Contesto. Tre modalità di scansione rivelano ciò che gli occhi non vedono.',
+    hero_cta_primary: 'Inizia scansione',
     hero_cta_secondary: 'Vedi Esempi',
-    hero_microcopy: 'Prova gratuita, nessuna registrazione richiesta.',
+    hero_microcopy: 'Gratuito. Senza registrazione.',
     
     // How it works
     how_title: 'Come Funziona ForRealScan',
@@ -2022,15 +2022,15 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Juego',
     nav_pricing: 'Precios',
     nav_faq: 'FAQ',
-    cta_app: 'Comprobar Imagen Ahora',
+    cta_app: 'Iniciar escaneo',
     language_label: 'Idioma',
-    
+
     // Hero
-    hero_title: 'Descubre Cuánta IA Hay en Tus Imágenes',
-    hero_subtitle: 'Sube tu imagen y obtén un valor porcentual con ForRealScan – con indicadores de IA, zonas de incertidumbre y detalles técnicos para evaluar mejor lo que es real.',
-    hero_cta_primary: 'Verificar Ahora',
+    hero_title: '¿Real o IA? La verdad en segundos.',
+    hero_subtitle: 'Imágenes. Historias. Contexto. Tres modos de escaneo revelan lo que los ojos pasan por alto.',
+    hero_cta_primary: 'Iniciar escaneo',
     hero_cta_secondary: 'Ver Ejemplos',
-    hero_microcopy: 'Prueba gratuita, sin necesidad de registro.',
+    hero_microcopy: 'Gratis. Sin registro.',
     
     // How it works
     how_title: 'Cómo Funciona ForRealScan',
@@ -2525,15 +2525,15 @@ export const translations: Record<Language, Translations> = {
     nav_game: 'Jeu',
     nav_pricing: 'Tarifs',
     nav_faq: 'FAQ',
-    cta_app: 'Vérifier l\'Image Maintenant',
+    cta_app: 'Lancer le scan',
     language_label: 'Langue',
-    
+
     // Hero
-    hero_title: 'Découvrez la part d\'IA dans vos images',
-    hero_subtitle: 'Téléchargez votre image et obtenez un pourcentage avec ForRealScan – avec des indicateurs IA, des zones d\'incertitude et des détails techniques pour mieux évaluer ce qui est réel.',
-    hero_cta_primary: 'Vérifier maintenant',
+    hero_title: 'Réel ou IA ? La vérité en quelques secondes.',
+    hero_subtitle: 'Images. Stories. Contexte. Trois modes de scan révèlent ce que l\'œil ne voit pas.',
+    hero_cta_primary: 'Lancer le scan',
     hero_cta_secondary: 'Voir les exemples',
-    hero_microcopy: 'Essai gratuit, sans inscription.',
+    hero_microcopy: 'Gratuit. Sans inscription.',
     
     // How it works
     how_title: 'Comment fonctionne ForRealScan',
