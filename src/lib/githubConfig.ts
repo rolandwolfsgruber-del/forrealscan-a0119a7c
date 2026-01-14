@@ -1,5 +1,5 @@
 export const GITHUB_CONFIG = {
-  owner: 'rolandwolfgruber-del',
+  owner: 'rolandwolfsgruber-del',
   repo: 'forrealscan-a0119a7c',
   branch: 'main',
   apiBaseUrl: 'https://api.github.com',
