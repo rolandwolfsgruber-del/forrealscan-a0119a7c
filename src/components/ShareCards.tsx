@@ -44,9 +44,11 @@ export const ShareCards = ({ language, theme }: ShareCardsProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-            {t.sharecard_title}
-          </h2>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        <span className="bg-gradient-to-r from-veritas to-robo bg-clip-text text-transparent">
+          {t.sharecard_title}
+        </span>
+      </h2>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
             {t.sharecard_subtitle}
           </p>
