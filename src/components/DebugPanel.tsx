@@ -75,7 +75,9 @@ export const DebugPanel = () => {
     APP_STORAGE_KEYS.forEach((key) => localStorage.removeItem(key));
 
     const url = new URL(window.location.href);
-    url.searchParams.set('v', BUILD_ID);
+    // Use timestamp if BUILD_ID is 'dev' to ensure real cache bust
+    const bustValue = BUILD_ID === 'dev' ? Date.now().toString() : BUILD_ID;
+    url.searchParams.set('v', bustValue);
     if (debugEnabled) {
       url.searchParams.set('debug', '1');
     }
