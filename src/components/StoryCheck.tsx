@@ -1,4 +1,4 @@
-import { FileText, ImageIcon } from 'lucide-react';
+import { FileText, ImageIcon, Layers } from 'lucide-react';
 import { Language, translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedSection } from '@/components/ui/animated-section';
@@ -14,18 +14,25 @@ export const StoryCheck = ({ language, theme }: StoryCheckProps) => {
 
   const cards = [
     {
-      icon: FileText,
+      icon: ImageIcon,
       title: t.story_text_title,
       description: t.story_text_desc,
+      color: 'from-veritas to-emerald-400',
+      glowColor: 'rgba(34, 197, 94, 0.3)',
+    },
+    {
+      icon: FileText,
+      title: t.story_check_title,
+      description: t.story_check_desc,
       color: 'from-indigo-500 to-purple-500',
       glowColor: 'rgba(99, 102, 241, 0.3)',
     },
     {
-      icon: ImageIcon,
-      title: t.story_check_title,
-      description: t.story_check_desc,
-      color: 'from-emerald-500 to-teal-500',
-      glowColor: 'rgba(16, 185, 129, 0.3)',
+      icon: Layers,
+      title: t.story_full_title,
+      description: t.story_full_desc,
+      color: 'from-robo to-cyan-400',
+      glowColor: 'rgba(59, 130, 246, 0.3)',
     },
   ];
 
@@ -49,7 +56,7 @@ export const StoryCheck = ({ language, theme }: StoryCheckProps) => {
           </h2>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {cards.map((card, index) => {
             const Icon = card.icon;
             return (
